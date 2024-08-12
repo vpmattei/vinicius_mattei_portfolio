@@ -14,7 +14,7 @@ export default function Page() {
             in this new industry and I'm eager to learn new things.`}
       </p>
       <br></br>
-      <hr className="border-t border-gray-300 my-6" />
+      <hr className="border-gray-300" />
       <br></br>
       <h2>Experiences</h2>
       {/* ---------------------------- GRAPE HAWK ---------------------------- */}
