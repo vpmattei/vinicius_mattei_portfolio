@@ -88,7 +88,7 @@ html {
 }
 
 .prose h1 {
-  @apply text-8xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-8xl font-medium tracking-tight mt-6 mb-12;
 }
 
 .prose h2 {
@@ -117,8 +117,8 @@ html {
 
 .prose > :first-child {
   /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
+  /* margin-top: 1.25em !important; */
+  /* margin-bottom: 1.25em !important; */
 }
 
 pre::-webkit-scrollbar {
