@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="prose">
+    <section className="prose ml-8 mr-8">
       <h1>Games</h1>
       <h2>Hebald Forest</h2>
       <p className="text-xl indent-8 text-justify">

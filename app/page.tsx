@@ -2,7 +2,7 @@ import { BlogPosts } from "app/components/posts";
 
 export default function Page() {
   return (
-    <section className="prose">
+    <section className="prose ml-8 mr-8">
       <p className="text-2xl indent-8 text-justify">
         {`I became interested in game development very early on when
          I was a teenager, my interest only grew as time went on.
