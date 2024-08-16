@@ -1,15 +1,20 @@
+import React from "react";
 import { BlogPosts } from "app/components/posts";
+import FullScreenImage from "../components/FullScreenImage";
+import FullScreenGallery from "../components/FullScreenGallery";
 
 export const metadata = {
   title: "Games",
-  description: "Read my blog.",
+  description: "Games developed.",
 };
 
-export const imgStyle = {
-  width: 500,
-};
+const images = [
+  "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc4NS5wbmc=/original/WBVXpO.png",
+  "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc2NS5wbmc=/original/yXh2qu.png",
+  "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc2Ni5wbmc=/original/KacFle.png"
+]
 
-export default function Page() {
+const Page: React.FC = () => {
   return (
     <section className="prose ml-8 mr-8 flex flex-col items-center">
       <h1>Games</h1>
@@ -72,7 +77,15 @@ export default function Page() {
           {`Hebald Forest was not just a project; it was a comprehensive platform for me to apply and expand my skills in game development, showcasing the potential of collaborative creativity powered by Unreal Engine 5.`}
         </p>
       </div>
-      <BlogPosts />
+
+      <div>
+        <FullScreenGallery images={images}/>
+      </div>
+      <div className="w-full">
+        <BlogPosts />
+      </div>
     </section>
   );
 }
+
+export default Page;

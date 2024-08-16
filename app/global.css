@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+
 ::selection {
   background-color: #78f347;
   color: #ffe0f3;
