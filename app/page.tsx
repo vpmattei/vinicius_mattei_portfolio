@@ -22,6 +22,8 @@ export default function Page() {
       <h4 className="italic">05.24 - Present</h4>
       <a
         className="italic underline text-gray-300"
+        target="_blank"
+        rel="noopener noreferrer"
         href="https://grapehawk.com"
       >
         Grape Hawk
@@ -43,6 +45,8 @@ export default function Page() {
       <h4 className="italic">04.23 - 09.23</h4>
       <a
         className="italic underline text-gray-300"
+        target="_blank"
+        rel="noopener noreferrer"
         href="http://centraltest.fr"
       >
         Central Test
@@ -56,7 +60,12 @@ export default function Page() {
       {/* ---------------------------- KENTYOU ---------------------------- */}
       <h3>Internship - UI / UX and Web Developer</h3>
       <h4 className="italic">05.22 - 09.22</h4>
-      <a className="italic underline text-gray-300" href="http://kentyou.com">
+      <a
+        className="italic underline text-gray-300"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="http://kentyou.com"
+      >
         Kentyou
       </a>
       <ul className="text-gray-400">
@@ -71,6 +80,8 @@ export default function Page() {
       <h4 className="italic">08.19 - 09.19</h4>
       <a
         className="italic underline text-gray-300"
+        target="_blank"
+        rel="noopener noreferrer"
         href="https://www.hololab.com.br"
       >
         HoloLab - Laboratório de Inovações e Tecnologias
@@ -85,6 +96,8 @@ export default function Page() {
       <h4 className="italic">08.18 - 09.18</h4>
       <a
         className="italic underline text-gray-300"
+        target="_blank"
+        rel="noopener noreferrer"
         href="http://softplan.com.br"
       >
         Softplan

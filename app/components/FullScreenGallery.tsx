@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import useImageModal from "../useImageModal";
+import useImageModal from "../hooks/useImageModal";
 
 interface FullScreenGalleryProps {
   images: string[];
@@ -53,13 +53,13 @@ const FullScreenGallery: React.FC<FullScreenGalleryProps> = ({ images }) => {
           {/* Left and Right Navigation Outside the Image */}
           <button
             onClick={showPreviousImage}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-gray-800/50 p-2 rounded-full cursor-pointer"
+            className="absolute left-8 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-gray-800/50 p-2 rounded-full cursor-pointer"
           >
             &#10094;
           </button>
           <button
             onClick={showNextImage}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-gray-800/50 p-2 rounded-full cursor-pointer"
+            className="absolute right-8 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-gray-800/50 p-2 rounded-full cursor-pointer"
           >
             &#10095;
           </button>
