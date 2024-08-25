@@ -5,13 +5,13 @@ export default function Page() {
     <section className="prose ml-8 mr-8">
       <p className="text-2xl indent-8 text-justify">
         {`I became interested in game development very early on when
-         I was a teenager, my interest only grew as time went on.
-         Now I specialize mainly in Game Design and Development,
-         being able to develop my own games as a solo developer,
-         as well as doing all the 2D and 3D assets by myself.
+          I was a teenager, my interest only grew as time went on.
+          Now I specialize mainly in Game Design and Development,
+          being able to develop my own games as a solo developer,
+          as well as doing all the 2D and 3D assets by myself.
           I am a fast learner and I am passionate about Video Games
-           and its applications, I love all the new technologies growing
-            in this new industry and I'm eager to learn new things.`}
+          and its applications, I love all the new technologies growing
+          in this new industry and I'm eager to learn new things.`}
       </p>
       <br></br>
       <hr className="border-gray-300" />
