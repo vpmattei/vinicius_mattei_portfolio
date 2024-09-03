@@ -20,7 +20,7 @@ const Page: React.FC = () => {
     <section className="prose ml-8 mr-8 flex flex-col items-center">
       <h1>Games</h1>
 
-      <GamePageSection
+      {/* <GamePageSection
         title={{
           url: "https://jessymonrocq.itch.io/hebald-forest",
           text: "Hebald Forest",
@@ -256,7 +256,7 @@ const Page: React.FC = () => {
           "https://i.pinimg.com/564x/f2/ec/93/f2ec93ee6d3ae30c3fb37ab700993040.jpg",
           "https://i.pinimg.com/564x/b1/6b/2f/b16b2f587ccb7ae3a9ce88178f2474a4.jpg",
         ]}
-      />
+      /> */}
     </section>
   );
 };
