@@ -1,8 +1,8 @@
 import React from "react";
 import { BlogPosts } from "app/components/posts";
 import ArrowIcon from "../components/ArrowIcon";
-import FullScreenGallery from "../components/FullScreenGallery";
-import GamePageSection from "../components/GamePageSection";
+// import FullScreenGallery from "../components/FullScreenGallery";
+// import GamePageSection from "../components/GamePageSection";
 
 export const metadata = {
   title: "Games",
@@ -20,6 +20,8 @@ const Page: React.FC = () => {
     <section className="prose ml-8 mr-8 flex flex-col items-center">
       <h1>Games</h1>
 
+      <h2>Cooking . . .</h2>
+      <h3>Come back later :)</h3>
       {/* <GamePageSection
         title={{
           url: "https://jessymonrocq.itch.io/hebald-forest",
