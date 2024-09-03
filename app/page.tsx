@@ -159,9 +159,6 @@ export default function Page() {
       <p className="text-gray-400">Fluent</p>
       <h3>Spanish</h3>
       <p className="text-gray-400">Conversational level</p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
     </section>
   );
 }

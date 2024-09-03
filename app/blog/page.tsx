@@ -22,7 +22,7 @@ const Page: React.FC = () => {
 
       <GamePageSection
         title={{
-          url: "https://ludhic.fr/anamnesis/",
+          url: "https://jessymonrocq.itch.io/hebald-forest",
           text: "Hebald Forest",
         }}
         mainImage={{
@@ -81,14 +81,17 @@ const Page: React.FC = () => {
           </p>,
         ]}
         images={[
-          "https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Screenshot01-1024x576.webp",
-          "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc4NS5wbmc=/original/WBVXpO.png",
-          "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc2NS5wbmc=/original/yXh2qu.png",
-          "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc2Ni5wbmc=/original/KacFle.png",
-          "https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Screenshot02-1024x576.webp",
-          "https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Screenshot03-1024x576.webp",
-          "https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Screenshot04-1024x576.webp",
-          "https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Screenshot05-1024x576.webp",
+          "https://i.ibb.co/1GXQFmf/affiche-HBF.jpg",
+          "https://i.ibb.co/N7gm58n/village.png",
+          "https://i.ibb.co/JRdQbw0/image.png",
+          "https://i.ibb.co/2dHDpX1/cave2.png",
+          "https://i.ibb.co/27dJvMv/cave.png",
+          "https://i.ibb.co/Z1QsQdR/cave-pierre.png",
+          "https://i.ibb.co/nzMK2Cv/aymir.png",
+          "https://i.ibb.co/q9NNN4p/asian.png",
+          "https://i.ibb.co/mvVWHmf/carnet.png",
+          "https://i.ibb.co/19SxrGF/paravoile.png",
+          "https://i.ibb.co/6tcfB3h/village2.png",
         ]}
       />
       <br></br>
@@ -200,6 +203,11 @@ const Page: React.FC = () => {
       <br></br>
       <GamePageSection
         title={{ url: "", text: "Tangled Tales" }}
+        mainImage={{
+          src: "https://i.ibb.co/PcBZMtb/livretangledtales2.png",
+          alt: "Tangled Tales Logo",
+          width: 450,
+        }}
         content={[
           <p key="p1">
             During the first year of my Masters in the MAJIC program (Management
@@ -249,7 +257,6 @@ const Page: React.FC = () => {
           "https://i.pinimg.com/564x/b1/6b/2f/b16b2f587ccb7ae3a9ce88178f2474a4.jpg",
         ]}
       />
-      <BlogPosts />
     </section>
   );
 };
