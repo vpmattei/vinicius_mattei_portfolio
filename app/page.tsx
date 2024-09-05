@@ -1,5 +1,3 @@
-import { BlogPosts } from "app/components/posts";
-
 export default function Page() {
   return (
     <section className="prose ml-8 mr-8">
