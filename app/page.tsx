@@ -19,14 +19,14 @@ export default function Page() {
       <h3>Internship - Developer</h3>
       <h4 className="italic">05.24 - Present</h4>
       <a
-        className="italic underline text-gray-300"
+        className="italic underline text-pink-400 dark:text-pink-300"
         target="_blank"
         rel="noopener noreferrer"
         href="https://grapehawk.com"
       >
         Grape Hawk
       </a>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>Web Development</li>
         <li>JavaScript</li>
         <li>
@@ -42,14 +42,14 @@ export default function Page() {
       <h3>Internship - Game Designer / Developer</h3>
       <h4 className="italic">04.23 - 09.23</h4>
       <a
-        className="italic underline text-gray-300"
+        className="italic underline text-pink-400 dark:text-pink-300"
         target="_blank"
         rel="noopener noreferrer"
         href="http://centraltest.fr"
       >
         Central Test
       </a>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>Game Design / Development</li>
         <li>JavaScript</li>
         <li>Figma</li>
@@ -59,14 +59,14 @@ export default function Page() {
       <h3>Internship - UI / UX and Web Developer</h3>
       <h4 className="italic">05.22 - 09.22</h4>
       <a
-        className="italic underline text-gray-300"
+        className="italic underline text-pink-400 dark:text-pink-300"
         target="_blank"
         rel="noopener noreferrer"
         href="http://kentyou.com"
       >
         Kentyou
       </a>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>Typescript</li>
         <li>Java</li>
         <li>NodeJS</li>
@@ -77,14 +77,14 @@ export default function Page() {
       <h3>Internship - Unity VR</h3>
       <h4 className="italic">08.19 - 09.19</h4>
       <a
-        className="italic underline text-gray-300"
+        className="italic underline text-pink-400 dark:text-pink-300"
         target="_blank"
         rel="noopener noreferrer"
         href="https://www.hololab.com.br"
       >
         HoloLab - Laboratório de Inovações e Tecnologias
       </a>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>Unity VR</li>
         <li>C#</li>
         <li>3DS Max</li>
@@ -93,14 +93,14 @@ export default function Page() {
       <h3>Internship - Java</h3>
       <h4 className="italic">08.18 - 09.18</h4>
       <a
-        className="italic underline text-gray-300"
+        className="italic underline text-pink-400 dark:text-pink-300"
         target="_blank"
         rel="noopener noreferrer"
         href="http://softplan.com.br"
       >
         Softplan
       </a>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>Java</li>
       </ul>
 
@@ -110,14 +110,14 @@ export default function Page() {
       <h2>Tools</h2>
       {/* ---------------------------- GAME ENGINES ---------------------------- */}
       <h3>Game Engines</h3>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>Unity</li>
         <li>Unreal Engine</li>
         <li>GDevelop</li>
       </ul>
       {/* ---------------------------- ART ---------------------------- */}
       <h3>Art</h3>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>Blender</li>
         <li>3DS Max</li>
         <li>Maya</li>
@@ -127,7 +127,7 @@ export default function Page() {
       </ul>
       {/* ---------------------------- OTHERS ---------------------------- */}
       <h3>Others</h3>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>Wwise</li>
         <li>ChatGPT</li>
       </ul>
@@ -136,7 +136,7 @@ export default function Page() {
       <br />
       <hr className="border-t border-gray-300 my-6" />
       <h2>Languages - Programming</h2>
-      <ul className="text-gray-400">
+      <ul className="text-gray-700 dark:text-gray-400">
         <li>C#</li>
         <li>C++</li>
         <li>Blueprint (Unreal Engine)</li>
@@ -150,13 +150,13 @@ export default function Page() {
       <hr className="border-t border-gray-300 my-6" />
       <h2>Languages - Spoken</h2>
       <h3>Portuguese (Brazil)</h3>
-      <p className="text-gray-400">Native language</p>
+      <p className="text-gray-700 dark:text-gray-400">Native language</p>
       <h3>French</h3>
-      <p className="text-gray-400">Fluent</p>
+      <p className="text-gray-700 dark:text-gray-400">Fluent</p>
       <h3>English</h3>
-      <p className="text-gray-400">Fluent</p>
+      <p className="text-gray-700 dark:text-gray-400">Fluent</p>
       <h3>Spanish</h3>
-      <p className="text-gray-400">Conversational level</p>
+      <p className="text-gray-700 dark:text-gray-400">Conversational level</p>
     </section>
   );
 }
