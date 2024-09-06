@@ -1,13 +1,7 @@
-"use client"
+"use client";
 
 import React from "react";
 import GamePageSection from "./GamePageSection";
-
-const images = [
-  "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc4NS5wbmc=/original/WBVXpO.png",
-  "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc2NS5wbmc=/original/yXh2qu.png",
-  "https://img.itch.zone/aW1hZ2UvMjg2MzIzNS8xNzExNTc2Ni5wbmc=/original/KacFle.png",
-];
 
 const Page: React.FC = () => {
   return (

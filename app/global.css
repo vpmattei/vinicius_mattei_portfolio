@@ -2,8 +2,8 @@
 
 
 ::selection {
-  background-color: #78f347;
-  color: #ffe0f3;
+  background-color: #c82c5e;
+  color: #f8fff6;
 }
 
 :root {
@@ -19,6 +19,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: #f3477d;
+    color: #e8ffe0;
+  }
   :root {
     --sh-class: #4c97f8;
     --sh-identifier: white;
@@ -89,7 +93,7 @@ html {
 }
 
 .prose h1 {
-  @apply text-8xl font-medium tracking-tight mt-6 mb-12;
+  @apply text-8xl font-medium dark:text-neutral-200 tracking-tight mt-6 mb-12;
 }
 
 .prose h2 {

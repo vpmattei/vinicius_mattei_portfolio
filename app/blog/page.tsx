@@ -1,5 +1,5 @@
 import React from "react";
-import ClientPage from "../components/ClientPage";
+import GamePages from "../components/GamePages";
 
 export const metadata = {
   title: "Games",
@@ -9,7 +9,7 @@ export const metadata = {
 const Page: React.FC = () => {
   return (
     <section>
-      <ClientPage />
+      <GamePages />
     </section>
   );
 };
