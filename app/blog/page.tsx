@@ -9,6 +9,7 @@ export const metadata = {
 const Page: React.FC = () => {
   return (
     <section>
+      <ClientPage />
     </section>
   );
 };
