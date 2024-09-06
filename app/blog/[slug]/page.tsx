@@ -10,7 +10,7 @@ export async function generateStaticParams() {
   // return posts.map((post) => ({
   //   slug: post.slug,
   // }))
-  return ({});
+  return (["N/A"]);
 }
 
 export function generateMetadata({ params }) {
