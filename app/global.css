@@ -89,7 +89,7 @@ html {
 }
 
 .prose h1 {
-  @apply text-8xl font-medium tracking-tight mt-6 mb-12;
+  @apply text-8xl font-medium dark:text-neutral-200 tracking-tight mt-6 mb-12;
 }
 
 .prose h2 {
