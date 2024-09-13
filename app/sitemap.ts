@@ -1,7 +1,7 @@
 export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
 
 export default async function sitemap() {
-  let routes = ['', '/blog'].map((route) => ({
+  let routes = ['', '/games', '/art'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))
