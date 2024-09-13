@@ -1,5 +1,5 @@
 import React from "react";
-import GamePages from "../components/GamePages";
+import GamePages from "../../components/GamePages";
 
 export const metadata = {
   title: "Games",
