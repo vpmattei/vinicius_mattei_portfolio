@@ -1,22 +1,26 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const navItems = {
-  '/': {
-    name: 'Home',
+  "/": {
+    name: "Home",
   },
-  '/page/games': {
-    name: 'Games',
+  "/works": {
+    name: "Works",
   },
-  '/page/art': {
-    name: 'Art'
+  "/artworks": {
+    name: "Artworks",
   },
-}
+};
 
 export function Navbar() {
   return (
     <aside className="-ml-[8px] mb-8 p-5 tracking-tight text-zinc-50 dark:text-zinc-950 bg-lime-700 dark:bg-lime-200">
       <div className="lg:sticky lg:top-20 ">
-        <h1 className="text-8xl font-medium tracking-tight mt-6 mb-2">Vinícius Mattei</h1>
+        <Link key="/" href="/">
+          <h1 className="text-8xl font-medium tracking-tight mt-6 mb-2">
+            Vinícius Mattei
+          </h1>
+        </Link>
         <nav
           className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
@@ -31,11 +35,11 @@ export function Navbar() {
                 >
                   {name}
                 </Link>
-              )
+              );
             })}
           </div>
         </nav>
       </div>
     </aside>
-  )
+  );
 }
