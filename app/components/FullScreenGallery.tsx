@@ -20,7 +20,7 @@ const FullScreenGallery: React.FC<FullScreenGalleryProps> = ({ images }) => {
   return (
     <div>
       {/* Image grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 content-around">
+      <div className="grid grid-cols-1 gap-4 place-content-center">
         {images.map((image, index) => (
           <img
             key={index}
