@@ -1,7 +1,9 @@
-"use client";
-
 import React from "react";
 import GamePageSection from "../../components/GamePageSection";
+
+export const metadata = {
+  title: "Hebald Forest",
+};
 
 const Page: React.FC = () => {
   return (
