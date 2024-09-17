@@ -18,15 +18,15 @@ const FullScreenGallery: React.FC<FullScreenGalleryProps> = ({ images }) => {
   } = useImageModal(images);
 
   return (
-    <div>
+    <div className="">
       {/* Image grid */}
-      <div className="grid grid-cols-1 gap-4 place-content-center">
+      <div className="flex flex-col flex-wrap justify-center items-center gap-16">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Gallery Image ${index + 1}`}
-            className="rounded-lg cursor-pointer transition-transform duration-300 hover:scale-90"
+            className="max-h-[130vh] max-w-[95vw] object-contain rounded-lg cursor-pointer transition-transform duration-300 hover:scale-98 mx-auto"
             onClick={() => openModal(index)} // Open modal with the clicked image
           />
         ))}
@@ -34,13 +34,28 @@ const FullScreenGallery: React.FC<FullScreenGalleryProps> = ({ images }) => {
 
       {/* Modal Overlay */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 modal-background">
           <div className="relative">
             {/* Image */}
             <img
               src={images[currentIndex]}
               alt={`Gallery Image ${currentIndex + 1}`}
-              className="max-h-[80vh] max-w-full"
+              className="max-h-[95vh] max-w-[90vw] cursor-pointer"
+              onClick={(e) => {
+                const { clientX, target } = e;
+                const windowWidth = window.innerWidth;
+
+                // Ensure the click was on the image
+                if (target instanceof HTMLImageElement) {
+                  // If the click is on the right half of the screen, go to the next image
+                  if (clientX > windowWidth / 2) {
+                    showNextImage();
+                  } else {
+                    // If the click is on the left half of the screen, go to the previous image
+                    showPreviousImage();
+                  }
+                }
+              }}
             />
           </div>
           {/* Close Button */}

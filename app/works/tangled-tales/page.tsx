@@ -1,7 +1,9 @@
-"use client";
-
 import React from "react";
 import GamePageSection from "../../components/GamePageSection";
+
+export const metadata = {
+  title: "Tangled Tales",
+};
 
 const Page: React.FC = () => {
   return (
