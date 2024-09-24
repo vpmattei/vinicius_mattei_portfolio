@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center">
+    <section className="prose ml-8 mr-8 flex flex-col items-center gap-16">
       <GamePageSection
         title={{
           url: "https://jessymonrocq.itch.io/hebald-forest",
@@ -82,6 +82,15 @@ const Page: React.FC = () => {
           "https://i.ibb.co/6tcfB3h/village2.png",
         ]}
       />
+
+      <div className="previous-next-work-buttons">
+        <a className="previous-work" href="/works/anamnesis">
+          Anamnesis
+        </a>
+        <a className="next-work" href="/works">
+          All works
+        </a>
+      </div>
     </section>
   );
 };

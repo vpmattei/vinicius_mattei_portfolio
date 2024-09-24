@@ -19,7 +19,7 @@ const images = [
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center">
+    <section className="prose ml-8 mr-8 flex flex-col items-center gap-16">
       <h2 className="mb-16">Kentyou</h2>
       <br></br>
       <a
@@ -43,6 +43,13 @@ const Page: React.FC = () => {
         All designs were created using Figma.
       </p>
       <FullScreenGallery images={images} />
+
+      <div className="previous-next-work-buttons">
+        <a className="previous-work" href="/works">All works</a>
+        <a className="next-work" href="/works/tangled-tales">
+          Tangled Tales
+        </a>
+      </div>
     </section>
   );
 };

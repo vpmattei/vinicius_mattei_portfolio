@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center">
+    <section className="prose ml-8 mr-8 flex flex-col items-center gap-16">
       <GamePageSection
         title={{ url: "", text: "Tangled Tales" }}
         mainImage={{
@@ -64,6 +64,14 @@ const Page: React.FC = () => {
           "https://i.pinimg.com/564x/b1/6b/2f/b16b2f587ccb7ae3a9ce88178f2474a4.jpg",
         ]}
       />
+      <div className="previous-next-work-buttons">
+        <a className="previous-work" href="/works/kentyou">
+          Kentyou
+        </a>
+        <a className="next-work" href="/works/anamnesis">
+          Anamnesis
+        </a>
+      </div>
     </section>
   );
 };

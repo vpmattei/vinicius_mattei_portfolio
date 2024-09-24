@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center">
+    <section className="prose ml-8 mr-8 flex flex-col items-center gap-16">
       <GamePageSection
         title={{
           url: "https://ludhic.fr/anamnesis/",
@@ -109,6 +109,15 @@ const Page: React.FC = () => {
           "https://ludhic.fr/wp-content/uploads/2023/01/anamnesis02.webp",
         ]}
       />
+
+      <div className="previous-next-work-buttons">
+        <a className="previous-work" href="/works/tangled-tales">
+          Tangled Tales
+        </a>
+        <a className="next-work" href="/works/hebald-forest">
+          Hebald Forest
+        </a>
+      </div>
     </section>
   );
 };
