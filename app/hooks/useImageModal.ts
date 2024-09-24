@@ -33,11 +33,22 @@ const useImageModal = (images: string[]) => {
         }
       };
 
+      const handleClickOutside = (event: MouseEvent) => {
+        const target = event.target as HTMLElement;
+        // Close the modal if the click is outside the image
+        if (target.classList.contains("modal-background")) {
+          console.log("close image !!")
+          closeModal();
+        }
+      };
+
       window.addEventListener("keydown", handleKeyDown);
+      window.addEventListener("click", handleClickOutside);
 
       // Cleanup the event listener when the modal closes
       return () => {
         window.removeEventListener("keydown", handleKeyDown);
+        window.removeEventListener("click", handleClickOutside);
       };
     }
   }, [isModalOpen, images.length]);
