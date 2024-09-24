@@ -21,7 +21,7 @@ const Page: React.FC = () => {
             />
           </a>
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-4"></div>
+        <div className="w-[2px] h-[75vh] bg-black dark:bg-white mx-4"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/hebald-forest">
             <h2 className="transition-all hover:text-neutral-800 dark:hover:text-neutral-400">
@@ -42,7 +42,7 @@ const Page: React.FC = () => {
             />
           </a>
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[75vh] bg-black dark:bg-white mx-auto"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/anamnesis">
             <h2 className="transition-all hover:text-neutral-800 dark:hover:text-neutral-100">
@@ -63,7 +63,7 @@ const Page: React.FC = () => {
             />
           </a>
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[75vh] bg-black dark:bg-white mx-auto"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/tangled-tales">
             <h2 className="transition-all hover:text-neutral-800 dark:hover:text-neutral-100">
@@ -84,7 +84,7 @@ const Page: React.FC = () => {
             />
           </a>
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[75vh] bg-black dark:bg-white mx-auto"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/kentyou">
             <h2 className="transition-all hover:text-neutral-800 dark:hover:text-neutral-100">
