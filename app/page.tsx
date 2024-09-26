@@ -22,9 +22,9 @@ export default function Page() {
           VISUAL ARTIST
         </p>
         <p className="m-32 text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
-          I help bring people visions to fruition, by combining my technical
-          skills alongside my artistic point of view, I am able create unique,
-          creative and technically robust video games.
+          I help bring people's visions to fruition by combining my technical
+          skills with my artistic perspective. This allows me to create unique,
+          creative, and technically robust video games.
         </p>
       </div>
       <br></br>
