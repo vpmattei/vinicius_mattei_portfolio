@@ -21,7 +21,7 @@ export default function Page() {
         <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
           VISUAL ARTIST
         </p>
-        <p className="m-32 text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
+        <p className="text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
           I help bring people's visions to fruition by combining my technical
           skills with my artistic perspective. This allows me to create unique,
           creative, and technically robust video games.
