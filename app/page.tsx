@@ -104,35 +104,44 @@ export default function Page() {
         <li>Java</li>
       </ul>
 
-      {/* ---------------------------- SCHOOLING ---------------------------- */}
       <br></br>
       <hr className="border-gray-300" />
       <br></br>
-      <h2>Schooling</h2>
-      {/* ---------------------------- MAJIC ---------------------------- */}
-      <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
-      <h4 className="italic">Master's Degree</h4>
-      <h4 className="italic">09.22 - 09.24</h4>
-      <a
-        className="italic underline text-pink-400 dark:text-pink-300"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://univ-cotedazur.fr"
-      >
-        Université Côte d'Azur
-      </a>
-      {/* ---------------------------- MIAGE ---------------------------- */}
-      <h3>Computer Science Methods for Business Management (MIAGE)</h3>
-      <h4>Bachelor's Degree</h4>
-      <h4 className="italic">09.17 - 09.22</h4>
-      <a
-        className="italic underline text-pink-400 dark:text-pink-300"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.univ-grenoble-alpes.fr"
-      >
-        Université Grenoble Alpes
-      </a>
+      {/* ---------------------------- SCHOOLING ---------------------------- */}
+      <div className="flex flex-col items-center gap-8">
+        <h1>Schooling</h1>
+        <div className="flex flex-row w-[100%] justify-between">
+          <div className="mr-8 ml-8">
+            <h2>Université Côte d'Azur</h2>
+            <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
+            <h4>Master's Degree</h4>
+            <h4 className="italic">09.22 - 09.24</h4>
+            <a
+              className="italic underline text-pink-400 dark:text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://univ-cotedazur.fr"
+            ></a>
+          </div>
+
+          <div className="mr-8 ml-8">
+            <h2>Université Grenoble Alpes</h2>
+            <h3>
+              Computer Science Methods for Business Management (MIAGE)
+            </h3>
+            <h4>Bachelor's Degree</h4>
+            <h4 className="italic">09.17 - 09.22</h4>
+            <a
+              className="italic underline text-pink-400 dark:text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.univ-grenoble-alpes.fr"
+            >
+              <img src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"></img>
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* ---------------------------- TOOLS ---------------------------- */}
       <br />
