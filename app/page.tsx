@@ -1,7 +1,19 @@
 export default function Page() {
   return (
     <section className="prose ml-8 mr-8">
-      <p className="text-2xl indent-8 text-justify">
+      <div className="mt-48 mb-48 flex flex-col items-center gap-48">
+        <p className="text-8xl text-center leading-relaxed">My name is</p>
+        <p className="text-8xl text-center leading-relaxed">Vinícius Mattei</p>
+        <p className="text-7xl text-center leading-relaxed">Game Designer</p>
+        <p className="text-7xl text-center leading-relaxed">Game Developer</p>
+        <p className="text-7xl text-center leading-relaxed">VisualArtist</p>
+        <p className="m-32 text-4xl text-center text-balance leading-loose">
+          I help bring peoples vision to fruition, by combining my technical
+          skills alongside my artistic point of view, I create a unique,
+          creative and technically robust video games.
+        </p>
+      </div>
+      {/* <p className="text-2xl indent-8 text-justify">
         {`I became interested in game development very early on when
           I was a teenager, my interest only grew as time went on.
           Now I specialize mainly in Game Design and Development,
@@ -10,7 +22,7 @@ export default function Page() {
           I am a fast learner and I am passionate about Video Games
           and its applications, I love all the new technologies growing
           in this new industry and I'm eager to learn new things.`}
-      </p>
+      </p> */}
       <br></br>
       <hr className="border-gray-300" />
       <br></br>
@@ -126,9 +138,7 @@ export default function Page() {
 
           <div className="mr-8 ml-8">
             <h2>Université Grenoble Alpes</h2>
-            <h3>
-              Computer Science Methods for Business Management (MIAGE)
-            </h3>
+            <h3>Computer Science Methods for Business Management (MIAGE)</h3>
             <h4>Bachelor's Degree</h4>
             <h4 className="italic">09.17 - 09.22</h4>
             <a
