@@ -17,6 +17,39 @@
   }
 }
 
+@font-face {
+  font-family: "Anton";
+  src: url("../assets/fonts/Anton/Anton-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antonio";
+  src: url("../assets/fonts/Antonio/Antonio-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Antonio Bold";
+  src: url("../assets/fonts/Antonio/static/Antonio-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bodoni Moda Italic";
+  src: url("../assets/fonts/Bodoni_Moda/BodoniModa-Italic-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Bodoni Moda";
+  src: url("../assets/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Marcellus Regular";
+  src: url("../assets/fonts/Marcellus/Marcellus-Regular.ttf") format("truetype");
+}
+
 ::selection {
   background-color: #c82c5e;
   color: #f8fff6;
@@ -47,6 +80,7 @@
   }
   html {
     color-scheme: dark;
+    font-family: "Antonio";
   }
 }
 
@@ -110,18 +144,23 @@ html {
 
 .prose h1 {
   @apply text-8xl font-medium dark:text-neutral-200 tracking-tight mt-6 mb-12;
+  font-family: "Antonio Bold";
+  letter-spacing: 0.035em;
 }
 
 .prose h2 {
   @apply text-4xl font-medium tracking-tight mt-6 mb-2;
+  letter-spacing: 0.025em;
 }
 
 .prose h3 {
   @apply text-2xl font-medium tracking-tight mt-6 mb-2;
+  letter-spacing: 0.0125em;
 }
 
 .prose h4 {
   @apply text-lg font-medium tracking-tight mb-2;
+  letter-spacing: 0.00675em;
 }
 
 .prose strong {
@@ -154,8 +193,16 @@ html {
   }
 }
 
-.prose .title1 {
-  font-family:'Creato display', sans-serif;
+.prose {
+  .font-anton {
+    font-family: "Anton", sans-serif;
+  }
+  .font-bodoni-moda-i {
+    font-family: "Bodoni Moda Italic";
+  }
+  .font-bodoni-moda {
+    font-family: "Bodoni Moda";
+  }
 }
 
 pre::-webkit-scrollbar {

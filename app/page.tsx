@@ -7,19 +7,19 @@ export default function Page() {
 
   return (
     <section className="prose ml-8 mr-8">
-      <div className="mt-48 mb-32 flex flex-col items-center gap-16">
-        <div className="text-8xl text-center leading-relaxed fade-in-element opacity-0">
-          <p className="title1">HEY, I'M</p>
-          <p>Vinícius</p>
+      <div className="mt-48 mb-32 flex flex-col items-center gap-8">
+        <div className="mb-64 text-8xl text-center fade-in-element opacity-0">
+          <p className="font-anton">HEY, I'M</p>
+          <p className="font-bodoni-moda-i italic">Vinícius</p>
         </div>
-        <p className="text-7xl text-center leading-relaxed fade-in-element opacity-0">
-          Game Designer
+        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+          GAME DESIGNER
         </p>
-        <p className="text-7xl text-center leading-relaxed fade-in-element opacity-0">
-          Game Developer
+        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+          GAME DEVELOPER
         </p>
-        <p className="text-7xl text-center leading-relaxed fade-in-element opacity-0">
-          Visual Artist
+        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+          VISUAL ARTIST
         </p>
         <p className="m-32 text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
           I help bring people visions to fruition, by combining my technical
@@ -138,7 +138,10 @@ export default function Page() {
               rel="noopener noreferrer"
               href="https://univ-cotedazur.fr"
             >
-              <img src="https://univ-cotedazur.fr/medias/photo/vignette-2-lignes2_1668693930108-jpg?ID_FICHE=1167756"></img>
+              <img
+                src="https://univ-cotedazur.fr/medias/photo/vignette-2-lignes2_1668693930108-jpg?ID_FICHE=1167756"
+                style={{ height: 150 }}
+              ></img>
             </a>
           </div>
 
@@ -153,7 +156,10 @@ export default function Page() {
               rel="noopener noreferrer"
               href="https://www.univ-grenoble-alpes.fr"
             >
-              <img src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"></img>
+              <img
+                src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"
+                style={{ height: 150 }}
+              ></img>
             </a>
           </div>
         </div>
