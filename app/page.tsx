@@ -104,6 +104,36 @@ export default function Page() {
         <li>Java</li>
       </ul>
 
+      {/* ---------------------------- SCHOOLING ---------------------------- */}
+      <br></br>
+      <hr className="border-gray-300" />
+      <br></br>
+      <h2>Schooling</h2>
+      {/* ---------------------------- MAJIC ---------------------------- */}
+      <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
+      <h4 className="italic">Master's Degree</h4>
+      <h4 className="italic">09.22 - 09.24</h4>
+      <a
+        className="italic underline text-pink-400 dark:text-pink-300"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://univ-cotedazur.fr"
+      >
+        Université Côte d'Azur
+      </a>
+      {/* ---------------------------- MIAGE ---------------------------- */}
+      <h3>Computer Science Methods for Business Management (MIAGE)</h3>
+      <h4>Bachelor's Degree</h4>
+      <h4 className="italic">09.17 - 09.22</h4>
+      <a
+        className="italic underline text-pink-400 dark:text-pink-300"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.univ-grenoble-alpes.fr"
+      >
+        Université Grenoble Alpes
+      </a>
+
       {/* ---------------------------- TOOLS ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
