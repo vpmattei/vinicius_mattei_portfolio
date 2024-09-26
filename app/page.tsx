@@ -1,28 +1,32 @@
+"use client";
+
+import useIntersectionObserver from "./hooks/useIntersectionObserver";
+
 export default function Page() {
+  useIntersectionObserver(".fade-in-element");
+
   return (
     <section className="prose ml-8 mr-8">
-      <div className="mt-48 mb-48 flex flex-col items-center gap-48">
-        <p className="text-8xl text-center leading-relaxed">My name is</p>
-        <p className="text-8xl text-center leading-relaxed">Vinícius Mattei</p>
-        <p className="text-7xl text-center leading-relaxed">Game Designer</p>
-        <p className="text-7xl text-center leading-relaxed">Game Developer</p>
-        <p className="text-7xl text-center leading-relaxed">VisualArtist</p>
-        <p className="m-32 text-4xl text-center text-balance leading-loose">
-          I help bring peoples vision to fruition, by combining my technical
-          skills alongside my artistic point of view, I create a unique,
+      <div className="mt-48 mb-32 flex flex-col items-center gap-16">
+        <div className="text-8xl text-center leading-relaxed fade-in-element opacity-0">
+          <p className="title1">HEY, I'M</p>
+          <p>Vinícius</p>
+        </div>
+        <p className="text-7xl text-center leading-relaxed fade-in-element opacity-0">
+          Game Designer
+        </p>
+        <p className="text-7xl text-center leading-relaxed fade-in-element opacity-0">
+          Game Developer
+        </p>
+        <p className="text-7xl text-center leading-relaxed fade-in-element opacity-0">
+          Visual Artist
+        </p>
+        <p className="m-32 text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
+          I help bring people visions to fruition, by combining my technical
+          skills alongside my artistic point of view, I am able create unique,
           creative and technically robust video games.
         </p>
       </div>
-      {/* <p className="text-2xl indent-8 text-justify">
-        {`I became interested in game development very early on when
-          I was a teenager, my interest only grew as time went on.
-          Now I specialize mainly in Game Design and Development,
-          being able to develop my own games as a solo developer,
-          as well as doing all the 2D and 3D assets by myself.
-          I am a fast learner and I am passionate about Video Games
-          and its applications, I love all the new technologies growing
-          in this new industry and I'm eager to learn new things.`}
-      </p> */}
       <br></br>
       <hr className="border-gray-300" />
       <br></br>
@@ -133,7 +137,9 @@ export default function Page() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://univ-cotedazur.fr"
-            ></a>
+            >
+              <img src="https://univ-cotedazur.fr/medias/photo/vignette-2-lignes2_1668693930108-jpg?ID_FICHE=1167756"></img>
+            </a>
           </div>
 
           <div className="mr-8 ml-8">
