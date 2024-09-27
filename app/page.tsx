@@ -1,16 +1,32 @@
+"use client";
+
+import useIntersectionObserver from "./hooks/useIntersectionObserver";
+
 export default function Page() {
+  useIntersectionObserver(".fade-in-element");
+
   return (
     <section className="prose ml-8 mr-8">
-      <p className="text-2xl indent-8 text-justify">
-        {`I became interested in game development very early on when
-          I was a teenager, my interest only grew as time went on.
-          Now I specialize mainly in Game Design and Development,
-          being able to develop my own games as a solo developer,
-          as well as doing all the 2D and 3D assets by myself.
-          I am a fast learner and I am passionate about Video Games
-          and its applications, I love all the new technologies growing
-          in this new industry and I'm eager to learn new things.`}
-      </p>
+      <div className="mt-48 mb-32 flex flex-col items-center gap-8">
+        <div className="mb-64 text-8xl text-center fade-in-element opacity-0">
+          <p className="font-anton">HEY, I'M</p>
+          <p className="font-bodoni-moda-i italic">Vinícius</p>
+        </div>
+        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+          GAME DESIGNER
+        </p>
+        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+          GAME DEVELOPER
+        </p>
+        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+          VISUAL ARTIST
+        </p>
+        <p className="text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
+          I help bring people's visions to fruition by combining my technical
+          skills with my artistic perspective. This allows me to create unique,
+          creative, and technically robust video games.
+        </p>
+      </div>
       <br></br>
       <hr className="border-gray-300" />
       <br></br>
@@ -103,6 +119,51 @@ export default function Page() {
       <ul className="text-gray-700 dark:text-gray-400">
         <li>Java</li>
       </ul>
+
+      <br></br>
+      <hr className="border-gray-300" />
+      <br></br>
+      {/* ---------------------------- SCHOOLING ---------------------------- */}
+      <div className="flex flex-col items-center gap-8">
+        <h1>Schooling</h1>
+        <div className="flex flex-row w-[100%] justify-between">
+          <div className="mr-8 ml-8">
+            <h2>Université Côte d'Azur</h2>
+            <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
+            <h4>Master's Degree</h4>
+            <h4 className="italic">09.22 - 09.24</h4>
+            <a
+              className="italic underline text-pink-400 dark:text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://univ-cotedazur.fr"
+            >
+              <img
+                src="https://univ-cotedazur.fr/medias/photo/vignette-2-lignes2_1668693930108-jpg?ID_FICHE=1167756"
+                style={{ height: 150 }}
+              ></img>
+            </a>
+          </div>
+
+          <div className="mr-8 ml-8">
+            <h2>Université Grenoble Alpes</h2>
+            <h3>Computer Science Methods for Business Management (MIAGE)</h3>
+            <h4>Bachelor's Degree</h4>
+            <h4 className="italic">09.17 - 09.22</h4>
+            <a
+              className="italic underline text-pink-400 dark:text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.univ-grenoble-alpes.fr"
+            >
+              <img
+                src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"
+                style={{ height: 150 }}
+              ></img>
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* ---------------------------- TOOLS ---------------------------- */}
       <br />

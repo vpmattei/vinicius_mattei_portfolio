@@ -18,7 +18,7 @@ export function Navbar() {
       <div className="lg:sticky lg:top-20 ">
         <Link key="/" href="/">
           <h1 className="text-8xl font-medium tracking-tight mt-6 mb-2">
-            Vinícius Mattei
+            VINÍCIUS MATTEI
           </h1>
         </Link>
         <nav
