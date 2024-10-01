@@ -47,7 +47,7 @@ export default function Page() {
             >
               <img
                 src="https://static.wixstatic.com/media/40394b_082b5d3b5c134c7bad866569494c890b~mv2.jpg"
-                style={{ minWidth:150, height: 150 }}
+                style={{ minWidth: 150, height: 150 }}
               ></img>
             </a>
           </div>
@@ -65,7 +65,7 @@ export default function Page() {
             >
               <img
                 src="https://pbs.twimg.com/profile_images/1255054057414295552/yjzIrCMz_400x400.jpg"
-                style={{ height: 150 }}
+                style={{ maxHeight: 150, maxWidth: 200 }}
               ></img>
             </a>
           </div>
@@ -146,7 +146,7 @@ export default function Page() {
             >
               <img
                 src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"
-                style={{ height: 150 }}
+                style={{ maxHeight: 150, maxWidth: 200 }}
               ></img>
             </a>
           </div>
@@ -156,30 +156,37 @@ export default function Page() {
       {/* ---------------------------- TOOLS ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
-      <h2>Tools</h2>
-      {/* ---------------------------- GAME ENGINES ---------------------------- */}
-      <h3>Game Engines</h3>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>Unity</li>
-        <li>Unreal Engine</li>
-        <li>GDevelop</li>
-      </ul>
-      {/* ---------------------------- ART ---------------------------- */}
-      <h3>Art</h3>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>Blender</li>
-        <li>3DS Max</li>
-        <li>Maya</li>
-        <li>Adobe Photoshop</li>
-        <li>Adobe Illustrator</li>
-        <li>Figma</li>
-      </ul>
-      {/* ---------------------------- OTHERS ---------------------------- */}
-      <h3>Others</h3>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>Wwise</li>
-        <li>ChatGPT</li>
-      </ul>
+      <div className="flex flex-col items-center gap-8">
+        <h1>Tools</h1>
+        {/* ---------------------------- GAME ENGINES ---------------------------- */}
+        <h2>Game Engines</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] gap-16">
+          <img
+            src="https://alexdunn.org/wp-content/uploads/2017/05/unity-logo-white.png"
+            style={{ height: 100 }}
+          />
+          <img
+            src="https://cdn2.unrealengine.com/ue-logotype-2023-vertical-white-1686x2048-bbfded26daa7.png"
+            style={{ maxHeight: 150, maxWidth: 200 }}
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/ac/GD-logo-big.png?20200730084519"
+            style={{ height: 90 }}
+          />
+        </div>
+        {/* ---------------------------- ART ---------------------------- */}
+        <h2>Art</h2>
+        <h3>Blender</h3>
+        <h3>3DS Max</h3>
+        <h3>Maya</h3>
+        <h3>Adobe Photoshop</h3>
+        <h3>Adobe Illustrator</h3>
+        <h3>Figma</h3>
+        {/* ---------------------------- OTHERS ---------------------------- */}
+        <h2>Others</h2>
+        <h3>Wwise</h3>
+        <h3>ChatGPT</h3>
+      </div>
 
       {/* ---------------------------- PROGRAMMING ---------------------------- */}
       <br />
