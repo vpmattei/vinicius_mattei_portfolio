@@ -21,7 +21,7 @@ export default function Page() {
         <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
           VISUAL ARTIST
         </p>
-        <p className="text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
+        <p className="text-md sm:text-xl md:text-3xl xl:text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
           I help bring people's visions to fruition by combining my technical
           skills with my artistic perspective. This allows me to create unique,
           creative, and technically robust video games.
@@ -30,95 +30,83 @@ export default function Page() {
       <br></br>
       <hr className="border-gray-300" />
       <br></br>
-      <h2>Experiences</h2>
-      {/* ---------------------------- GRAPE HAWK ---------------------------- */}
-      <h3>Internship - Developer</h3>
-      <h4 className="italic">05.24 - Present</h4>
-      <a
-        className="italic underline text-pink-400 dark:text-pink-300"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://grapehawk.com"
-      >
-        Grape Hawk
-      </a>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>Web Development</li>
-        <li>JavaScript</li>
-        <li>
-          3D Drone Simulation using :
-          <ul>
-            <li>Gazebo</li>
-            <li>PX4</li>
-            <li>QGroundControl</li>
-          </ul>
-        </li>
-      </ul>
-      {/* ---------------------------- CENTRAL TEST ---------------------------- */}
-      <h3>Internship - Game Designer / Developer</h3>
-      <h4 className="italic">04.23 - 09.23</h4>
-      <a
-        className="italic underline text-pink-400 dark:text-pink-300"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="http://centraltest.fr"
-      >
-        Central Test
-      </a>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>Game Design / Development</li>
-        <li>JavaScript</li>
-        <li>Figma</li>
-        <li>Adobe Photoshop / Illustrator</li>
-      </ul>
-      {/* ---------------------------- KENTYOU ---------------------------- */}
-      <h3>Internship - UI / UX and Web Developer</h3>
-      <h4 className="italic">05.22 - 09.22</h4>
-      <a
-        className="italic underline text-pink-400 dark:text-pink-300"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="http://kentyou.com"
-      >
-        Kentyou
-      </a>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>Typescript</li>
-        <li>Java</li>
-        <li>NodeJS</li>
-        <li>Figma</li>
-        <li>Illustrator</li>
-      </ul>
-      {/* ---------------------------- HOLOLAB ---------------------------- */}
-      <h3>Internship - Unity VR</h3>
-      <h4 className="italic">08.19 - 09.19</h4>
-      <a
-        className="italic underline text-pink-400 dark:text-pink-300"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.hololab.com.br"
-      >
-        HoloLab - Laboratório de Inovações e Tecnologias
-      </a>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>Unity VR</li>
-        <li>C#</li>
-        <li>3DS Max</li>
-      </ul>
-      {/* ---------------------------- SOFTPLAN ---------------------------- */}
-      <h3>Internship - Java</h3>
-      <h4 className="italic">08.18 - 09.18</h4>
-      <a
-        className="italic underline text-pink-400 dark:text-pink-300"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="http://softplan.com.br"
-      >
-        Softplan
-      </a>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>Java</li>
-      </ul>
+
+      <div className="flex flex-col items-center gap-8">
+        <h1>Experiences</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] justify-between flex-wrap">
+          {/* ---------------------------- GRAPE HAWK ---------------------------- */}
+          <div className=" mr-8 ml-8">
+            <h2>GrapeHawk</h2>
+            <h3>Internship – Developer</h3>
+            <h4 className="italic">05.24 - 10.24</h4>
+            <a
+              className="italic underline text-pink-400 dark:text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://grapehawk.com"
+            >
+              <img
+                src="https://static.wixstatic.com/media/40394b_082b5d3b5c134c7bad866569494c890b~mv2.jpg"
+                style={{ minWidth:150, height: 150 }}
+              ></img>
+            </a>
+          </div>
+
+          {/* ---------------------------- CENTRAL TEST ---------------------------- */}
+          <div className=" mr-8 ml-8">
+            <h2>Central Test</h2>
+            <h3>Internship – Game Designer / Developer</h3>
+            <h4 className="italic">05.23 - 09.23</h4>
+            <a
+              className="italic underline text-pink-400 dark:text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.centraltest.fr"
+            >
+              <img
+                src="https://pbs.twimg.com/profile_images/1255054057414295552/yjzIrCMz_400x400.jpg"
+                style={{ height: 150 }}
+              ></img>
+            </a>
+          </div>
+
+          {/* ---------------------------- KENTYOU ---------------------------- */}
+          <div className="mr-8 ml-8">
+            <h2>Kentyou</h2>
+            <h3>Internship – UI/UX Web Designer / Developer</h3>
+            <h4 className="italic">06.22 - 09.22</h4>
+            <a
+              className="italic underline text-pink-400 dark:text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://kentyou.com"
+            >
+              <img
+                src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
+                style={{ height: 150 }}
+              ></img>
+            </a>
+          </div>
+
+          {/* ---------------------------- HOLOLAB ---------------------------- */}
+          <div className="mr-8 ml-8">
+            <h2>HoloLab</h2>
+            <h3>Internship – Game Designer</h3>
+            <h4 className="italic">08.19 - 09.19</h4>
+            <a
+              className="italic underline text-pink-400 dark:text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.hololab.com.br/en"
+            >
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D0BAQGyOtuUpnJVWw/company-logo_200_200/company-logo_200_200/0/1698412314269/hololab_tech_logo?e=2147483647&v=beta&t=z2QAVuVKBv6TF30jjXOrEaz1L8Wx63texxh06ZpzQPc"
+                style={{ height: 150 }}
+              ></img>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <br></br>
       <hr className="border-gray-300" />
@@ -126,7 +114,7 @@ export default function Page() {
       {/* ---------------------------- SCHOOLING ---------------------------- */}
       <div className="flex flex-col items-center gap-8">
         <h1>Schooling</h1>
-        <div className="flex flex-row w-[100%] justify-between">
+        <div className="flex md:flex-row flex-col w-[100%] justify-between">
           <div className="mr-8 ml-8">
             <h2>Université Côte d'Azur</h2>
             <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>

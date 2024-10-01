@@ -14,7 +14,7 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] mb-8 p-5 tracking-tight text-zinc-50 dark:text-zinc-950 bg-lime-700 dark:bg-lime-200">
+    <aside className="mb-8 p-5 w-screen tracking-tight text-zinc-50 dark:text-zinc-950 bg-lime-700 dark:bg-lime-200">
       <div className="lg:sticky lg:top-20 ">
         <Link key="/" href="/">
           <h1 className="text-8xl font-medium tracking-tight mt-6 mb-2">
