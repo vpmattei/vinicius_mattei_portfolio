@@ -161,18 +161,39 @@ export default function Page() {
         {/* ---------------------------- GAME ENGINES ---------------------------- */}
         <h2>Game Engines</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] gap-16">
-          <img
-            src="https://alexdunn.org/wp-content/uploads/2017/05/unity-logo-white.png"
-            style={{ height: 100 }}
-          />
-          <img
-            src="https://cdn2.unrealengine.com/ue-logotype-2023-vertical-white-1686x2048-bbfded26daa7.png"
-            style={{ maxHeight: 150, maxWidth: 200 }}
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/ac/GD-logo-big.png?20200730084519"
-            style={{ height: 90 }}
-          />
+          <a
+            className="italic underline text-pink-400 dark:text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://unity.com"
+          >
+            <img
+              src="https://alexdunn.org/wp-content/uploads/2017/05/unity-logo-white.png"
+              style={{ height: 100 }}
+            />
+          </a>
+          <a
+            className="italic underline text-pink-400 dark:text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://unrealengine.com"
+          >
+            <img
+              src="https://cdn2.unrealengine.com/ue-logotype-2023-vertical-white-1686x2048-bbfded26daa7.png"
+              style={{ maxHeight: 150, maxWidth: 200 }}
+            />
+          </a>
+          <a
+            className="italic underline text-pink-400 dark:text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://gdevelop.io"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/ac/GD-logo-big.png?20200730084519"
+              style={{ height: 90 }}
+            />
+          </a>
         </div>
         {/* ---------------------------- ART ---------------------------- */}
         <h2>Art</h2>
