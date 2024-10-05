@@ -284,34 +284,34 @@ export default function Page() {
       <hr className="border-t border-gray-300 my-6" />
       <div className="m-16 flex flex-col items-center gap-8">
         <h1>Languages - Spoken</h1>
-        <div className="m-16 flex flex-row items-center gap-64 flex-wrap">
-          <div className="flex flex-row items-center gap-8">
+        <div className="m-16 flex flex-col items-start gap-16 flex-wrap">
+          <div className="flex flex-row items-end gap-8">
             <img
-              src="assets/flag-icons/brazil.png"
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/brazil.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>Portuguese (Brazil)</h2>
             <i className="text-gray-700 dark:text-gray-400">Native language</i>
           </div>
-          <div className="flex flex-row items-center gap-8">
+          <div className="flex flex-row items-end gap-8">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png"
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/france.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>French</h2>
             <i className="text-gray-700 dark:text-gray-400">Fluent</i>
           </div>
-          <div className="flex flex-row items-center gap-8">
+          <div className="flex flex-row items-end gap-8">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png"
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/spain.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>English</h2>
             <i className="text-gray-700 dark:text-gray-400">Fluent</i>
           </div>
-          <div className="flex flex-row items-center gap-8">
+          <div className="flex flex-row items-end gap-8">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png"
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/united-kingdom.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>Spanish</h2>
