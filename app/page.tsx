@@ -7,18 +7,20 @@ export default function Page() {
 
   return (
     <section className="prose ml-8 mr-8">
-      <div className="mt-48 mb-32 flex flex-col items-center gap-8">
-        <div className="mb-64 text-8xl text-center fade-in-element opacity-0">
-          <p className="font-anton">HEY, I'M</p>
-          <p className="font-bodoni-moda-i italic">Vinícius</p>
+      <div className="mt-48 mb-32 flex flex-col items-center gap-16">
+        <div className="mb-64 text-center fade-in-element opacity-0">
+          <p className="font-anton text-8xl md:text-9xl">HEY, I'M</p>
+          <p className="font-bodoni-moda-i italic text-8xl md:text-9xl">
+            Vinícius
+          </p>
         </div>
-        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+        <p className="font-bodoni-moda text-5xl md:text-7xl text-center italic fade-in-element opacity-0">
           GAME DESIGNER
         </p>
-        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+        <p className="font-bodoni-moda text-5xl md:text-7xl text-center italic fade-in-element opacity-0">
           GAME DEVELOPER
         </p>
-        <p className="font-bodoni-moda text-5xl text-center italic fade-in-element opacity-0">
+        <p className="font-bodoni-moda text-5xl md:text-7xl text-center italic fade-in-element opacity-0">
           VISUAL ARTIST
         </p>
         <p className="text-md sm:text-xl md:text-3xl xl:text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
@@ -156,11 +158,10 @@ export default function Page() {
       {/* ---------------------------- TOOLS ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
-      <div className="flex flex-col items-center gap-8">
-        <h1>Tools</h1>
-        {/* ---------------------------- GAME ENGINES ---------------------------- */}
-        <h2>Game Engines</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] gap-16">
+      <div className="m-16 flex flex-col items-center gap-8">
+        <h1>Game Engines</h1>
+        <div className="flex flex-row items-center gap-32 m-16">
+          {/* ---------------------------- GAME ENGINES ---------------------------- */}
           <a
             className="italic underline text-pink-400 dark:text-pink-300"
             target="_blank"
@@ -169,7 +170,7 @@ export default function Page() {
           >
             <img
               src="https://alexdunn.org/wp-content/uploads/2017/05/unity-logo-white.png"
-              style={{ height: 100 }}
+              style={{ maxHeight: 300, maxWidth: 450 }}
             />
           </a>
           <a
@@ -180,7 +181,7 @@ export default function Page() {
           >
             <img
               src="https://cdn2.unrealengine.com/ue-logotype-2023-vertical-white-1686x2048-bbfded26daa7.png"
-              style={{ maxHeight: 150, maxWidth: 200 }}
+              style={{ maxHeight: 300, maxWidth: 300 }}
             />
           </a>
           <a
@@ -191,28 +192,64 @@ export default function Page() {
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/ac/GD-logo-big.png?20200730084519"
-              style={{ height: 90 }}
+              style={{ maxHeight: 300, maxWidth: 450 }}
             />
           </a>
         </div>
-        {/* ---------------------------- ART ---------------------------- */}
-        <h2>Art</h2>
-        <h3>Blender</h3>
-        <h3>3DS Max</h3>
-        <h3>Maya</h3>
-        <h3>Adobe Photoshop</h3>
-        <h3>Adobe Illustrator</h3>
-        <h3>Figma</h3>
-        {/* ---------------------------- OTHERS ---------------------------- */}
-        <h2>Others</h2>
-        <h3>Wwise</h3>
-        <h3>ChatGPT</h3>
+      </div>
+      <br />
+      <hr className="border-t border-gray-300 my-6" />
+      {/* ---------------------------- ART ---------------------------- */}
+      <div className="m-16 flex flex-col items-center gap-8">
+        <h1>Art</h1>
+        <div className="flex flex-row items-center justify-around gap-32 flex-wrap">
+          <img
+            src="https://download.blender.org/branding/community/blender_community_badge_white.png"
+            style={{ maxHeight: 300, maxWidth: 300 }}
+          />
+          <img
+            src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-3ds-max-small-social-400.png"
+            style={{ maxHeight: 300, maxWidth: 300 }}
+          />
+          <img
+            src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-maya-small-social-400.png"
+            style={{ maxHeight: 300, maxWidth: 300 }}
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+            style={{ maxHeight: 300, maxWidth: 300 }}
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
+            style={{ maxHeight: 300, maxWidth: 300 }}
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+            style={{ maxHeight: 300, maxWidth: 300 }}
+          />
+        </div>
+      </div>
+      <br />
+      <hr className="border-t border-gray-300 my-6" />
+      {/* ---------------------------- OTHERS ---------------------------- */}
+      <div className="m-16 flex flex-col items-center gap-8">
+        <h1>Others</h1>
+        <div className="m-16 flex flex-row items-center gap-64 flex-wrap">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/56576da6e4b0acafe10c53bb/1682136103428-A4BP43QWKDC8JLMK6XZZ/WWISE+LOGO+%2B+TAG_WHITE.png?format=500w"
+            style={{ maxHeight: 300, maxWidth: 300 }}
+          />
+          <img
+            src="https://freelogopng.com/images/all_img/1681039182chatgpt-logo-with-name.png"
+            style={{ maxHeight: 300, maxWidth: 300 }}
+          />
+        </div>
       </div>
 
       {/* ---------------------------- PROGRAMMING ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
-      <h2>Languages - Programming</h2>
+      <h1>Languages - Programming</h1>
       <ul className="text-gray-700 dark:text-gray-400">
         <li>C#</li>
         <li>C++</li>
@@ -225,14 +262,14 @@ export default function Page() {
       {/* ---------------------------- SPOKEN LANGUAGES ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
-      <h2>Languages - Spoken</h2>
-      <h3>Portuguese (Brazil)</h3>
+      <h1>Languages - Spoken</h1>
+      <h2>Portuguese (Brazil)</h2>
       <p className="text-gray-700 dark:text-gray-400">Native language</p>
-      <h3>French</h3>
+      <h2>French</h2>
       <p className="text-gray-700 dark:text-gray-400">Fluent</p>
-      <h3>English</h3>
+      <h2>English</h2>
       <p className="text-gray-700 dark:text-gray-400">Fluent</p>
-      <h3>Spanish</h3>
+      <h2>Spanish</h2>
       <p className="text-gray-700 dark:text-gray-400">Conversational level</p>
     </section>
   );
