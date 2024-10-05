@@ -30,11 +30,11 @@ export default function Page() {
         </p>
       </div>
       <br></br>
-      <hr className="border-gray-300" />
+      <hr className="border-t border-gray-300 my-6" />
       <br></br>
 
+      <h1>Experiences</h1>
       <div className="flex flex-col items-center gap-8">
-        <h1>Experiences</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] justify-between flex-wrap">
           {/* ---------------------------- GRAPE HAWK ---------------------------- */}
           <div className=" mr-8 ml-8">
@@ -111,13 +111,13 @@ export default function Page() {
       </div>
 
       <br></br>
-      <hr className="border-gray-300" />
+      <hr className="border-t border-gray-300 my-6" />
       <br></br>
       {/* ---------------------------- SCHOOLING ---------------------------- */}
+      <h1>Schooling</h1>
       <div className="flex flex-col items-center gap-8">
-        <h1>Schooling</h1>
-        <div className="flex md:flex-row flex-col w-[100%] justify-between">
-          <div className="mr-8 ml-8">
+        <div className="flex md:flex-row flex-col w-[100%] justify-between md:gap-0 gap-24">
+          <div className="flex flex-col mr-8 ml-8 gap-2">
             <h2>Université Côte d'Azur</h2>
             <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
             <h4>Master's Degree</h4>
@@ -135,7 +135,7 @@ export default function Page() {
             </a>
           </div>
 
-          <div className="mr-8 ml-8">
+          <div className="flex flex-col mr-8 ml-8 gap-2">
             <h2>Université Grenoble Alpes</h2>
             <h3>Computer Science Methods for Business Management (MIAGE)</h3>
             <h4>Bachelor's Degree</h4>
@@ -155,12 +155,13 @@ export default function Page() {
         </div>
       </div>
 
-      {/* ---------------------------- TOOLS ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
+      <br />
+      {/* ---------------------------- TOOLS ---------------------------- */}
+      <h1>Game Engines</h1>
       <div className="m-16 flex flex-col items-center gap-8">
-        <h1>Game Engines</h1>
-        <div className="flex flex-row items-center gap-32 m-16">
+        <div className="flex flex-row flex-wrap items-center justify-around gap-32 m-16">
           {/* ---------------------------- GAME ENGINES ---------------------------- */}
           <a
             className="italic underline text-pink-400 dark:text-pink-300"
@@ -169,8 +170,8 @@ export default function Page() {
             href="https://unity.com"
           >
             <img
+              className="max-w-[300px] max-h-[300px]"
               src="https://alexdunn.org/wp-content/uploads/2017/05/unity-logo-white.png"
-              style={{ maxHeight: 300, maxWidth: 450 }}
             />
           </a>
           <a
@@ -180,8 +181,8 @@ export default function Page() {
             href="https://unrealengine.com"
           >
             <img
+              className="max-w-[200px] max-h-[200px]"
               src="https://cdn2.unrealengine.com/ue-logotype-2023-vertical-white-1686x2048-bbfded26daa7.png"
-              style={{ maxHeight: 300, maxWidth: 300 }}
             />
           </a>
           <a
@@ -191,50 +192,52 @@ export default function Page() {
             href="https://gdevelop.io"
           >
             <img
+              className="max-w-[300px] max-h-[300px]"
               src="https://upload.wikimedia.org/wikipedia/commons/a/ac/GD-logo-big.png?20200730084519"
-              style={{ maxHeight: 300, maxWidth: 450 }}
             />
           </a>
         </div>
       </div>
       <br />
       <hr className="border-t border-gray-300 my-6" />
+      <br />
       {/* ---------------------------- ART TOOLS ---------------------------- */}
+      <h1>Art Tools</h1>
       <div className="m-16 flex flex-col items-center gap-8">
-        <h1>Art Tools</h1>
-        <div className="flex flex-row items-center justify-around gap-32 flex-wrap">
+        <div className="flex flex-row items-center justify-around gap-32 md:gap-x-64 flex-wrap">
           <img
+            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
             src="https://download.blender.org/branding/community/blender_community_badge_white.png"
-            style={{ maxHeight: 300, maxWidth: 300 }}
           />
           <img
+            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
             src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-3ds-max-small-social-400.png"
-            style={{ maxHeight: 300, maxWidth: 300 }}
           />
           <img
+            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
             src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-maya-small-social-400.png"
-            style={{ maxHeight: 300, maxWidth: 300 }}
           />
           <img
+            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
-            style={{ maxHeight: 300, maxWidth: 300 }}
           />
           <img
+            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
-            style={{ maxHeight: 300, maxWidth: 300 }}
           />
           <img
+            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
             src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-            style={{ maxHeight: 300, maxWidth: 300 }}
           />
         </div>
       </div>
       <br />
       <hr className="border-t border-gray-300 my-6" />
-      {/* ---------------------------- OTHERS ---------------------------- */}
+      <br />
+      {/* ---------------------------- OTHER TOOLS ---------------------------- */}
+      <h1>Other Tools</h1>
       <div className="m-16 flex flex-col items-center gap-8">
-        <h1>Others</h1>
-        <div className="m-16 flex flex-row items-center gap-64 flex-wrap">
+        <div className="m-16 flex flex-row items-center justify-around gap-64 flex-wrap">
           <img
             src="https://images.squarespace-cdn.com/content/v1/56576da6e4b0acafe10c53bb/1682136103428-A4BP43QWKDC8JLMK6XZZ/WWISE+LOGO+%2B+TAG_WHITE.png?format=500w"
             style={{ maxHeight: 300, maxWidth: 300 }}
@@ -249,32 +252,37 @@ export default function Page() {
       {/* ---------------------------- PROGRAMMING ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
+      <br />
+      <h1>Languages - Programming</h1>
       <div className="m-16 flex flex-col items-center gap-8">
-        <h1>Languages - Programming</h1>
-        <div className="m-16 flex flex-row items-center gap-64 flex-wrap">
+        <div className="m-16 flex flex-row items-center justify-around gap-32 md:gap-x-64 flex-wrap">
           <img
+            className="max-w-[150px] max-h-[150px] lg:max-w-[175px] lg:max-h-[175px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"
-            style={{ maxHeight: 200, maxWidth: 200 }}
           />
           <img
+            className="max-w-[150px] max-h-[150px] lg:max-w-[175px] lg:max-h-[175px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
-            style={{ maxHeight: 200, maxWidth: 200 }}
           />
           <img
+            className="max-w-[200px] max-h-[200px] lg:max-w-[250px] lg:max-h-[250px]"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"
+          />
+          <img
+            className="max-w-[150px] max-h-[150px] lg:max-w-[175px] lg:max-h-[175px]"
             src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-            style={{ maxHeight: 200, maxWidth: 200 }}
           />
           <img
+            className="max-w-[150px] max-h-[150px] lg:max-w-[175px] lg:max-h-[175px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
-            style={{ maxHeight: 200, maxWidth: 200 }}
           />
           <img
+            className="max-w-[150px] max-h-[150px] lg:max-w-[175px] lg:max-h-[175px]"
             src="https://static-00.iconduck.com/assets.00/sql-database-generic-icon-1521x2048-d0vdpxpg.png"
-            style={{ maxHeight: 200, maxWidth: 200 }}
           />
           <img
+            className="max-w-[150px] max-h-[150px] lg:max-w-[175px] lg:max-h-[175px]"
             src="https://cdn-icons-png.flaticon.com/512/9496/9496555.png"
-            style={{ maxHeight: 200, maxWidth: 200 }}
           />
         </div>
       </div>
@@ -282,10 +290,11 @@ export default function Page() {
       {/* ---------------------------- SPOKEN LANGUAGES ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
+      <br />
+      <h1>Languages - Spoken</h1>
       <div className="m-16 flex flex-col items-center gap-8">
-        <h1>Languages - Spoken</h1>
-        <div className="m-16 flex flex-col items-start gap-16 flex-wrap">
-          <div className="flex flex-row items-end gap-8">
+        <div className="m-16 flex flex-row items-start justify-between gap-16 md:gap-x-32 flex-wrap">
+          <div className="flex flex-row items-end gap-8 md:w-[30rem] w-[20rem]">
             <img
               src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/brazil.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
@@ -293,7 +302,7 @@ export default function Page() {
             <h2>Portuguese (Brazil)</h2>
             <i className="text-gray-700 dark:text-gray-400">Native language</i>
           </div>
-          <div className="flex flex-row items-end gap-8">
+          <div className="flex flex-row items-end gap-8 w-[20rem]">
             <img
               src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/france.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
@@ -301,7 +310,7 @@ export default function Page() {
             <h2>French</h2>
             <i className="text-gray-700 dark:text-gray-400">Fluent</i>
           </div>
-          <div className="flex flex-row items-end gap-8">
+          <div className="flex flex-row items-end gap-8 w-[20rem]">
             <img
               src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/united-kingdom.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
@@ -309,7 +318,7 @@ export default function Page() {
             <h2>English</h2>
             <i className="text-gray-700 dark:text-gray-400">Fluent</i>
           </div>
-          <div className="flex flex-row items-end gap-8">
+          <div className="flex flex-row items-end gap-8 w-[20rem]">
             <img
               src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/spain.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
