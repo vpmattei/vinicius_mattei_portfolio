@@ -303,7 +303,7 @@ export default function Page() {
           </div>
           <div className="flex flex-row items-end gap-8">
             <img
-              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/spain.png?raw=true"
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/united-kingdom.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>English</h2>
@@ -311,7 +311,7 @@ export default function Page() {
           </div>
           <div className="flex flex-row items-end gap-8">
             <img
-              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/united-kingdom.png?raw=true"
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/spain.png?raw=true"
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>Spanish</h2>
