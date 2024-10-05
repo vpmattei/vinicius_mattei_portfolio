@@ -143,7 +143,7 @@ html {
 }
 
 .prose h1 {
-  @apply text-6xl md:text-8xl font-medium dark:text-neutral-200 tracking-tight mt-6 mb-12;
+  @apply text-6xl lg:text-8xl font-medium dark:text-neutral-200 tracking-tight mt-6 mb-12;
   font-family: "Antonio Bold";
   letter-spacing: 0.035em;
 }
