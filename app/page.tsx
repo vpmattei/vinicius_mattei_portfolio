@@ -199,9 +199,9 @@ export default function Page() {
       </div>
       <br />
       <hr className="border-t border-gray-300 my-6" />
-      {/* ---------------------------- ART ---------------------------- */}
+      {/* ---------------------------- ART TOOLS ---------------------------- */}
       <div className="m-16 flex flex-col items-center gap-8">
-        <h1>Art</h1>
+        <h1>Art Tools</h1>
         <div className="flex flex-row items-center justify-around gap-32 flex-wrap">
           <img
             src="https://download.blender.org/branding/community/blender_community_badge_white.png"
@@ -249,28 +249,78 @@ export default function Page() {
       {/* ---------------------------- PROGRAMMING ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
-      <h1>Languages - Programming</h1>
-      <ul className="text-gray-700 dark:text-gray-400">
-        <li>C#</li>
-        <li>C++</li>
-        <li>Blueprint (Unreal Engine)</li>
-        <li>JavaScript / TypeScript</li>
-        <li>SQL</li>
-        <li>XML</li>
-      </ul>
+      <div className="m-16 flex flex-col items-center gap-8">
+        <h1>Languages - Programming</h1>
+        <div className="m-16 flex flex-row items-center gap-64 flex-wrap">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"
+            style={{ maxHeight: 200, maxWidth: 200 }}
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+            style={{ maxHeight: 200, maxWidth: 200 }}
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            style={{ maxHeight: 200, maxWidth: 200 }}
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+            style={{ maxHeight: 200, maxWidth: 200 }}
+          />
+          <img
+            src="https://static-00.iconduck.com/assets.00/sql-database-generic-icon-1521x2048-d0vdpxpg.png"
+            style={{ maxHeight: 200, maxWidth: 200 }}
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/9496/9496555.png"
+            style={{ maxHeight: 200, maxWidth: 200 }}
+          />
+        </div>
+      </div>
 
       {/* ---------------------------- SPOKEN LANGUAGES ---------------------------- */}
       <br />
       <hr className="border-t border-gray-300 my-6" />
-      <h1>Languages - Spoken</h1>
-      <h2>Portuguese (Brazil)</h2>
-      <p className="text-gray-700 dark:text-gray-400">Native language</p>
-      <h2>French</h2>
-      <p className="text-gray-700 dark:text-gray-400">Fluent</p>
-      <h2>English</h2>
-      <p className="text-gray-700 dark:text-gray-400">Fluent</p>
-      <h2>Spanish</h2>
-      <p className="text-gray-700 dark:text-gray-400">Conversational level</p>
+      <div className="m-16 flex flex-col items-center gap-8">
+        <h1>Languages - Spoken</h1>
+        <div className="m-16 flex flex-row items-center gap-64 flex-wrap">
+          <div className="flex flex-row items-center gap-8">
+            <img
+              src="assets/flag-icons/brazil.png"
+              style={{ maxHeight: 50, maxWidth: 50 }}
+            />
+            <h2>Portuguese (Brazil)</h2>
+            <i className="text-gray-700 dark:text-gray-400">Native language</i>
+          </div>
+          <div className="flex flex-row items-center gap-8">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png"
+              style={{ maxHeight: 50, maxWidth: 50 }}
+            />
+            <h2>French</h2>
+            <i className="text-gray-700 dark:text-gray-400">Fluent</i>
+          </div>
+          <div className="flex flex-row items-center gap-8">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png"
+              style={{ maxHeight: 50, maxWidth: 50 }}
+            />
+            <h2>English</h2>
+            <i className="text-gray-700 dark:text-gray-400">Fluent</i>
+          </div>
+          <div className="flex flex-row items-center gap-8">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png"
+              style={{ maxHeight: 50, maxWidth: 50 }}
+            />
+            <h2>Spanish</h2>
+            <i className="text-gray-700 dark:text-gray-400">
+              Conversational level
+            </i>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
