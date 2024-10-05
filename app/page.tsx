@@ -34,79 +34,77 @@ export default function Page() {
       <br></br>
 
       <h1>Experiences</h1>
-      <div className="flex flex-col items-center gap-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] justify-between flex-wrap">
-          {/* ---------------------------- GRAPE HAWK ---------------------------- */}
-          <div className=" mr-8 ml-8">
-            <h2>GrapeHawk</h2>
-            <h3>Internship – Developer</h3>
-            <h4 className="italic">05.24 - 10.24</h4>
-            <a
-              className="italic underline text-pink-400 dark:text-pink-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://grapehawk.com"
-            >
-              <img
-                src="https://static.wixstatic.com/media/40394b_082b5d3b5c134c7bad866569494c890b~mv2.jpg"
-                style={{ minWidth: 150, height: 150 }}
-              ></img>
-            </a>
-          </div>
+      <div className="m-16 flex flex-row justify-between flex-wrap gap-32 lg:gap-x-64">
+        {/* ---------------------------- GRAPE HAWK ---------------------------- */}
+        <div className="w-[20rem] lg:w-[30rem]">
+          <h2>GrapeHawk</h2>
+          <h3>Internship – Developer</h3>
+          <h4 className="italic">05.24 - 10.24</h4>
+          <a
+            className="italic underline text-pink-400 dark:text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://grapehawk.com"
+          >
+            <img
+              className="max-w-[200px] max-h-[200px]"
+              src="https://static.wixstatic.com/media/40394b_082b5d3b5c134c7bad866569494c890b~mv2.jpg"
+            ></img>
+          </a>
+        </div>
 
-          {/* ---------------------------- CENTRAL TEST ---------------------------- */}
-          <div className=" mr-8 ml-8">
-            <h2>Central Test</h2>
-            <h3>Internship – Game Designer / Developer</h3>
-            <h4 className="italic">05.23 - 09.23</h4>
-            <a
-              className="italic underline text-pink-400 dark:text-pink-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.centraltest.fr"
-            >
-              <img
-                src="https://pbs.twimg.com/profile_images/1255054057414295552/yjzIrCMz_400x400.jpg"
-                style={{ maxHeight: 150, maxWidth: 200 }}
-              ></img>
-            </a>
-          </div>
+        {/* ---------------------------- CENTRAL TEST ---------------------------- */}
+        <div className="w-[20rem] lg:w-[30rem]">
+          <h2>Central Test</h2>
+          <h3>Internship – Game Designer / Developer</h3>
+          <h4 className="italic">05.23 - 09.23</h4>
+          <a
+            className="italic underline text-pink-400 dark:text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.centraltest.fr"
+          >
+            <img
+              className="max-w-[200px] max-h-[200px]"
+              src="https://pbs.twimg.com/profile_images/1255054057414295552/yjzIrCMz_400x400.jpg"
+            ></img>
+          </a>
+        </div>
 
-          {/* ---------------------------- KENTYOU ---------------------------- */}
-          <div className="mr-8 ml-8">
-            <h2>Kentyou</h2>
-            <h3>Internship – UI/UX Web Designer / Developer</h3>
-            <h4 className="italic">06.22 - 09.22</h4>
-            <a
-              className="italic underline text-pink-400 dark:text-pink-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://kentyou.com"
-            >
-              <img
-                src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
-                style={{ height: 150 }}
-              ></img>
-            </a>
-          </div>
+        {/* ---------------------------- KENTYOU ---------------------------- */}
+        <div className="w-[20rem] lg:w-[30rem]">
+          <h2>Kentyou</h2>
+          <h3>Internship – UI/UX Web Designer / Developer</h3>
+          <h4 className="italic">06.22 - 09.22</h4>
+          <a
+            className="italic underline text-pink-400 dark:text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://kentyou.com"
+          >
+            <img
+              className="max-w-[200px] max-h-[200px]"
+              src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
+            ></img>
+          </a>
+        </div>
 
-          {/* ---------------------------- HOLOLAB ---------------------------- */}
-          <div className="mr-8 ml-8">
-            <h2>HoloLab</h2>
-            <h3>Internship – Game Designer</h3>
-            <h4 className="italic">08.19 - 09.19</h4>
-            <a
-              className="italic underline text-pink-400 dark:text-pink-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.hololab.com.br/en"
-            >
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4D0BAQGyOtuUpnJVWw/company-logo_200_200/company-logo_200_200/0/1698412314269/hololab_tech_logo?e=2147483647&v=beta&t=z2QAVuVKBv6TF30jjXOrEaz1L8Wx63texxh06ZpzQPc"
-                style={{ height: 150 }}
-              ></img>
-            </a>
-          </div>
+        {/* ---------------------------- HOLOLAB ---------------------------- */}
+        <div className="w-[20rem] lg:w-[30rem]">
+          <h2>HoloLab</h2>
+          <h3>Internship – Game Designer</h3>
+          <h4 className="italic">08.19 - 09.19</h4>
+          <a
+            className="italic underline text-pink-400 dark:text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.hololab.com.br/en"
+          >
+            <img
+              className="max-w-[200px] max-h-[200px]"
+              src="https://media.licdn.com/dms/image/v2/D4D0BAQGyOtuUpnJVWw/company-logo_200_200/company-logo_200_200/0/1698412314269/hololab_tech_logo?e=2147483647&v=beta&t=z2QAVuVKBv6TF30jjXOrEaz1L8Wx63texxh06ZpzQPc"
+            ></img>
+          </a>
         </div>
       </div>
 
@@ -158,11 +156,10 @@ export default function Page() {
       <br />
       <hr className="border-t border-gray-300 my-6" />
       <br />
-      {/* ---------------------------- TOOLS ---------------------------- */}
+      {/* ---------------------------- GAME ENGINES ---------------------------- */}
       <h1>Game Engines</h1>
-      <div className="m-16 flex flex-col items-center gap-8">
-        <div className="flex flex-row flex-wrap items-center justify-around gap-32 m-16">
-          {/* ---------------------------- GAME ENGINES ---------------------------- */}
+      <div className="flex flex-col items-center gap-8">
+        <div className="w-[100%] flex flex-row flex-wrap items-center justify-around gap-32 m-16">
           <a
             className="italic underline text-pink-400 dark:text-pink-300"
             target="_blank"
