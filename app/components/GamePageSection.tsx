@@ -60,7 +60,7 @@ const PageSection: React.FC<PageSectionProps> = ({
       {title.url ? (
         <div className="flex flex-row mt-4">
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="flex items-center transition-all hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
             href={title.url}

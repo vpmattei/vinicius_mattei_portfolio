@@ -41,7 +41,7 @@ export default function Page() {
           <h3>Internship – Developer</h3>
           <h4 className="italic">05.24 - 10.24</h4>
           <a
-            className="italic underline text-pink-400 dark:text-pink-300"
+            className="italic underline text-pink-300"
             target="_blank"
             rel="noopener noreferrer"
             href="https://grapehawk.com"
@@ -49,6 +49,7 @@ export default function Page() {
             <img
               className="max-w-[200px] max-h-[200px]"
               src="https://static.wixstatic.com/media/40394b_082b5d3b5c134c7bad866569494c890b~mv2.jpg"
+              
             ></img>
           </a>
         </div>
@@ -59,14 +60,15 @@ export default function Page() {
           <h3>Internship – Game Designer / Developer</h3>
           <h4 className="italic">05.23 - 09.23</h4>
           <a
-            className="italic underline text-pink-400 dark:text-pink-300"
+            className="italic underline text-pink-300"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.centraltest.fr"
           >
             <img
-              className="max-w-[200px] max-h-[200px]"
+            className="max-w-[200px] max-h-[200px]"
               src="https://pbs.twimg.com/profile_images/1255054057414295552/yjzIrCMz_400x400.jpg"
+              
             ></img>
           </a>
         </div>
@@ -77,14 +79,15 @@ export default function Page() {
           <h3>Internship – UI/UX Web Designer / Developer</h3>
           <h4 className="italic">06.22 - 09.22</h4>
           <a
-            className="italic underline text-pink-400 dark:text-pink-300"
+            className="italic underline text-pink-300"
             target="_blank"
             rel="noopener noreferrer"
             href="http://kentyou.com"
           >
             <img
-              className="max-w-[200px] max-h-[200px]"
+            className="max-w-[200px] max-h-[200px]"
               src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
+              
             ></img>
           </a>
         </div>
@@ -95,14 +98,15 @@ export default function Page() {
           <h3>Internship – Game Designer</h3>
           <h4 className="italic">08.19 - 09.19</h4>
           <a
-            className="italic underline text-pink-400 dark:text-pink-300"
+            className="italic underline text-pink-300"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.hololab.com.br/en"
           >
             <img
-              className="max-w-[200px] max-h-[200px]"
+            className="max-w-[200px] max-h-[200px]"
               src="https://media.licdn.com/dms/image/v2/D4D0BAQGyOtuUpnJVWw/company-logo_200_200/company-logo_200_200/0/1698412314269/hololab_tech_logo?e=2147483647&v=beta&t=z2QAVuVKBv6TF30jjXOrEaz1L8Wx63texxh06ZpzQPc"
+              
             ></img>
           </a>
         </div>
@@ -121,7 +125,7 @@ export default function Page() {
             <h4>Master's Degree</h4>
             <h4 className="italic">09.22 - 09.24</h4>
             <a
-              className="italic underline text-pink-400 dark:text-pink-300"
+              className="italic underline text-pink-300"
               target="_blank"
               rel="noopener noreferrer"
               href="https://univ-cotedazur.fr"
@@ -139,7 +143,7 @@ export default function Page() {
             <h4>Bachelor's Degree</h4>
             <h4 className="italic">09.17 - 09.22</h4>
             <a
-              className="italic underline text-pink-400 dark:text-pink-300"
+              className="italic underline text-pink-300"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.univ-grenoble-alpes.fr"
@@ -161,7 +165,7 @@ export default function Page() {
       <div className="flex flex-col items-center gap-8">
         <div className="w-[100%] flex flex-row flex-wrap items-center justify-around gap-32 m-16">
           <a
-            className="italic underline text-pink-400 dark:text-pink-300"
+            className="italic underline text-pink-300"
             target="_blank"
             rel="noopener noreferrer"
             href="https://unity.com"
@@ -172,7 +176,7 @@ export default function Page() {
             />
           </a>
           <a
-            className="italic underline text-pink-400 dark:text-pink-300"
+            className="italic underline text-pink-300"
             target="_blank"
             rel="noopener noreferrer"
             href="https://unrealengine.com"
@@ -183,7 +187,7 @@ export default function Page() {
             />
           </a>
           <a
-            className="italic underline text-pink-400 dark:text-pink-300"
+            className="italic underline text-pink-300"
             target="_blank"
             rel="noopener noreferrer"
             href="https://gdevelop.io"
@@ -297,7 +301,7 @@ export default function Page() {
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>Portuguese (Brazil)</h2>
-            <i className="text-gray-700 dark:text-gray-400">Native language</i>
+            <i className="text-gray-400">Native language</i>
           </div>
           <div className="flex flex-row items-end gap-8 w-[20rem]">
             <img
@@ -305,7 +309,7 @@ export default function Page() {
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>French</h2>
-            <i className="text-gray-700 dark:text-gray-400">Fluent</i>
+            <i className="text-gray-400">Fluent</i>
           </div>
           <div className="flex flex-row items-end gap-8 w-[20rem]">
             <img
@@ -313,7 +317,7 @@ export default function Page() {
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>English</h2>
-            <i className="text-gray-700 dark:text-gray-400">Fluent</i>
+            <i className="text-gray-400">Fluent</i>
           </div>
           <div className="flex flex-row items-end gap-8 w-[20rem]">
             <img
@@ -321,7 +325,7 @@ export default function Page() {
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>Spanish</h2>
-            <i className="text-gray-700 dark:text-gray-400">
+            <i className="text-gray-400">
               Conversational level
             </i>
           </div>
