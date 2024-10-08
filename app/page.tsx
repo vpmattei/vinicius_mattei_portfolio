@@ -1,7 +1,6 @@
 "use client";
 
 import CustomImage from "./components/CustomImage";
-import FullScreenGallery from "./components/FullScreenGallery";
 import useIntersectionObserver from "./hooks/useIntersectionObserver";
 
 export default function Page() {
@@ -12,18 +11,18 @@ export default function Page() {
       <div className="mt-48 mb-32 flex flex-col items-center gap-16">
         <div className="mb-64 text-center fade-in-element opacity-0">
           <p className="font-anton text-8xl md:text-9xl">HEY, I'M</p>
-          <p className="font-bodoni-moda-i italic text-8xl md:text-9xl">
+          <p className="font-fraunces-thin-i text-8xl md:text-9xl">
             Vinícius
           </p>
         </div>
-        <p className="font-bodoni-moda text-5xl md:text-7xl text-center italic fade-in-element opacity-0">
-          GAME DESIGNER
+        <p className="font-fraunces-thin-i text-5xl md:text-7xl text-center fade-in-element opacity-0">
+          Game Designer
         </p>
-        <p className="font-bodoni-moda text-5xl md:text-7xl text-center italic fade-in-element opacity-0">
-          GAME DEVELOPER
+        <p className="font-fraunces-thin-i text-5xl md:text-7xl text-center fade-in-element opacity-0">
+          Game Developer
         </p>
-        <p className="font-bodoni-moda text-5xl md:text-7xl text-center italic fade-in-element opacity-0">
-          VISUAL ARTIST
+        <p className="font-fraunces-thin-i text-5xl md:text-7xl text-center fade-in-element opacity-0">
+          Visual Artist
         </p>
         <p className="text-md sm:text-xl md:text-3xl xl:text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
           I help bring people's visions to fruition by combining my technical

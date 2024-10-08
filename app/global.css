@@ -50,6 +50,11 @@
   src: url("../assets/fonts/Marcellus/Marcellus-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Fraunces 72pt Thin Italic";
+  src: url("../assets/fonts/Fraunces/static/Fraunces_72pt-ThinItalic.ttf") format("truetype");
+}
+
 ::selection {
   background-color: #c82c5e;
   color: #f8fff6;
@@ -213,6 +218,9 @@ html {
 }
 .font-bodoni-moda {
   font-family: "Bodoni Moda";
+}
+.font-fraunces-thin-i {
+  font-family: 'Fraunces 72pt Thin Italic';
 }
 
 pre::-webkit-scrollbar {
