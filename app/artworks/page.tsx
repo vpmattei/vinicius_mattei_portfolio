@@ -28,7 +28,7 @@ const Page: React.FC = () => {
     <section className="prose ml-8 mr-8 flex flex-col items-center">
       <h1>Art</h1>
       <a
-        className="mb-8 flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+        className="mb-8 flex items-center transition-all hover:text-neutral-300"
         rel="noopener noreferrer"
         target="_blank"
         href="https://www.artstation.com/viniciusmattei"

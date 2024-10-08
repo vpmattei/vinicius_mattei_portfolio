@@ -28,7 +28,7 @@ const Page: React.FC = () => {
         />
         <h2 className="mb-16">Kentyou</h2>
         <a
-          className="mb-8 flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+          className="mb-8 flex items-center transition-all hover:text-neutral-100"
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.figma.com/proto/pBTikcvwgShCHDAPnP5tvN/kentyou-ui-library__core--client?node-id=3414-13558&starting-point-node-id=646%3A17244&t=BXHG4WbblYkKL9N9-1"

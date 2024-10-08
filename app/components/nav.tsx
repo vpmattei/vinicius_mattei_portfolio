@@ -10,11 +10,14 @@ const navItems = {
   "/artworks": {
     name: "Artworks",
   },
+  "/CV": {
+    name: "CV",
+  },
 };
 
 export function Navbar() {
   return (
-    <aside className="mb-8 p-5 w-screen tracking-tight text-zinc-50 dark:text-zinc-950 bg-lime-700 dark:bg-lime-200">
+    <aside className="mb-8 p-5 w-screen tracking-tight text-zinc-950 bg-lime-200">
       <div className="lg:sticky lg:top-20 ">
         <Link key="/" href="/">
           <h1 className="text-8xl font-medium tracking-tight mt-6 mb-2">
@@ -31,7 +34,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="text-3xl transition-all hover:text-pink-300 dark:hover:text-pink-500 flex align-middle relative py-1 px-2 m-1"
+                  className="text-3xl transition-all hover:text-pink-500 flex align-middle relative py-1 px-2 m-1"
                 >
                   {name}
                 </Link>
