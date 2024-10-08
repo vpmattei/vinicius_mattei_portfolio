@@ -1,5 +1,7 @@
 "use client";
 
+import CustomImage from "./components/CustomImage";
+import FullScreenGallery from "./components/FullScreenGallery";
 import useIntersectionObserver from "./hooks/useIntersectionObserver";
 
 export default function Page() {
@@ -29,11 +31,21 @@ export default function Page() {
           creative, and technically robust video games.
         </p>
       </div>
-      <br></br>
-      <hr className="border-t border-gray-300 my-6" />
-      <br></br>
 
-      
+      <div className="m-8 flex flex-col items-center">
+        <CustomImage
+          src="https://i.ibb.co/19SxrGF/paravoile.png"
+          alt="Hebald Forest"
+          link="/works/hebald-forest"
+          maxWidth="40rem"
+        />
+        <a href="/works/hebald-forest">
+          <div className="w-full flex flex-col items-center">
+            <h2>Hebald Forest</h2>
+            <p>Open world adventure game – Unreal Engine 5</p>
+          </div>
+        </a>
+      </div>
     </section>
   );
 }
