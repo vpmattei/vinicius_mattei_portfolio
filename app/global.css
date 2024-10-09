@@ -209,22 +209,25 @@ html {
 
 .prose button {
   @apply font-bold;
-  position: relative;
-  overflow: hidden; /* Ensures content doesn't go outside button */
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 2px solid #d9f99d;
-    z-index: -1;
-    transition: all .5s ease-in-out; /* Smooth transition */
-    border-radius: 50px;
-  }
-  
-  &:hover::before {
-    border: 100px solid #d9f99d; /* Expands from inside */
-    border-radius: 0px;
+  &.green-style {
+    position: relative;
+    overflow: hidden; /* Ensures content doesn't go outside button */
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 2px solid #d9f99d;
+      z-index: -1;
+      transition: all 0.5s ease-in-out; /* Smooth transition */
+      border-radius: 50px;
+    }
+
+    &:hover::before {
+      border: 100px solid #d9f99d; /* Expands from inside */
+      border-radius: 0px;
+    }
   }
 }
 

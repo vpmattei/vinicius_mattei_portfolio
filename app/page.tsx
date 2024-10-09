@@ -34,7 +34,7 @@ export default function Page() {
           <b>robust</b> video games.
         </p>
         <Link href={"/works"}>
-          <button className="cursor-pointer mt-8 bg-transparent text-lime-200 hover:text-[#171415] transition-all duration-300 rounded-full px-10 py-5 text-xl">
+          <button className="green-style cursor-pointer mt-8 bg-transparent text-lime-200 hover:text-[#171415] transition-all duration-300 rounded-full px-10 py-5 text-xl">
             SEE MY WORK
           </button>
         </Link>
