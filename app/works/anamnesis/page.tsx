@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center gap-16">
+    <section className="prose mt-32 ml-8 mr-8 flex flex-col items-center gap-16">
       <GamePageSection
         title={{
           url: "https://ludhic.fr/anamnesis/",
@@ -19,14 +19,14 @@ const Page: React.FC = () => {
           width: 300,
         }}
         content={[
-          <p key="paragraph1">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph1">
             In 2023, during my inaugural year in the MAJIC program (Management
             of Video Games, Image, and Creativity) at Université Côte d'Azur, I
             embarked on a journey to contribute to the development of Anamnesis,
             an immersive VR game.
           </p>,
 
-          <p key="paragraph2">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph2">
             As a key member of the Anamnesis development team, my primary focus
             was on the engineering of the game's core mechanics, specifically
             tailored for the VR environment. My contributions were fundamental
@@ -34,7 +34,7 @@ const Page: React.FC = () => {
             This included:
           </p>,
 
-          <ul key="list1">
+          <ul className="max-w-[50rem] min-w-[18rem] mx-8" key="list1">
             <li>
               <b>Implementing</b> realistic hand physics to facilitate a natural
               and intuitive interaction model for players.
@@ -52,7 +52,7 @@ const Page: React.FC = () => {
             </li>
           </ul>,
 
-          <p key="paragraph3">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph3">
             Beyond my technical contributions, I also played a role in the
             creative aspects of the game, assisting in the level design to
             ensure a coherent and engaging environment. Furthermore, I took part
@@ -61,7 +61,7 @@ const Page: React.FC = () => {
             experience.
           </p>,
 
-          <p key="paragraph4">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph4">
             A particularly notable achievement was my work in 3D modeling, where
             I crafted a human figure that was used as the giant stone colossus
             within the game. This creation not only served as a primordial
@@ -70,32 +70,32 @@ const Page: React.FC = () => {
             significantly to the game's immersive environment.
           </p>,
 
-          <p key="paragraph5">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph5">
             My work on Anamnesis was an enriching chapter in my academic and
             professional journey, allowing me to dive deep into the intricacies
             of VR development. Through this project, I honed my skills in:
           </p>,
 
-          <ul key="list2">
+          <ul className="max-w-[50rem] min-w-[18rem] mx-8" key="list2">
             <li>
-              VR Development: Building the foundation for immersive VR
+              <b>VR Development:</b> Building the foundation for immersive VR
               experiences through Unity.
             </li>
             <li>
-              Level Design: Contributing to the spatial and narrative design of
+              <b>Level Design:</b> Contributing to the spatial and narrative design of
               the game world.
             </li>
             <li>
-              Interactive Design: Creating fun and engaging objects for player
+              <b>Interactive Design:</b> Creating fun and engaging objects for player
               interaction, enriching the virtual environment.
             </li>
             <li>
-              3D Modeling: Modeling a human stone colossus, adding depth to the
+              <b>3D Modeling:</b> Modeling a human stone colossus, adding depth to the
               game.
             </li>
           </ul>,
 
-          <p key="paragraph6">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph6">
             Anamnesis stands as a testament to the immersion potential of VR
             gaming, and my involvement in its development was a pivotal
             experience that expanded my expertise in the realm of virtual

@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center gap-16">
+    <section className="prose mt-32 ml-8 mr-8 flex flex-col items-center gap-16">
       <GamePageSection
         title={{
           url: "https://jessymonrocq.itch.io/hebald-forest",
@@ -19,7 +19,7 @@ const Page: React.FC = () => {
           width: 800,
         }}
         content={[
-          <p key="paragraph1">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph1">
             During my second year in the MAJIC program (Management of Video
             Games, Image, and Creativity) at Université Côte d'Azur, I had the
             opportunity to contribute to the creation of Hebald Forest, an
@@ -29,7 +29,7 @@ const Page: React.FC = () => {
             bring our visionary world to life.
           </p>,
 
-          <p key="paragraph2">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph2">
             The development of Hebald Forest was a collaborative endeavor
             involving 19 talented individuals across various disciplines,
             including development, 2D/3D art, game design, level design, sound
@@ -38,7 +38,7 @@ const Page: React.FC = () => {
             development.
           </p>,
 
-          <ul key="list1">
+          <ul className="max-w-[50rem] min-w-[18rem] mx-8" key="list1">
             <li>
               <b>Project Manager:</b> Leading the team to ensure the project's
               vision was realized efficiently and effectively.
@@ -61,7 +61,7 @@ const Page: React.FC = () => {
             </li>
           </ul>,
 
-          <p key="paragraph3">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph3">
             Hebald Forest was not just a project; it was a comprehensive
             platform for me to apply and expand my skills in game development,
             showcasing the potential of collaborative creativity powered by

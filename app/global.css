@@ -52,7 +52,20 @@
 
 @font-face {
   font-family: "Fraunces 72pt Thin Italic";
-  src: url("../assets/fonts/Fraunces/static/Fraunces_72pt-ThinItalic.ttf") format("truetype");
+  src: url("../assets/fonts/Fraunces/static/Fraunces_72pt-ThinItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Fraunces 72pt Light Italic";
+  src: url("../assets/fonts/Fraunces/static/Fraunces_72pt_SuperSoft-ThinItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/static/OpenSans-Regular.ttf")
+    format("truetype");
 }
 
 ::selection {
@@ -85,7 +98,7 @@
   }
   html {
     color-scheme: dark;
-    font-family: "Antonio";
+    font-family: "Poppins";
   }
 }
 
@@ -153,28 +166,29 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-200;
+  @apply my-4 text-neutral-400;
+  &.title {
+    @apply text-neutral-200;
+  }
 }
 
 .prose h1 {
   @apply text-6xl lg:text-8xl font-medium text-neutral-200 tracking-tight mt-6 mb-12;
-  font-family: "Antonio Bold";
-  letter-spacing: 0.035em;
+  letter-spacing: 0.005em;
 }
 
 .prose h2 {
   @apply text-4xl font-medium tracking-tight mt-6 mb-2;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.0025em;
 }
 
 .prose h3 {
   @apply text-2xl font-medium tracking-tight mt-6 mb-2;
-  letter-spacing: 0.0125em;
+  letter-spacing: 0.00125em;
 }
 
 .prose h4 {
   @apply text-lg font-medium tracking-tight mb-2;
-  letter-spacing: 0.00675em;
 }
 
 .prose strong {
@@ -182,14 +196,36 @@ html {
 }
 
 .prose ul {
-  @apply list-disc pl-6;
+  @apply list-disc pl-6 text-neutral-400;
 }
 
 .prose ol {
   @apply list-decimal pl-6;
 }
 
-.prose p {
+.prose b {
+  @apply text-neutral-200 underline;
+}
+
+.prose button {
+  @apply font-bold;
+  position: relative;
+  overflow: hidden; /* Ensures content doesn't go outside button */
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid #d9f99d;
+    z-index: -1;
+    transition: all .5s ease-in-out; /* Smooth transition */
+    border-radius: 50px;
+  }
+  
+  &:hover::before {
+    border: 100px solid #d9f99d; /* Expands from inside */
+    border-radius: 0px;
+  }
 }
 
 .prose > :first-child {
@@ -220,7 +256,16 @@ html {
   font-family: "Bodoni Moda";
 }
 .font-fraunces-thin-i {
-  font-family: 'Fraunces 72pt Thin Italic';
+  font-family: "Fraunces 72pt Thin Italic";
+}
+.font-fraunces-light-i {
+  font-family: "Fraunces 72pt Light Italic";
+}
+.poppins {
+  font-family: "Poppins";
+  &.bold {
+    font-weight: bold;
+  }
 }
 
 pre::-webkit-scrollbar {

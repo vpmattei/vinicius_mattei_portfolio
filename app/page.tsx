@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import CustomImage from "./components/CustomImage";
 import useIntersectionObserver from "./hooks/useIntersectionObserver";
 
@@ -8,27 +9,35 @@ export default function Page() {
 
   return (
     <section className="prose ml-8 mr-8">
-      <div className="mt-48 mb-32 flex flex-col items-center gap-16">
-        <div className="mb-64 text-center fade-in-element opacity-0">
-          <p className="font-anton text-8xl md:text-9xl">HEY, I'M</p>
-          <p className="font-fraunces-thin-i text-8xl md:text-9xl">
-            Vinícius
+      <div className="mt-48 mb-32 flex flex-col items-center gap-8">
+        <div className="mb-8 text-center fade-in-element opacity-0">
+          <p className="title poppins bold text-8xl md:text-9xl lg:text-[190px]">
+            HEY, I'M
+          </p>
+          <p className="title font-fraunces-thin-i text-8xl md:text-9xl lg:text-[190px]">
+            VINÍCIUS
           </p>
         </div>
-        <p className="font-fraunces-thin-i text-5xl md:text-7xl text-center fade-in-element opacity-0">
-          Game Designer
+        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
+          GAME DESIGNER
         </p>
-        <p className="font-fraunces-thin-i text-5xl md:text-7xl text-center fade-in-element opacity-0">
-          Game Developer
+        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
+          GAME DEVELOPER
         </p>
-        <p className="font-fraunces-thin-i text-5xl md:text-7xl text-center fade-in-element opacity-0">
-          Visual Artist
+        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
+          VISUAL ARTIST
         </p>
-        <p className="text-md sm:text-xl md:text-3xl xl:text-4xl text-center text-balance leading-loose fade-in-element opacity-0">
-          I help bring people's visions to fruition by combining my technical
-          skills with my artistic perspective. This allows me to create unique,
-          creative, and technically robust video games.
+        <p className="max-w-[50rem] min-w-[18rem] mx-8 text-xl text-justify fade-in-element opacity-0">
+          I help bring people's visions to fruition by combining my{" "}
+          <b>technical skills</b> with my <b>artistic perspective</b>. This
+          allows me to create <b>unique</b>, <b>creative</b>, and technically{" "}
+          <b>robust</b> video games.
         </p>
+        <Link href={"/works"}>
+          <button className="cursor-pointer mt-8 bg-transparent text-lime-200 hover:text-[#171415] transition-all duration-300 rounded-full px-10 py-5 text-xl">
+            SEE MY WORK
+          </button>
+        </Link>
       </div>
 
       <div className="m-8 md:m-16 lg:m-48 flex flex-col items-center gap-32">
@@ -39,10 +48,10 @@ export default function Page() {
             link="/works/hebald-forest"
             maxWidth="40rem"
           />
-          <a href="/works/hebald-forest">
+          <Link href={"/works/hebald-forest"}>
             <h2>Hebald Forest</h2>
             <p>Open world adventure game – Unreal Engine 5</p>
-          </a>
+          </Link>
         </div>
 
         <div className="self-end">
@@ -52,10 +61,10 @@ export default function Page() {
             link="/works/anamnesis"
             maxWidth="40rem"
           />
-          <a href="/works/anamnesis">
+          <Link href={"/works/anamnesis"}>
             <h2>Anamnesis</h2>
             <p>Narrative VR Game – Unity</p>
-          </a>
+          </Link>
         </div>
 
         <div className="self-start">
@@ -65,10 +74,10 @@ export default function Page() {
             link="/works/tangled-tales"
             maxWidth="40rem"
           />
-          <a href="/works/tangled-tales">
+          <Link href={"/works/tangled-tales"}>
             <h2>Tangled Tales</h2>
             <p>2D Platformer – Unity</p>
-          </a>
+          </Link>
         </div>
 
         <div className="self-end">
@@ -78,10 +87,10 @@ export default function Page() {
             link="/works/kentyou"
             maxWidth="40rem"
           />
-          <a href="/works/kentyou">
+          <Link href={"/works/kentyou"}>
             <h2>Kentyou Website Design</h2>
             <p>Web Design of Kentyou's website using Figma</p>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
