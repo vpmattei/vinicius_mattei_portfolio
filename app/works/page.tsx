@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center">
+    <section className="prose mt-32 mx-8 flex flex-col items-center">
       <h1>Works</h1>
 
       {/* Hebald Forest */}

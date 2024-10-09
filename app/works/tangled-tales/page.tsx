@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center gap-16">
+    <section className="prose mt-32 ml-8 mr-8 flex flex-col items-center gap-16">
       <GamePageSection
         title={{ url: "", text: "Tangled Tales" }}
         mainImage={{
@@ -16,7 +16,7 @@ const Page: React.FC = () => {
           width: 450,
         }}
         content={[
-          <p key="p1">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="p1">
             During the first year of my Masters in the MAJIC program (Management
             of Video Games, Image, and Creativity) at Université Côte d'Azur, I
             had the privilege to work with a compact team of seven in developing
@@ -25,7 +25,7 @@ const Page: React.FC = () => {
             crafting a game that was both engaging and visually appealing.
           </p>,
 
-          <p key="p2">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="p2">
             As the lead developer of Tangled Tales, my role was pivotal in
             laying down the foundational mechanics that drove gameplay. My
             responsibilities extended beyond coding to include level design and
@@ -33,14 +33,14 @@ const Page: React.FC = () => {
             enjoyable experience for players.
           </p>,
 
-          <p key="p3">
+          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="p3">
             Working on Tangled Tales was an intensive process, demanding
             creativity and technical skill to bring our ideas to life within a
             tight timeframe. My involvement spanned various aspects of game
             development:
           </p>,
 
-          <ul key="list1">
+          <ul className="max-w-[50rem] min-w-[18rem] mx-8" key="list1">
             <li>
               <b>Lead Developer:</b> Spearheading the development process, from
               conceptualization to implementation, using Unity.

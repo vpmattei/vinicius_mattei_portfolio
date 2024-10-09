@@ -19,7 +19,7 @@ const images = [
 
 const Page: React.FC = () => {
   return (
-    <section className="prose ml-8 mr-8 flex flex-col items-center gap-16">
+    <section className="prose mt-32 ml-8 mr-8 flex flex-col items-center gap-16">
       <div className="w-[100%] flex flex-col items-center">
         <img
           src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
@@ -38,7 +38,7 @@ const Page: React.FC = () => {
             <ArrowIcon size={18} />
           </p>
         </a>
-        <p className="text-xl indent-8 text-justify">
+        <p className="max-w-[50rem] min-w-[18rem] mx-8 text-xl indent-8 text-justify">
           During my internship at Kentyou, a startup where I worked as a UI/UX
           Designer and Developer, I redesigned their dashboard overview. One key
           feature I introduced was an edit toggle button that allows users to

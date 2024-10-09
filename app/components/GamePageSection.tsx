@@ -76,7 +76,7 @@ const PageSection: React.FC<PageSectionProps> = ({
       )}
 
       {/* Dynamic Content */}
-      <div className="mt-6">
+      <div className="mt-6 flex flex-col items-center">
         {content.map((item, index) => (
           <div key={index} className="text-xl indent-8 text-justify">
             {item}

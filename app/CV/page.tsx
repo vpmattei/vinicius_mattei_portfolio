@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <section className="prose ml-8 mr-8">
+    <section className="prose mt-32 ml-8 mr-8">
       <h1>Experiences</h1>
       <div className="m-16 flex flex-row justify-between flex-wrap gap-32 lg:gap-x-64">
         {/* ---------------------------- GRAPE HAWK ---------------------------- */}
