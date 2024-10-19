@@ -115,6 +115,10 @@ html {
   min-width: 360px;
 }
 
+.prose {
+  @apply mt-32 ml-8 mr-8;
+}
+
 .prose .anchor {
   @apply absolute invisible no-underline;
 
@@ -173,7 +177,7 @@ html {
 }
 
 .prose h1 {
-  @apply text-6xl lg:text-8xl font-medium text-neutral-200 tracking-tight mt-6 mb-12;
+  @apply text-5xl lg:text-8xl font-medium text-neutral-200 tracking-tight mt-6 mb-12;
   letter-spacing: 0.005em;
 }
 
@@ -218,14 +222,14 @@ html {
       content: "";
       position: absolute;
       inset: 0;
-      border: 2px solid #d9f99d;
+      border: 2px solid #e5e5e5;
       z-index: -1;
       transition: all 0.5s ease-in-out; /* Smooth transition */
       border-radius: 50px;
     }
 
     &:hover::before {
-      border: 100px solid #d9f99d; /* Expands from inside */
+      border: 100px solid #e5e5e5; /* Expands from inside */
       border-radius: 0px;
     }
   }

@@ -1,8 +1,8 @@
 export default function Page() {
   return (
-    <section className="prose mt-32 ml-8 mr-8">
-      <h1>Experiences</h1>
-      <div className="m-16 flex flex-row justify-between flex-wrap gap-32 lg:gap-x-64">
+    <section className="prose flex flex-col flex-wrap items-center">
+      <h1 className="text-balance">Experiences</h1>
+      <div className="flex flex-row justify-between flex-wrap gap-32 lg:gap-x-64">
         {/* ---------------------------- GRAPE HAWK ---------------------------- */}
         <div className="w-[20rem] lg:w-[30rem]">
           <h2>GrapeHawk</h2>
@@ -17,7 +17,6 @@ export default function Page() {
             <img
               className="max-w-[200px] max-h-[200px]"
               src="https://static.wixstatic.com/media/40394b_082b5d3b5c134c7bad866569494c890b~mv2.jpg"
-              
             ></img>
           </a>
         </div>
@@ -34,9 +33,8 @@ export default function Page() {
             href="https://www.centraltest.fr"
           >
             <img
-            className="max-w-[200px] max-h-[200px]"
+              className="max-w-[200px] max-h-[200px]"
               src="https://pbs.twimg.com/profile_images/1255054057414295552/yjzIrCMz_400x400.jpg"
-              
             ></img>
           </a>
         </div>
@@ -53,9 +51,8 @@ export default function Page() {
             href="http://kentyou.com"
           >
             <img
-            className="max-w-[200px] max-h-[200px]"
+              className="max-w-[200px] max-h-[200px]"
               src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
-              
             ></img>
           </a>
         </div>
@@ -72,9 +69,8 @@ export default function Page() {
             href="https://www.hololab.com.br/en"
           >
             <img
-            className="max-w-[200px] max-h-[200px]"
+              className="max-w-[200px] max-h-[200px]"
               src="https://media.licdn.com/dms/image/v2/D4D0BAQGyOtuUpnJVWw/company-logo_200_200/company-logo_200_200/0/1698412314269/hololab_tech_logo?e=2147483647&v=beta&t=z2QAVuVKBv6TF30jjXOrEaz1L8Wx63texxh06ZpzQPc"
-              
             ></img>
           </a>
         </div>
@@ -84,44 +80,42 @@ export default function Page() {
       <hr className="border-t border-gray-300 my-6" />
       <br></br>
       {/* ---------------------------- SCHOOLING ---------------------------- */}
-      <h1>Schooling</h1>
-      <div className="flex flex-col items-center gap-8">
-        <div className="flex md:flex-row flex-col w-[100%] justify-between md:gap-0 gap-24">
-          <div className="flex flex-col mr-8 ml-8 gap-2">
-            <h2>Université Côte d'Azur</h2>
-            <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
-            <h4>Master's Degree</h4>
-            <h4 className="italic">09.22 - 09.24</h4>
-            <a
-              className="italic underline text-pink-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://univ-cotedazur.fr"
-            >
-              <img
-                src="https://univ-cotedazur.fr/medias/photo/vignette-2-lignes2_1668693930108-jpg?ID_FICHE=1167756"
-                style={{ height: 150 }}
-              ></img>
-            </a>
-          </div>
+      <h1 className="text-balance">Schooling</h1>
+      <div className="flex md:flex-row flex-col justify-between md:gap-0 gap-24">
+        <div className="flex flex-col mr-8 ml-8 gap-2">
+          <h2>Université Côte d'Azur</h2>
+          <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
+          <h4>Master's Degree</h4>
+          <h4 className="italic">09.22 - 09.24</h4>
+          <a
+            className="italic underline text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://univ-cotedazur.fr"
+          >
+            <img
+              src="https://univ-cotedazur.fr/medias/photo/vignette-2-lignes2_1668693930108-jpg?ID_FICHE=1167756"
+              style={{ height: 150 }}
+            ></img>
+          </a>
+        </div>
 
-          <div className="flex flex-col mr-8 ml-8 gap-2">
-            <h2>Université Grenoble Alpes</h2>
-            <h3>Computer Science Methods for Business Management (MIAGE)</h3>
-            <h4>Bachelor's Degree</h4>
-            <h4 className="italic">09.17 - 09.22</h4>
-            <a
-              className="italic underline text-pink-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.univ-grenoble-alpes.fr"
-            >
-              <img
-                src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"
-                style={{ maxHeight: 150, maxWidth: 200 }}
-              ></img>
-            </a>
-          </div>
+        <div className="flex flex-col mr-8 ml-8 gap-2">
+          <h2>Université Grenoble Alpes</h2>
+          <h3>Computer Science Methods for Business Management (MIAGE)</h3>
+          <h4>Bachelor's Degree</h4>
+          <h4 className="italic">09.17 - 09.22</h4>
+          <a
+            className="italic underline text-pink-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.univ-grenoble-alpes.fr"
+          >
+            <img
+              src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"
+              style={{ maxHeight: 150, maxWidth: 200 }}
+            ></img>
+          </a>
         </div>
       </div>
 
@@ -129,8 +123,8 @@ export default function Page() {
       <hr className="border-t border-gray-300 my-6" />
       <br />
       {/* ---------------------------- GAME ENGINES ---------------------------- */}
-      <h1>Game Engines</h1>
-      <div className="flex flex-col items-center gap-8">
+      <h1 className="text-balance">Game Engines</h1>
+      <div className="flex flex-col flex-wrap items-center gap-8">
         <div className="w-[100%] flex flex-row flex-wrap items-center justify-around gap-32 m-16">
           <a
             className="italic underline text-pink-300"
@@ -171,8 +165,8 @@ export default function Page() {
       <hr className="border-t border-gray-300 my-6" />
       <br />
       {/* ---------------------------- ART TOOLS ---------------------------- */}
-      <h1>Art Tools</h1>
-      <div className="m-16 flex flex-col items-center gap-8">
+      <h1 className="text-balance">Art Tools</h1>
+      <div className="flex flex-col flex-wrap items-center gap-8">
         <div className="flex flex-row items-center justify-around gap-32 md:gap-x-64 flex-wrap">
           <img
             className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
@@ -204,8 +198,8 @@ export default function Page() {
       <hr className="border-t border-gray-300 my-6" />
       <br />
       {/* ---------------------------- OTHER TOOLS ---------------------------- */}
-      <h1>Other Tools</h1>
-      <div className="m-16 flex flex-col items-center gap-8">
+      <h1 className="text-balance">Other Tools</h1>
+      <div className="flex flex-col flex-wrap items-center gap-8">
         <div className="m-16 flex flex-row items-center justify-around gap-64 flex-wrap">
           <img
             src="https://images.squarespace-cdn.com/content/v1/56576da6e4b0acafe10c53bb/1682136103428-A4BP43QWKDC8JLMK6XZZ/WWISE+LOGO+%2B+TAG_WHITE.png?format=500w"
@@ -222,8 +216,8 @@ export default function Page() {
       <br />
       <hr className="border-t border-gray-300 my-6" />
       <br />
-      <h1>Languages - Programming</h1>
-      <div className="m-16 flex flex-col items-center gap-8">
+      <h1 className="text-balance">Languages - Programming</h1>
+      <div className="flex flex-col flex-wrap items-center gap-8">
         <div className="m-16 flex flex-row items-center justify-around gap-32 md:gap-x-64 flex-wrap">
           <img
             className="max-w-[150px] max-h-[150px] lg:max-w-[175px] lg:max-h-[175px]"
@@ -260,8 +254,8 @@ export default function Page() {
       <br />
       <hr className="border-t border-gray-300 my-6" />
       <br />
-      <h1>Languages - Spoken</h1>
-      <div className="m-16 flex flex-col items-center gap-8">
+      <h1 className="text-balance">Languages - Spoken</h1>
+      <div className="flex flex-col flex-wrap items-center gap-8">
         <div className="m-16 flex flex-row items-start justify-between gap-16 md:gap-x-32 flex-wrap">
           <div className="flex flex-row items-end gap-8 md:w-[30rem] w-[20rem]">
             <img
@@ -293,9 +287,7 @@ export default function Page() {
               style={{ maxHeight: 50, maxWidth: 50 }}
             />
             <h2>Spanish</h2>
-            <i className="text-gray-400">
-              Conversational level
-            </i>
+            <i className="text-gray-400">Conversational level</i>
           </div>
         </div>
       </div>

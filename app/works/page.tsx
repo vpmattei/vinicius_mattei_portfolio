@@ -1,3 +1,4 @@
+import CustomImage from "app/components/CustomImage";
 import React from "react";
 
 export const metadata = {
@@ -13,15 +14,14 @@ const Page: React.FC = () => {
       {/* Hebald Forest */}
       <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">
-          <a href="/works/hebald-forest">
-            <img
-              src="https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Logo.png"
-              alt="Hebald Forest Logo"
-              style={{ width: 700 }}
+            <CustomImage
+              src="https://i.ibb.co/19SxrGF/paravoile.png"
+              alt="Hebald Forest"
+              link="/works/hebald-forest"
+              maxWidth="40rem"
             />
-          </a>
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-4"></div>
+        <div className="w-[2px] h-[40vh] bg-white mx-4"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/hebald-forest">
             <h2 className="transition-all hover:text-neutral-400">
@@ -34,20 +34,17 @@ const Page: React.FC = () => {
       {/* Anamnesis */}
       <div className="flex flex-row justify-center gap-16">
         <div className="w-1/3 flex justify-end">
-          <a href="/works/anamnesis">
-            <img
-              src="https://ludhic.fr/wp-content/uploads/2023/01/Anamnesis.webp"
-              alt="Anamnesis Logo"
-              style={{ width: 350 }}
+            <CustomImage
+              src="https://ludhic.fr/wp-content/uploads/2023/01/anamnesis02.webp"
+              alt="Anamnesis"
+              link="/works/anamnesis"
+              maxWidth="40rem"
             />
-          </a>
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[40vh] bg-white mx-auto"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/anamnesis">
-            <h2 className="transition-all hover:text-neutral-100">
-              Anamnesis
-            </h2>
+            <h2 className="transition-all hover:text-neutral-100">Anamnesis</h2>
           </a>
         </div>
       </div>
@@ -63,7 +60,7 @@ const Page: React.FC = () => {
             />
           </a>
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[40vh] bg-white mx-auto"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/tangled-tales">
             <h2 className="transition-all hover:text-neutral-100">
@@ -84,12 +81,10 @@ const Page: React.FC = () => {
             />
           </a>
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[40vh] bg-white mx-auto"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/kentyou">
-            <h2 className="transition-all hover:text-neutral-100">
-              Kentyou
-            </h2>
+            <h2 className="transition-all hover:text-neutral-100">Kentyou</h2>
           </a>
         </div>
       </div>
