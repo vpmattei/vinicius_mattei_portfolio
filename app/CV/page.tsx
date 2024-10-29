@@ -167,29 +167,29 @@ export default function Page() {
       {/* ---------------------------- ART TOOLS ---------------------------- */}
       <h1 className="text-balance">Art Tools</h1>
       <div className="flex flex-col flex-wrap items-center gap-8">
-        <div className="flex flex-row items-center justify-around gap-32 md:gap-x-64 flex-wrap">
+        <div className="flex flex-row items-center justify-around gap-16 md:gap-x-32 lg:gap-x-64 flex-wrap">
           <img
-            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
+            className="max-w-[100px] max-h-[100px] md:max-w-[160px] md:max-h-[160px] lg:max-w-[220px] lg:max-h-[220px]"
             src="https://download.blender.org/branding/community/blender_community_badge_white.png"
           />
           <img
-            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
+            className="max-w-[100px] max-h-[100px] md:max-w-[160px] md:max-h-[160px] lg:max-w-[220px] lg:max-h-[220px]"
             src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-3ds-max-small-social-400.png"
           />
           <img
-            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
+            className="max-w-[100px] max-h-[100px] md:max-w-[160px] md:max-h-[160px] lg:max-w-[220px] lg:max-h-[220px]"
             src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-maya-small-social-400.png"
           />
           <img
-            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
+            className="max-w-[100px] max-h-[100px] md:max-w-[160px] md:max-h-[160px] lg:max-w-[220px] lg:max-h-[220px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
           />
           <img
-            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
+            className="max-w-[100px] max-h-[100px] md:max-w-[160px] md:max-h-[160px] lg:max-w-[220px] lg:max-h-[220px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
           />
           <img
-            className="max-w-[200px] max-h-[200px] md:max-w-[220px] md:max-h-[220px]"
+            className="max-w-[100px] max-h-[100px] md:max-w-[160px] md:max-h-[160px] lg:max-w-[220px] lg:max-h-[220px]"
             src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
           />
         </div>
