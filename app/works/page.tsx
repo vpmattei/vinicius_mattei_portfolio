@@ -1,3 +1,4 @@
+import CustomImage from "app/components/CustomImage";
 import React from "react";
 
 export const metadata = {
@@ -13,15 +14,14 @@ const Page: React.FC = () => {
       {/* Hebald Forest */}
       <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">
-          <a href="/works/hebald-forest">
-            <img
-              src="https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Logo.png"
-              alt="Hebald Forest Logo"
-              style={{ width: 700 }}
-            />
-          </a>
+          <CustomImage
+            src="https://i.ibb.co/19SxrGF/paravoile.png"
+            alt="Hebald Forest"
+            link="/works/hebald-forest"
+            maxWidth="40rem"
+          />
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-4"></div>
+        <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/hebald-forest">
             <h2 className="transition-all hover:text-neutral-400">
@@ -32,41 +32,37 @@ const Page: React.FC = () => {
       </div>
 
       {/* Anamnesis */}
-      <div className="flex flex-row justify-center gap-16">
+      <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">
-          <a href="/works/anamnesis">
-            <img
-              src="https://ludhic.fr/wp-content/uploads/2023/01/Anamnesis.webp"
-              alt="Anamnesis Logo"
-              style={{ width: 350 }}
-            />
-          </a>
+          <CustomImage
+            src="https://ludhic.fr/wp-content/uploads/2023/01/anamnesis02.webp"
+            alt="Anamnesis"
+            link="/works/anamnesis"
+            maxWidth="40rem"
+          />
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/anamnesis">
-            <h2 className="transition-all hover:text-neutral-100">
-              Anamnesis
-            </h2>
+            <h2 className="transition-all hover:text-neutral-400">Anamnesis</h2>
           </a>
         </div>
       </div>
 
       {/* Tangled Tales */}
-      <div className="flex flex-row justify-center gap-16">
+      <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">
-          <a href="/works/tangled-tales">
-            <img
-              src="https://i.ibb.co/PcBZMtb/livretangledtales2.png"
-              alt="Tangled Tales Logo"
-              style={{ width: 350 }}
-            />
-          </a>
+          <CustomImage
+            src="https://i.pinimg.com/564x/77/e2/c2/77e2c23bd4a54c852e15c146079e4b7c.jpg"
+            alt="Tangled Tales"
+            link="/works/tangled-tales"
+            maxWidth="40rem"
+          />
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/tangled-tales">
-            <h2 className="transition-all hover:text-neutral-100">
+            <h2 className="transition-all hover:text-neutral-400">
               Tangled Tales
             </h2>
           </a>
@@ -74,22 +70,19 @@ const Page: React.FC = () => {
       </div>
 
       {/* Kentyou */}
-      <div className="flex flex-row justify-center gap-16">
+      <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">
-          <a href="/works/kentyou">
-            <img
-              src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
-              alt="Kentyou Logo"
-              style={{ width: 350 }}
-            />
-          </a>
+          <CustomImage
+            src="https://i.ibb.co/GPvMSqy/Captura-de-Tela-2024-09-13-s-12-00-21.png"
+            alt="Kentyou"
+            link="/works/kentyou"
+            maxWidth="40rem"
+          />
         </div>
-        <div className="w-[2px] h-[75vh] bg-white mx-auto"></div>
+        <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/kentyou">
-            <h2 className="transition-all hover:text-neutral-100">
-              Kentyou
-            </h2>
+            <h2 className="transition-all hover:text-neutral-400">Kentyou</h2>
           </a>
         </div>
       </div>

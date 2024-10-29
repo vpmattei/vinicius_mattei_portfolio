@@ -3,6 +3,7 @@
 import Link from "next/link";
 import CustomImage from "./components/CustomImage";
 import useIntersectionObserver from "./hooks/useIntersectionObserver";
+import CustomButton from "./components/CustomButton";
 
 export default function Page() {
   useIntersectionObserver(".fade-in-element");
@@ -11,10 +12,10 @@ export default function Page() {
     <section className="prose ml-8 mr-8">
       <div className="mt-48 mb-32 flex flex-col items-center gap-8">
         <div className="mb-8 text-center fade-in-element opacity-0">
-          <p className="title poppins bold text-8xl md:text-9xl lg:text-[190px]">
+          <p className="title poppins bold text-7xl sm:text-8xl md:text-9xl lg:text-[190px]">
             HEY, I'M
           </p>
-          <p className="title font-fraunces-thin-i text-8xl md:text-9xl lg:text-[190px]">
+          <p className="title font-fraunces-thin-i text-7xl sm:text-8xl md:text-9xl lg:text-[190px]">
             VINÍCIUS
           </p>
         </div>
@@ -27,14 +28,19 @@ export default function Page() {
         <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
           VISUAL ARTIST
         </p>
-        <p className="max-w-[50rem] min-w-[18rem] mx-8 text-xl text-justify fade-in-element opacity-0">
+        <p className="max-w-[50rem] min-w-[18rem] mx-8 md:text-xl fade-in-element opacity-0">
           I help bring people's visions to fruition by combining my{" "}
           <b>technical skills</b> with my <b>artistic perspective</b>. This
           allows me to create <b>unique</b>, <b>creative</b>, and technically{" "}
           <b>robust</b> video games.
         </p>
         <Link href={"/works"}>
-          <button className="green-style cursor-pointer mt-8 bg-transparent text-lime-200 hover:text-[#171415] transition-all duration-300 rounded-full px-10 py-5 text-xl">
+          {/* <CustomButton
+            buttonText="SEE MY WORK"
+            bgColor="white" // Default background color of the screen
+            hoverBgColor="#171415" // Background color when hovering
+          /> */}
+          <button className="green-style cursor-pointer mt-8 bg-transparent text-neutral-200 hover:text-[#171415] transition-all duration-300 rounded-full px-10 py-5 text-xl">
             SEE MY WORK
           </button>
         </Link>
@@ -49,8 +55,8 @@ export default function Page() {
             maxWidth="40rem"
           />
           <Link href={"/works/hebald-forest"}>
-            <h2>Hebald Forest</h2>
-            <p>Open world adventure game – Unreal Engine 5</p>
+            <h2>3D Open World Adventure Game</h2>
+            <p>Hebald Forest – Unreal Engine 5</p>
           </Link>
         </div>
 
@@ -62,8 +68,8 @@ export default function Page() {
             maxWidth="40rem"
           />
           <Link href={"/works/anamnesis"}>
-            <h2>Anamnesis</h2>
-            <p>Narrative VR Game – Unity</p>
+            <h2>VR Narrative Game Experience</h2>
+            <p>Anamnesis - Unity</p>
           </Link>
         </div>
 
@@ -75,8 +81,8 @@ export default function Page() {
             maxWidth="40rem"
           />
           <Link href={"/works/tangled-tales"}>
-            <h2>Tangled Tales</h2>
-            <p>2D Platformer – Unity</p>
+            <h2>2D Platformer Game</h2>
+            <p>Tangled Tales – Unity</p>
           </Link>
         </div>
 
@@ -88,8 +94,8 @@ export default function Page() {
             maxWidth="40rem"
           />
           <Link href={"/works/kentyou"}>
-            <h2>Kentyou Website Design</h2>
-            <p>Web Design of Kentyou's website using Figma</p>
+            <h2>Data Analytics Dashboard Redesign</h2>
+            <p>A data driven dashboard redesign of Kentyou's main page website</p>
           </Link>
         </div>
       </div>

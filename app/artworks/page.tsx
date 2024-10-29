@@ -25,20 +25,20 @@ const images = [
 
 const Page: React.FC = () => {
   return (
-    <section className="prose mt-32 ml-8 mr-8 flex flex-col items-center">
-      <h1>Artworks</h1>
-      <a
-        className="mb-8 flex items-center transition-all hover:text-neutral-300"
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://www.artstation.com/viniciusmattei"
-      >
-        <h2>Drawings</h2>
-        <p className="ml-2">
-          <ArrowIcon size={24} />
-        </p>
-      </a>
-      <FullScreenGallery images={images} />
+    <section className="prose flex flex-col items-center">
+        <h1>Artworks</h1>
+        <a
+          className="mb-8 flex items-center transition-all hover:text-neutral-300"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.artstation.com/viniciusmattei"
+        >
+          <h2>Drawings</h2>
+          <p className="ml-2">
+            <ArrowIcon size={24} />
+          </p>
+        </a>
+        <FullScreenGallery images={images} />
     </section>
   );
 };
