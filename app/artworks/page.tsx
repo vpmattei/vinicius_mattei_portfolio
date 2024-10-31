@@ -25,7 +25,7 @@ const images = [
 
 const Page: React.FC = () => {
   return (
-    <section className="prose flex flex-col items-center">
+    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center">
         <h1>Artworks</h1>
         <a
           className="mb-8 flex items-center transition-all hover:text-neutral-300"

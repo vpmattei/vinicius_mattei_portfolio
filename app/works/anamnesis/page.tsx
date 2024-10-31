@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose mt-32 ml-8 mr-8 flex flex-col items-center gap-16">
+    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
       <GamePageSection
         title={{
           url: "https://ludhic.fr/anamnesis/",

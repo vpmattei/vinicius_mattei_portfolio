@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose mt-32 ml-8 mr-8 flex flex-col items-center gap-16">
+    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
       <GamePageSection
         title={{
           url: "https://jessymonrocq.itch.io/hebald-forest",
@@ -16,7 +16,7 @@ const Page: React.FC = () => {
         mainImage={{
           src: "https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Logo.png",
           alt: "Hebald Forest Logo",
-          width: 800,
+          width: 400,
         }}
         content={[
           <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph1">
