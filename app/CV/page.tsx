@@ -7,12 +7,13 @@ export default function Page() {
           {/* ---------------------------- GRAPE HAWK ---------------------------- */}
           <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
             <div>
-              <h3 className="text-neutral-300">GrapeHawk</h3>
-              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br/>
-              <h4 className="text-neutral-400">
-                Developer<p className="italic">05.24 - 10.24</p>
+              <h4 className="text-neutral-300">
+                GrapeHawk <i className="text-lg text-neutral-400">(Remote)</i>
               </h4>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <br />
+              <h5 className="text-neutral-400">Developer</h5>
+              <h5 className="text-neutral-400 italic">05.24 - present</h5>
             </div>
 
             <a
@@ -31,12 +32,14 @@ export default function Page() {
           {/* ---------------------------- CENTRAL TEST ---------------------------- */}
           <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
             <div>
-              <h3 className="text-neutral-300">Central Test</h3>
+              <h3 className="text-neutral-300">
+                Central Test{" "}
+                <i className="text-lg text-neutral-400">(Paris, FR)</i>
+              </h3>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br/>
-              <h4 className="text-neutral-400">
-                Game Designer / Developer<p className="italic">05.23 - 09.23</p>
-              </h4>
+              <br />
+              <h5 className="text-neutral-400">Game Designer / Developer</h5>
+              <h5 className="text-neutral-400 italic">05.23 - 09.23</h5>
             </div>
 
             <a
@@ -55,13 +58,16 @@ export default function Page() {
           {/* ---------------------------- KENTYOU ---------------------------- */}
           <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
             <div>
-              <h3 className="text-neutral-300">Kentyou</h3>
+              <h3 className="text-neutral-300">
+                Kentyou{" "}
+                <i className="text-lg text-neutral-400">(Grenoble, FR)</i>
+              </h3>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br/>
-              <h4 className="text-neutral-400">
+              <br />
+              <h5 className="text-neutral-400">
                 UI/UX Web Designer / Developer
-                <p className="italic">06.22 - 09.22</p>
-              </h4>
+              </h5>
+              <h5 className="text-neutral-400 italic">06.22 - 09.22</h5>
             </div>
 
             <a
@@ -80,12 +86,14 @@ export default function Page() {
           {/* ---------------------------- HOLOLAB ---------------------------- */}
           <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
             <div>
-              <h3 className="text-neutral-300">HoloLab</h3>
+              <h3 className="text-neutral-300">
+                HoloLab{" "}
+                <i className="text-lg text-neutral-400">(Florianópolis, BR)</i>
+              </h3>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br/>
-              <h4 className="text-neutral-400">
-                Game Designer <p className="italic"> 08.19 - 09.19</p>
-              </h4>
+              <br />
+              <h5 className="text-neutral-400">Game Designer</h5>
+              <h5 className="text-neutral-400 italic">08.19 - 09.19</h5>
             </div>
 
             <a
@@ -106,12 +114,21 @@ export default function Page() {
       {/* ---------------------------- SCHOOLING ---------------------------- */}
       <div className="w-[100%]">
         <h1 className="text-balance">Schooling</h1>
-        <div className="flex md:flex-row flex-col justify-between md:gap-0 gap-24">
+        <div className="flex md:flex-row flex-col justify-between gap-8">
           <div className="flex flex-col gap-2">
-            <h2>Université Côte d'Azur</h2>
-            <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
-            <h4>Master's Degree</h4>
-            <h4 className="italic">09.22 - 09.24</h4>
+            <div>
+              <h4 className="text-neutral-300">
+                Université Côte d'Azur{" "}
+                <i className="text-lg text-neutral-400">(Cannes, FR)</i>
+              </h4>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <br />
+              <h5 className="text-neutral-400">
+                Management of Video Games, Image and Creativity (MAJIC)
+              </h5>
+              <h5 className="text-neutral-400">Master's Degree</h5>
+              <h5 className="text-neutral-400 italic">09.22 - 09.24</h5>
+            </div>
             <a
               className="italic underline text-pink-300"
               target="_blank"
@@ -119,17 +136,26 @@ export default function Page() {
               href="https://univ-cotedazur.fr"
             >
               <img
+                className="max-h-[6rem]"
                 src="https://univ-cotedazur.fr/medias/photo/vignette-2-lignes2_1668693930108-jpg?ID_FICHE=1167756"
-                style={{ height: 150 }}
               ></img>
             </a>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h2>Université Grenoble Alpes</h2>
-            <h3>Computer Science Methods for Business Management (MIAGE)</h3>
-            <h4>Bachelor's Degree</h4>
-            <h4 className="italic">09.17 - 09.22</h4>
+            <div>
+              <h4 className="text-neutral-300">
+                Université Grenoble Alpes
+                <i className="text-lg text-neutral-400"> (Grenoble, FR)</i>
+              </h4>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <br />
+              <h5 className="text-neutral-400">
+                Computer Science Methods for Business Management (MIAGE)
+              </h5>
+              <h5 className="text-neutral-400">Bachelor's Degree</h5>
+              <h5 className="text-neutral-400 italic">09.17 - 09.22</h5>
+            </div>
             <a
               className="italic underline text-pink-300"
               target="_blank"
@@ -137,8 +163,8 @@ export default function Page() {
               href="https://www.univ-grenoble-alpes.fr"
             >
               <img
+                className="max-h-[6rem]"
                 src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"
-                style={{ maxHeight: 150, maxWidth: 200 }}
               ></img>
             </a>
           </div>
