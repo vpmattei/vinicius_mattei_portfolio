@@ -116,7 +116,7 @@ html {
 }
 
 .prose {
-  @apply mt-32 mx-16;
+  @apply mt-32;
 }
 
 .prose .anchor {
@@ -177,12 +177,12 @@ html {
 }
 
 .prose h1 {
-  @apply text-4xl lg:text-6xl font-medium text-neutral-200 tracking-tight mt-6 mb-12;
+  @apply text-3xl font-medium text-neutral-200 tracking-tight mt-6 mb-12;
   letter-spacing: 0.005em;
 }
 
 .prose h2 {
-  @apply text-3xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-2xl font-medium tracking-tight mt-6 mb-2;
   letter-spacing: 0.0025em;
 }
 

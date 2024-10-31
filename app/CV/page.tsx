@@ -1,14 +1,20 @@
 export default function Page() {
   return (
-    <section className="prose flex flex-col flex-wrap items-start gap-16">
+    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col flex-wrap items-start gap-16">
       <div className="w-[100%]">
         <h1 className="text-balance">Experiences</h1>
-        <div className="mx-16 flex flex-row justify-between flex-wrap gap-32">
+        <div className="flex flex-row justify-between flex-wrap gap-8">
           {/* ---------------------------- GRAPE HAWK ---------------------------- */}
-          <div className="w-[20rem] lg:w-[30rem]">
-            <h2>GrapeHawk</h2>
-            <h3>Internship – Developer</h3>
-            <h4 className="italic">05.24 - 10.24</h4>
+          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+            <div>
+              <h3 className="text-neutral-300">GrapeHawk</h3>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <br/>
+              <h4 className="text-neutral-400">
+                Developer<p className="italic">05.24 - 10.24</p>
+              </h4>
+            </div>
+
             <a
               className="italic underline text-pink-300"
               target="_blank"
@@ -16,17 +22,23 @@ export default function Page() {
               href="https://grapehawk.com"
             >
               <img
-                className="max-w-[200px] max-h-[200px]"
+                className="max-w-[130px] max-h-[130px]"
                 src="https://static.wixstatic.com/media/40394b_082b5d3b5c134c7bad866569494c890b~mv2.jpg"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- CENTRAL TEST ---------------------------- */}
-          <div className="w-[20rem] lg:w-[30rem]">
-            <h2>Central Test</h2>
-            <h3>Internship – Game Designer / Developer</h3>
-            <h4 className="italic">05.23 - 09.23</h4>
+          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+            <div>
+              <h3 className="text-neutral-300">Central Test</h3>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <br/>
+              <h4 className="text-neutral-400">
+                Game Designer / Developer<p className="italic">05.23 - 09.23</p>
+              </h4>
+            </div>
+
             <a
               className="italic underline text-pink-300"
               target="_blank"
@@ -34,17 +46,24 @@ export default function Page() {
               href="https://www.centraltest.fr"
             >
               <img
-                className="max-w-[200px] max-h-[200px]"
+                className="max-w-[130px] max-h-[130px]"
                 src="https://pbs.twimg.com/profile_images/1255054057414295552/yjzIrCMz_400x400.jpg"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- KENTYOU ---------------------------- */}
-          <div className="w-[20rem] lg:w-[30rem]">
-            <h2>Kentyou</h2>
-            <h3>Internship – UI/UX Web Designer / Developer</h3>
-            <h4 className="italic">06.22 - 09.22</h4>
+          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+            <div>
+              <h3 className="text-neutral-300">Kentyou</h3>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <br/>
+              <h4 className="text-neutral-400">
+                UI/UX Web Designer / Developer
+                <p className="italic">06.22 - 09.22</p>
+              </h4>
+            </div>
+
             <a
               className="italic underline text-pink-300"
               target="_blank"
@@ -52,17 +71,23 @@ export default function Page() {
               href="http://kentyou.com"
             >
               <img
-                className="max-w-[200px] max-h-[200px]"
+                className="max-w-[130px] max-h-[130px]"
                 src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- HOLOLAB ---------------------------- */}
-          <div className="w-[20rem] lg:w-[30rem]">
-            <h2>HoloLab</h2>
-            <h3>Internship – Game Designer</h3>
-            <h4 className="italic">08.19 - 09.19</h4>
+          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+            <div>
+              <h3 className="text-neutral-300">HoloLab</h3>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <br/>
+              <h4 className="text-neutral-400">
+                Game Designer <p className="italic"> 08.19 - 09.19</p>
+              </h4>
+            </div>
+
             <a
               className="italic underline text-pink-300"
               target="_blank"
@@ -70,7 +95,7 @@ export default function Page() {
               href="https://www.hololab.com.br/en"
             >
               <img
-                className="max-w-[200px] max-h-[200px]"
+                className="max-w-[130px] max-h-[130px]"
                 src="https://media.licdn.com/dms/image/v2/D4D0BAQGyOtuUpnJVWw/company-logo_200_200/company-logo_200_200/0/1698412314269/hololab_tech_logo?e=2147483647&v=beta&t=z2QAVuVKBv6TF30jjXOrEaz1L8Wx63texxh06ZpzQPc"
               ></img>
             </a>
@@ -81,7 +106,7 @@ export default function Page() {
       {/* ---------------------------- SCHOOLING ---------------------------- */}
       <div className="w-[100%]">
         <h1 className="text-balance">Schooling</h1>
-        <div className="mt-16 mx-16 flex md:flex-row flex-col justify-between md:gap-0 gap-24">
+        <div className="flex md:flex-row flex-col justify-between md:gap-0 gap-24">
           <div className="flex flex-col gap-2">
             <h2>Université Côte d'Azur</h2>
             <h3>Management of Video Games, Image and Creativity (MAJIC)</h3>
@@ -123,7 +148,7 @@ export default function Page() {
       {/* ---------------------------- GAME ENGINES ---------------------------- */}
       <div className="w-[100%]">
         <h1 className="text-balance">Game Engines</h1>
-        <div className="mx-16 flex flex-row flex-wrap items-center justify-between gap-32">
+        <div className="lg:m-16 md:m-8 m-4 flex flex-row flex-wrap items-center justify-between gap-16 md:gap-x-32">
           <a
             className="italic underline text-pink-300"
             target="_blank"
@@ -167,37 +192,39 @@ export default function Page() {
       </div>
 
       {/* ---------------------------- ART TOOLS ---------------------------- */}
-      <h1 className="text-balance">Art Tools</h1>
-      <div className="mx-16 flex flex-row items-center justify-between gap-16 md:gap-x-32 lg:gap-x-64 flex-wrap">
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://download.blender.org/branding/community/blender_community_badge_white.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-3ds-max-small-social-400.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-maya-small-social-400.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-        />
+      <div className="w-[100%]">
+        <h1 className="text-balance">Art Tools</h1>
+        <div className="lg:m-16 md:m-8 m-4 flex flex-row items-center justify-between gap-16 md:gap-x-32 lg:gap-x-64 flex-wrap">
+          <img
+            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            src="https://download.blender.org/branding/community/blender_community_badge_white.png"
+          />
+          <img
+            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-3ds-max-small-social-400.png"
+          />
+          <img
+            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-maya-small-social-400.png"
+          />
+          <img
+            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+          />
+          <img
+            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
+          />
+          <img
+            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+          />
+        </div>
       </div>
 
       {/* ---------------------------- PROGRAMMING ---------------------------- */}
       <h1 className="text-balance">Languages - Programming</h1>
-      <div className="mx-16 flex flex-row items-center justify-between gap-16 md:gap-32 lg:gap-48 flex-wrap">
+      <div className="lg:m-16 md:m-8 m-4 flex flex-row items-center justify-between gap-16 md:gap-32 lg:gap-48 flex-wrap">
         <img
           className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"
@@ -231,7 +258,7 @@ export default function Page() {
       {/* ---------------------------- OTHER TOOLS ---------------------------- */}
       <div className="w-[100%]">
         <h1 className="text-balance">Other Tools</h1>
-        <div className="mx-16 flex flex-row items-center justify-around gap-16 md:gap-32 lg:gap-48 flex-wrap">
+        <div className="lg:m-16 md:m-8 m-4 flex flex-row items-center justify-around gap-16 md:gap-32 lg:gap-48 flex-wrap">
           <img
             className="max-w-[130px] max-h-[130px] md:max-w-[170px] md:max-h-[170px] lg:max-w-[200px] lg:max-h-[200px]"
             src="https://images.squarespace-cdn.com/content/v1/56576da6e4b0acafe10c53bb/1682136103428-A4BP43QWKDC8JLMK6XZZ/WWISE+LOGO+%2B+TAG_WHITE.png?format=500w"
@@ -244,43 +271,40 @@ export default function Page() {
       </div>
 
       {/* ---------------------------- SPOKEN LANGUAGES ---------------------------- */}
-      <br />
       <div className="w-[100%]">
         <h1 className="text-balance">Languages - Spoken</h1>
-        <div className="mx-16 flex flex-col flex-wrap items-center gap-8">
-          <div className="m-16 flex flex-row items-start justify-between gap-16 md:gap-x-32 flex-wrap">
-            <div className="flex flex-row items-end gap-8 md:w-[30rem] w-[20rem]">
-              <img
-                src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/brazil.png?raw=true"
-                style={{ maxHeight: 50, maxWidth: 50 }}
-              />
-              <h2>Portuguese (Brazil)</h2>
-              <i className="text-gray-400">Native language</i>
-            </div>
-            <div className="flex flex-row items-end gap-8 w-[20rem]">
-              <img
-                src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/france.png?raw=true"
-                style={{ maxHeight: 50, maxWidth: 50 }}
-              />
-              <h2>French</h2>
-              <i className="text-gray-400">Fluent</i>
-            </div>
-            <div className="flex flex-row items-end gap-8 w-[20rem]">
-              <img
-                src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/united-kingdom.png?raw=true"
-                style={{ maxHeight: 50, maxWidth: 50 }}
-              />
-              <h2>English</h2>
-              <i className="text-gray-400">Fluent</i>
-            </div>
-            <div className="flex flex-row items-end gap-8 w-[20rem]">
-              <img
-                src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/spain.png?raw=true"
-                style={{ maxHeight: 50, maxWidth: 50 }}
-              />
-              <h2>Spanish</h2>
-              <i className="text-gray-400">Conversational level</i>
-            </div>
+        <div className="lg:m-16 md:m-8 m-4 flex flex-row items-start justify-between gap-16 md:gap-x-32 flex-wrap">
+          <div className="flex flex-row items-end gap-8 md:w-[30rem] w-[20rem]">
+            <img
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/brazil.png?raw=true"
+              style={{ maxHeight: 50, maxWidth: 50 }}
+            />
+            <h2>Portuguese (Brazil)</h2>
+            <i className="text-gray-400">Native language</i>
+          </div>
+          <div className="flex flex-row items-end gap-8 w-[20rem]">
+            <img
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/france.png?raw=true"
+              style={{ maxHeight: 50, maxWidth: 50 }}
+            />
+            <h2>French</h2>
+            <i className="text-gray-400">Fluent</i>
+          </div>
+          <div className="flex flex-row items-end gap-8 w-[20rem]">
+            <img
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/united-kingdom.png?raw=true"
+              style={{ maxHeight: 50, maxWidth: 50 }}
+            />
+            <h2>English</h2>
+            <i className="text-gray-400">Fluent</i>
+          </div>
+          <div className="flex flex-row items-end gap-8 w-[20rem]">
+            <img
+              src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/spain.png?raw=true"
+              style={{ maxHeight: 50, maxWidth: 50 }}
+            />
+            <h2>Spanish</h2>
+            <i className="text-gray-400">Conversational level</i>
           </div>
         </div>
       </div>
