@@ -249,42 +249,44 @@ export default function Page() {
       </div>
 
       {/* ---------------------------- PROGRAMMING ---------------------------- */}
-      <h1 className="text-balance">Languages - Programming</h1>
-      <div className="lg:m-16 md:m-8 m-4 flex flex-row items-center justify-between gap-16 md:gap-32 lg:gap-48 flex-wrap">
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://static-00.iconduck.com/assets.00/sql-database-generic-icon-1521x2048-d0vdpxpg.png"
-        />
-        <img
-          className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
-          src="https://cdn-icons-png.flaticon.com/512/9496/9496555.png"
-        />
+      <div className="w-[100%]">
+        <h1 className="text-balance">Languages - Programming</h1>
+        <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://static-00.iconduck.com/assets.00/sql-database-generic-icon-1521x2048-d0vdpxpg.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://cdn-icons-png.flaticon.com/512/9496/9496555.png"
+          />
+        </div>
       </div>
 
       {/* ---------------------------- OTHER TOOLS ---------------------------- */}
       <div className="w-[100%]">
         <h1 className="text-balance">Other Tools</h1>
-        <div className="lg:m-16 md:m-8 m-4 flex flex-row items-center justify-around gap-16 md:gap-32 lg:gap-48 flex-wrap">
+        <div className="md:mt-32 mt-24 flex flex-row items-center justify-between gap-16 flex-wrap">
           <img
             className="max-w-[130px] max-h-[130px] md:max-w-[170px] md:max-h-[170px] lg:max-w-[200px] lg:max-h-[200px]"
             src="https://images.squarespace-cdn.com/content/v1/56576da6e4b0acafe10c53bb/1682136103428-A4BP43QWKDC8JLMK6XZZ/WWISE+LOGO+%2B+TAG_WHITE.png?format=500w"
@@ -299,38 +301,38 @@ export default function Page() {
       {/* ---------------------------- SPOKEN LANGUAGES ---------------------------- */}
       <div className="w-[100%]">
         <h1 className="text-balance">Languages - Spoken</h1>
-        <div className="lg:m-16 md:m-8 m-4 flex flex-row items-start justify-between gap-16 md:gap-x-32 flex-wrap">
-          <div className="flex flex-row items-end gap-8 md:w-[30rem] w-[20rem]">
+        <div className="md:mt-24 mt-16 flex flex-row items-center justify-between gap-16 flex-wrap">
+          <div className="flex flex-row items-end gap-4 md:w-[30rem] w-[20rem]">
             <img
+              className="max-h-[35px] max-w-[35px] md:max-h-[40px] md:max-w-[40px] lg:max-h-[45px] lg:max-w-[45px]"
               src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/brazil.png?raw=true"
-              style={{ maxHeight: 50, maxWidth: 50 }}
             />
-            <h2>Portuguese (Brazil)</h2>
-            <i className="text-gray-400">Native language</i>
+            <h4 className="text-neutral-300">Portuguese (Brazil)</h4>
+            <h4 className="italic text-gray-400">Native language</h4>
           </div>
-          <div className="flex flex-row items-end gap-8 w-[20rem]">
+          <div className="flex flex-row items-end gap-4 w-[20rem]">
             <img
+              className="max-h-[35px] max-w-[35px] md:max-h-[40px] md:max-w-[40px] lg:max-h-[45px] lg:max-w-[45px]"
               src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/france.png?raw=true"
-              style={{ maxHeight: 50, maxWidth: 50 }}
             />
-            <h2>French</h2>
-            <i className="text-gray-400">Fluent</i>
+            <h4 className="text-neutral-300">French</h4>
+            <h4 className="italic text-gray-400">Fluent</h4>
           </div>
-          <div className="flex flex-row items-end gap-8 w-[20rem]">
+          <div className="flex flex-row items-end gap-4 w-[20rem]">
             <img
+              className="max-h-[35px] max-w-[35px] md:max-h-[40px] md:max-w-[40px] lg:max-h-[45px] lg:max-w-[45px]"
               src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/united-kingdom.png?raw=true"
-              style={{ maxHeight: 50, maxWidth: 50 }}
             />
-            <h2>English</h2>
-            <i className="text-gray-400">Fluent</i>
+            <h4 className="text-neutral-300">English</h4>
+            <h4 className="italic text-gray-400">Fluent</h4>
           </div>
-          <div className="flex flex-row items-end gap-8 w-[20rem]">
+          <div className="flex flex-row items-end gap-4 w-[20rem]">
             <img
+              className="max-h-[35px] max-w-[35px] md:max-h-[40px] md:max-w-[40px] lg:max-h-[45px] lg:max-w-[45px]"
               src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/portfolio-redesign/assets/flag-icons/spain.png?raw=true"
-              style={{ maxHeight: 50, maxWidth: 50 }}
             />
-            <h2>Spanish</h2>
-            <i className="text-gray-400">Conversational level</i>
+            <h4 className="text-neutral-300">Spanish</h4>
+            <h4 className="italic text-gray-400">Conversational level</h4>
           </div>
         </div>
       </div>
