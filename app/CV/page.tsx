@@ -174,7 +174,7 @@ export default function Page() {
       {/* ---------------------------- GAME ENGINES ---------------------------- */}
       <div className="w-[100%]">
         <h1 className="text-balance">Game Engines</h1>
-        <div className="lg:m-16 md:m-8 m-4 flex flex-row flex-wrap items-center justify-between gap-16 md:gap-x-32">
+        <div className="md:mt-32 mt-24 flex flex-row flex-wrap justify-between sm:gap-16">
           <a
             className="italic underline text-pink-300"
             target="_blank"
@@ -183,8 +183,8 @@ export default function Page() {
           >
             <img
               className="max-w-[150px] max-h-[150px]
-                        md:max-w-[200px] md:max-h-[200px]
-                        lg:max-w-[300px] lg:max-h-[300px]"
+                        md:max-w-[170px] md:max-h-[170px]
+                        lg:max-w-[190px] lg:max-h-[190px]"
               src="https://alexdunn.org/wp-content/uploads/2017/05/unity-logo-white.png"
             />
           </a>
@@ -196,8 +196,8 @@ export default function Page() {
           >
             <img
               className="max-w-[100px] max-h-[100px]
-                        md:max-w-[150px] md:max-h-[150px]
-                        lg:max-w-[200px] lg:max-h-[200px]"
+                        md:max-w-[120px] md:max-h-[120px]
+                        lg:max-w-[140px] lg:max-h-[140px]"
               src="https://cdn2.unrealengine.com/ue-logotype-2023-vertical-white-1686x2048-bbfded26daa7.png"
             />
           </a>
@@ -209,8 +209,8 @@ export default function Page() {
           >
             <img
               className="max-w-[150px] max-h-[150px]
-                        md:max-w-[200px] md:max-h-[200px]
-                        lg:max-w-[300px] lg:max-h-[300px]"
+                        md:max-w-[170px] md:max-h-[170px]
+                        lg:max-w-[190px] lg:max-h-[190px]"
               src="https://upload.wikimedia.org/wikipedia/commons/a/ac/GD-logo-big.png?20200730084519"
             />
           </a>
@@ -220,29 +220,29 @@ export default function Page() {
       {/* ---------------------------- ART TOOLS ---------------------------- */}
       <div className="w-[100%]">
         <h1 className="text-balance">Art Tools</h1>
-        <div className="lg:m-16 md:m-8 m-4 flex flex-row items-center justify-between gap-16 md:gap-x-32 lg:gap-x-64 flex-wrap">
+        <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
           <img
-            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://download.blender.org/branding/community/blender_community_badge_white.png"
           />
           <img
-            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-3ds-max-small-social-400.png"
           />
           <img
-            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-maya-small-social-400.png"
           />
           <img
-            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
           />
           <img
-            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
           />
           <img
-            className="max-w-[100px] max-h-[100px] md:max-w-[120px] md:max-h-[120px] lg:max-w-[140px] lg:max-h-[140px]"
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
           />
         </div>
