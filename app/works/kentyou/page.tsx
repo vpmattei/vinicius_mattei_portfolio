@@ -19,7 +19,7 @@ const images = [
 
 const Page: React.FC = () => {
   return (
-    <section className="prose mt-32 ml-8 mr-8 flex flex-col items-center gap-16">
+    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
       <div className="w-[100%] flex flex-col items-center">
         <img
           src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"

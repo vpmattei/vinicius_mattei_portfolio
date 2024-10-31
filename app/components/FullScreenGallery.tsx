@@ -27,7 +27,7 @@ const FullScreenGallery: React.FC<FullScreenGalleryProps> = ({ images }) => {
               key={index}
               src={image}
               alt={`Gallery Image ${index + 1}`}
-              className="max-h-[130vh] max-w-[95vw] object-contain rounded-lg cursor-pointer transition-transform duration-1000 hover:scale-110 mx-auto"
+              className="object-contain cursor-pointer transition-transform duration-1000 hover:scale-110 mx-auto"
               onClick={() => openModal(index)} // Open modal with the clicked image
             />
           </div>
