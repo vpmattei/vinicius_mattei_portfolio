@@ -248,12 +248,15 @@ html {
 .prose div.previous-next-work-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 
   width: 100%;
 
   a {
     cursor: pointer;
+  }
+
+  .next-work {
+
   }
 }
 
