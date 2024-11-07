@@ -76,9 +76,9 @@ const PageSection: React.FC<PageSectionProps> = ({
       )}
 
       {/* Dynamic Content */}
-      <div className="mt-6 flex flex-col items-center">
+      <div className="max-w-[50rem] min-w-[18rem] mt-6 mx-8 flex flex-col items-center">
         {content.map((item, index) => (
-          <div key={index} className="text-xl indent-8 text-justify">
+          <div key={index} className="text-xl indent-8">
             {item}
           </div>
         ))}
@@ -86,7 +86,7 @@ const PageSection: React.FC<PageSectionProps> = ({
 
       {/* Full Screen Gallery */}
       {images && images.length > 0 && (
-        <div className="mt-6">
+        <div className="mt-6 mx-8">
           <FullScreenGallery images={images} />
         </div>
       )}

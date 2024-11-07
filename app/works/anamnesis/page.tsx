@@ -19,14 +19,14 @@ const Page: React.FC = () => {
           width: 300,
         }}
         content={[
-          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph1">
+          <p key="paragraph1">
             In 2023, during my inaugural year in the MAJIC program (Management
             of Video Games, Image, and Creativity) at Université Côte d'Azur, I
             embarked on a journey to contribute to the development of Anamnesis,
             an immersive VR game.
           </p>,
 
-          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph2">
+          <p key="paragraph2">
             As a key member of the Anamnesis development team, my primary focus
             was on the engineering of the game's core mechanics, specifically
             tailored for the VR environment. My contributions were fundamental
@@ -34,7 +34,7 @@ const Page: React.FC = () => {
             This included:
           </p>,
 
-          <ul className="max-w-[50rem] min-w-[18rem] mx-8" key="list1">
+          <ul key="list1">
             <li>
               <b>Implementing</b> realistic hand physics to facilitate a natural
               and intuitive interaction model for players.
@@ -52,7 +52,7 @@ const Page: React.FC = () => {
             </li>
           </ul>,
 
-          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph3">
+          <p key="paragraph3">
             Beyond my technical contributions, I also played a role in the
             creative aspects of the game, assisting in the level design to
             ensure a coherent and engaging environment. Furthermore, I took part
@@ -61,7 +61,7 @@ const Page: React.FC = () => {
             experience.
           </p>,
 
-          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph4">
+          <p key="paragraph4">
             A particularly notable achievement was my work in 3D modeling, where
             I crafted a human figure that was used as the giant stone colossus
             within the game. This creation not only served as a primordial
@@ -70,13 +70,13 @@ const Page: React.FC = () => {
             significantly to the game's immersive environment.
           </p>,
 
-          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph5">
+          <p key="paragraph5">
             My work on Anamnesis was an enriching chapter in my academic and
             professional journey, allowing me to dive deep into the intricacies
             of VR development. Through this project, I honed my skills in:
           </p>,
 
-          <ul className="max-w-[50rem] min-w-[18rem] mx-8" key="list2">
+          <ul key="list2">
             <li>
               <b>VR Development:</b> Building the foundation for immersive VR
               experiences through Unity.
@@ -95,7 +95,7 @@ const Page: React.FC = () => {
             </li>
           </ul>,
 
-          <p className="max-w-[50rem] min-w-[18rem] mx-8" key="paragraph6">
+          <p key="paragraph6">
             Anamnesis stands as a testament to the immersion potential of VR
             gaming, and my involvement in its development was a pivotal
             experience that expanded my expertise in the realm of virtual
@@ -110,13 +110,34 @@ const Page: React.FC = () => {
         ]}
       />
 
-      <div className="previous-next-work-buttons">
-        <a className="previous-work" href="/works/tangled-tales">
-          Tangled Tales
-        </a>
-        <a className="next-work" href="/works/hebald-forest">
-          Hebald Forest
-        </a>
+<div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
+        <div className="flex flex-col items-start w-[100%]">
+          <a
+            className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
+            href="/works/tangled-tales"
+          >
+            <img
+              className="h-[50px]"
+              src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
+              loading="lazy"
+            ></img>
+            PREVIOUS PROJECT
+          </a>
+        </div>
+
+        <div className="flex flex-col items-end w-[100%]">
+          <a
+            className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
+            href="/works/hebald-forest"
+          >
+            NEXT PROJECT
+            <img
+              className="h-[50px]"
+              src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
+              loading="lazy"
+            ></img>
+          </a>
+        </div>
       </div>
     </section>
   );
