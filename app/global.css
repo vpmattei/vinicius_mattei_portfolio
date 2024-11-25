@@ -69,50 +69,26 @@
 }
 
 ::selection {
-  background-color: #c82c5e;
-  color: #f8fff6;
+  background-color: #f3477d;
+  color: #e8ffe0;
 }
 
 :root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
+  --sh-class: #4c97f8;
+  --sh-identifier: #white;
   --sh-sign: #8996a3;
-  --sh-string: #007f7a;
-  --sh-keyword: #e02518;
+  --sh-string: #0fa295;
+  --sh-keyword: #f47067;
   --sh-comment: #a19595;
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
 }
 
-@media (prefers-color-scheme: dark) {
-  ::selection {
-    background-color: #f3477d;
-    color: #e8ffe0;
-  }
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-    font-family: "Poppins";
-  }
-}
-
-/* If the user prefers light mode, 
-we still enforce color-scheme: dark, despite the user preference */
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-    font-family: "Antonio";
-  }
-}
-
 html {
   min-width: 360px;
+  color-scheme: dark;
+  font-family: "Poppins";
 }
 
 .prose {
@@ -256,7 +232,6 @@ html {
   }
 
   .next-work {
-
   }
 }
 
