@@ -86,6 +86,24 @@ const Page: React.FC = () => {
           </a>
         </div>
       </div>
+
+      {/* Podcastr */}
+      <div className="flex flex-row justify-center gap-4">
+        <div className="w-1/3 flex justify-end">
+          <CustomImage
+            src="https://i.ibb.co/QbHsPWM/podcastr-details-dark.png"
+            alt="Podcastr"
+            link="/works/podcastr"
+            maxWidth="40rem"
+          />
+        </div>
+        <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
+        <div className="w-1/3 flex justify-start">
+          <a href="/works/podcastr">
+            <h2 className="transition-all hover:text-neutral-400">Podcastr</h2>
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

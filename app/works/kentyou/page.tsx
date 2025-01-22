@@ -1,5 +1,4 @@
 import React from "react";
-import FullScreenGallery from "app/components/FullScreenGallery";
 import ArrowIcon from "app/components/ArrowIcon";
 
 export const metadata = {
@@ -7,60 +6,100 @@ export const metadata = {
   description: "Kentyou work.",
 };
 
-const images = [
-  "https://i.ibb.co/GPvMSqy/Captura-de-Tela-2024-09-13-s-12-00-21.png",
-  "https://i.ibb.co/BgFDSmh/Captura-de-Tela-2024-09-13-s-12-00-09.png",
-  "https://i.ibb.co/3drXmZP/Captura-de-Tela-2024-09-13-s-12-00-34.png",
-  "https://i.ibb.co/Hxfy1Pv/Captura-de-Tela-2024-09-13-s-12-00-39.png",
-  "https://i.ibb.co/JHqPKMT/Captura-de-Tela-2024-09-13-s-12-00-48.png",
-  "https://i.ibb.co/hR0LZbN/Captura-de-Tela-2024-09-13-s-12-01-29.png",
-  "https://i.ibb.co/2k5HGzh/Captura-de-Tela-2024-09-13-s-12-01-34.png",
-];
+const kentyouImages = {
+  logo: "https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png",
+  gallery: [
+    "https://i.ibb.co/GPvMSqy/Captura-de-Tela-2024-09-13-s-12-00-21.png",
+    "https://i.ibb.co/BgFDSmh/Captura-de-Tela-2024-09-13-s-12-00-09.png",
+    "https://i.ibb.co/3drXmZP/Captura-de-Tela-2024-09-13-s-12-00-34.png",
+    "https://i.ibb.co/Hxfy1Pv/Captura-de-Tela-2024-09-13-s-12-00-39.png",
+    "https://i.ibb.co/JHqPKMT/Captura-de-Tela-2024-09-13-s-12-00-48.png",
+    "https://i.ibb.co/hR0LZbN/Captura-de-Tela-2024-09-13-s-12-01-29.png",
+    "https://i.ibb.co/2k5HGzh/Captura-de-Tela-2024-09-13-s-12-01-34.png",
+  ],
+};
 
 const Page: React.FC = () => {
   return (
     <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
-      <div className="w-[100%] flex flex-col items-center">
+      {/* Logo and Header */}
+      <div className="w-full flex flex-col items-center text-center">
         <img
-          src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
+          src={kentyouImages.logo}
           alt="Kentyou Logo"
-          style={{ width: 250 }}
+          style={{ width: "250px", height: "250px" }}
         />
-        <h2 className="mb-16">Kentyou</h2>
-        <a
-          className="mb-8 flex items-center transition-all hover:text-neutral-100"
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://www.figma.com/proto/pBTikcvwgShCHDAPnP5tvN/kentyou-ui-library__core--client?node-id=3414-13558&starting-point-node-id=646%3A17244&t=BXHG4WbblYkKL9N9-1"
-        >
-          <h3>Kentyou UI Prototype</h3>
-          <p className="ml-2">
-            <ArrowIcon size={18} />
-          </p>
-        </a>
-        <p className="text-xl indent-8 text-justify">
-          During my internship at Kentyou, a startup where I worked as a UI/UX
-          Designer and Developer, I redesigned their dashboard overview. One key
-          feature I introduced was an edit toggle button that allows users to
-          easily switch between viewing and editing their dashboard.
-          Additionally, I designed a profile settings page that enables users to
-          update their profile name, change their password, and adjust various
-          other settings. All designs were created using Figma.
+        <h2 className="text-3xl font-bold mt-4">Kentyou</h2>
+        <h3 className="text-xl font-medium mt-2">🚀 Empowering Smart Cities</h3>
+      </div>
+
+      {/* About Section */}
+      <div className="w-full text-justify">
+        <h3 className="text-2xl font-bold">📃 About</h3>
+        <p>
+          During my internship at Kentyou, I worked as both a UI/UX Designer and
+          Developer. I redesigned their dashboard overview, adding a toggle
+          button to switch between editing and viewing modes. Additionally, I
+          created a profile settings page where users can update their profile,
+          change passwords, and configure settings.
         </p>
       </div>
-      <FullScreenGallery images={images} />
+
+      {/* Features Section */}
+      <div className="w-full">
+        <h3 className="text-2xl font-bold">✨ Features</h3>
+        <ul className="list-disc list-inside">
+          <li>🖥️ Redesigned dashboard for improved user experience</li>
+          <li>🛠️ Edit/view toggle for dashboards</li>
+          <li>🔑 Profile settings for customization</li>
+          <li>🎨 Created all designs using Figma</li>
+        </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+          {kentyouImages.gallery.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Kentyou Screenshot ${index + 1}`}
+              style={{ width: "100%", borderRadius: "8px" }}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Technologies Section */}
+      <div className="w-full">
+        <h3 className="text-2xl font-bold">🚀 Technologies</h3>
+        <p>
+          Kentyou leverages cutting-edge tools and technologies to deliver smart
+          city solutions:
+        </p>
+        <ul className="list-disc list-inside">
+          <li>
+            ⚛️ <strong>React</strong> for building the UI
+          </li>
+          <li>
+            🌐 <strong>Next.js</strong> for server-side rendering and routing
+          </li>
+          <li>
+            💻 <strong>TypeScript</strong> for type safety
+          </li>
+          <li>
+            🎨 <strong>Figma</strong> for UI/UX design
+          </li>
+        </ul>
+      </div>
 
       <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
         <div className="flex flex-col items-start w-[100%]">
           <a
             className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-            href="/works/hebald-forest"
+            href="/works/podcastr"
           >
             <img
               className="h-[50px]"
               src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
-              loading="lazy"
-            ></img>
+              alt="Previous"
+            />
             PREVIOUS PROJECT
           </a>
         </div>
@@ -74,8 +113,8 @@ const Page: React.FC = () => {
             <img
               className="h-[50px]"
               src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
-              loading="lazy"
-            ></img>
+              alt="Next"
+            />
           </a>
         </div>
       </div>

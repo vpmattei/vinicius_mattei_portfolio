@@ -98,6 +98,19 @@ export default function Page() {
             <p>A data driven dashboard redesign of Kentyou's main page website</p>
           </Link>
         </div>
+
+        <div className="self-start">
+          <CustomImage
+            src="https://i.ibb.co/QbHsPWM/podcastr-details-dark.png"
+            alt="Podcastr"
+            link="/works/podcastr"
+            maxWidth="40rem"
+          />
+          <Link href={"/works/podcastr"}>
+            <h2>Podcast platform</h2>
+            <p>Modern web application designed for managing and listening to podcasts</p>
+          </Link>
+        </div>
       </div>
     </section>
   );
