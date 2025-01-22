@@ -8,7 +8,7 @@ export default function Page() {
           <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h4 className="text-neutral-300">
-                GrapeHawk <i className="text-lg text-neutral-400">(Cannes, France)</i>
+                GrapeHawk <i className="text-lg text-neutral-400">(Cannes, FR)</i>
               </h4>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
               <br />
