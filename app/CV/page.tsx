@@ -311,6 +311,10 @@ export default function Page() {
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://img.icons8.com/fluent-systems-filled/200/FFFFFF/nextjs.png"
           />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://img.icons8.com/color/600/spring-logo.png"
+          />
         </div>
       </div>
 
