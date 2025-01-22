@@ -13,7 +13,7 @@ export default function Page() {
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
               <br />
               <h5 className="text-neutral-400">Developer</h5>
-              <h5 className="text-neutral-400 italic">05.24 - present</h5>
+              <h5 className="text-neutral-400 italic">05.24 - 11.24</h5>
             </div>
 
             <a
