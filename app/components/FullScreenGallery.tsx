@@ -5,9 +5,13 @@ import useImageModal from "../hooks/useImageModal";
 
 interface FullScreenGalleryProps {
   images: string[];
+  useGrid?: boolean;
 }
 
-const FullScreenGallery: React.FC<FullScreenGalleryProps> = ({ images }) => {
+const FullScreenGallery: React.FC<FullScreenGalleryProps> = ({
+  images,
+  useGrid = false,
+}) => {
   const {
     isModalOpen,
     currentIndex,
@@ -19,20 +23,40 @@ const FullScreenGallery: React.FC<FullScreenGalleryProps> = ({ images }) => {
 
   return (
     <div className="">
-      {/* Image grid */}
-      <div className="flex flex-col flex-wrap justify-center items-center gap-16">
-        {images.map((image, index) => (
-          <div className="relative overflow-hidden transition-all duration-1000 ease-in-out hover:scale-98">
-            <img
+      {/* Image Display */}
+      {useGrid ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
+          {images.map((image, index) => (
+            <div
               key={index}
-              src={image}
-              alt={`Gallery Image ${index + 1}`}
-              className="object-contain cursor-pointer transition-transform duration-1000 hover:scale-110 mx-auto"
-              onClick={() => openModal(index)} // Open modal with the clicked image
-            />
-          </div>
-        ))}
-      </div>
+              className="relative overflow-hidden transition-all duration-1000 ease-in-out hover:scale-98 cursor-object-contain cursor-pointer transition-transform duration-1000 hover:scale-110 mx-auto"
+              onClick={() => openModal(index)}
+            >
+              <img
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className="object-contain cursor-pointer transition-transform duration-1000 hover:scale-110 mx-auto"
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="flex flex-col flex-wrap justify-center items-center gap-16">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="relative overflow-hidden transition-all duration-1000 ease-in-out hover:scale-98 cursor-object-contain cursor-pointer transition-transform duration-1000 hover:scale-110 mx-auto"
+              onClick={() => openModal(index)}
+            >
+              <img
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className="object-contain cursor-pointer transition-transform duration-1000 hover:scale-110 mx-auto"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Modal Overlay */}
       {isModalOpen && (
