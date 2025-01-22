@@ -280,6 +280,37 @@ export default function Page() {
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://cdn-icons-png.flaticon.com/512/9496/9496555.png"
           />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+          />
+        </div>
+      </div>
+
+      {/* ---------------------------- FRAMEWORKS ---------------------------- */}
+      <div className="w-[100%]">
+        <h1 className="text-balance">Frameworks</h1>
+        <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://static-00.iconduck.com/assets.00/react-original-wordmark-icon-840x1024-vhmauxp6.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://cdn.iconscout.com/icon/free/png-256/free-vuejs-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175052.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://www.svgrepo.com/show/353657/django-icon.svg"
+          />
+          <img
+            className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
+            src="https://img.icons8.com/fluent-systems-filled/200/FFFFFF/nextjs.png"
+          />
         </div>
       </div>
 
