@@ -8,7 +8,8 @@ export default function Page() {
           <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h4 className="text-neutral-300">
-                GrapeHawk <i className="text-lg text-neutral-400">(Cannes, FR)</i>
+                GrapeHawk{" "}
+                <i className="text-lg text-neutral-400">(Cannes, FR)</i>
               </h4>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
               <br />
@@ -224,26 +225,32 @@ export default function Page() {
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://download.blender.org/branding/community/blender_community_badge_white.png"
+            title="Blender"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-3ds-max-small-social-400.png"
+            title="Autodesk 3ds Max"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-maya-small-social-400.png"
+            title="Autodesk Maya"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+            title="Adobe Photoshop"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
+            title="Adobe Illustrator"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+            title="Figma"
           />
         </div>
       </div>
@@ -255,34 +262,42 @@ export default function Page() {
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"
+            title="C#"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+            title="C++"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"
+            title="Java"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            title="JavaScript"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+            title="TypeScript"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://static-00.iconduck.com/assets.00/sql-database-generic-icon-1521x2048-d0vdpxpg.png"
+            title="SQL"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://cdn-icons-png.flaticon.com/512/9496/9496555.png"
+            title="XML"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+            title="Python"
           />
         </div>
       </div>
@@ -294,26 +309,32 @@ export default function Page() {
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://static-00.iconduck.com/assets.00/react-original-wordmark-icon-840x1024-vhmauxp6.png"
+            title="React"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://cdn.iconscout.com/icon/free/png-256/free-vuejs-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175052.png"
+            title="VueJS"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+            title="Angular"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://www.svgrepo.com/show/353657/django-icon.svg"
+            title="Django"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://img.icons8.com/fluent-systems-filled/200/FFFFFF/nextjs.png"
+            title="Next.js"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
             src="https://img.icons8.com/color/600/spring-logo.png"
+            title="Spring Boot"
           />
         </div>
       </div>
