@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import ArrowIcon from "app/components/ArrowIcon";
+import FullScreenGallery from "app/components/FullScreenGallery";
 
 export const metadata = {
   title: "Podcastr",
@@ -9,6 +10,11 @@ export const metadata = {
 
 const podcastrImages = {
   logo: "https://github.com/vpmattei/podcastrnext/raw/master/.github/podcastr.svg",
+  gallery: [
+    "https://i.ibb.co/6r8R6yH/podcastr-playing-dark.png",
+    "https://i.ibb.co/QbHsPWM/podcastr-details-dark.png",
+    "https://i.ibb.co/Fnt5JLX/podcastr-mobile-screens.png",
+  ],
   playingDark: "https://i.ibb.co/6r8R6yH/podcastr-playing-dark.png",
   detailsDark: "https://i.ibb.co/QbHsPWM/podcastr-details-dark.png",
   mobileScreens: "https://i.ibb.co/Fnt5JLX/podcastr-mobile-screens.png",
@@ -44,16 +50,6 @@ const Page: React.FC = () => {
       {/* About Section */}
       <div className="w-full text-justify">
         <h3 className="text-2xl font-bold">📃 About</h3>
-        <img
-          src={podcastrImages.playingDark}
-          alt="Podcastr Screenshot"
-          style={{
-            width: "800px",
-            height: "450px",
-            margin: "16px auto",
-            borderRadius: "8px",
-          }}
-        />
         <p>
           <strong>Podcastr</strong> is a modern web application developed during
           Rocketseat's <strong>Next Level Week</strong> React track. Its main
@@ -61,6 +57,8 @@ const Page: React.FC = () => {
           episode information and a custom audio player. 🚀
         </p>
       </div>
+
+      <FullScreenGallery images={podcastrImages.gallery} useGrid={true} />
 
       {/* Features Section */}
       <div className="w-full">
@@ -72,16 +70,6 @@ const Page: React.FC = () => {
           <li>🎛️ Audio player with shuffle, repeat, and playback controls</li>
           <li>🌗 Responsive layout with dark and light mode</li>
         </ul>
-        <img
-          src={podcastrImages.detailsDark}
-          alt="Podcastr Details"
-          style={{
-            width: "800px",
-            height: "450px",
-            margin: "16px auto",
-            borderRadius: "8px",
-          }}
-        />
       </div>
 
       {/* Technologies Section */}
@@ -105,16 +93,6 @@ const Page: React.FC = () => {
             🎨 <strong>Sass</strong> for styling
           </li>
         </ul>
-        <img
-          src={podcastrImages.mobileScreens}
-          alt="Podcastr Mobile Screens"
-          style={{
-            width: "800px",
-            height: "450px",
-            margin: "16px auto",
-            borderRadius: "8px",
-          }}
-        />
       </div>
 
       <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">

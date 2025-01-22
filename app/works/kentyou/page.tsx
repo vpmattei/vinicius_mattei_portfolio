@@ -1,5 +1,6 @@
 import React from "react";
 import ArrowIcon from "app/components/ArrowIcon";
+import FullScreenGallery from "app/components/FullScreenGallery";
 
 export const metadata = {
   title: "Kentyou",
@@ -45,25 +46,16 @@ const Page: React.FC = () => {
         </p>
       </div>
 
+      <FullScreenGallery images={kentyouImages.gallery} useGrid={true} />
+
       {/* Features Section */}
       <div className="w-full">
         <h3 className="text-2xl font-bold">✨ Features</h3>
         <ul className="list-disc list-inside">
-          <li>🖥️ Redesigned dashboard for improved user experience</li>
           <li>🛠️ Edit/view toggle for dashboards</li>
+          <li>📋 List of KPI Targets and an option to edit/delete each KPI</li>
           <li>🔑 Profile settings for customization</li>
-          <li>🎨 Created all designs using Figma</li>
         </ul>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-          {kentyouImages.gallery.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Kentyou Screenshot ${index + 1}`}
-              style={{ width: "100%", borderRadius: "8px" }}
-            />
-          ))}
-        </div>
       </div>
 
       {/* Technologies Section */}
@@ -75,7 +67,7 @@ const Page: React.FC = () => {
         </p>
         <ul className="list-disc list-inside">
           <li>
-            ⚛️ <strong>React</strong> for building the UI
+            ⚛️ <strong>VueJS</strong> for building the UI
           </li>
           <li>
             🌐 <strong>Next.js</strong> for server-side rendering and routing
