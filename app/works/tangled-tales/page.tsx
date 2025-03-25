@@ -68,7 +68,7 @@ const Page: React.FC = () => {
         <div className="flex flex-col items-start w-[100%]">
           <a
             className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-            href="/works/kentyou"
+            href="/works/pokedex-app"
           >
             <img
               className="h-[50px]"

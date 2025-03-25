@@ -69,6 +69,24 @@ const Page: React.FC = () => {
         </div>
       </div>
 
+      {/* Pokedex App */}
+      <div className="flex flex-row justify-center gap-4">
+        <div className="w-1/3 flex justify-end">
+          <CustomImage
+            src="https://raw.githubusercontent.com/vpmattei/pokedex-app/main/Showcase/Final%20Export/MainPhotoPokedexShowcase.png"
+            alt="Kentyou"
+            link="/works/pokedex-app"
+            maxWidth="40rem"
+          />
+        </div>
+        <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
+        <div className="w-1/3 flex justify-start">
+          <a href="/works/pokedex-app">
+            <h2 className="transition-all hover:text-neutral-400">Pokédex App</h2>
+          </a>
+        </div>
+      </div>
+
       {/* Kentyou */}
       <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">

@@ -88,6 +88,19 @@ export default function Page() {
 
         <div className="self-end">
           <CustomImage
+            src="https://raw.githubusercontent.com/vpmattei/pokedex-app/main/Showcase/Final%20Export/MainPhotoPokedexShowcase.png"
+            alt="Pokedex App"
+            link="/works/pokedex-app"
+            maxWidth="40rem"
+          />
+          <Link href={"/works/pokedex-app"}>
+            <h2>Pokédex App</h2>
+            <p>A simple Pokedex application that let's you search for you favorite Pokémon and look at its stats!</p>
+          </Link>
+        </div>
+
+        <div className="self-start">
+          <CustomImage
             src="https://i.ibb.co/GPvMSqy/Captura-de-Tela-2024-09-13-s-12-00-21.png"
             alt="Kentyou"
             link="/works/kentyou"
@@ -99,7 +112,7 @@ export default function Page() {
           </Link>
         </div>
 
-        <div className="self-start">
+        <div className="self-end">
           <CustomImage
             src="https://i.ibb.co/QbHsPWM/podcastr-details-dark.png"
             alt="Podcastr"
