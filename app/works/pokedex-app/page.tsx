@@ -4,8 +4,8 @@ import ArrowIcon from "app/components/ArrowIcon";
 import FullScreenGallery from "app/components/FullScreenGallery";
 
 export const metadata = {
-  title: "Pokedex App",
-  description: "Pokedex Android App made with Jetpack Compose.",
+  title: "Pokédex App",
+  description: "Pokédex Android App made with Jetpack Compose.",
 };
 
 const pokedexImages = {
@@ -26,10 +26,10 @@ const Page: React.FC = () => {
       <div className="w-full flex flex-col items-center text-center">
         <img
           src={pokedexImages.logo}
-          alt="Pokedex Logo"
+          alt="Pokédex Logo"
           style={{ width: "1000px", height: "auto" }}
         />
-        <h2 className="text-3xl font-bold mt-4">Pokedex App</h2>
+        <h2 className="text-3xl font-bold mt-4">Pokédex App</h2>
         <h3 className="text-xl font-medium mt-2">
           📈 Gotta catch 'em all!
         </h3>
@@ -51,7 +51,7 @@ const Page: React.FC = () => {
         <h3 className="text-2xl font-bold">📃 About
         </h3>
         <p>
-          <strong>Pokedex App</strong> is a sleek and modern Android application built with <strong>Jetpack Compose</strong>. It allows users to browse, search, and view Pokémon stats using data fetched from the <strong>PokéAPI</strong>. Built with responsiveness and performance in mind, it uses <strong>Hilt</strong> for Dependency Injection and <strong>Coil</strong> for image loading.
+          <strong>Pokédex App</strong> is a sleek and modern Android application built with <strong>Jetpack Compose</strong>. It allows users to browse, search, and view Pokémon stats using data fetched from the <strong>PokéAPI</strong>. Built with responsiveness and performance in mind, it uses <strong>Hilt</strong> for Dependency Injection and <strong>Coil</strong> for image loading.
         </p>
       </div>
 
@@ -72,7 +72,7 @@ const Page: React.FC = () => {
       {/* Technologies Section */}
       <div className="w-full">
         <h3 className="text-2xl font-bold">🚀 Technologies</h3>
-        <p>The Pokedex App was built using modern Android technologies:</p>
+        <p>The Pokédex App was built using modern Android technologies:</p>
         <ul className="list-disc list-inside">
           <li>📱 <strong>Jetpack Compose</strong> - Declarative UI framework for Android</li>
           <li>🛠️ <strong>Hilt</strong> - Dependency injection</li>
