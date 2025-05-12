@@ -9,8 +9,8 @@ export const metadata = {
 };
 
 const podcastrImages = {
-  //"https://github.com/vpmattei/vinicius_mattei_portfolio"
-  logo: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/app/assets/procedural-walk-animation_img/pwa_title.png",
+  //"https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/pwa_title.png?raw=true"
+  logo: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/pwa_title.png?raw=true",
   gallery: [
     "https://raw.githubusercontent.com/vpmattei/pokedex-app/main/Showcase/Final%20Export/PokemonListShowcase.png",
   ],
