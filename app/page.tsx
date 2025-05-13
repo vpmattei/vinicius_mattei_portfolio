@@ -20,13 +20,13 @@ export default function Page() {
           </p>
         </div>
         <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
-          WEB DEVELOPER
-        </p>
-        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
-          VISUAL ARTIST
-        </p>
-        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
           GAME DEVELOPER
+        </p>
+        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
+          GAME DESIGNER
+        </p>
+        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
+          WEB DEVELOPER
         </p>
         <p className="max-w-[50rem] min-w-[18rem] mx-8 md:text-xl fade-in-element opacity-0">
           I help bring people's visions to fruition by combining my{" "}
@@ -47,6 +47,19 @@ export default function Page() {
       </div>
 
       <div className="m-8 md:m-16 lg:m-48 flex flex-col items-center gap-32">
+        <div className="self-end">
+          <CustomImage
+            src="https://raw.githubusercontent.com/vpmattei/TicTacToe-Multiplayer-Game/main/Assets/ReadmeImages/TicTacToe_MainScene.png"
+            alt="Tic Tac Toe Multiplayer"
+            link="/works/tic-tac-toe"
+            maxWidth="40rem"
+          />
+          <Link href={"/works/tic-tac-toe"}>
+            <h2>Multiplayer Tic Tac Toe</h2>
+            <p>Real-time online game with Unity Netcode, Lobby, and Relay</p>
+          </Link>
+        </div>
+
         <div className="self-start">
           <CustomImage
             src="https://i.ibb.co/19SxrGF/paravoile.png"

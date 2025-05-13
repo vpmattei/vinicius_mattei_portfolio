@@ -101,7 +101,7 @@ const Page: React.FC = () => {
         <div className="flex flex-col items-end w-[100%]">
           <a
             className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
-            href="/works/podcastr"
+            href="/works/tic-tac-toe"
           >
             NEXT PROJECT
             <img

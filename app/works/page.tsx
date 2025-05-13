@@ -11,6 +11,26 @@ const Page: React.FC = () => {
     <section className="prose mt-32 mx-8 flex flex-col items-center">
       <h1>Works</h1>
 
+      {/* Tic Tac Toe */}
+      <div className="flex flex-row justify-center gap-4">
+        <div className="w-1/3 flex justify-end">
+          <CustomImage
+            src="https://raw.githubusercontent.com/vpmattei/TicTacToe-Multiplayer-Game/main/Assets/ReadmeImages/Multiplayer_MainScene.png"
+            alt="Tic Tac Toe"
+            link="/works/tic-tac-toe"
+            maxWidth="40rem"
+          />
+        </div>
+        <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
+        <div className="w-1/3 flex justify-start">
+          <a href="/works/tic-tac-toe">
+            <h2 className="transition-all hover:text-neutral-400">
+              Multiplayer Tic Tac Toe
+            </h2>
+          </a>
+        </div>
+      </div>
+
       {/* Hebald Forest */}
       <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">
@@ -82,7 +102,9 @@ const Page: React.FC = () => {
         <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
         <div className="w-1/3 flex justify-start">
           <a href="/works/pokedex-app">
-            <h2 className="transition-all hover:text-neutral-400">Pokédex App</h2>
+            <h2 className="transition-all hover:text-neutral-400">
+              Pokédex App
+            </h2>
           </a>
         </div>
       </div>
