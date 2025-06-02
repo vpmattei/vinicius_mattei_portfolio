@@ -14,7 +14,7 @@ const Page: React.FC = () => {
           text: "Anamnesis",
         }}
         mainImage={{
-          src: "https://ludhic.fr/wp-content/uploads/2023/01/Anamnesis.webp",
+          src: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/logo.webp",
           alt: "Frogmnesis",
           width: 300,
         }}
@@ -103,10 +103,10 @@ const Page: React.FC = () => {
           </p>,
         ]}
         images={[
-          "https://ludhic.fr/wp-content/uploads/2023/01/anamnesis04-1024x576.webp",
-          "https://ludhic.fr/wp-content/uploads/2023/01/anamnesis01.webp",
-          "https://ludhic.fr/wp-content/uploads/2023/01/anamnesis03.webp",
-          "https://ludhic.fr/wp-content/uploads/2023/01/anamnesis02.webp",
+          "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/1.webp",
+          "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/2.webp",
+          "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/3.webp",
+          "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/4.webp",
         ]}
       />
 

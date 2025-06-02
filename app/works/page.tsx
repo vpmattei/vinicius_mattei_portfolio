@@ -55,7 +55,7 @@ const Page: React.FC = () => {
       <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">
           <CustomImage
-            src="https://ludhic.fr/wp-content/uploads/2023/01/anamnesis02.webp"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/1.webp"
             alt="Anamnesis"
             link="/works/anamnesis"
             maxWidth="40rem"
