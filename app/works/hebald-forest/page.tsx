@@ -14,7 +14,7 @@ const Page: React.FC = () => {
           text: "Hebald Forest",
         }}
         mainImage={{
-          src: "https://ludhic.fr/wp-content/uploads/2024/03/HebaldForest_Logo.png",
+          src: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/hebald_forest_images/logo.webp",
           alt: "Hebald Forest Logo",
           width: 400,
         }}
