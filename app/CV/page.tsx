@@ -25,7 +25,7 @@ export default function Page() {
             >
               <img
                 className="max-w-[130px] max-h-[130px]"
-                src="https://static.wixstatic.com/media/40394b_082b5d3b5c134c7bad866569494c890b~mv2.jpg"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/grapehawk_logo.webp"
               ></img>
             </a>
           </div>
@@ -51,7 +51,7 @@ export default function Page() {
             >
               <img
                 className="max-w-[130px] max-h-[130px]"
-                src="https://pbs.twimg.com/profile_images/1255054057414295552/yjzIrCMz_400x400.jpg"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/central_test_logo.webp"
               ></img>
             </a>
           </div>
@@ -79,7 +79,7 @@ export default function Page() {
             >
               <img
                 className="max-w-[130px] max-h-[130px]"
-                src="https://pbs.twimg.com/profile_images/1328342235038048263/gHLzQIHN_400x400.png"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/kentyou_logo.webp"
               ></img>
             </a>
           </div>
@@ -105,7 +105,7 @@ export default function Page() {
             >
               <img
                 className="max-w-[130px] max-h-[130px]"
-                src="https://media.licdn.com/dms/image/v2/D4D0BAQGyOtuUpnJVWw/company-logo_200_200/company-logo_200_200/0/1698412314269/hololab_tech_logo?e=2147483647&v=beta&t=z2QAVuVKBv6TF30jjXOrEaz1L8Wx63texxh06ZpzQPc"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/hololab_logo.webp"
               ></img>
             </a>
           </div>
@@ -138,7 +138,7 @@ export default function Page() {
             >
               <img
                 className="max-h-[6rem]"
-                src="https://univ-cotedazur.fr/medias/photo/vignette-2-lignes2_1668693930108-jpg?ID_FICHE=1167756"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/uca_logo.webp"
               ></img>
             </a>
           </div>
@@ -165,7 +165,7 @@ export default function Page() {
             >
               <img
                 className="max-h-[6rem]"
-                src="https://faculte-sciences.univ-grenoble-alpes.fr/medias/photo/logo-dlst_1676552384171-jpg"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/uga_logo.webp"
               ></img>
             </a>
           </div>
