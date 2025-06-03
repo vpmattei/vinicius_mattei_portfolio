@@ -25,7 +25,7 @@ export default function Page() {
             >
               <img
                 className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/grapehawk_logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/grapehawk_logo.jpg"
               ></img>
             </a>
           </div>
@@ -51,7 +51,7 @@ export default function Page() {
             >
               <img
                 className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/central_test_logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/central_test_logo.png"
               ></img>
             </a>
           </div>
@@ -79,7 +79,7 @@ export default function Page() {
             >
               <img
                 className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/kentyou_logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/kentyou_logo.png"
               ></img>
             </a>
           </div>
@@ -105,7 +105,7 @@ export default function Page() {
             >
               <img
                 className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/hololab_logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/hololab_logo.jpeg"
               ></img>
             </a>
           </div>
@@ -138,7 +138,7 @@ export default function Page() {
             >
               <img
                 className="max-h-[6rem]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/uca_logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/uca_logo.jpg"
               ></img>
             </a>
           </div>
@@ -165,7 +165,7 @@ export default function Page() {
             >
               <img
                 className="max-h-[6rem]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/uga_logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/uga_logo.jpg"
               ></img>
             </a>
           </div>
