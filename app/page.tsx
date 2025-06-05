@@ -101,6 +101,19 @@ export default function Page() {
 
         <div className="self-end">
           <CustomImage
+            src="https://raw.githubusercontent.com/vpmattei/Starfox-laser-defender-game/main/Assets/GameImages/starfox-gameplay.png"
+            alt="Tangled Tales"
+            link="/works/starfox-game"
+            maxWidth="40rem"
+          />
+          <Link href={"/works/starfox-game"}>
+            <h2>Laser Defender Game</h2>
+            <p>Starfox Inspired, a Laser Defender Game – Unity</p>
+          </Link>
+        </div>
+
+        <div className="self-start">
+          <CustomImage
             src="https://raw.githubusercontent.com/vpmattei/pokedex-app/main/Showcase/Final%20Export/MainPhotoPokedexShowcase.png"
             alt="Pokédex App"
             link="/works/pokedex-app"
@@ -112,7 +125,7 @@ export default function Page() {
           </Link>
         </div>
 
-        <div className="self-start">
+        <div className="self-end">
           <CustomImage
             src="https://i.ibb.co/GPvMSqy/Captura-de-Tela-2024-09-13-s-12-00-21.png"
             alt="Kentyou"
@@ -125,7 +138,7 @@ export default function Page() {
           </Link>
         </div>
 
-        <div className="self-end">
+        <div className="self-start">
           <CustomImage
             src="https://i.ibb.co/QbHsPWM/podcastr-details-dark.png"
             alt="Podcastr"

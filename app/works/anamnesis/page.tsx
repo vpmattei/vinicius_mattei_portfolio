@@ -82,16 +82,16 @@ const Page: React.FC = () => {
               experiences through Unity.
             </li>
             <li>
-              <b>Level Design:</b> Contributing to the spatial and narrative design of
-              the game world.
+              <b>Level Design:</b> Contributing to the spatial and narrative
+              design of the game world.
             </li>
             <li>
-              <b>Interactive Design:</b> Creating fun and engaging objects for player
-              interaction, enriching the virtual environment.
+              <b>Interactive Design:</b> Creating fun and engaging objects for
+              player interaction, enriching the virtual environment.
             </li>
             <li>
-              <b>3D Modeling:</b> Modeling a human stone colossus, adding depth to the
-              game.
+              <b>3D Modeling:</b> Modeling a human stone colossus, adding depth
+              to the game.
             </li>
           </ul>,
 
@@ -110,7 +110,7 @@ const Page: React.FC = () => {
         ]}
       />
 
-<div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
+      <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
         <div className="flex flex-col items-start w-[100%]">
           <a
             className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"

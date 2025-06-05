@@ -89,6 +89,27 @@ const Page: React.FC = () => {
         </div>
       </div>
 
+      {/* Starfox Game */}
+      <div className="flex flex-row justify-center gap-4">
+        <div className="w-1/3 flex justify-end">
+          <CustomImage
+            src="https://raw.githubusercontent.com/vpmattei/Starfox-laser-defender-game/main/Assets/GameImages/starfox-gameplay.png"
+            alt="Tangled Tales"
+            link="/works/starfox-game"
+            maxWidth="20rem"
+            maxHeight="15rem"
+          />
+        </div>
+        <div className="w-[2px] h-[30vh] bg-white mx-4"></div>
+        <div className="w-1/3 flex justify-start">
+          <a href="/works/starfox-game">
+            <h2 className="transition-all hover:text-neutral-400">
+              Starfox Laser Defender Game
+            </h2>
+          </a>
+        </div>
+      </div>
+
       {/* Pokedex App */}
       <div className="flex flex-row justify-center gap-4">
         <div className="w-1/3 flex justify-end">
