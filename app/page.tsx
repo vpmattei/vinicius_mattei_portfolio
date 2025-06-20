@@ -47,19 +47,6 @@ export default function Page() {
       </div>
 
       <div className="m-8 md:m-16 lg:m-48 flex flex-col items-center gap-32">
-        <div className="self-end">
-          <CustomImage
-            src="https://raw.githubusercontent.com/vpmattei/TicTacToe-Multiplayer-Game/main/Assets/ReadmeImages/TicTacToe_MainScene.png"
-            alt="Tic Tac Toe Multiplayer"
-            link="/works/tic-tac-toe"
-            maxWidth="40rem"
-          />
-          <Link href={"/works/tic-tac-toe"}>
-            <h2>Multiplayer Tic Tac Toe</h2>
-            <p>Real-time online game with Unity Netcode, Lobby, and Relay</p>
-          </Link>
-        </div>
-
         <div className="self-start">
           <CustomImage
             src="https://i.ibb.co/19SxrGF/paravoile.png"
@@ -83,71 +70,6 @@ export default function Page() {
           <Link href={"/works/anamnesis"}>
             <h2>VR Narrative Game Experience</h2>
             <p>Anamnesis - Unity</p>
-          </Link>
-        </div>
-
-        <div className="self-start">
-          <CustomImage
-            src="https://i.pinimg.com/564x/77/e2/c2/77e2c23bd4a54c852e15c146079e4b7c.jpg"
-            alt="Tangled Tales"
-            link="/works/tangled-tales"
-            maxWidth="40rem"
-          />
-          <Link href={"/works/tangled-tales"}>
-            <h2>2D Platformer Game</h2>
-            <p>Tangled Tales – Unity</p>
-          </Link>
-        </div>
-
-        <div className="self-end">
-          <CustomImage
-            src="https://raw.githubusercontent.com/vpmattei/Starfox-laser-defender-game/main/Assets/GameImages/starfox-gameplay.png"
-            alt="Tangled Tales"
-            link="/works/starfox-game"
-            maxWidth="40rem"
-          />
-          <Link href={"/works/starfox-game"}>
-            <h2>Laser Defender Game</h2>
-            <p>Starfox Inspired, a Laser Defender Game – Unity</p>
-          </Link>
-        </div>
-
-        <div className="self-start">
-          <CustomImage
-            src="https://raw.githubusercontent.com/vpmattei/pokedex-app/main/Showcase/Final%20Export/MainPhotoPokedexShowcase.png"
-            alt="Pokédex App"
-            link="/works/pokedex-app"
-            maxWidth="40rem"
-          />
-          <Link href={"/works/pokedex-app"}>
-            <h2>Pokédex App</h2>
-            <p>A simple Pokédex application that let's you search for you favorite Pokémon and look at its stats!</p>
-          </Link>
-        </div>
-
-        <div className="self-end">
-          <CustomImage
-            src="https://i.ibb.co/GPvMSqy/Captura-de-Tela-2024-09-13-s-12-00-21.png"
-            alt="Kentyou"
-            link="/works/kentyou"
-            maxWidth="40rem"
-          />
-          <Link href={"/works/kentyou"}>
-            <h2>Data Analytics Dashboard Redesign</h2>
-            <p>A data driven dashboard redesign of Kentyou's main page website</p>
-          </Link>
-        </div>
-
-        <div className="self-start">
-          <CustomImage
-            src="https://i.ibb.co/QbHsPWM/podcastr-details-dark.png"
-            alt="Podcastr"
-            link="/works/podcastr"
-            maxWidth="40rem"
-          />
-          <Link href={"/works/podcastr"}>
-            <h2>Podcast platform</h2>
-            <p>Modern web application designed for managing and listening to podcasts</p>
           </Link>
         </div>
       </div>
