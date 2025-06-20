@@ -51,7 +51,24 @@ const Page: React.FC = () => {
 
       {/* Side Game Projects */}
       <h2 className="text-center pb-8">Side Game Projects</h2>
+
       <div className="flex flex-row flex-wrap justify-center gap-12 mb-16">
+        <div className="flex flex-col items-center">
+          <CustomImage
+            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/pwa_title.png?raw=true"
+            alt="Procedural Walk Animation"
+            link="/works/procedural-walk-animation"
+            maxWidth="12rem"
+            maxHeight="12rem"
+            squareImage={true}
+          />
+          <a href="/works/procedural-walk-animation">
+            <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
+              Procedural Walk Animation
+            </h4>
+          </a>
+        </div>
+
         <div className="flex flex-col items-center">
           <CustomImage
             src="https://raw.githubusercontent.com/vpmattei/TicTacToe-Multiplayer-Game/main/Assets/ReadmeImages/TicTacToe_MainScene.png"

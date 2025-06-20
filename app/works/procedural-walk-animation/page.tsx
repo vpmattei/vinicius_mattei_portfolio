@@ -10,117 +10,103 @@ export const metadata = {
 const Page: React.FC = () => {
   return (
     <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
-      {/* Logo and Header */}
+      {/* Header */}
       <div className="w-full flex flex-col items-center text-center">
         <img
           src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/pwa_title.png?raw=true"
-          alt="Procedural Walk Animation Logo"
+          alt="Procedural Walk Animation Title"
           style={{ width: "600px", height: "300px" }}
         />
         <h2 className="text-3xl font-bold mt-4">Procedural Leg Animation</h2>
         <h3 className="text-xl font-medium mt-2">
-          🦿 Robot/Insect-style Procedural Movement in Unity
+          🦿 Robot-Style Stepping Logic with Unity 6
         </h3>
       </div>
 
-      {/* Video Section */}
-      <div className="w-full text-center">
-        <h3 className="text-2xl font-bold">🎥 Video Showcase</h3>
-        <div className="aspect-video w-full max-w-3xl mx-auto">
-          <iframe
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/xotQjLULcAw"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
-
-      {/* About Section */}
-      <div className="w-full text-justify">
-        <h3 className="text-2xl font-bold">📃 About</h3>
-        <p>
-          I’m working on a game prototype in Unity, and one of the features I’ve
-          been exploring is procedural leg animation for multi-legged creatures.
-          This system simulates realistic robot or insect-like walking, using
-          logic-driven movement without baked animations.
-        </p>
-        <p>
-          The key concept: each leg belongs to a group. Only one group moves at
-          a time, keeping animation balanced and stable. This group-based
-          alternating approach ensures natural transitions and responsive
-          terrain adaptation.
-        </p>
-        <p>
-          In the demo, cubes act as placeholder legs, each tracking a priority
-          value between 0 and 1 based on their distance to a target point. When
-          a group’s combined score exceeds a threshold, and outpaces the
-          opposing group, the legs in that group move if their individual
-          priority is high enough.
-        </p>
-        <p>
-          This logic sets the groundwork for adding procedural animation using
-          Inverse Kinematics (IK) next.
-        </p>
-      </div>
-
-      {/* GIF Showcase */}
-      <div className="w-full text-center">
-        <h3 className="text-2xl font-bold">🌀 Animated Demo</h3>
+      {/* GIF */}
+      <div className="w-full flex-col justify-center">
+        <h3 className="text-2xl font-bold center pb-4">🌀 Demo</h3>
         <img
-          src="/assets/procedural-walk-animation_img/gifs/ezgif-36801abcdb5bab.gif"
-          alt="Procedural Walk GIF"
-          className="mx-auto rounded-lg"
+          src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/gifs/ezgif-36801abcdb5bab.gif?raw=true"
+          alt="Demo GIF"
+          className="mx-auto rounded-lg w-full flex justify-center"
         />
       </div>
 
-      {/* Editor Views */}
-      <div className="w-full">
-        <h3 className="text-2xl font-bold">🧪 In-Editor Visualization</h3>
+      {/* Description */}
+      <div className="w-full text-justify">
+        <h3 className="text-2xl font-bold">📃 Overview</h3>
         <p>
-          These screenshots illustrate the priority-based logic. The red lines
-          represent the distance between a leg’s current position and its
-          target. When that value passes a threshold, the leg is triggered to
-          move.
+          This procedural walking animation system was developed as a foundation
+          for insect- or robot-like movement using Unity 6. Legs are divided
+          into two groups (A and B), each calculating a stepping priority from 0
+          to 1 based on distance to a target point. If a group’s total score
+          exceeds 2 and beats the opposing team, legs in that group with
+          priority above 1 will step.
+        </p>
+        <p>
+          It’s a prototype system, currently using cubes as placeholders for
+          legs, with an IK rig planned for the next iterations. All logic is
+          fully procedural, responsive, and uses no baked animations.
+        </p>
+      </div>
+
+      {/* YouTube Video */}
+      <div className="w-full aspect-video max-w-4xl">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/xotQjLULcAw"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      {/* Editor Images */}
+      <div className="w-full">
+        <h3 className="text-2xl font-bold">🧠 In-Editor Visuals</h3>
+        <p>
+          Below are screenshots from Unity showing how leg distances are
+          calculated with red lines, and target positions visualized with white
+          spheres. Legs move when their group wins and individual priority is
+          high enough.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <img
-            src="/assets/procedural-walk-animation_img/PLA_InEditor_01.jpeg"
-            alt="In Editor 1"
+            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_01.jpeg?raw=true"
+            alt="Editor View 01"
             className="rounded-lg"
           />
           <img
-            src="/assets/procedural-walk-animation_img/PLA_InEditor_02.jpeg"
-            alt="In Editor 2"
+            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_02.jpeg?raw=true"
+            alt="Editor View 02"
             className="rounded-lg"
           />
           <img
-            src="/assets/procedural-walk-animation_img/PLA_InEditor_03.jpeg"
-            alt="In Editor 3"
+            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_03.jpeg?raw=true"
+            alt="Editor View 03"
             className="rounded-lg"
           />
           <img
-            src="/assets/procedural-walk-animation_img/PLA_InEditor_04.jpeg"
-            alt="In Editor 4"
+            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_04.jpeg?raw=true"
+            alt="Editor View 04"
             className="rounded-lg"
           />
         </div>
       </div>
 
-      {/* Navigation to Other Projects */}
+      {/* Footer Nav */}
       <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
         <div className="flex flex-col items-start w-[100%]">
           <a
             className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-            href="/works/starfox-game"
+            href="/works/tic-tac-toe"
           >
             <img
               className="h-[50px]"
               src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
               alt="Previous"
-              loading="lazy"
             />
             PREVIOUS PROJECT
           </a>
@@ -129,14 +115,13 @@ const Page: React.FC = () => {
         <div className="flex flex-col items-end w-[100%]">
           <a
             className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
-            href="/works/hebald-forest"
+            href="/works/anamnesis"
           >
             NEXT PROJECT
             <img
               className="h-[50px]"
               src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
               alt="Next"
-              loading="lazy"
             />
           </a>
         </div>
