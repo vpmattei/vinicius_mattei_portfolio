@@ -90,17 +90,17 @@ const Page: React.FC = () => {
         <h3 className="text-2xl font-bold">🖼️ Screenshots</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           {[
-            "https://i.ibb.co/1GXQFmf/affiche-HBF.jpg",
-            "https://i.ibb.co/N7gm58n/village.png",
-            "https://i.ibb.co/JRdQbw0/image.png",
-            "https://i.ibb.co/2dHDpX1/cave2.png",
-            "https://i.ibb.co/27dJvMv/cave.png",
-            "https://i.ibb.co/Z1QsQdR/cave-pierre.png",
-            "https://i.ibb.co/nzMK2Cv/aymir.png",
-            "https://i.ibb.co/q9NNN4p/asian.png",
-            "https://i.ibb.co/mvVWHmf/carnet.png",
-            "https://i.ibb.co/19SxrGF/paravoile.png",
-            "https://i.ibb.co/6tcfB3h/village2.png",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/affiche-HBF.jpg?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/village.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/image.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave2.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave-pierre.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/aymir.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/asian.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/paravoile.png?raw=true",
+            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/village2.png?raw=true",
           ].map((src, index) => (
             <img
               key={index}
