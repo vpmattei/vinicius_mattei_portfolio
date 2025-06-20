@@ -1,88 +1,118 @@
 import React from "react";
-import GamePageSection from "../../components/GamePageSection";
+import ArrowIcon from "app/components/ArrowIcon";
 
 export const metadata = {
   title: "Hebald Forest",
+  description: "Open-world game developed with Unreal Engine 5.",
 };
 
 const Page: React.FC = () => {
   return (
-    <section className="prose xl:mx-64 lg:mx-32 md:mx-16 mx-8 flex flex-col items-center gap-16">
-      <GamePageSection
-        title={{
-          url: "https://jessymonrocq.itch.io/hebald-forest",
-          text: "Hebald Forest",
-        }}
-        mainImage={{
-          src: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/hebald_forest_images/logo.webp",
-          alt: "Hebald Forest Logo",
-          width: 400,
-        }}
-        content={[
-          <p key="paragraph1">
-            During my second year in the MAJIC program (Management of Video
-            Games, Image, and Creativity) at Université Côte d'Azur, I had the
-            opportunity to contribute to the creation of Hebald Forest, an
-            expansive open-world game. This project was a testament to the
-            capabilities of Unreal Engine 5, utilizing cutting-edge features
-            such as Lumen and Nanite, among other advanced technologies, to
-            bring our visionary world to life.
-          </p>,
+    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
+      {/* Header */}
+      <div className="w-full flex flex-col items-center text-center">
+        <img
+          src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/hebald_forest_images/logo.webp"
+          alt="Hebald Forest Logo"
+          style={{ width: "400px", height: "300px" }}
+        />
+        <h2 className="text-3xl font-bold mt-4">Hebald Forest</h2>
+        <h3 className="text-xl font-medium mt-2">
+          🌲 An Unreal Engine 5 open-world adventure
+        </h3>
+        <a
+          className="mb-8 flex items-center transition-all hover:text-neutral-100"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://jessymonrocq.itch.io/hebald-forest"
+        >
+          <h3>Play on Itch.io</h3>
+          <p className="ml-2">
+            <ArrowIcon size={18} />
+          </p>
+        </a>
+      </div>
 
-          <p key="paragraph2">
-            The development of Hebald Forest was a collaborative endeavor
-            involving 19 talented individuals across various disciplines,
-            including development, 2D/3D art, game design, level design, sound
-            design, UI design, and more. My role in this project was
-            multifaceted, allowing me to engage with nearly every aspect of game
-            development.
-          </p>,
+      {/* YouTube Video */}
+      <div className="w-full aspect-video max-w-4xl">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/ODJmCASHLy4"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
 
-          <ul key="list1">
-            <li>
-              <b>Project Manager:</b> Leading the team to ensure the project's
-              vision was realized efficiently and effectively.
-            </li>
-            <li>
-              <b>Sound Designer:</b> Implementing the auditory experience using
-              Wwise, from ambient sounds to the dynamic soundtrack.
-            </li>
-            <li>
-              <b>Game Designer:</b> Ensuring the game feel was right and
-              fine-tuning mechanics with developers.
-            </li>
-            <li>
-              <b>Level Designer:</b> Constructing the base of the level and
-              modifying specific locations within the level.
-            </li>
-            <li>
-              <b>Developer:</b> Implementing a few minor mechanics, specifically
-              used in a puzzle.
-            </li>
-          </ul>,
+      {/* Description */}
+      <div className="w-full text-justify">
+        <h3 className="text-2xl font-bold">📃 About</h3>
+        <p>
+          Hebald Forest is a collaborative open-world game developed with Unreal
+          Engine 5 during the second year of the MAJIC program (Management of
+          Video Games, Image, and Creativity) at Université Côte d'Azur.
+          Featuring cutting-edge technologies like Lumen and Nanite, this
+          project served as a hands-on learning platform for mastering UE5.
+        </p>
+        <p>
+          With a team of 19 multidisciplinary members, the development process
+          touched all areas of game creation. My personal contributions
+          included:
+        </p>
+        <ul className="list-disc list-inside">
+          <li>
+            <b>Project Manager:</b> Coordinated development to align with the
+            project vision
+          </li>
+          <li>
+            <b>Sound Designer:</b> Created immersive audio using Wwise
+          </li>
+          <li>
+            <b>Game Designer:</b> Balanced mechanics and enhanced gameplay feel
+          </li>
+          <li>
+            <b>Level Designer:</b> Structured the game world and refined
+            environments
+          </li>
+          <li>
+            <b>Developer:</b> Programmed puzzle-related mechanics
+          </li>
+        </ul>
+        <p>
+          Hebald Forest represents a significant step in my journey as a game
+          developer, showcasing technical versatility and teamwork.
+        </p>
+      </div>
 
-          <p key="paragraph3">
-            Hebald Forest was not just a project; it was a comprehensive
-            platform for me to apply and expand my skills in game development,
-            showcasing the potential of collaborative creativity powered by
-            Unreal Engine 5.
-          </p>,
-        ]}
-        images={[
-          "https://i.ibb.co/1GXQFmf/affiche-HBF.jpg",
-          "https://i.ibb.co/N7gm58n/village.png",
-          "https://i.ibb.co/JRdQbw0/image.png",
-          "https://i.ibb.co/2dHDpX1/cave2.png",
-          "https://i.ibb.co/27dJvMv/cave.png",
-          "https://i.ibb.co/Z1QsQdR/cave-pierre.png",
-          "https://i.ibb.co/nzMK2Cv/aymir.png",
-          "https://i.ibb.co/q9NNN4p/asian.png",
-          "https://i.ibb.co/mvVWHmf/carnet.png",
-          "https://i.ibb.co/19SxrGF/paravoile.png",
-          "https://i.ibb.co/6tcfB3h/village2.png",
-        ]}
-      />
+      {/* Gallery */}
+      <div className="w-full">
+        <h3 className="text-2xl font-bold">🖼️ Screenshots</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          {[
+            "https://i.ibb.co/1GXQFmf/affiche-HBF.jpg",
+            "https://i.ibb.co/N7gm58n/village.png",
+            "https://i.ibb.co/JRdQbw0/image.png",
+            "https://i.ibb.co/2dHDpX1/cave2.png",
+            "https://i.ibb.co/27dJvMv/cave.png",
+            "https://i.ibb.co/Z1QsQdR/cave-pierre.png",
+            "https://i.ibb.co/nzMK2Cv/aymir.png",
+            "https://i.ibb.co/q9NNN4p/asian.png",
+            "https://i.ibb.co/mvVWHmf/carnet.png",
+            "https://i.ibb.co/19SxrGF/paravoile.png",
+            "https://i.ibb.co/6tcfB3h/village2.png",
+          ].map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`Hebald Forest ${index + 1}`}
+              className="rounded-lg"
+            />
+          ))}
+        </div>
+      </div>
 
+      {/* Footer Nav */}
       <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
         <div className="flex flex-col items-start w-[100%]">
           <a
@@ -92,8 +122,8 @@ const Page: React.FC = () => {
             <img
               className="h-[50px]"
               src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
-              loading="lazy"
-            ></img>
+              alt="Previous"
+            />
             PREVIOUS PROJECT
           </a>
         </div>
@@ -107,8 +137,8 @@ const Page: React.FC = () => {
             <img
               className="h-[50px]"
               src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
-              loading="lazy"
-            ></img>
+              alt="Next"
+            />
           </a>
         </div>
       </div>
