@@ -49,8 +49,8 @@ const Page: React.FC = () => {
 
       <hr className="w-full border-gray-500 my-6" />
 
-      {/* Side Game Projects */}
-      <h2 className="text-center pb-8">Side Game Projects</h2>
+      {/* Solo Game Projects */}
+      <h2 className="text-center pb-8">Solo Game Projects</h2>
 
       <div className="flex flex-row flex-wrap justify-center gap-12 mb-16">
         <div className="flex flex-col items-center">
@@ -97,6 +97,60 @@ const Page: React.FC = () => {
           <a href="/works/starfox-game">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Starfox Laser Defender Game
+            </h4>
+          </a>
+        </div>
+      </div>
+
+      <hr className="w-full border-gray-500 my-6" />
+
+      {/* Web Development Projects */}
+      <h2 className="text-center pb-8">Web Development Projects</h2>
+      <div className="flex flex-row flex-wrap justify-center gap-12 mb-16">
+        <div className="flex flex-col items-center">
+          <CustomImage
+            src="https://raw.githubusercontent.com/vpmattei/pokedex-app/main/Showcase/Final%20Export/MainPhotoPokedexShowcase.png"
+            alt="Pokédex App"
+            link="/works/pokedex-app"
+            maxWidth="12rem"
+            maxHeight="12rem"
+            squareImage={true}
+          />
+          <a href="/works/pokedex-app">
+            <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
+              Pokédex App
+            </h4>
+          </a>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <CustomImage
+            src="https://i.ibb.co/GPvMSqy/Captura-de-Tela-2024-09-13-s-12-00-21.png"
+            alt="Kentyou"
+            link="/works/kentyou"
+            maxWidth="12rem"
+            maxHeight="12rem"
+            squareImage={true}
+          />
+          <a href="/works/kentyou">
+            <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
+              Kentyou Dashboard Redesign
+            </h4>
+          </a>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <CustomImage
+            src="https://i.ibb.co/QbHsPWM/podcastr-details-dark.png"
+            alt="Podcastr"
+            link="/works/podcastr"
+            maxWidth="12rem"
+            maxHeight="12rem"
+            squareImage={true}
+          />
+          <a href="/works/podcastr">
+            <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
+              Podcastr Platform
             </h4>
           </a>
         </div>
