@@ -111,7 +111,7 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_main_image.png?raw=true"
             alt="Past Self – GMTK 2025"
-            link="/works/past-self"
+            link="/works/past-self-gmtk-2025"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}

@@ -9,7 +9,6 @@ export const metadata = {
 };
 
 const galleryImages = [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_main_image.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_01.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_02.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_03.png?raw=true",
@@ -20,6 +19,11 @@ const Page: React.FC = () => {
         <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
             {/* Header */}
             <div className="w-full flex flex-col items-center text-center">
+                <img
+                    src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_main_image.png?raw=true"
+                    alt="Pokédex Logo"
+                    style={{ width: "1000px", height: "auto" }}
+                />
                 <h2 className="text-3xl font-bold mt-4">⏳ Past Self – GMTK 2025</h2>
                 <h3 className="text-xl font-medium mt-2">
                     Platformer game made in 4 days for the GMTK Game Jam 2025
