@@ -16,6 +16,9 @@ const navItems = {
   "/CV": {
     name: "CV",
   },
+  "/contact-me": {
+    name: "Contact Me",
+  },
 };
 
 const HamburgerMenu = () => {
