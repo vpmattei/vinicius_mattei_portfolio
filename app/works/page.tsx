@@ -104,6 +104,28 @@ const Page: React.FC = () => {
 
       <hr className="w-full border-gray-500 my-6" />
 
+      {/* Game Jams */}
+      <h2 className="text-center pb-8">Game Jams</h2>
+      <div className="flex flex-row flex-wrap justify-center gap-12 mb-16">
+        <div className="flex flex-col items-center">
+          <CustomImage
+            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_main_image.png?raw=true"
+            alt="Past Self – GMTK 2025"
+            link="/works/past-self"
+            maxWidth="12rem"
+            maxHeight="12rem"
+            squareImage={true}
+          />
+          <a href="/works/past-self">
+            <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
+              Past Self – GMTK 2025
+            </h4>
+          </a>
+        </div>
+      </div>
+
+      <hr className="w-full border-gray-500 my-6" />
+
       {/* Web Development Projects */}
       <h2 className="text-center pb-8">Web Development Projects</h2>
       <div className="flex flex-row flex-wrap justify-center gap-12 mb-16">
