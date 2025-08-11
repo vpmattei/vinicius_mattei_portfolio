@@ -377,7 +377,7 @@ export default function Page() {
           />
           <img
             className="max-w-[130px] max-h-[130px] md:max-w-[170px] md:max-h-[170px] lg:max-w-[200px] lg:max-h-[200px]"
-            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/others/Logo_ChatGPT.webp"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/others/Logo_ChatGPT.png"
           />
         </div>
       </div>
