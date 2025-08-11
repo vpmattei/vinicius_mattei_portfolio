@@ -126,8 +126,8 @@ const Page: React.FC = () => {
 
       <hr className="w-full border-gray-500 my-6" />
 
-      {/* Web Development Projects */}
-      <h2 className="text-center pb-8">Web Development Projects</h2>
+      {/* Other Projects */}
+      <h2 className="text-center pb-8">Other Projects</h2>
       <div className="flex flex-row flex-wrap justify-center gap-12 mb-16">
         <div className="flex flex-col items-center">
           <CustomImage

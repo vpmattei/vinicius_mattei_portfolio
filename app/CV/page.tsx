@@ -3,7 +3,35 @@ export default function Page() {
     <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col flex-wrap items-start gap-16">
       <div className="w-[100%]">
         <h1 className="text-balance">Experiences</h1>
-        <div className="flex flex-row justify-between flex-wrap gap-8">
+        <div className="flex flex-row justify-start flex-wrap gap-x-32 gap-y-8">
+          {/* ---------------------------- Freelance ---------------------------- */}
+          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+            <div>
+              <h4 className="text-neutral-300">
+                Freelancer{" "}
+                <i className="text-lg text-neutral-400">(Remote)</i>
+              </h4>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <br />
+              <h5 className="text-neutral-400">Game Development</h5>
+              <h5 className="text-neutral-400">AI & API Integration</h5>
+              <h5 className="text-neutral-400">Client - server communication</h5>
+              <h5 className="text-neutral-400 italic">06.25 - Present</h5>
+            </div>
+
+            <a
+              className="italic underline text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://grapehawk.com"
+            >
+              {/* <img
+                className="max-w-[130px] max-h-[130px]"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/grapehawk_logo.jpg"
+              ></img> */}
+            </a>
+          </div>
+
           {/* ---------------------------- GRAPE HAWK ---------------------------- */}
           <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
             <div>
@@ -224,32 +252,32 @@ export default function Page() {
         <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://download.blender.org/branding/community/blender_community_badge_white.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/art-tools/blender_community_badge_white.png"
             title="Blender"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-3ds-max-small-social-400.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/art-tools/autodesk-3ds-max-small-social-400.png"
             title="Autodesk 3ds Max"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://www.altam.fr/wp-content/uploads/2024/01/autodesk-maya-small-social-400.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/art-tools/autodesk-maya-small-social-400.png"
             title="Autodesk Maya"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/art-tools/Adobe_Photoshop_CC_icon.svg.png"
             title="Adobe Photoshop"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/art-tools/Adobe_Illustrator_CC_icon.svg.png"
             title="Adobe Illustrator"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/art-tools/Figma-logo.svg"
             title="Figma"
           />
         </div>
@@ -261,42 +289,42 @@ export default function Page() {
         <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/programming-languages/Logo_C_sharp.svg.png"
             title="C#"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/programming-languages/Logo_C++.svg.png"
             title="C++"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/programming-languages/Logo_Java.svg.png"
             title="Java"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/programming-languages/Logo_JavaScript.png"
             title="JavaScript"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/programming-languages/Logo_TypeScript.svg.png"
             title="TypeScript"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://static-00.iconduck.com/assets.00/sql-database-generic-icon-1521x2048-d0vdpxpg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/programming-languages/logoazuresql.png"
             title="SQL"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://cdn-icons-png.flaticon.com/512/9496/9496555.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/programming-languages/Logo_XML.png"
             title="XML"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/programming-languages/Logo_Python.svg.png"
             title="Python"
           />
         </div>
@@ -308,32 +336,32 @@ export default function Page() {
         <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://static-00.iconduck.com/assets.00/react-original-wordmark-icon-840x1024-vhmauxp6.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/frameworks/React-icon.svg.png"
             title="React"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://cdn.iconscout.com/icon/free/png-256/free-vuejs-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175052.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/frameworks/Logo_VueJS.webp"
             title="VueJS"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/frameworks/Logo_AngularJS.svg.png"
             title="Angular"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://www.svgrepo.com/show/353657/django-icon.svg"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/frameworks/Logo_Django.svg"
             title="Django"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://img.icons8.com/fluent-systems-filled/200/FFFFFF/nextjs.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/frameworks/Logo_NextJS.png"
             title="Next.js"
           />
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
-            src="https://img.icons8.com/color/600/spring-logo.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/frameworks/Logo_SpringBoot.png"
             title="Spring Boot"
           />
         </div>
@@ -345,11 +373,11 @@ export default function Page() {
         <div className="md:mt-32 mt-24 flex flex-row items-center justify-between gap-16 flex-wrap">
           <img
             className="max-w-[130px] max-h-[130px] md:max-w-[170px] md:max-h-[170px] lg:max-w-[200px] lg:max-h-[200px]"
-            src="https://images.squarespace-cdn.com/content/v1/56576da6e4b0acafe10c53bb/1682136103428-A4BP43QWKDC8JLMK6XZZ/WWISE+LOGO+%2B+TAG_WHITE.png?format=500w"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/others/Logo_Wwise.png.webp"
           />
           <img
             className="max-w-[130px] max-h-[130px] md:max-w-[170px] md:max-h-[170px] lg:max-w-[200px] lg:max-h-[200px]"
-            src="https://freelogopng.com/images/all_img/1681039182chatgpt-logo-with-name.png"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/others/Logo_ChatGPT.webp"
           />
         </div>
       </div>
