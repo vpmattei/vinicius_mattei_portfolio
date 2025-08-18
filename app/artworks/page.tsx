@@ -9,6 +9,7 @@ export const metadata = {
 
 const images = [
   "https://cdna.artstation.com/p/assets/images/images/033/880/002/large/vinicius-mattei-viagem-de-chihiro.jpg?1610809149",
+  "https://cdnb.artstation.com/p/assets/images/images/090/285/321/large/vinicius-mattei-thomas.jpg?1753452025",
   "https://cdna.artstation.com/p/assets/images/images/034/102/748/large/vinicius-mattei-eu.jpg?1611406156",
   "https://cdna.artstation.com/p/assets/images/images/034/593/376/large/vinicius-mattei-soul-fanart.jpg?1612716655",
   "https://cdnb.artstation.com/p/assets/images/images/035/239/137/large/vinicius-mattei-moonwind-sketch.jpg?1614462646",

@@ -1,48 +1,38 @@
+import Link from "next/link";
+
 export default function Page() {
   return (
-    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col flex-wrap items-start gap-16">
+    <section className="prose lg:mx-32 md:mx-24 mx-16 flex flex-col flex-wrap items-start gap-16">
       <div className="w-[100%]">
-        <h1 className="text-balance">Experiences</h1>
-        <div className="flex flex-row justify-start flex-wrap gap-x-32 gap-y-8">
+        <h1 className="text-balance">About me</h1>
+        {/* TODO: Modify my description */}
+        <p>
+          I’m a dedicated <b>game developer</b> with over <b>8 years</b> of hands-on work in Unity and C#. I specialize in designing and developing
+          game mechanics and interactions, with a focus on NPC behaviour and interactions, as well as AI and
+          Large Language Models integration.
+          <br/>
+          <br/>
+          I've worked on countless projects, from solo projects, to university projects with over 10+ people on a single project, ranging from
+          developers to musicians and sound designers. This helped me gain good experience to know how to effectively communicate ideas with 
+          a wide range of different areas of work. My <Link className="transition-colors text-white/95 hover:text-pink-400" key="/artworks" href="/artworks">artistic background</Link> has also helped me navigate through this, as I am a musician and a
+          visual artist myself.
+        </p>
+        <h2 className="text-balance">Experiences</h2>
+        <div className="flex flex-row justify-start flex-wrap gap-x-8 gap-y-8">
           {/* ---------------------------- Freelance ---------------------------- */}
-          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[9rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
-              <h4 className="text-neutral-300">
+              <h6 className="text-neutral-300 mt-4">
                 Freelancer{" "}
-                <i className="text-lg text-neutral-400">(Remote)</i>
-              </h4>
+                <i className="text-neutral-400">(Remote)</i>
+              </h6>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br />
-              <h5 className="text-neutral-400">Game Development</h5>
-              <h5 className="text-neutral-400">AI & API Integration</h5>
-              <h5 className="text-neutral-400">Client - server communication</h5>
-              <h5 className="text-neutral-400 italic">06.25 - Present</h5>
-            </div>
-
-            <a
-              className="italic underline text-pink-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://grapehawk.com"
-            >
-              {/* <img
-                className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/grapehawk_logo.jpg"
-              ></img> */}
-            </a>
-          </div>
-
-          {/* ---------------------------- GRAPE HAWK ---------------------------- */}
-          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
-            <div>
-              <h4 className="text-neutral-300">
-                GrapeHawk{" "}
-                <i className="text-lg text-neutral-400">(Cannes, FR)</i>
-              </h4>
-              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br />
-              <h5 className="text-neutral-400">Developer</h5>
-              <h5 className="text-neutral-400 italic">05.24 - 11.24</h5>
+              <p className="text-neutral-400 italic">06.25 - Present</p>
+              <p className="text-neutral-400">
+                Game Development
+                <br/>
+                AI & API Integration
+              </p>
             </div>
 
             <a
@@ -52,23 +42,51 @@ export default function Page() {
               href="https://grapehawk.com"
             >
               <img
-                className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/grapehawk_logo.jpg"
+                className="max-w-[80px] max-h-[80px]"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/ED_Logo_black.jpg"
+              ></img>
+            </a>
+          </div>
+
+          {/* ---------------------------- GRAPE HAWK ---------------------------- */}
+          <div className="w-[9rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+            <div>
+              <h6 className="text-neutral-300 mt-4">
+                GrapeHawk{" "}
+                <i className="text-neutral-400">(Cannes, FR)</i>
+              </h6>
+              <div className="h-[1px] w-[100%] bg-neutral-500"></div>
+              <p className="text-neutral-400 italic">05.24 - 11.24</p>
+              <p className="text-neutral-400">
+                Software Developer
+              </p>
+            </div>
+
+            <a
+              className="italic underline text-pink-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://grapehawk.com"
+            >
+              <img
+                className="max-w-[80px] max-h-[80px]"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/grapehawk_logo.jpg"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- CENTRAL TEST ---------------------------- */}
-          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[9rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
-              <h3 className="text-neutral-300">
+              <h6 className="text-neutral-300 mt-4">
                 Central Test{" "}
-                <i className="text-lg text-neutral-400">(Paris, FR)</i>
-              </h3>
+                <i className="text-neutral-400">(Paris, FR)</i>
+              </h6>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br />
-              <h5 className="text-neutral-400">Game Designer / Developer</h5>
-              <h5 className="text-neutral-400 italic">05.23 - 09.23</h5>
+              <p className="text-neutral-400 italic">05.23 - 09.23</p>
+              <p className="text-neutral-400">
+                Game Designer / Developer
+              </p>
             </div>
 
             <a
@@ -78,25 +96,24 @@ export default function Page() {
               href="https://www.centraltest.fr"
             >
               <img
-                className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/central_test_logo.png"
+                className="max-w-[80px] max-h-[80px]"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/central_test_logo.png"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- KENTYOU ---------------------------- */}
-          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[9rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
-              <h3 className="text-neutral-300">
+              <h6 className="text-neutral-300 mt-4">
                 Kentyou{" "}
-                <i className="text-lg text-neutral-400">(Grenoble, FR)</i>
-              </h3>
+                <i className="text-neutral-400">(Grenoble, FR)</i>
+              </h6>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br />
-              <h5 className="text-neutral-400">
+              <p className="text-neutral-400 italic">06.22 - 09.22</p>
+              <p className="text-neutral-400">
                 UI/UX Web Designer / Developer
-              </h5>
-              <h5 className="text-neutral-400 italic">06.22 - 09.22</h5>
+              </p>
             </div>
 
             <a
@@ -106,23 +123,22 @@ export default function Page() {
               href="http://kentyou.com"
             >
               <img
-                className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/kentyou_logo.png"
+                className="max-w-[80px] max-h-[80px]"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/kentyou_logo.png"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- HOLOLAB ---------------------------- */}
-          <div className="w-[10rem] lg:w-[15rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[9rem] lg:w-[12rem] h-[20rem] flex flex-col ">
             <div>
-              <h3 className="text-neutral-300">
+              <h6 className="text-neutral-300 mt-4">
                 HoloLab{" "}
-                <i className="text-lg text-neutral-400">(Florianópolis, BR)</i>
-              </h3>
+                <i className="text-neutral-400">(Florianópolis, BR)</i>
+              </h6>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
-              <br />
-              <h5 className="text-neutral-400">Game Designer</h5>
-              <h5 className="text-neutral-400 italic">08.19 - 09.19</h5>
+              <p className="text-neutral-400 italic">08.19 - 09.19</p>
+              <p className="text-neutral-400">Game Designer</p>
             </div>
 
             <a
@@ -132,8 +148,8 @@ export default function Page() {
               href="https://www.hololab.com.br/en"
             >
               <img
-                className="max-w-[130px] max-h-[130px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/hololab_logo.jpeg"
+                className="max-w-[80px] max-h-[80px]"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/hololab_logo.jpeg"
               ></img>
             </a>
           </div>
@@ -142,13 +158,13 @@ export default function Page() {
 
       {/* ---------------------------- SCHOOLING ---------------------------- */}
       <div className="w-[100%]">
-        <h1 className="text-balance">Schooling</h1>
+        <h2 className="text-balance">Schooling</h2>
         <div className="flex md:flex-row flex-col justify-between gap-8">
           <div className="flex flex-col gap-2">
             <div>
               <h4 className="text-neutral-300">
                 Université Côte d'Azur{" "}
-                <i className="text-lg text-neutral-400">(Cannes, FR)</i>
+                <i className="text-neutral-400">(Cannes, FR)</i>
               </h4>
               <div className="h-[1px] w-[100%] bg-neutral-500"></div>
               <br />
@@ -202,7 +218,7 @@ export default function Page() {
 
       {/* ---------------------------- GAME ENGINES ---------------------------- */}
       <div className="w-[100%]">
-        <h1 className="text-balance">Game Engines</h1>
+        <h2 className="text-balance">Game Engines</h2>
         <div className="md:mt-32 mt-24 flex flex-row flex-wrap justify-between sm:gap-16">
           <a
             className="italic underline text-pink-300"
@@ -248,7 +264,7 @@ export default function Page() {
 
       {/* ---------------------------- ART TOOLS ---------------------------- */}
       <div className="w-[100%]">
-        <h1 className="text-balance">Art Tools</h1>
+        <h2 className="text-balance">Art Tools</h2>
         <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
@@ -285,7 +301,7 @@ export default function Page() {
 
       {/* ---------------------------- PROGRAMMING ---------------------------- */}
       <div className="w-[100%]">
-        <h1 className="text-balance">Languages - Programming</h1>
+        <h2 className="text-balance">Languages - Programming</h2>
         <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
@@ -332,7 +348,7 @@ export default function Page() {
 
       {/* ---------------------------- FRAMEWORKS ---------------------------- */}
       <div className="w-[100%]">
-        <h1 className="text-balance">Frameworks</h1>
+        <h2 className="text-balance">Frameworks</h2>
         <div className="md:mt-32 mt-24 flex flex-row justify-between flex-wrap gap-16">
           <img
             className="max-w-[70px] max-h-[70px] md:max-w-[80px] md:max-h-[80px] lg:max-w-[90px] lg:max-h-[90px]"
@@ -384,7 +400,7 @@ export default function Page() {
 
       {/* ---------------------------- SPOKEN LANGUAGES ---------------------------- */}
       <div className="w-[100%]">
-        <h1 className="text-balance">Languages - Spoken</h1>
+        <h2 className="text-balance">Languages - Spoken</h2>
         <div className="md:mt-24 mt-16 flex flex-row items-center justify-between gap-16 flex-wrap">
           <div className="flex flex-row items-end gap-4 md:w-[30rem] w-[20rem]">
             <img

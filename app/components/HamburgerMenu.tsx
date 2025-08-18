@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 
 const navItems = {
@@ -13,8 +14,8 @@ const navItems = {
   "/artworks": {
     name: "Artworks",
   },
-  "/CV": {
-    name: "CV",
+  "/about": {
+    name: "About",
   },
   "/contact-me": {
     name: "Contact Me",
@@ -23,10 +24,56 @@ const navItems = {
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [animateOpen, setAnimateOpen] = useState(false);
+  const [overlayKey, setOverlayKey] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    let rafId: number | null = null;
+    let openTimeoutId: number | null = null;
+    let closeTimeoutId: number | null = null;
+
+    if (isOpen) {
+      // Ensure the overlay is mounted
+      setIsVisible(true);
+
+      // Force a new overlay mount so CSS transitions always restart
+      setOverlayKey((k) => k + 1);
+
+      root.classList.add("overflow-hidden");
+      setAnimateOpen(false);
+
+      // Ensure layout is flushed before starting open animation
+      openTimeoutId = window.setTimeout(() => {
+        rafId = requestAnimationFrame(() => setAnimateOpen(true));
+      }, 20);
+    } else {
+      // Trigger close animation (bottom-to-top)
+      setAnimateOpen(false);
+
+      // Wait for the CSS transition to finish before unmounting & re-enabling scroll
+      closeTimeoutId = window.setTimeout(() => {
+        setIsVisible(false);
+        root.classList.remove("overflow-hidden");
+      }, 520); // matches duration-500 with a tiny buffer
+    }
+
+    return () => {
+      if (rafId !== null) cancelAnimationFrame(rafId);
+      if (openTimeoutId !== null) clearTimeout(openTimeoutId);
+      if (closeTimeoutId !== null) clearTimeout(closeTimeoutId);
+    };
+  }, [isOpen]);
 
   return (
     <>
@@ -42,32 +89,49 @@ const HamburgerMenu = () => {
         </div>
       </button>
 
-      {/* Menu Overlay (shown when isOpen is true, for all screen sizes) */}
-      {isOpen && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex flex-col justify-center items-center">
-          {/* Close Button */}
-          <button
-            className="absolute top-5 right-5 text-white text-3xl"
-            onClick={toggleMenu}
-          >
-            &times;
-          </button>
+      {/* Menu Overlay (full-screen, blurred, animated) */}
+      {mounted && isVisible &&
+        createPortal(
+          <div key={overlayKey} className="fixed inset-0 z-[999]">
+            {/* Animated backdrop: slides from top */}
+            <div
+              className={`absolute inset-0 bg-neutral-900/60 backdrop-blur-md transition-transform duration-500 ease-out transform ${
+                animateOpen ? "translate-y-0" : "-translate-y-full"
+              }`}
+            />
 
-          {/* Navigation Links (shown when the menu is open) */}
-          <nav className="flex flex-col space-y-8">
-            {Object.entries(navItems).map(([path, { name }]) => (
-              <Link
-                key={path}
-                href={path}
-                onClick={toggleMenu} // Close the menu when clicking a link
-                className="text-3xl transition-all text-white hover:text-pink-500"
+            {/* Content layer */}
+            <div
+              className={`relative z-[1000] h-full w-full flex flex-col items-center justify-center transition-opacity duration-500 ${
+                animateOpen ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {/* Close Button */}
+              <button
+                className="cursor-pointer absolute top-5 right-5 text-white/90 hover:text-white text-4xl"
+                onClick={toggleMenu}
+                aria-label="Close menu"
               >
-                {name}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      )}
+                &times;
+              </button>
+
+              {/* Navigation Links */}
+              <nav className="flex flex-col space-y-8">
+                {Object.entries(navItems).map(([path, { name }]) => (
+                  <Link
+                    key={path}
+                    href={path}
+                    onClick={toggleMenu}
+                    className="text-3xl md:text-4xl lg:text-5xl font-medium transition-colors text-white/95 hover:text-pink-400"
+                  >
+                    {name}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          </div>,
+          document.body
+        )}
     </>
   );
 };

@@ -10,26 +10,25 @@ export default function Page() {
 
   return (
     <section className="prose ml-8 mr-8">
-      <div className="mt-48 mb-32 flex flex-col items-center gap-8">
+      <div className="mt-48 mb-32 flex flex-col items-center gap-4">
         <div className="mb-8 text-center fade-in-element opacity-0">
-          <p className="title poppins bold text-7xl sm:text-8xl md:text-9xl lg:text-[190px]">
+          <div className="title poppins bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
             HEY, I'M
-          </p>
-          <p className="title font-fraunces-thin-i text-7xl sm:text-8xl md:text-9xl lg:text-[190px]">
+          </div>
+          <div className="title font-fraunces-thin-i text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
             VINÍCIUS
-          </p>
+          </div>
         </div>
-        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
+        <div className="mb-4 title font-fraunces-thin-i text-3xl md:text-4xl lg:text-5xl text-center fade-in-element opacity-0">
           GAME DEVELOPER
-        </p>
-        <p className="title font-fraunces-thin-i text-5xl md:text-7xl lg:text-8xl text-center fade-in-element opacity-0">
+        </div>
+        <div className="mb-4 title font-fraunces-thin-i text-3xl md:text-4xl lg:text-5xl text-center fade-in-element opacity-0">
           GAME DESIGNER
-        </p>
-        <p className="max-w-[50rem] min-w-[18rem] mx-8 md:text-xl fade-in-element opacity-0">
-          I help bring people's visions to fruition by combining my{" "}
-          <b>technical skills</b> with my <b>artistic perspective</b>. This
-          allows me to create <b>unique</b>, <b>creative</b>, and technically{" "}
-          <b>robust</b> video games.
+        </div>
+        <p className="max-w-[50rem] min-w-[18rem] mx-8 text-sm md:text-base fade-in-element opacity-0">
+          I am a <b>Game Developer</b> and a <b>Game Designer</b> that focuses on building <b>core systems</b> for games.
+          <br/>
+          I specialize in building game mechanics and interactions, with a focus on <b>integrating AIs</b> in games like with <b>NPCs</b> and their behaviour.
         </p>
         <Link href={"/works"}>
           {/* <CustomButton
@@ -46,7 +45,7 @@ export default function Page() {
       <div className="m-8 md:m-16 lg:m-48 flex flex-col items-center gap-32">
         <div className="self-start">
           <CustomImage
-            src="https://i.ibb.co/19SxrGF/paravoile.png"
+            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/paravoile.png?raw=true"
             alt="Hebald Forest"
             link="/works/hebald-forest"
             maxWidth="40rem"
