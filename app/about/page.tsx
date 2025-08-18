@@ -20,7 +20,7 @@ export default function Page() {
         <h2 className="text-balance">Experiences</h2>
         <div className="flex flex-row justify-start flex-wrap gap-x-8 gap-y-8">
           {/* ---------------------------- Freelance ---------------------------- */}
-          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[6rem] sm:w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 Freelancer{" "}
@@ -49,7 +49,7 @@ export default function Page() {
           </div>
 
           {/* ---------------------------- GRAPE HAWK ---------------------------- */}
-          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[6rem] sm:w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 GrapeHawk{" "}
@@ -76,7 +76,7 @@ export default function Page() {
           </div>
 
           {/* ---------------------------- CENTRAL TEST ---------------------------- */}
-          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[6rem] sm:w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 Central Test{" "}
@@ -103,7 +103,7 @@ export default function Page() {
           </div>
 
           {/* ---------------------------- KENTYOU ---------------------------- */}
-          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[6rem] sm:w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 Kentyou{" "}
@@ -130,7 +130,7 @@ export default function Page() {
           </div>
 
           {/* ---------------------------- HOLOLAB ---------------------------- */}
-          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[6rem] sm:w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 HoloLab{" "}
