@@ -20,7 +20,7 @@ export default function Page() {
         <h2 className="text-balance">Experiences</h2>
         <div className="flex flex-row justify-start flex-wrap gap-x-8 gap-y-8">
           {/* ---------------------------- Freelance ---------------------------- */}
-          <div className="w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 Freelancer{" "}
@@ -39,17 +39,17 @@ export default function Page() {
               className="italic underline text-pink-300"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://grapehawk.com"
+              href="https://www.ellipticdata.com"
             >
               <img
-                className="max-w-[80px] max-h-[80px]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/ED_Logo_black.jpg"
+                className="max-w-[80px] max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[130px] lg:max-h-[130px]"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/ED_Logo_black.png"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- GRAPE HAWK ---------------------------- */}
-          <div className="w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 GrapeHawk{" "}
@@ -69,14 +69,14 @@ export default function Page() {
               href="https://grapehawk.com"
             >
               <img
-                className="max-w-[80px] max-h-[80px]"
+                className="max-w-[80px] max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[130px] lg:max-h-[130px]"
                 src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/grapehawk_logo.jpg"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- CENTRAL TEST ---------------------------- */}
-          <div className="w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 Central Test{" "}
@@ -96,14 +96,14 @@ export default function Page() {
               href="https://www.centraltest.fr"
             >
               <img
-                className="max-w-[80px] max-h-[80px]"
+                className="max-w-[80px] max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[130px] lg:max-h-[130px]"
                 src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/central_test_logo.png"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- KENTYOU ---------------------------- */}
-          <div className="w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
+          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 Kentyou{" "}
@@ -123,14 +123,14 @@ export default function Page() {
               href="http://kentyou.com"
             >
               <img
-                className="max-w-[80px] max-h-[80px]"
+                className="max-w-[80px] max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[130px] lg:max-h-[130px]"
                 src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/kentyou_logo.png"
               ></img>
             </a>
           </div>
 
           {/* ---------------------------- HOLOLAB ---------------------------- */}
-          <div className="w-[9rem] lg:w-[12rem] h-[20rem] flex flex-col ">
+          <div className="w-[7rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
             <div>
               <h6 className="text-neutral-300 mt-4">
                 HoloLab{" "}
@@ -148,7 +148,7 @@ export default function Page() {
               href="https://www.hololab.com.br/en"
             >
               <img
-                className="max-w-[80px] max-h-[80px]"
+                className="max-w-[80px] max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[130px] lg:max-h-[130px]"
                 src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/experiences/hololab_logo.jpeg"
               ></img>
             </a>
