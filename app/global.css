@@ -146,7 +146,7 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-400 text-sm md:text-base;
+  @apply my-4 text-neutral-400;
   &.title {
     @apply text-neutral-200;
   }
