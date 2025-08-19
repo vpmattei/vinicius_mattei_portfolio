@@ -10,8 +10,15 @@ export const metadata = {
 const beforeAndAfterTowerImages = {
   gallery: [
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/tower_before_01.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/image.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/tower_after.png?raw=true",
 
+  ],
+};
+
+const beforeAndAfterCaveImages = {
+  gallery: [
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave_before.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave2.png?raw=true",
   ],
 };
 
@@ -86,34 +93,108 @@ const Page: React.FC = () => {
 
       {/* My Contribution */}
       <div className="w-full mt-16 flex flex-col items-start">
-        <h2>My Contribution</h2>
-        <div className="w-full mt-8 flex flex-row items-center">
-          <div className="w-3/8 flex flex-col items-start">
-            <ImageDisplay
-              src={beforeAndAfterTowerImages.gallery[0]}
-              gallery={beforeAndAfterTowerImages.gallery}
-              index={0}
-            />
+        <h2>My Contributions</h2>
+        {/* Tower */}
+        <div className="w-full mt-16 flex flex-col items-start">
+          <a
+            className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
+            rel="noopener noreferrer"
+            href="/works/hebald-forest/tower-rework"
+          >
+            <h3>
+              1. Tower Rework
+            </h3>
+          </a>
+          <div className="w-full mt-8 flex flex-row items-center">
+            <div className="w-3/8 flex flex-col items-start">
+              <ImageDisplay
+                src={beforeAndAfterTowerImages.gallery[0]}
+                gallery={beforeAndAfterTowerImages.gallery}
+                index={0}
+              />
+            </div>
+            <div className="w-2/8 flex flex-col items-center">
+              <img
+                className="max-w-[50%]"
+                src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
+                alt="Next"
+              />
+            </div>
+            <div className="w-3/8 flex flex-col items-start">
+              <ImageDisplay
+                src={beforeAndAfterTowerImages.gallery[1]}
+                gallery={beforeAndAfterTowerImages.gallery}
+                index={1}
+              />
+            </div>
           </div>
-          <div className="w-2/8 flex flex-col items-center">
-            ARROW
-          </div>
-          <div className="w-3/8 flex flex-col items-start">
-            <ImageDisplay
-              src={beforeAndAfterTowerImages.gallery[1]}
-              gallery={beforeAndAfterTowerImages.gallery}
-              index={1}
-            />
+          <div className="w-full mt-8 flex flex-row items-start">
+            <div className="w-3/8 flex flex-col items-start">
+              <p className="self-center mb-8"><i>BEFORE</i></p>
+              <p>
+                <b>Problem:</b> The old puzzle was <b>too simple</b> and had <b>no clear objective</b>, nor
+                was it clear on how to get to the objective, plus it being in the middle of the map was one of
+                the first things players would go after.
+              </p>
+            </div>
+            <div className="w-2/8 flex flex-col items-center">
+            </div>
+            <div className="w-3/8 flex flex-col items-start">
+              <p className="self-center mb-8"><i>AFTER</i></p>
+              <p>
+                <b>Solution:</b> Reworked the whole area completely by removing all the previous woden towers
+                and replacing them with a tall and flashy tower. Its size immediately <b>catches the attention</b> of
+                the player and makes him feel an <b>urge to climb</b> to the top of the tower and find out
+                what's inside it.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="w-full mt-8 flex flex-row items-center">
-          <div className="w-3/8 flex flex-col items-center">
-            <h4><i>BEFORE</i></h4>
+
+        {/* Cave */}
+        <div className="w-full mt-16 flex flex-col items-start">
+          <h3>2. Cave Rework</h3>
+          <div className="w-full mt-8 flex flex-row items-center">
+            <div className="w-3/8 flex flex-col items-start">
+              <ImageDisplay
+                src={beforeAndAfterCaveImages.gallery[0]}
+                gallery={beforeAndAfterCaveImages.gallery}
+                index={0}
+              />
+            </div>
+            <div className="w-2/8 flex flex-col items-center">
+              <img
+                className="max-w-[50%]"
+                src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
+                alt="Next"
+              />
+            </div>
+            <div className="w-3/8 flex flex-col items-start">
+              <ImageDisplay
+                src={beforeAndAfterCaveImages.gallery[1]}
+                gallery={beforeAndAfterCaveImages.gallery}
+                index={1}
+              />
+            </div>
           </div>
-          <div className="w-2/8 flex flex-col items-center">
-          </div>
-          <div className="w-3/8 flex flex-col items-center">
-            <h4><i>AFTER</i></h4>
+          <div className="w-full mt-8 flex flex-row items-start">
+            <div className="w-3/8 flex flex-col items-start">
+              <p className="self-center mb-8"><i>BEFORE</i></p>
+              <p>
+                <b>Problem:</b> The old puzzle was <b>too simple</b> and had <b>no clear objective</b>, nor did
+                was it clear how to get to the objective, plus it was in the middle of the map.
+              </p>
+            </div>
+            <div className="w-2/8 flex flex-col items-center">
+            </div>
+            <div className="w-3/8 flex flex-col items-start">
+              <p className="self-center mb-8"><i>AFTER</i></p>
+              <p>
+                <b>Solution:</b> I added a tall and flashy tower in the middle of the map that immediately catches
+                the attention of the player and urges him to go to the top of the tower and find out
+                what's hiding at its peak.
+              </p>
+            </div>
           </div>
         </div>
       </div>
