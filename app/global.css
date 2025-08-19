@@ -146,33 +146,33 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-400;
+  @apply text-neutral-400 text-sm sm:text-base;
   &.title {
     @apply text-neutral-200;
   }
 }
 
 .prose h1 {
-  @apply text-6xl font-medium text-neutral-200 tracking-tight mt-6 mb-12;
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-neutral-200 tracking-tight mb-12;
   letter-spacing: 0.005em;
 }
 
 .prose h2 {
-  @apply text-3xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-2;
   letter-spacing: 0.0025em;
 }
 
 .prose h3 {
-  @apply text-2xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-base sm:text-lg md:text-xl lg:text-2xl font-medium tracking-tight mb-2;
   letter-spacing: 0.00125em;
 }
 
 .prose h4 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-base md:text-lg lg:text-xl font-medium tracking-tight mb-2;
 }
 
 .prose h5 {
-  @apply text-lg font-medium tracking-tight mb-2;
+  @apply text-base lg:text-lg font-medium tracking-tight mb-2;
 }
 
 .prose h6 {
@@ -184,7 +184,7 @@ html {
 }
 
 .prose ul {
-  @apply list-disc pl-6 text-neutral-400;
+  @apply list-disc pl-6 text-neutral-400 text-sm sm:text-base;
 }
 
 .prose ol {
@@ -192,7 +192,11 @@ html {
 }
 
 .prose b {
-  @apply text-neutral-200 underline;
+  @apply text-neutral-200;
+}
+
+.prose u {
+  @apply underline
 }
 
 .prose button {

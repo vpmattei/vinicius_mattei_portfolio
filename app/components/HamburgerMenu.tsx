@@ -15,10 +15,10 @@ const navItems = {
     name: "Artworks",
   },
   "/about": {
-    name: "About",
+    name: "About me",
   },
   "/contact-me": {
-    name: "Contact Me",
+    name: "Contact",
   },
 };
 

@@ -7,7 +7,7 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
+    <section className="prose mx-12 sm:mx-16 md:mx-20 lg:mx-32 flex flex-col items-center gap-16">
       <GamePageSection
         title={{ url: "", text: "Tangled Tales" }}
         mainImage={{

@@ -58,7 +58,7 @@ const starfoxImages = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-16">
+    <section className="prose mx-12 sm:mx-16 md:mx-20 lg:mx-32 flex flex-col items-center gap-16">
       {/* Header */}
       <div className="w-full flex flex-col items-center text-center">
         <h2 className="text-3xl font-bold mt-4">🚀 Starfox Laser Defender Game</h2>
