@@ -83,7 +83,6 @@ const Page: React.FC = () => {
           {/* LEFT */}
           <div className="w-3/8">
 
-
             {/* Info */}
             <div className="p-2 md:p-4 shadow-xl">
               <ul>
@@ -106,7 +105,7 @@ const Page: React.FC = () => {
 
             {/* Team */}
             <div className="p-2 md:p-4 shadow-xl">
-              <h3>Team</h3>
+              <h4>Team</h4>
               <p>
                 The team consisted of <b>19 members</b>, including 4 Developers, 2 3D Artists, 2 2D Artists,
                 1 VFX Artist, 1 UI Programmer, 1 Level Designer, 1 Narrative Designer, 5 Sound Designers.
@@ -121,7 +120,7 @@ const Page: React.FC = () => {
 
             {/* Brief */}
             <div className="p-2 md:p-4 shadow-xl">
-              <h3>Brief</h3>
+              <h4>Brief</h4>
               <p>
                 <b>Hebald Forest</b> is <b>open-world exploration game</b> developed
                 During my second year of my Masters Degree at Université Côte d'Azur in Cannes, France.
@@ -132,7 +131,7 @@ const Page: React.FC = () => {
 
             {/* Project Goals */}
             <div className="p-2 md:p-4 shadow-xl">
-              <h3>Project Goals</h3>
+              <h4>Project Goals</h4>
               <p>
                 Our primary goal was to deliver a <b>playable demo of Hebald Forest</b> for the International Games Festival {" "}
                 (<b>FIJ</b>) in Cannes, France.
@@ -168,7 +167,7 @@ const Page: React.FC = () => {
 
             {/* Takeaways */}
             <div className="p-2 md:p-4 shadow-xl">
-              <h3>Takeaways</h3>
+              <h4>Takeaways</h4>
               <p>
                 The game made use of cutting-edge technologies such as <b>Lumen</b> and <b>Nanite</b>.
                 However, these innovations often proved to be more of a challenge than a benefit, introducing{" "}
