@@ -1,11 +1,29 @@
 import React from "react";
 import ArrowIcon from "app/components/ArrowIcon";
 import ImageDisplay from "app/components/ImageDisplay";
+import FullScreenGallery from "app/components/FullScreenGallery";
 
 export const metadata = {
   title: "Hebald Forest",
   description: "Open-world game developed with Unreal Engine 5.",
 };
+
+const hebaldForestImages =
+{
+  gallery: [
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/affiche-HBF.jpg?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/village.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/tower_after.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave2.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave-pierre.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/aymir.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/asian.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/paravoile.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/village2.png?raw=true",
+  ]
+}
 
 const beforeAndAfterTowerImages = {
   gallery: [
@@ -56,7 +74,7 @@ const Page: React.FC = () => {
               <li>Duration: 5 months</li>
               <li>
                 <a
-                  className="flex gap-1 items-center transition-all hover:text-neutral-100"
+                  className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://jessymonrocq.itch.io/hebald-forest"
@@ -97,7 +115,7 @@ const Page: React.FC = () => {
         {/* Tower */}
         <div className="w-full mt-16 flex flex-col items-start">
           <a
-            className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
+            className="w-full flex flex-row gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
             rel="noopener noreferrer"
             href="/works/hebald-forest/tower-rework"
           >
@@ -106,21 +124,21 @@ const Page: React.FC = () => {
             </h3>
           </a>
           <div className="w-full mt-8 flex flex-row items-center">
-            <div className="w-3/8 flex flex-col items-start">
+            <div className="w-6/15 flex flex-col items-start">
               <ImageDisplay
                 src={beforeAndAfterTowerImages.gallery[0]}
                 gallery={beforeAndAfterTowerImages.gallery}
                 index={0}
               />
             </div>
-            <div className="w-2/8 flex flex-col items-center">
+            <div className="w-3/15 flex flex-col items-center">
               <img
-                className="max-w-[50%]"
+                className="max-w-[60%]"
                 src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
                 alt="Next"
               />
             </div>
-            <div className="w-3/8 flex flex-col items-start">
+            <div className="w-6/15 flex flex-col items-start">
               <ImageDisplay
                 src={beforeAndAfterTowerImages.gallery[1]}
                 gallery={beforeAndAfterTowerImages.gallery}
@@ -129,31 +147,49 @@ const Page: React.FC = () => {
             </div>
           </div>
           <div className="w-full mt-8 flex flex-row items-start">
-            <div className="w-3/8 flex flex-col items-start">
+            <div className="w-6/15 flex flex-col items-center">
               <p className="self-center mb-8"><i>BEFORE</i></p>
               <p>
-                <b>Problem:</b> The old puzzle was <b>too simple</b> and had <b>no clear objective</b>, nor
-                was it clear on how to get to the objective, plus it being in the middle of the map was one of
-                the first things players would go after.
+                Weak puzzle with <b>no clear goal</b>.
               </p>
             </div>
-            <div className="w-2/8 flex flex-col items-center">
+            <div className="w-3/15 flex flex-col items-center">
             </div>
-            <div className="w-3/8 flex flex-col items-start">
+            <div className="w-6/15 flex flex-col items-center">
               <p className="self-center mb-8"><i>AFTER</i></p>
               <p>
-                <b>Solution:</b> Reworked the whole area completely by removing all the previous woden towers
-                and replacing them with a tall and flashy tower. Its size immediately <b>catches the attention</b> of
-                the player and makes him feel an <b>urge to climb</b> to the top of the tower and find out
-                what's inside it.
+                Eye-catching tower creates <b>urge to climb</b>.
               </p>
+              <br />
+              <div className="w-full flex flex-col items-end">
+                <a
+                  className="w-auto flex flex-row gap-1 items-center transition-colors text-white/95 hover:text-pink-400 px-2 py-1"
+                  rel="noopener noreferrer"
+                  href="/works/hebald-forest/tower-rework"
+                >
+                  <span>See more</span>
+                  <img
+                    className="w-4 h-4"  // better than max-w-vw, scales consistently
+                    src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
+                    alt="Next"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
+        <hr className="w-full mt-32 border-gray-500" />
+
         {/* Cave */}
-        <div className="w-full mt-16 flex flex-col items-start">
-          <h3>2. Cave Rework</h3>
+        <div className="w-full mt-32 flex flex-col items-start">
+          <a
+            className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
+            rel="noopener noreferrer"
+            href="/works/hebald-forest/cave-rework"
+          >
+            <h3>2. Cave Rework</h3>
+          </a>
           <div className="w-full mt-8 flex flex-row items-center">
             <div className="w-3/8 flex flex-col items-start">
               <ImageDisplay
@@ -181,8 +217,9 @@ const Page: React.FC = () => {
             <div className="w-3/8 flex flex-col items-start">
               <p className="self-center mb-8"><i>BEFORE</i></p>
               <p>
-                <b>Problem:</b> The old puzzle was <b>too simple</b> and had <b>no clear objective</b>, nor did
-                was it clear how to get to the objective, plus it was in the middle of the map.
+                <b><u>Problem:</u></b> The old cave was <b>too messy</b> with <b>no clear direction</b> of where to go.
+                The main objective that was collecting the gem was poorly designed and had no feedback whatsoever,
+                leaving the player confused at the after leaving the cave, not knowing if he had completed the cave.
               </p>
             </div>
             <div className="w-2/8 flex flex-col items-center">
@@ -190,9 +227,10 @@ const Page: React.FC = () => {
             <div className="w-3/8 flex flex-col items-start">
               <p className="self-center mb-8"><i>AFTER</i></p>
               <p>
-                <b>Solution:</b> I added a tall and flashy tower in the middle of the map that immediately catches
-                the attention of the player and urges him to go to the top of the tower and find out
-                what's hiding at its peak.
+                <b><u>Solution:</u></b> A complete overhaul and rework of the cave, with clear objective of where to go right
+                off the bat after entering the cave. A short path on the left takes the player to a closed door, signaling
+                that he should try and get the door open. And the longer but more difficult path on the right with puzzles and
+                platforms to jump on.
               </p>
             </div>
           </div>
@@ -211,72 +249,7 @@ const Page: React.FC = () => {
         ></iframe>
       </div>
 
-      {/* Description */}
-      <div className="w-full text-justify">
-        <h3 className="text-2xl font-bold">📃 About</h3>
-        <p>
-          Hebald Forest is a collaborative open-world game developed with Unreal
-          Engine 5 during the second year of the MAJIC program (Management of
-          Video Games, Image, and Creativity) at Université Côte d'Azur.
-          Featuring cutting-edge technologies like Lumen and Nanite, this
-          project served as a hands-on learning platform for mastering UE5.
-        </p>
-        <p>
-          With a team of 19 multidisciplinary members, the development process
-          touched all areas of game creation. My personal contributions
-          included:
-        </p>
-        <ul className="list-disc list-inside">
-          <li>
-            <b>Project Manager:</b> Coordinated development to align with the
-            project vision
-          </li>
-          <li>
-            <b>Sound Designer:</b> Created immersive audio using Wwise
-          </li>
-          <li>
-            <b>Game Designer:</b> Balanced mechanics and enhanced gameplay feel
-          </li>
-          <li>
-            <b>Level Designer:</b> Structured the game world and refined
-            environments
-          </li>
-          <li>
-            <b>Developer:</b> Programmed puzzle-related mechanics
-          </li>
-        </ul>
-        <p>
-          Hebald Forest represents a significant step in my journey as a game
-          developer, showcasing technical versatility and teamwork.
-        </p>
-      </div>
-
-      {/* Gallery */}
-      <div className="w-full">
-        <h3 className="text-2xl font-bold">🖼️ Screenshots</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          {[
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/affiche-HBF.jpg?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/village.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/image.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave2.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave-pierre.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/aymir.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/asian.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/paravoile.png?raw=true",
-            "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/village2.png?raw=true",
-          ].map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Hebald Forest ${index + 1}`}
-              className="rounded-lg"
-            />
-          ))}
-        </div>
-      </div>
+      <FullScreenGallery images={hebaldForestImages.gallery} useGrid={true} />
 
       {/* Footer Nav */}
       <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
