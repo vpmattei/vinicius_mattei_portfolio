@@ -50,14 +50,17 @@ const beforeAndAfterCaveImages = {
 
 const Page: React.FC = () => {
   return (
-    <section className="prose mx-12 sm:mx-16 md:mx-20 lg:mx-36 flex flex-col items-center gap-16">
-      {/* Description */}
-      <div className="w-full flex flex-col items-start">
-        <div className="w-full flex flex-row items-end gap-8 sm:gap-6 md:gap-4">
+    <section className="prose mx-6 sm:mx-8 md:mx-16 lg:mx-24 flex flex-col items-center gap-16">
+      <div className="w-full flex flex-col items-start gap-4">
+
+        {/* Title and Main Image */}
+        <div className="w-full flex flex-row items-end gap-2 bg-gray-800">
+
+          {/* LEFT */}
           <div className="w-3/8 flex items-start">
             <div className="flex flex-col items-start">
               <img
-                className="max-w-[100%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[60%]"
+                className="max-w-[100%] sm:max-w-[70%] md:max-w-[60%]"
                 src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/hebald_forest_images/logo.webp"
                 alt="Hebald Forest Logo"
               />
@@ -65,48 +68,44 @@ const Page: React.FC = () => {
               <h3 className="mt-0 mb-2">Project Breakdown</h3>
             </div>
           </div>
-          <div className="w-5/8 flex items-start">
-            <div className="flex flex-col items-start">
-              <div className="max-w-[80%]">
-                <ImageDisplay src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/paravoile.png?raw=true" />
-              </div>
+
+          {/* RIGHT */}
+          <div className="w-5/8">
+            <div className="flex flex-col items-center">
+              <ImageDisplay src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/affiche-HBF.jpg?raw=true" />
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-row items-start mt-8 gap-8 sm:gap-6 md:gap-4">
+
+        {/* Project Description */}
+        <div className="w-full flex flex-row items-start gap-2 bg-gray-700">
+
+          {/* LEFT */}
           <div className="w-3/8">
-            <ul className="p-4 shadow-xl">
-              <li>Platform: PC</li>
-              <li>Engine: Unreal Engine 5</li>
-              <li>Team Size: 19</li>
-              <li>Duration: 5 months</li>
-              <li>
-                <a
-                  className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://jessymonrocq.itch.io/hebald-forest"
-                >
-                  Build: Itch.io <ArrowIcon size={12} />
-                </a>
-              </li>
-            </ul>
-          </div>
 
-          <div className="w-5/8">
-            {/* Brief */}
-            <div className="p-4 shadow-xl">
-              <h3>Brief</h3>
-              <p>
-                <b>Hebald Forest</b> is <b>open-world exploration game</b> developed
-                During my second year of my Masters Degree at Université Côte d'Azur in Cannes, France.
-                This project was a collaborative game built with <b>Unreal Engine 5</b>.
 
-              </p>
+            {/* Info */}
+            <div className="p-2 md:p-4 shadow-xl">
+              <ul>
+                <li>Platform: PC</li>
+                <li>Engine: Unreal Engine 5</li>
+                <li>Team Size: 19</li>
+                <li>Duration: 5 months</li>
+                <li>
+                  <a
+                    className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://jessymonrocq.itch.io/hebald-forest"
+                  >
+                    Build: Itch.io <ArrowIcon size={12} />
+                  </a>
+                </li>
+              </ul>
             </div>
-            <br />
+
             {/* Team */}
-            <div className="p-4 shadow-xl">
+            <div className="p-2 md:p-4 shadow-xl">
               <h3>Team</h3>
               <p>
                 The team consisted of <b>19 members</b>, including 4 Developers, 2 3D Artists, 2 2D Artists,
@@ -115,8 +114,24 @@ const Page: React.FC = () => {
                 <b>Development</b>, <b>Game Design</b>, <b>Sound Design and Integration</b>, and later <b>Level Design</b>.
               </p>
             </div>
-            <br />
-            <div className="p-4 shadow-xl">
+          </div>
+
+          {/* RIGHT */}
+          <div className="w-5/8">
+
+            {/* Brief */}
+            <div className="p-2 md:p-4 shadow-xl">
+              <h3>Brief</h3>
+              <p>
+                <b>Hebald Forest</b> is <b>open-world exploration game</b> developed
+                During my second year of my Masters Degree at Université Côte d'Azur in Cannes, France.
+                This project was a collaborative game built with <b>Unreal Engine 5</b>.
+
+              </p>
+            </div>
+
+            {/* Project Goals */}
+            <div className="p-2 md:p-4 shadow-xl">
               <h3>Project Goals</h3>
               <p>
                 Our primary goal was to deliver a <b>playable demo of Hebald Forest</b> for the International Games Festival {" "}
@@ -150,8 +165,9 @@ const Page: React.FC = () => {
                 </div>
               </div>
             </div>
-            <br />
-            <div className="p-4 shadow-xl">
+
+            {/* Takeaways */}
+            <div className="p-2 md:p-4 shadow-xl">
               <h3>Takeaways</h3>
               <p>
                 The game made use of cutting-edge technologies such as <b>Lumen</b> and <b>Nanite</b>.
@@ -166,9 +182,9 @@ const Page: React.FC = () => {
       {/* Game Mechanics */}
       <div className="w-full flex flex-col items-start bg-gray-700 pb-4 shadow-xl">
         <h2>Game Mechanics</h2>
-        
+
         {/* Notebook */}
-        <div className="w-full mt-4 flex flex-col items-start p-4 shadow-xl bg-gray-800">
+        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
           <h3>1. Notebook</h3>
 
           <div className="w-full mt-4 flex flex-row items-start shadow-xl bg-gray-700 gap-2">
@@ -200,7 +216,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Climbing */}
-        <div className="w-full mt-4 flex flex-col items-start p-4 shadow-xl bg-gray-800">
+        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
           <h3>2. Climbing</h3>
 
           <div className="w-full mt-4 flex flex-row items-start shadow-xl bg-gray-700 gap-2">
@@ -232,7 +248,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Swimming */}
-        <div className="w-full mt-4 flex flex-col items-start p-4 shadow-xl bg-gray-800">
+        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
           <h3>3. Swimming</h3>
 
           <div className="w-full mt-4 flex flex-row items-start shadow-xl bg-gray-700 gap-2">
@@ -269,7 +285,7 @@ const Page: React.FC = () => {
         <h2>My Contributions</h2>
 
         {/* Tower */}
-        <div className="w-full mt-4 flex flex-col items-start p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
           <h3>1. Tower Rework</h3>
 
           {/* BEFORE */}
@@ -327,7 +343,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Cave */}
-        <div className="w-full mt-4 flex flex-col items-start p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
           <h3>2. Cave Rework</h3>
 
           {/* BEFORE */}
@@ -386,7 +402,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Fox Statues */}
-        <div className="w-full mt-4 flex flex-col items-start p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
           <h3>3. Improved VFX & SFX for the Fox Statues</h3>
 
           {/* BEFORE */}
@@ -444,7 +460,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Butterfly Puzzle */}
-        <div className="w-full mt-4 flex flex-col items-start p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
           <h3>4. Improved VFX & SFX for the Butterfly Puzzle</h3>
 
           {/* BEFORE */}

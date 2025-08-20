@@ -146,7 +146,7 @@ html {
 }
 
 .prose p {
-  @apply text-neutral-400 text-[0.6rem] sm:text-[0.7rem] md:text-[0.75rem] lg:text-[0.8rem];
+  @apply text-neutral-400 text-[0.6rem] sm:text-[0.725rem] md:text-[0.8rem] lg:text-[0.85rem];
   &.title {
     @apply text-neutral-200;
   }
@@ -184,7 +184,7 @@ html {
 }
 
 .prose ul {
-  @apply list-disc pl-6 text-neutral-400 text-[0.6rem] sm:text-[0.7rem] md:text-[0.75rem] lg:text-[0.8rem];
+  @apply list-disc pl-6 text-neutral-400 text-[0.6rem] sm:text-[0.725rem] md:text-[0.8rem] lg:text-[0.85rem];
 }
 
 .prose ol {
