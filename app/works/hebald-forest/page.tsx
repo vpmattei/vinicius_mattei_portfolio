@@ -71,7 +71,7 @@ const beforeAndAfterFoxStatue = {
 const buttonActivatedDoor = {
   gallery: [
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/button_activation.gif?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/fox_statue_activating_after.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/button_closed_and_open_door.png?raw=true",
   ],
 };
 
@@ -570,55 +570,37 @@ const Page: React.FC = () => {
           <h3>5. Button Activated Door</h3>
 
           {/* BEFORE */}
-          <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-row items-center bg-gray-600">
-              <p>
-                <b><u>Problem:</u></b> The puzzle was <b>too simple</b> with <b>no clear objective</b>.
-                Its central location made it one of the first areas players rushed to, leading to a <b>weak
-                  first impression</b>.
-              </p>
+          <div className="w-full mt-4 flex flex-col md:flex-row items-start shadow-xl bg-gray-700 gap-2">
+            <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center bg-gray-600 gap-2">
+              <div className="w-4/5 md:w-full">
+                <ImageDisplay
+                  src={buttonActivatedDoor.gallery[0]}
+                  gallery={buttonActivatedDoor.gallery}
+                  index={0}
+                />
+              </div>
+              <div className="w-1/5 md:w-full">
+                <p className="md:text-center">
+                  <b>Unlocking skills</b>: You unlock skills like swimming or climbing by typing each one of them
+                  on your notebook. The skills are only able to be unlocked once you have spoken to the right NPC
+                  and they have spoken the specific word, like climb or swim, which are always annotated in <b>red</b>.
+                </p>
+              </div>
             </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
-              <ImageDisplay
-                src={beforeAndAfterTowerImages.gallery[0]}
-                gallery={beforeAndAfterTowerImages.gallery}
-                index={0}
-              />
-              <p className="mt-2 self-center"><i>BEFORE</i></p>
-            </div>
-          </div>
-
-          {/* ARROW */}
-          <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-col items-start bg-gray-600">
-            </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
-              <svg
-                className="mt-2 self-center h-[5vh] w-[5vw] text-gray-300"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
-              </svg>
-            </div>
-          </div>
-
-          {/* AFTER */}
-          <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-row items-center bg-gray-600">
-              <p>
-                <b><u>Solution:</u></b> Replaced with a tall, eye-catching tower that creates a natural <b>urge
-                  to climb</b> and discover what’s inside.
-              </p>
-            </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
-              <ImageDisplay
-                src={beforeAndAfterTowerImages.gallery[1]}
-                gallery={beforeAndAfterTowerImages.gallery}
-                index={0}
-              />
-              <p className="mt-2 self-center"><i>AFTER</i></p>
+            <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center bg-gray-500 gap-2">
+              <div className="w-4/5 md:w-full">
+                <ImageDisplay
+                  src={buttonActivatedDoor.gallery[1]}
+                  gallery={buttonActivatedDoor.gallery}
+                  index={1}
+                />
+              </div>
+              <div className="w-1/5 md:w-full">
+                <p className="md:text-center">
+                  A sketch of the <b>map</b> can also be found in one of the pages, this helps (<i>somewhat</i>) the player
+                  navigate through the game.
+                </p>
+              </div>
             </div>
           </div>
         </div>
