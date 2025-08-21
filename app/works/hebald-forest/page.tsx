@@ -136,15 +136,14 @@ const Page: React.FC = () => {
               <div>
                 <p>The team consisted of <b>19 members</b>:</p>
                 <ul>
+                  <li>3 Coordinators</li>
                   <li>4 Developers</li>
                   <li>2 3D Artists</li>
                   <li>2 2D Artists</li>
                   <li>1 VFX Artist</li>
-                  <li>1 UI Programmer</li>
                   <li>1 Level Designer</li>
                   <li>1 Narrative Designer</li>
                   <li>5 Sound Designers</li>
-                  <li>3 Coordinators (<i>me included</i>)</li>
                 </ul>
               </div>
             </div>
