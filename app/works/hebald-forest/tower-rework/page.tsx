@@ -48,9 +48,9 @@ const Page: React.FC = () => {
           <div className="w-3/8 flex flex-col items-start">
             <p className="self-center mb-8"><i>BEFORE</i></p>
             <p>
-              <b><u>Problem:</u></b> The puzzle was <b>too simple</b> with <b>no clear objective</b>.
-              Its central location made it one of the first areas players rushed to, leading to a <b>weak
-                first impression</b>.
+              <b><u>Problem:</u></b> The old puzzle was <b>too simple</b> and had <b>no clear objective</b>, nor
+              was it clear on how to get to the objective, plus it being in the middle of the map was one of
+              the first things players would go after.
             </p>
           </div>
           <div className="w-2/8 flex flex-col items-center">
@@ -58,8 +58,10 @@ const Page: React.FC = () => {
           <div className="w-3/8 flex flex-col items-start">
             <p className="self-center mb-8"><i>AFTER</i></p>
             <p>
-              <b><u>Solution:</u></b> Replaced with a tall, eye-catching tower that creates a natural <b>urge
-                to climb</b> and discover what’s inside.
+              <b><u>Solution:</u></b> Reworked the whole area completely by removing all the previous woden towers
+              and replacing them with a tall and flashy tower. Its size immediately <b>catches the attention</b> of
+              the player and makes him feel an <b>urge to climb</b> to the top of the tower and find out
+              what's inside it.
             </p>
           </div>
         </div>
