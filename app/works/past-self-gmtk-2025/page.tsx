@@ -147,7 +147,7 @@ const Page: React.FC = () => {
                     <h3>1. Time‑Loop Cooperation</h3>
 
                     <div className="w-full mt-4 flex flex-col md:flex-row items-start gap-2">
-                        <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+                        <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
                             <div className="w-3/5 md:w-full">
                                 <ImageDisplay src={pastSelfImages.gallery[0]} gallery={pastSelfImages.gallery} index={0} />
                             </div>
@@ -158,24 +158,13 @@ const Page: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+                        <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
                             <div className="w-3/5 md:w-full">
                                 <ImageDisplay src={pastSelfImages.gallery[1]} gallery={pastSelfImages.gallery} index={1} />
                             </div>
                             <div className="w-2/5 md:w-full">
                                 <p className="md:text-center">
                                     Keys and doors form simple goals; cooperation with previous runs solves otherwise impossible routes.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
-                            <div className="w-3/5 md:w-full">
-                                <ImageDisplay src={pastSelfImages.gallery[2]} gallery={pastSelfImages.gallery} index={2} />
-                            </div>
-                            <div className="w-2/5 md:w-full">
-                                <p className="md:text-center">
-                                    Minimal UI with <b>Music/SFX sliders</b> keeps focus on timing, reads, and fast retries.
                                 </p>
                             </div>
                         </div>
@@ -188,17 +177,17 @@ const Page: React.FC = () => {
                 <h2>My Contributions</h2>
 
                 {/* UI */}
-                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
-                    <h3>1. UI Integration</h3>
-
+                <h3>1. UI Integration</h3>
+                <div className="w-full flex flex-col items-start p-2 md:p-4 md:gap-8">
                     <div className="w-full mt-4 flex flex-col md:flex-row items-start gap-2">
+
                         <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
                             <div className="w-3/5 md:w-full">
                                 <ImageDisplay src={UIImages.gallery[0]} gallery={UIImages.gallery} index={0} />
                             </div>
                             <div className="w-2/5 md:w-full">
                                 <p className="md:text-center">
-                                    Short runs (5–15s) create a recording; your past self repeats actions to hold buttons or open paths.
+                                    Main menu UI, with play, settings and quit buttons.
                                 </p>
                             </div>
                         </div>
@@ -209,13 +198,14 @@ const Page: React.FC = () => {
                             </div>
                             <div className="w-2/5 md:w-full">
                                 <p className="md:text-center">
-                                    Keys and doors form simple goals; cooperation with previous runs solves otherwise impossible routes.
+                                    Minimal UI with <b>Music/SFX sliders</b>.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <h3>2. Other stuff</h3>
                 <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl">
                     <ul>
                         <li>Designed & implemented the <b>key collection</b> and <b>inventory</b> logic</li>
