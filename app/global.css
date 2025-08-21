@@ -184,7 +184,7 @@ html {
 }
 
 .prose ul {
-  @apply list-disc pl-6 text-neutral-400 text-[0.6rem] sm:text-[0.725rem] md:text-[0.8rem] lg:text-[0.85rem];
+  @apply list-none md:list-disc pl-1 sm:pl-2 md:pl-5 text-neutral-400 text-[0.6rem] sm:text-[0.725rem] md:text-[0.8rem] lg:text-[0.85rem];
 }
 
 .prose ol {
