@@ -27,8 +27,9 @@ const hebaldForestImages =
 
 const notebookImages = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_02.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_unlocking_escalade_nage.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_map.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_tips_02.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_tips_01.png?raw=true",
   ]
 }
@@ -36,7 +37,13 @@ const notebookImages = {
 const climbingWallGifs = {
   gallery: [
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_wall.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_wall_02.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_planks_01.gif?raw=true",
   ]
+}
+
+const swimmingGif = {
+  gif: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/swimming.gif?raw=true"
 }
 
 const beforeAndAfterTowerImages = {
@@ -57,6 +64,13 @@ const beforeAndAfterCaveImages = {
 const beforeAndAfterFoxStatue = {
   gallery: [
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/fox_statue_activating_before.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/fox_statue_activating_after.gif?raw=true",
+  ],
+};
+
+const buttonActivatedDoor = {
+  gallery: [
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/button_activation.gif?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/fox_statue_activating_after.gif?raw=true",
   ],
 };
@@ -207,30 +221,52 @@ const Page: React.FC = () => {
         <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
           <h3>1. Notebook</h3>
 
-          <div className="w-full mt-4 flex flex-row items-start shadow-xl bg-gray-700 gap-2">
-            <div className="w-1/3 flex flex-col items-center bg-gray-600">
-              <ImageDisplay
-                src={notebookImages.gallery[0]}
-                gallery={notebookImages.gallery}
-                index={0}
-              />
-              <p>description</p>
+          <div className="w-full mt-4 flex flex-col md:flex-row items-start shadow-xl bg-gray-700 gap-2">
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center bg-gray-600 gap-2">
+              <div className="w-4/5 md:w-full">
+                <ImageDisplay
+                  src={notebookImages.gallery[0]}
+                  gallery={notebookImages.gallery}
+                  index={0}
+                />
+              </div>
+              <div className="w-1/5 md:w-full">
+                <p className="md:text-center">
+                  <b>Unlocking skills</b>: You unlock skills like swimming or climbing by typing each one of them
+                  on your notebook. The skills are only able to be unlocked once you have spoken to the right NPC
+                  and they have spoken the specific word, like climb or swim, which are always annotated in <b>red</b>.
+                </p>
+              </div>
             </div>
-            <div className="w-1/3 flex flex-col items-center bg-gray-500">
-              <ImageDisplay
-                src={notebookImages.gallery[1]}
-                gallery={notebookImages.gallery}
-                index={0}
-              />
-              <p>description</p>
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center bg-gray-500 gap-2">
+              <div className="w-4/5 md:w-full">
+                <ImageDisplay
+                  src={notebookImages.gallery[1]}
+                  gallery={notebookImages.gallery}
+                  index={1}
+                />
+              </div>
+              <div className="w-1/5 md:w-full">
+                <p className="md:text-center">
+                  A sketch of the <b>map</b> can also be found in one of the pages, this helps (<i>somewhat</i>) the player
+                  navigate through the game.
+                </p>
+              </div>
             </div>
-            <div className="w-1/3 flex flex-col items-center bg-gray-400">
-              <ImageDisplay
-                src={notebookImages.gallery[2]}
-                gallery={notebookImages.gallery}
-                index={0}
-              />
-              <p>description</p>
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center bg-gray-400 gap-2">
+              <div className="w-4/5 md:w-full">
+                <ImageDisplay
+                  src={notebookImages.gallery[2]}
+                  gallery={notebookImages.gallery}
+                  index={2}
+                />
+              </div>
+              <div className="w-1/5 md:w-full">
+                <p className="md:text-center">
+                  Some game <b>tips and clues</b> can also be found in the notebook, these tips help the player find out where{" "}
+                  and how to collect the <b>spheres</b>.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -239,30 +275,48 @@ const Page: React.FC = () => {
         <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
           <h3>2. Climbing</h3>
 
-          <div className="w-full mt-4 flex flex-row items-start shadow-xl bg-gray-700 gap-2">
-            <div className="w-1/3 flex flex-col items-center bg-gray-600">
-              <ImageDisplay
-                src={notebookImages.gallery[0]}
-                gallery={notebookImages.gallery}
-                index={0}
-              />
-              <p>description</p>
+          <div className="w-full mt-4 flex flex-col md:flex-row items-start shadow-xl bg-gray-700 gap-2">
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+              <div className="w-4/5 md:w-full">
+                <ImageDisplay
+                  src={climbingWallGifs.gallery[0]}
+                  gallery={climbingWallGifs.gallery}
+                  index={0}
+                />
+              </div>
+              <div className="w-1/5 md:w-full">
+                <p className="md:text-center">
+                  With the <b>Climb skill</b> unlocked, the player can move sideways along walls before releasing and dropping down.
+                </p>
+              </div>
             </div>
-            <div className="w-1/3 flex flex-col items-center bg-gray-500">
-              <ImageDisplay
-                src={notebookImages.gallery[1]}
-                gallery={notebookImages.gallery}
-                index={0}
-              />
-              <p>description</p>
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+              <div className="w-4/5 md:w-full">
+                <ImageDisplay
+                  src={climbingWallGifs.gallery[1]}
+                  gallery={climbingWallGifs.gallery}
+                  index={1}
+                />
+              </div>
+              <div className="w-1/5 md:w-full">
+                <p className="md:text-center">
+                  The <b>Climb skill</b> also allows the player to scale walls upward, reaching the top and continuing on foot.
+                </p>
+              </div>
             </div>
-            <div className="w-1/3 flex flex-col items-center bg-gray-400">
-              <ImageDisplay
-                src={notebookImages.gallery[2]}
-                gallery={notebookImages.gallery}
-                index={0}
-              />
-              <p>description</p>
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+              <div className="w-4/5 md:w-full">
+                <ImageDisplay
+                  src={climbingWallGifs.gallery[2]}
+                  gallery={climbingWallGifs.gallery}
+                  index={2}
+                />
+              </div>
+              <div className="w-1/5 md:w-full">
+                <p className="md:text-center">
+                  Even without unlocking <b>Climb</b>, the player can still grab onto ledges or planks to pull themselves up.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -271,30 +325,21 @@ const Page: React.FC = () => {
         <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
           <h3>3. Swimming</h3>
 
-          <div className="w-full mt-4 flex flex-row items-start shadow-xl bg-gray-700 gap-2">
-            <div className="w-1/3 flex flex-col items-center bg-gray-600">
+          <div className="w-full flex flex-col md:flex-row items-center gap-4">
+            {/* LEFT - Video */}
+            <div className="w-full md:w-2/3 aspect-video bg-gray-600">
               <ImageDisplay
-                src={notebookImages.gallery[0]}
-                gallery={notebookImages.gallery}
-                index={0}
+                src={swimmingGif.gif}
               />
-              <p>description</p>
             </div>
-            <div className="w-1/3 flex flex-col items-center bg-gray-500">
-              <ImageDisplay
-                src={notebookImages.gallery[1]}
-                gallery={notebookImages.gallery}
-                index={0}
-              />
-              <p>description</p>
-            </div>
-            <div className="w-1/3 flex flex-col items-center bg-gray-400">
-              <ImageDisplay
-                src={notebookImages.gallery[2]}
-                gallery={notebookImages.gallery}
-                index={0}
-              />
-              <p>description</p>
+
+            {/* RIGHT - Text */}
+            <div className="w-full md:w-1/3 flex flex-col items-center bg-gray-500 gap-4 p-4">
+              <p>
+                The <b>swimming</b> skill is unlocked after speaking with an NPC near the lake and writing the word in the <b>Notebook</b>.
+                Once unlocked, the player can swim using a stamina bar that gradually depletes. If the bar runs out, the player <i>drowns</i>
+                and respawns near the spot of death. Without the skill, jumping into the water immediately causes the player to <i>drown</i>.
+              </p>
             </div>
           </div>
         </div>
@@ -482,11 +527,11 @@ const Page: React.FC = () => {
         <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
           <h3>4. Improved VFX & SFX for the Butterfly Puzzle</h3>
 
-          <div className="w-full flex flex-row items-center gap-2">
-            {/* LEFT */}
-            <div className="w-2/3 w-[60vw] h-[60vh] bg-gray-600">
+          <div className="w-full flex flex-col md:flex-row items-center gap-4">
+            {/* LEFT - Video */}
+            <div className="w-full md:w-2/3 aspect-video bg-gray-600">
               <iframe
-                className="w-full h-full"
+                className="w-full h-full rounded"
                 src="https://www.youtube.com/embed/FLSQJRue0SU"
                 title="YouTube video player"
                 frameBorder="0"
@@ -494,20 +539,23 @@ const Page: React.FC = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            {/* RIGHT */}
-            <div className="w-1/3 flex flex-col items-center bg-gray-500 gap-4">
+
+            {/* RIGHT - Text */}
+            <div className="w-full md:w-1/3 flex flex-col items-center bg-gray-500 gap-4 p-4">
               <p>
                 <b><u>Problem:</u></b> <b>No sound or visual feedback</b>, the player was left <b>not knowing</b> if anything had
                 even happened, sometimes the player would <b>not</b> even <b>know</b> that he had triggered the butterfly puzzle.
               </p>
+
               <svg
-                className="h-[5vh] w-[5vw] text-gray-300"
+                className="h-6 w-6 text-gray-300"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
                 <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
               </svg>
+
               <p>
                 <b><u>Solution:</u></b> Added <b>audio and visual feedback</b>, when triggering one of the three butterfly placements,
                 a <b>sound</b> + a <b>visual</b> effect plays. The <b>pitch</b> also <b>increases</b> as the player "collects" more butterflies,
