@@ -36,8 +36,8 @@ const notebookImages = {
 
 const climbing = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_plank_01.jpeg?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_wall_02.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_plank_01.jpeg?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_plank_02.jpeg?raw=true",
   ]
 }
@@ -78,10 +78,10 @@ const buttonActivatedDoor = {
 const Page: React.FC = () => {
   return (
     <section className="prose mx-6 sm:mx-8 md:mx-16 lg:mx-24 flex flex-col items-center gap-16">
-      <div className="w-full flex flex-col items-start gap-4">
+      <div className="w-full flex flex-col items-start gap-4 md:gap-16">
 
         {/* Title and Main Image */}
-        <div className="w-full flex flex-row items-end gap-2 bg-gray-800">
+        <div className="w-full flex flex-row items-end gap-2 ">
 
           {/* LEFT */}
           <div className="w-3/8 flex items-start">
@@ -105,7 +105,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Project Description */}
-        <div className="w-full flex flex-row items-start gap-2 bg-gray-700">
+        <div className="w-full flex flex-row items-start gap-2 ">
 
           {/* LEFT */}
           <div className="w-2/8">
@@ -133,8 +133,8 @@ const Page: React.FC = () => {
             {/* Team */}
             <div className="p-2 md:p-4 shadow-xl">
               <h4>Team</h4>
-              <p>
-                The team consisted of <b>19 members</b>:
+              <div>
+                <p>The team consisted of <b>19 members</b>:</p>
                 <ul>
                   <li>4 Developers</li>
                   <li>2 3D Artists</li>
@@ -146,7 +146,7 @@ const Page: React.FC = () => {
                   <li>5 Sound Designers</li>
                   <li>3 Coordinators (<i>me included</i>)</li>
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
 
@@ -158,9 +158,8 @@ const Page: React.FC = () => {
               <h4>Brief</h4>
               <p>
                 <b>Hebald Forest</b> is <b>open-world exploration game</b> developed
-                During my second year of my Masters Degree at Université Côte d'Azur in Cannes, France.
-                This project was a collaborative game built with <b>Unreal Engine 5</b>.
-
+                During my second year of my Masters Degree at Université Côte d'Azur in Cannes, France,
+                built collaboratively in <b>Unreal Engine 5</b>.
               </p>
             </div>
 
@@ -214,23 +213,23 @@ const Page: React.FC = () => {
       </div>
 
       {/* Game Mechanics */}
-      <div className="w-full flex flex-col items-start bg-gray-700 pb-4 shadow-xl">
+      <div className="w-full flex flex-col items-start gap-4 md:gap-16">
         <h2>Game Mechanics</h2>
 
         {/* Notebook */}
-        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
           <h3>1. Notebook</h3>
 
-          <div className="w-full mt-4 flex flex-col md:flex-row items-start shadow-xl bg-gray-700 gap-2">
-            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center bg-gray-600 gap-2">
-              <div className="w-4/5 md:w-full">
+          <div className="w-full mt-4 flex flex-col md:flex-row items-start gap-2">
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+              <div className="w-3/5 md:w-full">
                 <ImageDisplay
                   src={notebookImages.gallery[0]}
                   gallery={notebookImages.gallery}
                   index={0}
                 />
               </div>
-              <div className="w-1/5 md:w-full">
+              <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
                   <b>Unlocking skills</b>: You unlock skills like swimming or climbing by typing each one of them
                   on your notebook. The skills are only able to be unlocked once you have spoken to the right NPC
@@ -238,30 +237,30 @@ const Page: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center bg-gray-500 gap-2">
-              <div className="w-4/5 md:w-full">
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center  gap-2">
+              <div className="w-3/5 md:w-full">
                 <ImageDisplay
                   src={notebookImages.gallery[1]}
                   gallery={notebookImages.gallery}
                   index={1}
                 />
               </div>
-              <div className="w-1/5 md:w-full">
+              <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
                   A sketch of the <b>map</b> can also be found in one of the pages, this helps (<i>somewhat</i>) the player
                   navigate through the game.
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center bg-gray-400 gap-2">
-              <div className="w-4/5 md:w-full">
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+              <div className="w-3/5 md:w-full">
                 <ImageDisplay
                   src={notebookImages.gallery[2]}
                   gallery={notebookImages.gallery}
                   index={2}
                 />
               </div>
-              <div className="w-1/5 md:w-full">
+              <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
                   Some game <b>tips and clues</b> can also be found in the notebook, these tips help the player find out where{" "}
                   and how to collect the <b>spheres</b>.
@@ -272,49 +271,50 @@ const Page: React.FC = () => {
         </div>
 
         {/* Climbing */}
-        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
           <h3>2. Climbing</h3>
 
-          <div className="w-full mt-4 flex flex-col md:flex-row items-start shadow-xl bg-gray-700 gap-2">
+          <div className="w-full mt-4 flex flex-col md:flex-row items-start gap-2">
             <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
-              <div className="w-4/5 md:w-full">
+              <div className="w-3/5 md:w-full">
                 <ImageDisplay
                   src={climbing.gallery[0]}
                   gallery={climbing.gallery}
                   index={0}
                 />
               </div>
-              <div className="w-1/5 md:w-full">
+              <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
                   With the <b>Climb skill</b> unlocked, the player can move sideways along walls before releasing and dropping down.
+                  It also allows the player to <b>scale walls upward</b>, reaching the top and continuing on foot.
                 </p>
               </div>
             </div>
             <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
-              <div className="w-4/5 md:w-full">
+              <div className="w-3/5 md:w-full">
                 <ImageDisplay
                   src={climbing.gallery[1]}
                   gallery={climbing.gallery}
                   index={1}
                 />
               </div>
-              <div className="w-1/5 md:w-full">
+              <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
-                  The <b>Climb skill</b> also allows the player to scale walls upward, reaching the top and continuing on foot.
+                  Even without unlocking <b>Climb</b>, the player can still grab onto ledges or planks to pull themselves up.
                 </p>
               </div>
             </div>
             <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
-              <div className="w-4/5 md:w-full">
+              <div className="w-3/5 md:w-full">
                 <ImageDisplay
                   src={climbing.gallery[2]}
                   gallery={climbing.gallery}
                   index={2}
                 />
               </div>
-              <div className="w-1/5 md:w-full">
+              <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
-                  Even without unlocking <b>Climb</b>, the player can still grab onto ledges or planks to pull themselves up.
+                  Players may also use planks as simple ledges, no <b>Climb</b> required to boost themselves higher.
                 </p>
               </div>
             </div>
@@ -322,19 +322,19 @@ const Page: React.FC = () => {
         </div>
 
         {/* Swimming */}
-        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800">
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
           <h3>3. Swimming</h3>
 
           <div className="w-full flex flex-col md:flex-row items-center gap-4">
             {/* LEFT - Video */}
-            <div className="w-full md:w-2/3 aspect-video bg-gray-600">
+            <div className="w-full md:w-2/3 aspect-video ">
               <ImageDisplay
                 src={swimming.image}
               />
             </div>
 
             {/* RIGHT - Text */}
-            <div className="w-full md:w-1/3 flex flex-col items-center bg-gray-500 gap-4 p-4">
+            <div className="w-full md:w-1/3 flex flex-col items-center  gap-4 p-4">
               <p>
                 The <b>swimming</b> skill is unlocked after speaking with an NPC near the lake and writing the word in the <b>Notebook</b>.
                 Once unlocked, the player can swim using a stamina bar that gradually depletes. If the bar runs out, the player <i>drowns</i>
@@ -346,23 +346,23 @@ const Page: React.FC = () => {
       </div>
 
       {/* My Contribution */}
-      <div className="w-full flex flex-col items-start bg-gray-700 pb-4 shadow-xl">
+      <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16">
         <h2>My Contributions</h2>
 
         {/* Tower */}
-        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
           <h3>1. Tower Rework</h3>
 
           {/* BEFORE */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-row items-center bg-gray-600">
+            <div className="w-2/5 flex flex-row items-center ">
               <p>
                 <b><u>Problem:</u></b> The old puzzle was <b>too simple</b> and had <b>no clear objective</b>, nor
                 was it clear on how to get to the objective, plus it being in the middle of the map was one of
                 the first things players would go after, leading to a <b>weak first impression</b>.
               </p>
             </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+            <div className="w-3/5 flex flex-col items-start ">
               <ImageDisplay
                 src={beforeAndAfterTowerImages.gallery[0]}
                 gallery={beforeAndAfterTowerImages.gallery}
@@ -374,9 +374,9 @@ const Page: React.FC = () => {
 
           {/* ARROW */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-col items-start bg-gray-600">
+            <div className="w-2/5 flex flex-col items-start ">
             </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+            <div className="w-3/5 flex flex-col items-start ">
               <svg
                 className="mt-2 self-center h-[5vh] w-[5vw] text-gray-300"
                 xmlns="http://www.w3.org/2000/svg"
@@ -390,7 +390,7 @@ const Page: React.FC = () => {
 
           {/* AFTER */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-row items-center bg-gray-600">
+            <div className="w-2/5 flex flex-row items-center ">
               <p>
                 <b><u>Solution:</u></b> Reworked the whole area completely by removing all the previous woden towers
                 and replacing them with a tall and flashy tower. Its size immediately <b>catches the attention</b> of
@@ -398,11 +398,11 @@ const Page: React.FC = () => {
                 what's inside it.
               </p>
             </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+            <div className="w-3/5 flex flex-col items-start ">
               <ImageDisplay
                 src={beforeAndAfterTowerImages.gallery[1]}
                 gallery={beforeAndAfterTowerImages.gallery}
-                index={0}
+                index={1}
               />
               <p className="mt-2 self-center"><i>AFTER</i></p>
             </div>
@@ -410,12 +410,12 @@ const Page: React.FC = () => {
         </div>
 
         {/* Cave */}
-        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
           <h3>2. Cave Rework</h3>
 
           {/* BEFORE */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-3/5 flex flex-col items-start bg-gray-600">
+            <div className="w-3/5 flex flex-col items-start ">
               <ImageDisplay
                 src={beforeAndAfterCaveImages.gallery[0]}
                 gallery={beforeAndAfterCaveImages.gallery}
@@ -424,7 +424,7 @@ const Page: React.FC = () => {
               <p className="mt-2 self-center"><i>BEFORE</i></p>
 
             </div>
-            <div className="w-2/5 flex flex-row items-center bg-gray-500">
+            <div className="w-2/5 flex flex-row items-center ">
               <p>
                 <b><u>Problem:</u></b> The old cave was <b>too messy</b> with <b>no clear direction</b> of where to go.
                 The main objective that was collecting the gem was poorly designed and had no feedback whatsoever,
@@ -435,7 +435,7 @@ const Page: React.FC = () => {
 
           {/* ARROW */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-3/5 flex flex-col items-start bg-gray-600">
+            <div className="w-3/5 flex flex-col items-start ">
               <svg
                 className="mt-2 self-center h-[5vh] w-[5vw] text-gray-300"
                 xmlns="http://www.w3.org/2000/svg"
@@ -445,21 +445,21 @@ const Page: React.FC = () => {
                 <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
               </svg>
             </div>
-            <div className="w-2/5 flex flex-col items-start bg-gray-500">
+            <div className="w-2/5 flex flex-col items-start ">
             </div>
           </div>
 
           {/* AFTER */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-3/5 flex flex-col items-start bg-gray-600">
+            <div className="w-3/5 flex flex-col items-start ">
               <ImageDisplay
                 src={beforeAndAfterCaveImages.gallery[1]}
                 gallery={beforeAndAfterCaveImages.gallery}
-                index={0}
+                index={1}
               />
               <p className="mt-2 self-center"><i>AFTER</i></p>
             </div>
-            <div className="w-2/5 flex flex-row items-center bg-gray-500">
+            <div className="w-2/5 flex flex-row items-center ">
               <p><b><u>Solution:</u></b> A complete overhaul and rework of the cave, with clear objective of where to go right
                 off the bat after entering the cave. A short path on the left takes the player to a closed door, signaling
                 that he should try and get the door open. And the longer but more difficult path on the right with puzzles and
@@ -469,18 +469,18 @@ const Page: React.FC = () => {
         </div>
 
         {/* Fox Statues */}
-        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
           <h3>3. Improved VFX & SFX for the Fox Statues</h3>
 
           {/* BEFORE */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-row items-center bg-gray-600">
+            <div className="w-2/5 flex flex-row items-center ">
               <p>
                 <b><u>Problem:</u></b> There was <b>no feedback</b> for activating the Fox Statue, leaving
                 the player wondering if he activated it correctly or not.
               </p>
             </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+            <div className="w-3/5 flex flex-col items-start ">
               <img
                 className="w-[100vw]"
                 src={beforeAndAfterFoxStatue.gallery[0]}
@@ -491,9 +491,9 @@ const Page: React.FC = () => {
 
           {/* ARROW */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-col items-start bg-gray-600">
+            <div className="w-2/5 flex flex-col items-start ">
             </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+            <div className="w-3/5 flex flex-col items-start ">
               <svg
                 className="mt-2 self-center h-[5vh] w-[5vw] text-gray-300"
                 xmlns="http://www.w3.org/2000/svg"
@@ -507,13 +507,13 @@ const Page: React.FC = () => {
 
           {/* AFTER */}
           <div className="w-full flex flex-row gap-2">
-            <div className="w-2/5 flex flex-row items-center bg-gray-600">
+            <div className="w-2/5 flex flex-row items-center ">
               <p>
                 <b><u>Solution:</u></b> Added <b>visual and audio effects</b> after activating the Fox Statue,
                 clearly showing an output for activating the fox correctly.
               </p>
             </div>
-            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+            <div className="w-3/5 flex flex-col items-start ">
               <img
                 className="w-[100vw]"
                 src={beforeAndAfterFoxStatue.gallery[1]}
@@ -524,12 +524,12 @@ const Page: React.FC = () => {
         </div>
 
         {/* Butterfly Puzzle */}
-        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
           <h3>4. Improved VFX & SFX for the Butterfly Puzzle</h3>
 
           <div className="w-full flex flex-col md:flex-row items-center gap-4">
             {/* LEFT - Video */}
-            <div className="w-full md:w-2/3 aspect-video bg-gray-600">
+            <div className="w-full md:w-2/3 aspect-video ">
               <iframe
                 className="w-full h-full rounded"
                 src="https://www.youtube.com/embed/FLSQJRue0SU"
@@ -541,10 +541,10 @@ const Page: React.FC = () => {
             </div>
 
             {/* RIGHT - Text */}
-            <div className="w-full md:w-1/3 flex flex-col items-center bg-gray-500 gap-4 p-4">
+            <div className="w-full md:w-1/3 flex flex-col items-center  gap-4 p-4">
               <p>
-                <b><u>Problem:</u></b> <b>No sound or visual feedback</b>, the player was left <b>not knowing</b> if anything had
-                even happened, sometimes the player would <b>not</b> even <b>know</b> that he had triggered the butterfly puzzle.
+                <b>Problem:</b> The puzzle gave no sound or visual feedback, leaving players unsure if they had triggered
+                it or made any progress.
               </p>
 
               <svg
@@ -557,48 +557,49 @@ const Page: React.FC = () => {
               </svg>
 
               <p>
-                <b><u>Solution:</u></b> Added <b>audio and visual feedback</b>, when triggering one of the three butterfly placements,
-                a <b>sound</b> + a <b>visual</b> effect plays. The <b>pitch</b> also <b>increases</b> as the player "collects" more butterflies,
-                signaling that he is <b>progressing</b> through the puzzle.
+                <b>Solution:</b> Added audio and visual cues for each butterfly placement, with the sound’s pitch rising
+                as the player collected more butterflies to signal progress.
               </p>
             </div>
           </div>
         </div>
 
         {/* Button Activated Door */}
-        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
           <h3>5. Button Activated Door</h3>
 
-          {/* BEFORE */}
-          <div className="w-full mt-4 flex flex-col md:flex-row items-start shadow-xl bg-gray-700 gap-2">
-            <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center bg-gray-600 gap-2">
-              <div className="w-4/5 md:w-full">
+          <div className="w-full mt-4 flex flex-col items-start gap-2 md:gap-8">
+
+            {/* GIF */}
+            <div className="w-full flex flex-row items-center  gap-2">
+              <div className="w-3/5">
                 <ImageDisplay
                   src={buttonActivatedDoor.gallery[0]}
                   gallery={buttonActivatedDoor.gallery}
                   index={0}
                 />
               </div>
-              <div className="w-1/5 md:w-full">
+              <div className="w-2/5">
                 <p className="md:text-center">
-                  <b>Unlocking skills</b>: You unlock skills like swimming or climbing by typing each one of them
-                  on your notebook. The skills are only able to be unlocked once you have spoken to the right NPC
-                  and they have spoken the specific word, like climb or swim, which are always annotated in <b>red</b>.
+                  <b>GIF</b> showing the <b>button activation system working</b>, this button could be connected to any sort of door or
+                  activation, like a platform going up and down for example, or any object that has 2 states.
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center bg-gray-500 gap-2">
-              <div className="w-4/5 md:w-full">
+
+            {/* IMAGE */}
+            <div className="w-full flex flex-row items-center  gap-2">
+              <div className="w-3/5 flex items-center">
                 <ImageDisplay
+                  imageClassName="max-h-[60vh]"
                   src={buttonActivatedDoor.gallery[1]}
                   gallery={buttonActivatedDoor.gallery}
                   index={1}
                 />
               </div>
-              <div className="w-1/5 md:w-full">
+              <div className="w-2/5">
                 <p className="md:text-center">
-                  A sketch of the <b>map</b> can also be found in one of the pages, this helps (<i>somewhat</i>) the player
-                  navigate through the game.
+                  <b>Objects</b> could also be placed on top in order to <b>activate</b> the button and <b>open the door</b>.
                 </p>
               </div>
             </div>
@@ -606,19 +607,31 @@ const Page: React.FC = () => {
         </div>
       </div>
 
-      {/* YouTube Video */}
-      <div className="w-full aspect-video max-w-4xl">
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/ODJmCASHLy4"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+      {/* Gameplay Video */}
+      <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16 shadow-2xl">
+        <h2>Gameplay</h2>
+        <div className="self-center w-full aspect-video max-w-4xl">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/ODJmCASHLy4"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
 
-      <FullScreenGallery images={hebaldForestImages.gallery} useGrid={true} />
+      <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16 shadow-2xl">
+        <h2>Image Gallery</h2>
+
+        <ImageDisplay
+          src={hebaldForestImages.gallery[0]}
+          gallery={hebaldForestImages.gallery}
+          index={0}
+        />
+      </div>
+
 
       {/* Footer Nav */}
       <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
