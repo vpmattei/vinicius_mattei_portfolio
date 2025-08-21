@@ -28,7 +28,7 @@ const hebaldForestImages =
 const notebookImages = {
   gallery: [
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet_02.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet.png?raw=true",
   ]
 }
@@ -513,6 +513,64 @@ const Page: React.FC = () => {
                 off the bat after entering the cave. A short path on the left takes the player to a closed door, signaling
                 that he should try and get the door open. And the longer but more difficult path on the right with puzzles and
                 platforms to jump on.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Button Activated Door */}
+        <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
+          <h3>5. Button Activated Door</h3>
+
+          {/* BEFORE */}
+          <div className="w-full flex flex-row gap-2">
+            <div className="w-2/5 flex flex-row items-center bg-gray-600">
+              <p>
+                <b><u>Problem:</u></b> The puzzle was <b>too simple</b> with <b>no clear objective</b>.
+                Its central location made it one of the first areas players rushed to, leading to a <b>weak
+                  first impression</b>.
+              </p>
+            </div>
+            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+              <ImageDisplay
+                src={beforeAndAfterTowerImages.gallery[0]}
+                gallery={beforeAndAfterTowerImages.gallery}
+                index={0}
+              />
+              <p className="mt-2 self-center"><i>BEFORE</i></p>
+            </div>
+          </div>
+
+          {/* ARROW */}
+          <div className="w-full flex flex-row gap-2">
+            <div className="w-2/5 flex flex-col items-start bg-gray-600">
+            </div>
+            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+              <svg
+                className="mt-2 self-center h-[5vh] w-[5vw] text-gray-300"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+              </svg>
+            </div>
+          </div>
+
+          {/* AFTER */}
+          <div className="w-full flex flex-row gap-2">
+            <div className="w-2/5 flex flex-row items-center bg-gray-600">
+              <p>
+                <b><u>Solution:</u></b> Replaced with a tall, eye-catching tower that creates a natural <b>urge
+                  to climb</b> and discover what’s inside.
+              </p>
+            </div>
+            <div className="w-3/5 flex flex-col items-start bg-gray-500">
+              <ImageDisplay
+                src={beforeAndAfterTowerImages.gallery[1]}
+                gallery={beforeAndAfterTowerImages.gallery}
+                index={0}
+              />
+              <p className="mt-2 self-center"><i>AFTER</i></p>
             </div>
           </div>
         </div>
