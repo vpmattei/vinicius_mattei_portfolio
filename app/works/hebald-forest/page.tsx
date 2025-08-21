@@ -33,6 +33,12 @@ const notebookImages = {
   ]
 }
 
+const climbingWallGifs = {
+  gallery: [
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_wall.gif?raw=true",
+  ]
+}
+
 const beforeAndAfterTowerImages = {
   gallery: [
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/tower_before_01.png?raw=true",
@@ -45,6 +51,13 @@ const beforeAndAfterCaveImages = {
   gallery: [
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave_before.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave2.png?raw=true",
+  ],
+};
+
+const beforeAndAfterFoxStatue = {
+  gallery: [
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/fox_statue_activating_before.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/fox_statue_activating_after.gif?raw=true",
   ],
 };
 
@@ -299,9 +312,9 @@ const Page: React.FC = () => {
           <div className="w-full flex flex-row gap-2">
             <div className="w-2/5 flex flex-row items-center bg-gray-600">
               <p>
-                <b><u>Problem:</u></b> The puzzle was <b>too simple</b> with <b>no clear objective</b>.
-                Its central location made it one of the first areas players rushed to, leading to a <b>weak
-                  first impression</b>.
+                <b><u>Problem:</u></b> The old puzzle was <b>too simple</b> and had <b>no clear objective</b>, nor
+                was it clear on how to get to the objective, plus it being in the middle of the map was one of
+                the first things players would go after, leading to a <b>weak first impression</b>.
               </p>
             </div>
             <div className="w-3/5 flex flex-col items-start bg-gray-500">
@@ -334,8 +347,10 @@ const Page: React.FC = () => {
           <div className="w-full flex flex-row gap-2">
             <div className="w-2/5 flex flex-row items-center bg-gray-600">
               <p>
-                <b><u>Solution:</u></b> Replaced with a tall, eye-catching tower that creates a natural <b>urge
-                  to climb</b> and discover what’s inside.
+                <b><u>Solution:</u></b> Reworked the whole area completely by removing all the previous woden towers
+                and replacing them with a tall and flashy tower. Its size immediately <b>catches the attention</b> of
+                the player and makes him feel an <b>urge to climb</b> to the top of the tower and find out
+                what's inside it.
               </p>
             </div>
             <div className="w-3/5 flex flex-col items-start bg-gray-500">
@@ -416,16 +431,14 @@ const Page: React.FC = () => {
           <div className="w-full flex flex-row gap-2">
             <div className="w-2/5 flex flex-row items-center bg-gray-600">
               <p>
-                <b><u>Problem:</u></b> The puzzle was <b>too simple</b> with <b>no clear objective</b>.
-                Its central location made it one of the first areas players rushed to, leading to a <b>weak
-                  first impression</b>.
+                <b><u>Problem:</u></b> There was <b>no feedback</b> for activating the Fox Statue, leaving
+                the player wondering if he activated it correctly or not.
               </p>
             </div>
             <div className="w-3/5 flex flex-col items-start bg-gray-500">
-              <ImageDisplay
-                src={beforeAndAfterTowerImages.gallery[0]}
-                gallery={beforeAndAfterTowerImages.gallery}
-                index={0}
+              <img
+                className="w-[100vw]"
+                src={beforeAndAfterFoxStatue.gallery[0]}
               />
               <p className="mt-2 self-center"><i>BEFORE</i></p>
             </div>
@@ -451,15 +464,14 @@ const Page: React.FC = () => {
           <div className="w-full flex flex-row gap-2">
             <div className="w-2/5 flex flex-row items-center bg-gray-600">
               <p>
-                <b><u>Solution:</u></b> Replaced with a tall, eye-catching tower that creates a natural <b>urge
-                  to climb</b> and discover what’s inside.
+                <b><u>Solution:</u></b> Added <b>visual and audio effects</b> after activating the Fox Statue,
+                clearly showing an output for activating the fox correctly.
               </p>
             </div>
             <div className="w-3/5 flex flex-col items-start bg-gray-500">
-              <ImageDisplay
-                src={beforeAndAfterTowerImages.gallery[1]}
-                gallery={beforeAndAfterTowerImages.gallery}
-                index={0}
+              <img
+                className="w-[100vw]"
+                src={beforeAndAfterFoxStatue.gallery[1]}
               />
               <p className="mt-2 self-center"><i>AFTER</i></p>
             </div>
@@ -470,57 +482,37 @@ const Page: React.FC = () => {
         <div className="w-full mt-4 flex flex-col items-start p-2 md:p-4 shadow-xl bg-gray-800 gap-2">
           <h3>4. Improved VFX & SFX for the Butterfly Puzzle</h3>
 
-          {/* BEFORE */}
-          <div className="w-full flex flex-row gap-2">
-            <div className="w-3/5 flex flex-col items-start bg-gray-600">
-              <ImageDisplay
-                src={beforeAndAfterCaveImages.gallery[0]}
-                gallery={beforeAndAfterCaveImages.gallery}
-                index={0}
-              />
-              <p className="mt-2 self-center"><i>BEFORE</i></p>
-
+          <div className="w-full flex flex-row items-center gap-2">
+            {/* LEFT */}
+            <div className="w-2/3 w-[60vw] h-[60vh] bg-gray-600">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/FLSQJRue0SU"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="w-2/5 flex flex-row items-center bg-gray-500">
+            {/* RIGHT */}
+            <div className="w-1/3 flex flex-col items-center bg-gray-500 gap-4">
               <p>
-                <b><u>Problem:</u></b> The old cave was <b>too messy</b> with <b>no clear direction</b> of where to go.
-                The main objective that was collecting the gem was poorly designed and had no feedback whatsoever,
-                leaving the player confused at the after leaving the cave, not knowing if he had completed the cave.
+                <b><u>Problem:</u></b> <b>No sound or visual feedback</b>, the player was left <b>not knowing</b> if anything had
+                even happened, sometimes the player would <b>not</b> even <b>know</b> that he had triggered the butterfly puzzle.
               </p>
-            </div>
-          </div>
-
-          {/* ARROW */}
-          <div className="w-full flex flex-row gap-2">
-            <div className="w-3/5 flex flex-col items-start bg-gray-600">
               <svg
-                className="mt-2 self-center h-[5vh] w-[5vw] text-gray-300"
+                className="h-[5vh] w-[5vw] text-gray-300"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
                 <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
               </svg>
-            </div>
-            <div className="w-2/5 flex flex-col items-start bg-gray-500">
-            </div>
-          </div>
-
-          {/* AFTER */}
-          <div className="w-full flex flex-row gap-2">
-            <div className="w-3/5 flex flex-col items-start bg-gray-600">
-              <ImageDisplay
-                src={beforeAndAfterCaveImages.gallery[1]}
-                gallery={beforeAndAfterCaveImages.gallery}
-                index={0}
-              />
-              <p className="mt-2 self-center"><i>AFTER</i></p>
-            </div>
-            <div className="w-2/5 flex flex-row items-center bg-gray-500">
-              <p><b><u>Solution:</u></b> A complete overhaul and rework of the cave, with clear objective of where to go right
-                off the bat after entering the cave. A short path on the left takes the player to a closed door, signaling
-                that he should try and get the door open. And the longer but more difficult path on the right with puzzles and
-                platforms to jump on.</p>
+              <p>
+                <b><u>Solution:</u></b> Added <b>audio and visual feedback</b>, when triggering one of the three butterfly placements,
+                a <b>sound</b> + a <b>visual</b> effect plays. The <b>pitch</b> also <b>increases</b> as the player "collects" more butterflies,
+                signaling that he is <b>progressing</b> through the puzzle.
+              </p>
             </div>
           </div>
         </div>
