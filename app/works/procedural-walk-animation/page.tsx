@@ -1,98 +1,182 @@
 import React from "react";
-import Link from "next/link";
 import ArrowIcon from "app/components/ArrowIcon";
+import ImageDisplay from "app/components/ImageDisplay";
 
 export const metadata = {
   title: "Procedural Walk Animation",
-  description: "Insect|Robot-like Animation done in Unity.",
+  description: "Insect/robot-like stepping logic built in Unity.",
 };
+
+const plaImages = {
+  gallery: [
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/pwa_title.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_01.jpeg?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_02.jpeg?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_03.jpeg?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_04.jpeg?raw=true",
+  ],
+};
+
+const plaGif =
+  "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/gifs/ezgif-36801abcdb5bab.gif?raw=true";
 
 const Page: React.FC = () => {
   return (
-    <section className="prose mx-12 sm:mx-16 md:mx-20 lg:mx-32 flex flex-col items-center gap-16">
-      {/* Header */}
-      <div className="w-full flex flex-col items-center text-center">
-        <img
-          src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/pwa_title.png?raw=true"
-          alt="Procedural Walk Animation Title"
-          style={{ width: "600px", height: "300px" }}
-        />
-        <h2 className="text-3xl font-bold mt-4">Procedural Leg Animation</h2>
-        <h3 className="text-xl font-medium mt-2">
-          🦿 Robot-Style Stepping Logic with Unity 6
-        </h3>
+    <section className="prose mx-6 sm:mx-8 md:mx-16 lg:mx-24 flex flex-col items-center gap-16">
+      <div className="w-full flex flex-col items-start gap-4 md:gap-16">
+        {/* Title and Main Image */}
+        <div className="w-full flex flex-row items-end gap-2">
+          {/* LEFT */}
+          <div className="w-3/8 flex items-start">
+            <div className="flex flex-col items-start">
+              <h1 className="mt-4 mb-2">Procedural Leg Animation</h1>
+              <h3 className="mt-0 mb-2">Project Breakdown</h3>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="w-5/8">
+            <div className="flex flex-col items-center">
+              <ImageDisplay src={plaImages.gallery[0]} />
+            </div>
+          </div>
+        </div>
+
+        {/* Project Description */}
+        <div className="w-full flex flex-row items-start gap-2">
+          {/* LEFT */}
+          <div className="w-2/8">
+            {/* Info */}
+            <div className="p-2 md:p-4 shadow-xl">
+              <ul>
+                <li>Platform: PC (<i>no build</i>)</li>
+                <li>Engine: Unity</li>
+                <li>Duration: 3 months</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="w-6/8">
+            {/* Brief */}
+            <div className="p-2 md:p-4 shadow-xl">
+              <h4>Brief</h4>
+              <p>
+                A fully <b>procedural stepping system</b> for insect/robot-like legs in <b>Unity 6</b>. Legs are split into two groups (A/B) and compute a <b>priority score</b> based on distance to their target; when a group’s total overtakes the other and individual leg priority exceeds a threshold, those legs step—no baked animations.
+              </p>
+            </div>
+
+            {/* Project Goals */}
+            <div className="p-2 md:p-4 shadow-xl">
+              <h4>Project Goals</h4>
+              <p>
+                Build a <b>publisher-facing prototype</b> that proves the viability of <b>procedural locomotion</b>: clear group coordination, stable foot placement, and responsive stepping logic suitable for future IK integration.
+              </p>
+              <br />
+              <div className="w-full flex flex-row">
+                <div className="w-1/2">
+                  <h6 className="mb-2">Primary responsibilities</h6>
+                  <ul>
+                    <li>Stepping Priority Algorithm</li>
+                    <li>Group Coordination Logic (A/B)</li>
+                    <li>Physics & Threshold Tuning</li>
+                    <li>Debug/Visualization Tools</li>
+                  </ul>
+                </div>
+                <div className="w-1/2">
+                  <h6 className="mb-2">Other hats</h6>
+                  <ul>
+                    <li>Prototype Integration</li>
+                    <li>IK Planning & Roadmap</li>
+                    <li><i>N/A</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Takeaways */}
+            <div className="p-2 md:p-4 shadow-xl">
+              <h4>Takeaways</h4>
+              <p>
+                Robust procedural motion hinges on <b>clean heuristics</b> and <b>good debug tooling</b>. Visualizing distances/targets and iterating thresholds quickly improved stability and readability of the system.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* GIF */}
-      <div className="w-full flex-col justify-center">
-        <h3 className="text-2xl font-bold center pb-4">🌀 Demo</h3>
-        <img
-          src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/gifs/ezgif-36801abcdb5bab.gif?raw=true"
-          alt="Demo GIF"
-          className="mx-auto rounded-lg w-full flex justify-center"
-        />
-      </div>
+      {/* Key Features (mirrors “Game Mechanics”) */}
+      <div className="w-full flex flex-col items-start gap-4 md:gap-16">
+        <h2>Key Features</h2>
 
-      {/* Description */}
-      <div className="w-full text-justify">
-        <h3 className="text-2xl font-bold">📃 Overview</h3>
-        <p>
-          This procedural walking animation system was developed as a foundation
-          for insect- or robot-like movement using Unity 6. Legs are divided
-          into two groups (A and B), each calculating a stepping priority from 0
-          to 1 based on distance to a target point. If a group’s total score
-          exceeds 2 and beats the opposing team, legs in that group with
-          priority above 1 will step.
-        </p>
-        <p>
-          It’s a prototype system, currently using cubes as placeholders for
-          legs, with an IK rig planned for the next iterations. All logic is
-          fully procedural, responsive, and uses no baked animations.
-        </p>
+        {/* Stepping Logic */}
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
+          <h3>1. Priority-Based Stepping</h3>
+
+          <div className="w-full mt-4 flex flex-col md:flex-row items-start gap-2">
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+              <div className="w-3/5 md:w-full">
+                <ImageDisplay src={plaImages.gallery[1]} gallery={plaImages.gallery} index={1} />
+              </div>
+              <div className="w-2/5 md:w-full">
+                <p className="md:text-center">
+                  Legs compute distance-based priority toward a moving target; high-priority legs are candidates to step.
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+              <div className="w-3/5 md:w-full">
+                <ImageDisplay src={plaImages.gallery[2]} gallery={plaImages.gallery} index={2} />
+              </div>
+              <div className="w-2/5 md:w-full">
+                <p className="md:text-center">
+                  Two groups (A/B) compete via summed priorities; the leading group triggers steps for its eligible legs.
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
+              <div className="w-3/5 md:w-full">
+                <ImageDisplay src={plaImages.gallery[3]} gallery={plaImages.gallery} index={3} />
+              </div>
+              <div className="w-2/5 md:w-full">
+                <p className="md:text-center">
+                  Fully procedural—no baked anims—tuned for responsiveness and future IK foot placement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Demo GIF */}
+        <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
+          <h3>2. Live Demo</h3>
+          <div className="w-full flex flex-col md:flex-row items-center gap-4">
+            <div className="w-full md:w-2/3">
+              <ImageDisplay src={plaGif} />
+            </div>
+            <div className="w-full md:w-1/3 flex items-center">
+              <p className="md:text-center">
+                Prototype shown with cube legs; IK rigging is planned next to improve realism and foot placement.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* YouTube Video */}
-      <div className="w-full aspect-video max-w-4xl">
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/xotQjLULcAw"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-
-      {/* Editor Images */}
-      <div className="w-full">
-        <h3 className="text-2xl font-bold">🧠 In-Editor Visuals</h3>
-        <p>
-          Below are screenshots from Unity showing how leg distances are
-          calculated with red lines, and target positions visualized with white
-          spheres. Legs move when their group wins and individual priority is
-          high enough.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img
-            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_01.jpeg?raw=true"
-            alt="Editor View 01"
-            className="rounded-lg"
-          />
-          <img
-            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_02.jpeg?raw=true"
-            alt="Editor View 02"
-            className="rounded-lg"
-          />
-          <img
-            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_03.jpeg?raw=true"
-            alt="Editor View 03"
-            className="rounded-lg"
-          />
-          <img
-            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/PLA_InEditor_04.jpeg?raw=true"
-            alt="Editor View 04"
-            className="rounded-lg"
-          />
+      <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16 shadow-2xl">
+        <h2>How it works video</h2>
+        <div className="self-center w-full aspect-video max-w-4xl">
+          <iframe
+            className="w-full h-full rounded"
+            src="https://www.youtube.com/embed/xotQjLULcAw"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
 

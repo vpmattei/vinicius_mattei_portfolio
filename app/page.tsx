@@ -31,11 +31,6 @@ export default function Page() {
           I specialize in building game mechanics and interactions, with a focus on <b>integrating AIs</b> in games like with <b>NPCs</b> and their behaviour.
         </p>
         <Link href={"/works"}>
-          {/* <CustomButton
-            buttonText="SEE MY WORK"
-            bgColor="white" // Default background color of the screen
-            hoverBgColor="#171415" // Background color when hovering
-          /> */}
           <button className="green-style cursor-pointer mt-8 bg-transparent text-neutral-200 hover:text-[#171415] transition-all duration-300 rounded-full px-10 py-5 text-xl">
             SEE MY WORK
           </button>
