@@ -19,6 +19,13 @@ const pastSelfImages = {
     ],
 };
 
+const UIImages = {
+    gallery: [
+        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/past_self_images/menu.png?raw=true",
+        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/past_self_images/settings.png?raw=true",
+    ]
+}
+
 const Page: React.FC = () => {
     return (
         <section className="prose mx-6 sm:mx-8 md:mx-16 lg:mx-24 flex flex-col items-center gap-16">
@@ -179,6 +186,35 @@ const Page: React.FC = () => {
             {/* My Contributions */}
             <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16">
                 <h2>My Contributions</h2>
+
+                {/* UI */}
+                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
+                    <h3>1. UI Integration</h3>
+
+                    <div className="w-full mt-4 flex flex-col md:flex-row items-start gap-2">
+                        <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
+                            <div className="w-3/5 md:w-full">
+                                <ImageDisplay src={UIImages.gallery[0]} gallery={UIImages.gallery} index={0} />
+                            </div>
+                            <div className="w-2/5 md:w-full">
+                                <p className="md:text-center">
+                                    Short runs (5–15s) create a recording; your past self repeats actions to hold buttons or open paths.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
+                            <div className="w-3/5 md:w-full">
+                                <ImageDisplay src={UIImages.gallery[1]} gallery={UIImages.gallery} index={1} />
+                            </div>
+                            <div className="w-2/5 md:w-full">
+                                <p className="md:text-center">
+                                    Keys and doors form simple goals; cooperation with previous runs solves otherwise impossible routes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl">
                     <ul>
