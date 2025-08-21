@@ -34,16 +34,16 @@ const notebookImages = {
   ]
 }
 
-const climbingWallGifs = {
+const climbing = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_wall.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_plank_01.jpeg?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_wall_02.gif?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_planks_01.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_plank_02.jpeg?raw=true",
   ]
 }
 
-const swimmingGif = {
-  gif: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/swimming.gif?raw=true"
+const swimming = {
+  image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/swimming.jpeg?raw=true"
 }
 
 const beforeAndAfterTowerImages = {
@@ -70,7 +70,7 @@ const beforeAndAfterFoxStatue = {
 
 const buttonActivatedDoor = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/button_activation.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/button_activation_fixed.gif?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/button_closed_and_open_door.png?raw=true",
   ],
 };
@@ -279,8 +279,8 @@ const Page: React.FC = () => {
             <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
               <div className="w-4/5 md:w-full">
                 <ImageDisplay
-                  src={climbingWallGifs.gallery[0]}
-                  gallery={climbingWallGifs.gallery}
+                  src={climbing.gallery[0]}
+                  gallery={climbing.gallery}
                   index={0}
                 />
               </div>
@@ -293,8 +293,8 @@ const Page: React.FC = () => {
             <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
               <div className="w-4/5 md:w-full">
                 <ImageDisplay
-                  src={climbingWallGifs.gallery[1]}
-                  gallery={climbingWallGifs.gallery}
+                  src={climbing.gallery[1]}
+                  gallery={climbing.gallery}
                   index={1}
                 />
               </div>
@@ -307,8 +307,8 @@ const Page: React.FC = () => {
             <div className="w-full md:w-1/3 flex flex-row md:flex-col items-center gap-2">
               <div className="w-4/5 md:w-full">
                 <ImageDisplay
-                  src={climbingWallGifs.gallery[2]}
-                  gallery={climbingWallGifs.gallery}
+                  src={climbing.gallery[2]}
+                  gallery={climbing.gallery}
                   index={2}
                 />
               </div>
@@ -329,7 +329,7 @@ const Page: React.FC = () => {
             {/* LEFT - Video */}
             <div className="w-full md:w-2/3 aspect-video bg-gray-600">
               <ImageDisplay
-                src={swimmingGif.gif}
+                src={swimming.image}
               />
             </div>
 
