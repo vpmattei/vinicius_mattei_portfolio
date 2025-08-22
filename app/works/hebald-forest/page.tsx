@@ -157,8 +157,8 @@ const Page: React.FC = () => {
               <h4>Brief</h4>
               <p>
                 <b>Hebald Forest</b> is <b>open-world exploration game</b> developed
-                During my second year of my Masters Degree at Université Côte d'Azur in Cannes, France,
-                built collaboratively in <b>Unreal Engine 5</b>.
+                during my second year of my Masters Degree at Université Côte d'Azur
+                in Cannes, France, built with a <b>team of 19</b> in <b>Unreal Engine 5</b>.
               </p>
             </div>
 

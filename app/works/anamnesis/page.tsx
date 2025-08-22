@@ -90,7 +90,12 @@ const Page: React.FC = () => {
             <div className="p-2 md:p-4 shadow-xl">
               <h4>Brief</h4>
               <p>
-                <b>Anamnesis</b> is an <b>immersive VR experience</b> developed during my first year in the MAJIC program at Université Côte d’Azur, built in <b>Unity</b>. I focused on core VR mechanics and interaction systems while also supporting level design and 3D content.
+                <b>Anamnesis</b> is an <b>immersive VR experience</b> in
+                which the protagonist has forgotten his identity and seeks
+                to recover it by reliving his lost dreams. The game was
+                developed during my first year of the Master’s program at
+                Université Côte d’Azur in Cannes, France, created in{" "}
+                <b>Unity</b> with a <b>team of nine</b>.
               </p>
             </div>
 
@@ -98,7 +103,13 @@ const Page: React.FC = () => {
             <div className="p-2 md:p-4 shadow-xl">
               <h4>Project Goals</h4>
               <p>
-                Deliver a <b>publisher-facing VR demo</b> that clearly showcases intuitive <b>hand interactions</b>, <b>robust object handling</b> (grab/throw/push/pull), and <b>comfortable locomotion</b> via teleportation—presented as a polished, <b>cohesive prototype</b>.
+                The demo featured <b>four playable levels</b>: the <b>player’s
+                  bedroom</b>, shown in three different versions that changed
+                and evolved in look and feel over time; a <b>main playground
+                  level</b>, designed as a dreamlike space for exploration and
+                interaction; and <b>two additional levels</b> representing the
+                player’s forgotten memories, which was the inspiration behind
+                the game’s title, <b>Anamnesis</b>.
               </p>
               <br />
               <div className="w-full flex flex-row">
@@ -126,7 +137,9 @@ const Page: React.FC = () => {
             <div className="p-2 md:p-4 shadow-xl">
               <h4>Takeaways</h4>
               <p>
-                Building for VR demanded tight <b>interaction fidelity</b> and <b>player comfort</b>. Iterating on physics feel, affordances, and teleport rules was key to reducing friction and increasing immersion.
+                Building for VR demanded tight <b>interaction fidelity</b> and <b>player comfort</b>.
+                Iterating on physics feel, affordances, and teleport rules was key to reducing friction
+                and increasing immersion.
               </p>
             </div>
           </div>
