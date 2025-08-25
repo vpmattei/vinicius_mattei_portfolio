@@ -10,85 +10,85 @@ export const metadata = {
 
 const anamnesisImageGallery = {
   gallery: [
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/1.webp",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/2.webp",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/3.webp",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/4.webp",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_level_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_level_02.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_level_03.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_items_level_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_items_level_02.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_items_01_level_03.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_items_02_level_03.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/colossus_chain_interaction_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/colossus_chain_interaction_02.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/colossus_unchained_left.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/memory_first_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/memory_first_guitar.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/memory_final.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/main_level_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/main_level_02.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/1.webp",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/2.webp",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/3.webp",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/4.webp",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_level_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_level_02.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_level_03.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_items_level_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_items_level_02.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_items_01_level_03.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_items_02_level_03.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/colossus_chain_interaction_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/colossus_chain_interaction_02.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/colossus_unchained_left.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/memory_first_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/memory_first_guitar.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/memory_final.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/main_level_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/main_level_02.png?raw=true",
   ],
 };
 
 const teleportingGif = {
-  gif: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/teleporting.gif?raw=true"
+  gif: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/teleporting.gif?raw=true"
 };
 
 const bedroomLevelImages = {
   gallery: [
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_level_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_level_02.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_level_03.png?raw=true"
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_level_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_level_02.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_level_03.png?raw=true"
   ]
 };
 
 const bedroomItemsImages = {
   gallery: [
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_items_level_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_items_level_02.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_items_01_level_03.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/bedroom_items_02_level_03.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_items_level_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_items_level_02.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_items_01_level_03.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/bedroom_items_02_level_03.png?raw=true",
   ]
 };
 
 const handInteractions = {
   gallery: [
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/hand_interaction_grab.gif?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/hand_interaction_physics.gif?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/hand_interaction_bed.gif?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/hand_interaction_grab.gif?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/hand_interaction_physics.gif?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/hand_interaction_bed.gif?raw=true",
   ]
 };
 
 const colossusInteractionImages = {
   gallery: [
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/colossus_chain_interaction_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/colossus_chain_interaction_02.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/colossus_unchained_left.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/colossus_chain_interaction_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/colossus_chain_interaction_02.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/colossus_unchained_left.png?raw=true",
   ]
 };
 
 const colossusGif = {
-  gif: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/colossus_unchaining_and_opening_hand.gif?raw=true"
+  gif: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/colossus_unchaining_and_opening_hand.gif?raw=true"
 };
 
 const memoriesImages = {
   gallery: [
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/memory_first_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/memory_first_guitar.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/memory_final.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/memory_first_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/memory_first_guitar.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/memory_final.png?raw=true",
   ]
 };
 
 const memoryFinalActivatingGif = {
-  gif: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/memory_final_activating.gif?raw=true"
+  gif: "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/memory_final_activating.gif?raw=true"
 };
 
 const mainLevelImages = {
   gallery: [
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/main_level_01.png?raw=true",
-    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/main_level_02.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/main_level_01.png?raw=true",
+    "https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/main_level_02.png?raw=true",
   ]
 };
 
@@ -109,7 +109,7 @@ const Page: React.FC = () => {
             <div className="flex flex-col items-start">
               <img
                 className="max-w-[100%] sm:max-w-[70%] md:max-w-[60%]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/logo.webp"
                 alt="Anamnesis Logo"
               />
               <h1 className="mt-4 mb-2">Anamnesis</h1>

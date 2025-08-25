@@ -56,7 +56,7 @@ export default function Page() {
 
         <div className="self-end">
           <CustomImage
-            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/main_level_01.png?raw=true"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/main_level_01.png?raw=true"
             alt="Anamnesis"
             link="/works/anamnesis"
             maxWidth="40rem"

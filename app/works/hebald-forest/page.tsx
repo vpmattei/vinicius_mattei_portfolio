@@ -12,67 +12,67 @@ export const metadata = {
 const hebaldForestImages =
 {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/affiche-HBF.jpg?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/village.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/tower_after_03.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave2.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave-pierre.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/aymir.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/asian.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/paravoile.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/village2.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/affiche-HBF.jpg?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/village.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/tower_after_03.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave2.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave-pierre.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/aymir.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/asian.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/paravoile.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/village2.png?raw=true",
   ]
 }
 
 const notebookImages = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_unlocking_escalade_nage.gif?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_map.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_tips_02.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/carnet_tips_01.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet_unlocking_escalade_nage.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet_map.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet_tips_02.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/carnet_tips_01.png?raw=true",
   ]
 }
 
 const climbing = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_wall_02.gif?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_plank_01.jpeg?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/climbing_plank_02.jpeg?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/climbing_wall_02.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/climbing_plank_01.jpeg?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/climbing_plank_02.jpeg?raw=true",
   ]
 }
 
 const swimming = {
-  image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/swimming.jpeg?raw=true"
+  image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/swimming.jpeg?raw=true"
 }
 
 const beforeAndAfterTowerImages = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/tower_before_01.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/tower_after_02.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/tower_before_01.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/tower_after_02.png?raw=true",
 
   ],
 };
 
 const beforeAndAfterCaveImages = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave_before.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave2.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave_before.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/cave2.png?raw=true",
   ],
 };
 
 const beforeAndAfterFoxStatue = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/fox_statue_activating_before.gif?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/fox_statue_activating_after.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/fox_statue_activating_before.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/fox_statue_activating_after.gif?raw=true",
   ],
 };
 
 const buttonActivatedDoor = {
   gallery: [
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/button_activation_fixed.gif?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/button_closed_and_open_door.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/button_activation_fixed.gif?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/button_closed_and_open_door.png?raw=true",
   ],
 };
 
@@ -89,7 +89,7 @@ const Page: React.FC = () => {
             <div className="flex flex-col items-start">
               <img
                 className="max-w-[100%] sm:max-w-[70%] md:max-w-[60%]"
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/hebald_forest_images/logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/hebald_forest_images/logo.webp"
                 alt="Hebald Forest Logo"
               />
               <h1 className="mt-4 mb-2">Hebald Forest</h1>
@@ -100,7 +100,7 @@ const Page: React.FC = () => {
           {/* RIGHT */}
           <div className="w-5/8">
             <div className="flex flex-col items-center">
-              <ImageDisplay src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/affiche-HBF.jpg?raw=true" />
+              <ImageDisplay src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/hebald_forest_images/affiche-HBF.jpg?raw=true" />
             </div>
           </div>
         </div>
