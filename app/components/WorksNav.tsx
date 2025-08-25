@@ -8,13 +8,13 @@ type WorkItem = {
 };
 
 const WORKS_INDEX: WorkItem[] = [
-    { slug: "podcastr", title: "Podcastr Platform" },
-    { slug: "kentyou", title: "Kentyou Dashboard Redesign" },
-    { slug: "pokedex-app", title: "Pokédex App" },
-    { slug: "past-self-gmtk-2025", title: "Past Self – GMTK 2025" },
-    { slug: "procedural-walk-animation", title: "Procedural Leg Animation" },
-    { slug: "anamnesis", title: "Anamnesis" },
     { slug: "hebald-forest", title: "Hebald Forest" },
+    { slug: "anamnesis", title: "Anamnesis" },
+    { slug: "procedural-walk-animation", title: "Procedural Leg Animation" },
+    { slug: "past-self-gmtk-2025", title: "Past Self – GMTK 2025" },
+    { slug: "pokedex-app", title: "Pokédex App" },
+    { slug: "kentyou", title: "Kentyou Dashboard Redesign" },
+    { slug: "podcastr", title: "Podcastr Platform" },
     // add/remove/reorder here only
 ];
 
