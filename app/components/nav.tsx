@@ -23,7 +23,7 @@ export function Navbar() {
         bg-neutral-900/40 backdrop-blur-lg
         border-b border-white/10
         transition-all duration-500 ease-in-out
-        ${scrolled ? "h-10" : "h-20"}
+        ${scrolled ? "h-12" : "h-20"}
       `}
     >
       <div className="flex items-center justify-between h-full">
@@ -34,8 +34,12 @@ export function Navbar() {
           <h1 className={`font-fraunces-light-i text-neutral-200 text-3xl transition-opacity duration-500 ${scrolled ? "opacity-0 absolute" : "opacity-100"}`}>MATTEI</h1>
 
           {/* Shrink */}
-          <h1 className={`poppins bold text-neutral-200 text-2xl transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0 absolute"}`}>V</h1>
-          <h1 className={`font-fraunces-light-i text-neutral-200 text-2xl transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0 absolute"}`}>M</h1>
+          <h1 className={`poppins bold text-neutral-200 text-2xl transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0 absolute"}`}>
+            <img 
+            className="w-[2.25rem]"
+            src="/vm_logo_transparent.png" alt="" />
+          </h1>
+          {/* <h1 className={`font-fraunces-light-i text-neutral-200 text-2xl transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0 absolute"}`}>M</h1> */}
         </Link>
 
         {/* Hamburger Menu */}

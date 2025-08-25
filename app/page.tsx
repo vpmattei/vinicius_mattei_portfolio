@@ -15,8 +15,8 @@ export default function Page() {
           <div className="title poppins bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
             HEY, I'M
           </div>
-          <div className="title font-fraunces-thin-i text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
-            VINÍCIUS
+          <div className="mt-8 title font-fraunces-thin-i text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+            VINÍCIUS MATTEI
           </div>
         </div>
         <div className="mb-4 title font-fraunces-thin-i text-3xl md:text-4xl lg:text-5xl text-center fade-in-element opacity-0">
