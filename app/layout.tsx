@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     template: '%s | Vinícius Mattei',
   },
   description: 'This is my portfolio.',
+  icons: {
+    icon: '/vm_logo.png', // or .png, .svg
+    shortcut: '/vm_logo.png',
+    apple: '/vm_logo.png',
+  },
   openGraph: {
     title: 'My Portfolio',
     description: 'This is my portfolio.',
