@@ -26,17 +26,17 @@ const images = [
 
 const Page: React.FC = () => {
   return (
-    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center">
+    <section className="prose lg:mx-64 md:mx-12 mx-8 flex flex-col items-center gap-8">
         <h1>Artworks</h1>
         <a
-          className="mb-8 flex items-center transition-all hover:text-neutral-300"
+          className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.artstation.com/viniciusmattei"
         >
-          <h2>Drawings</h2>
+          <h4>Artstation</h4>
           <p className="ml-2">
-            <ArrowIcon size={24} />
+            <ArrowIcon size={12} />
           </p>
         </a>
         <FullScreenGallery images={images} />

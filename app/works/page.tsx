@@ -69,7 +69,7 @@ const Page: React.FC = () => {
           </a>
         </div>
 
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <CustomImage
             src="https://raw.githubusercontent.com/vpmattei/TicTacToe-Multiplayer-Game/main/Assets/ReadmeImages/TicTacToe_MainScene.png"
             alt="Tic Tac Toe"
@@ -99,7 +99,7 @@ const Page: React.FC = () => {
               Starfox Laser Defender Game
             </h4>
           </a>
-        </div>
+        </div> */}
       </div>
 
       <hr className="w-full border-gray-500 my-6" />

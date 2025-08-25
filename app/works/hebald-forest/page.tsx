@@ -2,6 +2,7 @@ import React from "react";
 import ArrowIcon from "app/components/ArrowIcon";
 import ImageDisplay from "app/components/ImageDisplay";
 import FullScreenGallery from "app/components/FullScreenGallery";
+import WorksNav from "app/components/WorksNav";
 
 export const metadata = {
   title: "Hebald Forest",
@@ -13,7 +14,7 @@ const hebaldForestImages =
   gallery: [
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/affiche-HBF.jpg?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/village.png?raw=true",
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/tower_after.png?raw=true",
+    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/tower_after_03.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave2.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave.png?raw=true",
     "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/hebald_forest_images/cave-pierre.png?raw=true",
@@ -212,7 +213,7 @@ const Page: React.FC = () => {
       </div>
 
       {/* Game Mechanics */}
-      <div className="w-full flex flex-col items-start gap-4 md:gap-16">
+      <div className="w-full flex flex-col items-start gap-8 md:gap-16">
         <h2>Game Mechanics</h2>
 
         {/* Notebook */}
@@ -631,37 +632,8 @@ const Page: React.FC = () => {
         />
       </div>
 
-
       {/* Footer Nav */}
-      <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
-        <div className="flex flex-col items-start w-[100%]">
-          <a
-            className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-            href="/works/anamnesis"
-          >
-            <img
-              className="h-[50px]"
-              src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
-              alt="Previous"
-            />
-            PREVIOUS PROJECT
-          </a>
-        </div>
-
-        <div className="flex flex-col items-end w-[100%]">
-          <a
-            className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
-            href="/works/podcastr"
-          >
-            NEXT PROJECT
-            <img
-              className="h-[50px]"
-              src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
-              alt="Next"
-            />
-          </a>
-        </div>
-      </div>
+      <WorksNav currentSlug="hebald-forest" />
     </section>
   );
 };

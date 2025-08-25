@@ -1,6 +1,7 @@
 import React from "react";
 import ArrowIcon from "app/components/ArrowIcon";
 import ImageDisplay from "app/components/ImageDisplay";
+import WorksNav from "app/components/WorksNav";
 
 export const metadata = {
   title: "Procedural Walk Animation",
@@ -62,7 +63,10 @@ const Page: React.FC = () => {
             <div className="p-2 md:p-4 shadow-xl">
               <h4>Brief</h4>
               <p>
-                A fully <b>procedural stepping system</b> for insect/robot-like legs in <b>Unity 6</b>. Legs are split into two groups (A/B) and compute a <b>priority score</b> based on distance to their target; when a group’s total overtakes the other and individual leg priority exceeds a threshold, those legs step—no baked animations.
+                A fully <b>procedural stepping system</b> for insect/robot-like legs in <b>Unity 6</b>.
+                Legs are split into two groups (A/B) and compute a <b>priority score</b> based on distance
+                to their target; when a group’s total overtakes the other and individual leg priority
+                exceeds a threshold, those legs step—no baked animations.
               </p>
             </div>
 
@@ -70,35 +74,9 @@ const Page: React.FC = () => {
             <div className="p-2 md:p-4 shadow-xl">
               <h4>Project Goals</h4>
               <p>
-                Build a <b>publisher-facing prototype</b> that proves the viability of <b>procedural locomotion</b>: clear group coordination, stable foot placement, and responsive stepping logic suitable for future IK integration.
-              </p>
-              <br />
-              <div className="w-full flex flex-row">
-                <div className="w-1/2">
-                  <h6 className="mb-2">Primary responsibilities</h6>
-                  <ul>
-                    <li>Stepping Priority Algorithm</li>
-                    <li>Group Coordination Logic (A/B)</li>
-                    <li>Physics & Threshold Tuning</li>
-                    <li>Debug/Visualization Tools</li>
-                  </ul>
-                </div>
-                <div className="w-1/2">
-                  <h6 className="mb-2">Other hats</h6>
-                  <ul>
-                    <li>Prototype Integration</li>
-                    <li>IK Planning & Roadmap</li>
-                    <li><i>N/A</i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Takeaways */}
-            <div className="p-2 md:p-4 shadow-xl">
-              <h4>Takeaways</h4>
-              <p>
-                Robust procedural motion hinges on <b>clean heuristics</b> and <b>good debug tooling</b>. Visualizing distances/targets and iterating thresholds quickly improved stability and readability of the system.
+                Build a <b>prototype</b> that shows the viability of a <b>procedural leg locomotion</b>:
+                clear group coordination, stable foot placement, and responsive stepping logic. A system
+                that is suitable for a <b>future IK integration</b> in another game.
               </p>
             </div>
           </div>
@@ -120,7 +98,8 @@ const Page: React.FC = () => {
               </div>
               <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
-                  Legs compute distance-based priority toward a moving target; high-priority legs are candidates to step.
+                  Legs compute <b>distance-based priority</b> toward a moving target, shown by the <b>white sphere</b>, the{" "}
+                  <i>predicted target</i> and a <b>red line</b>, <i>distance to target</i>; high-priority legs are candidates to step.
                 </p>
               </div>
             </div>
@@ -131,7 +110,7 @@ const Page: React.FC = () => {
               </div>
               <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
-                  Two groups (A/B) compete via summed priorities; the leading group triggers steps for its eligible legs.
+                  <b>Two leg groups</b> (A/B) compete via <b>summed priorities</b>; the leading group triggers steps for its eligible legs.
                 </p>
               </div>
             </div>
@@ -142,7 +121,7 @@ const Page: React.FC = () => {
               </div>
               <div className="w-2/5 md:w-full">
                 <p className="md:text-center">
-                  Fully procedural—no baked anims—tuned for responsiveness and future IK foot placement.
+                  Fully procedural, no baked animations, tuned for responsiveness and future IK foot placement.
                 </p>
               </div>
             </div>
@@ -181,35 +160,7 @@ const Page: React.FC = () => {
       </div>
 
       {/* Footer Nav */}
-      <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
-        <div className="flex flex-col items-start w-[100%]">
-          <a
-            className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-            href="/works/tic-tac-toe"
-          >
-            <img
-              className="h-[50px]"
-              src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
-              alt="Previous"
-            />
-            PREVIOUS PROJECT
-          </a>
-        </div>
-
-        <div className="flex flex-col items-end w-[100%]">
-          <a
-            className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
-            href="/works/anamnesis"
-          >
-            NEXT PROJECT
-            <img
-              className="h-[50px]"
-              src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
-              alt="Next"
-            />
-          </a>
-        </div>
-      </div>
+      <WorksNav currentSlug="procedural-walk-animation" />
     </section>
   );
 };

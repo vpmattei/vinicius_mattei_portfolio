@@ -1,6 +1,7 @@
 import React from "react";
 import ArrowIcon from "app/components/ArrowIcon";
 import ImageDisplay from "app/components/ImageDisplay";
+import WorksNav from "app/components/WorksNav";
 
 export const metadata = {
     title: "Past Self – GMTK Game Jam 2025",
@@ -210,7 +211,6 @@ const Page: React.FC = () => {
                     <ul>
                         <li>Designed & implemented the <b>key collection</b> and <b>inventory</b> logic</li>
                         <li>Helped build and tune <b>core player mechanics</b></li>
-                        <li>Developed the <b>UI</b> and in‑game <b>settings</b> (Music/SFX)</li>
                         <li>Composed and integrated the <b>background music</b></li>
                         <li>Fixed various <b>game‑breaking bugs</b> and added polish</li>
                     </ul>
@@ -218,35 +218,7 @@ const Page: React.FC = () => {
             </div>
 
             {/* Footer Nav */}
-            <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
-                <div className="flex flex-col items-start w-[100%]">
-                    <a
-                        className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-                        href="/works/pokedex-app"
-                    >
-                        <img
-                            className="h-[50px]"
-                            src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
-                            alt="Previous"
-                        />
-                        PREVIOUS PROJECT
-                    </a>
-                </div>
-
-                <div className="flex flex-col items-end w-[100%]">
-                    <a
-                        className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
-                        href="/works/starfox-game"
-                    >
-                        NEXT PROJECT
-                        <img
-                            className="h-[50px]"
-                            src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
-                            alt="Next"
-                        />
-                    </a>
-                </div>
-            </div>
+            <WorksNav currentSlug="past-self-gmtk-2025" />
         </section>
     );
 };

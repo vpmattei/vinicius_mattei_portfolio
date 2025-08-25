@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import ArrowIcon from "app/components/ArrowIcon";
 import FullScreenGallery from "app/components/FullScreenGallery";
+import WorksNav from "app/components/WorksNav";
 
 export const metadata = {
   title: "Pokédex App",
@@ -83,37 +84,7 @@ const Page: React.FC = () => {
       </div>
 
       {/* Navigation to Previous and Next Projects */}
-      <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
-        <div className="flex flex-col items-start w-[100%]">
-          <a
-            className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-            href="/works/kentyou"
-          >
-            <img
-              className="h-[50px]"
-              src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
-              loading="lazy"
-              alt="Previous"
-            />
-            PREVIOUS PROJECT
-          </a>
-        </div>
-
-        <div className="flex flex-col items-end w-[100%]">
-          <a
-            className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
-            href="/works/past-self-gmtk-2025"
-          >
-            NEXT PROJECT
-            <img
-              className="h-[50px]"
-              src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
-              loading="lazy"
-              alt="Next"
-            />
-          </a>
-        </div>
-      </div>
+      <WorksNav currentSlug="pokedex-app" />
     </section>
   );
 };

@@ -26,9 +26,12 @@ export default function Page() {
           GAME DESIGNER
         </div>
         <p className="max-w-[50rem] min-w-[18rem] mx-8 text-sm md:text-base fade-in-element opacity-0">
-          I am a <b>Game Developer</b> and a <b>Game Designer</b> that focuses on building <b>core systems</b> for games.
-          <br/>
-          I specialize in building game mechanics and interactions, with a focus on <b>integrating AIs</b> in games like with <b>NPCs</b> and their behaviour.
+          I am a <b>Game Developer</b> and a <b>Game Designer</b> with <b>8+ years</b> of personal experience with <b>Unity</b>,
+          I focus on building <b>core systems</b> for games.
+        </p>
+        <p className="max-w-[50rem] min-w-[18rem] mx-8 text-sm md:text-base fade-in-element opacity-0">
+          I specialize in building game mechanics and interactions, with a focus on <b>integrating AIs</b> in games like
+          with <b>NPCs</b> and their behaviour.
         </p>
         <Link href={"/works"}>
           <button className="green-style cursor-pointer mt-8 bg-transparent text-neutral-200 hover:text-[#171415] transition-all duration-300 rounded-full px-10 py-5 text-xl">
