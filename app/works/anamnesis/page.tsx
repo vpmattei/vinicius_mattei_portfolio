@@ -120,7 +120,7 @@ const Page: React.FC = () => {
           {/* RIGHT */}
           <div className="w-5/8">
             <div className="flex flex-col items-center">
-              <ImageDisplay src={anamnesisImageGallery.gallery[0]} />
+              <ImageDisplay src={anamnesisImageGallery.gallery[17]} />
             </div>
           </div>
         </div>
