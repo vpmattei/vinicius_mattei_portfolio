@@ -22,8 +22,8 @@ const pastSelfImages = {
 
 const UIImages = {
     gallery: [
-        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/past_self_images/menu.png?raw=true",
-        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/work-pages-redesign/assets/past_self_images/settings.png?raw=true",
+        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/menu.png?raw=true",
+        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/settings.png?raw=true",
     ]
 }
 

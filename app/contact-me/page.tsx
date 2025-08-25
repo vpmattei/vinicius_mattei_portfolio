@@ -19,7 +19,7 @@ const Page = () => {
                 >
                     <img
                         className="max-w-[3rem] sm:max-w-[4rem] md:max-w-[5rem]"
-                        src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/logos/websites/linkedin.png?raw=true"
+                        src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/websites/linkedin.png?raw=true"
                         alt="LinkedIn"
                     />
                     <div>LinkedIn</div>
@@ -32,7 +32,7 @@ const Page = () => {
                 >
                     <img
                         className="max-w-[4rem] sm:max-w-[5rem] md:max-w-[6rem]"
-                        src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/logos/websites/github.png?raw=true"
+                        src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/websites/github.png?raw=true"
                         alt="GitHub"
                     />
                     <div>GitHub</div>
