@@ -32,7 +32,7 @@ const Page: React.FC = () => {
 
         <div className="flex flex-col items-center">
           <CustomImage
-            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/1.webp"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/anamnesis_images/main_level_01.png?raw=true"
             alt="Anamnesis"
             link="/works/anamnesis"
             maxWidth="12rem"
@@ -69,7 +69,7 @@ const Page: React.FC = () => {
           </a>
         </div>
 
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <CustomImage
             src="https://raw.githubusercontent.com/vpmattei/TicTacToe-Multiplayer-Game/main/Assets/ReadmeImages/TicTacToe_MainScene.png"
             alt="Tic Tac Toe"
@@ -99,7 +99,7 @@ const Page: React.FC = () => {
               Starfox Laser Defender Game
             </h4>
           </a>
-        </div>
+        </div> */}
       </div>
 
       <hr className="w-full border-gray-500 my-6" />

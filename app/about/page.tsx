@@ -10,13 +10,15 @@ export default function Page() {
           I’m a dedicated <b>game developer</b> with over <b>8 years</b> of hands-on work in Unity and C#. I specialize in designing and developing
           game mechanics and interactions, with a focus on NPC behaviour and interactions, as well as AI and
           Large Language Models integration.
-          <br/>
-          <br/>
+        </p>
+        <br />
+        <p>
           I've worked on countless projects, from solo projects, to university projects with over 10+ people on a single project, ranging from
-          developers to musicians and sound designers. This helped me gain good experience to know how to effectively communicate ideas with 
+          developers to musicians and sound designers. This helped me gain good experience to know how to effectively communicate ideas with
           a wide range of different areas of work. My <Link className="transition-colors text-white/95 hover:text-pink-400" key="/artworks" href="/artworks">artistic background</Link> has also helped me navigate through this, as I am a musician and a
           visual artist myself.
         </p>
+
         <h2 className="text-balance">Experiences</h2>
         <div className="flex flex-row justify-start flex-wrap gap-x-8 gap-y-8">
           {/* ---------------------------- Freelance ---------------------------- */}
@@ -30,7 +32,7 @@ export default function Page() {
               <p className="text-neutral-400 italic">06.25 - Present</p>
               <p className="text-neutral-400">
                 Game Development
-                <br/>
+                <br />
                 AI & API Integration
               </p>
             </div>
