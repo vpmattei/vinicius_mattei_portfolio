@@ -109,6 +109,22 @@ const Page: React.FC = () => {
       <div className="flex flex-row flex-wrap justify-center gap-12 mb-16">
         <div className="flex flex-col items-center">
           <CustomImage
+            src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/hero_image.png?raw=true"
+            alt="Where the Cookies at? – Brackeys 2025.2"
+            link="/works/where-the-cookies-at"
+            maxWidth="12rem"
+            maxHeight="12rem"
+            squareImage={true}
+          />
+          <a href="/works/where-the-cookies-at">
+            <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
+              Where the Cookies At? – Brackeys 2025.2
+            </h4>
+          </a>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <CustomImage
             src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_main_image.png?raw=true"
             alt="Past Self – GMTK 2025"
             link="/works/past-self-gmtk-2025"

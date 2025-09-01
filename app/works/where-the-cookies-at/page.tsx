@@ -85,18 +85,60 @@ const Page: React.FC = () => {
                             <h4>Brief</h4>
                             <p>
                                 <b>Where the Cookies At?</b> is a stealth game made for{" "}
-                                <b>Brackeys Game Jam 2025.2</b>. The player must sneak cookies
+                                <b>Brackeys Game Jam 2025.2</b>. The player must sneak to eat cookies
                                 without being caught by the <b>mother NPC</b>, who patrols the
                                 level and reacts to the player’s movements. My primary
                                 contribution was <b>designing and implementing the NPC behavior</b>,
                                 as well as adding <b>UI interaction feedback</b> for the cookies.
                             </p>
                         </div>
+
+                        {/* Project Goals */}
+                        <div className="p-2 md:p-4 shadow-xl">
+                            <h4>Project Goals</h4>
+                            <p>
+                                Build a <b>playable stealth prototype</b> for the Brackeys Game Jam 2025.2 that focused on
+                                <b> NPC behavior</b>, <b>cookie interaction</b>, and <b>player feedback</b>. The goal was to create
+                                a short but complete loop where the player sneaks and tries to eat all the cookies while avoiding
+                                the mother NPC, supported by clear UI, patrol logic, and detection states.
+                            </p>
+                            <br />
+                            <div className="w-full flex flex-row">
+                                <div className="w-1/2">
+                                    <h6 className="mb-2">Primary responsibilities</h6>
+                                    <ul>
+                                        <li><b>NPC State Machine</b> (patrol, detection, catch, cooldown)</li>
+                                        <li><b>Field of View</b> & Player Detection</li>
+                                        <li><b>Visual Feedback</b> (icons, exclamation/question marks)</li>
+                                        <li>Cookie Interaction <b>UI</b> & <b>Counter</b></li>
+                                    </ul>
+                                </div>
+                                <div className="w-1/2">
+                                    <h6 className="mb-2">Other hats</h6>
+                                    <ul>
+                                        <li>Gameplay Scripting & Integration</li>
+                                        <li>Bug Fixing & Polish</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Takeaways */}
+                        <div className="p-2 md:p-4 shadow-xl">
+                            <h4>Takeaways</h4>
+                            <p>
+                                The jam showed the importance of <b>scope control</b>. Even simple interactions like grabbing a
+                                cookie required UI, counters, HUD elements, and sound effects, which added more work than
+                                expected. While ambitious, the project reinforced how a <b>smaller scope with more mechanics</b>{" "}
+                                can sometimes deliver stronger results. Still, the team delivered a <b>fun, cohesive prototype</b>{" "}
+                                under time pressure.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            {/* Key Features */}
+            {/* My Contributions */}
             <div className="w-full flex flex-col items-start gap-4 md:gap-16">
                 <h2>My Contributions</h2>
 
@@ -182,21 +224,7 @@ const Page: React.FC = () => {
             </div>
 
             {/* Play Our Game */}
-            <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16 shadow-2xl">
-                <h2>Play our Game!</h2>
-                <div className="self-center w-full aspect-video max-w-5xl">
-                    <iframe
-                        src="https://itch.io/embed-upload/14843207?color=000000"
-                        className="w-full h-full rounded-lg border-2 border-neutral-800"
-                        allowFullScreen
-                        frameBorder="0"
-                    >
-                        <a href="https://hinoga.itch.io/where-the-cookies-at">
-                            Play <b>Where the Cookies At?</b> on itch.io
-                        </a>
-                    </iframe>
-                </div>
-            </div>
+                <a href="https://hinoga.itch.io/where-the-cookies-at"><h2>Play our Game!</h2></a>
 
             {/* Footer Nav */}
             <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
