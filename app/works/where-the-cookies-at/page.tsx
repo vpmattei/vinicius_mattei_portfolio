@@ -1,31 +1,35 @@
 import React from "react";
 import ArrowIcon from "app/components/ArrowIcon";
 import ImageDisplay from "app/components/ImageDisplay";
-import WorksNav from "app/components/WorksNav";
 
 export const metadata = {
-    title: "Where the Cookies At – Brackeys Game Jam 2025.2",
-    description:
-        "Platformer where your past runs help you reach the goal. Designed and developed in 4 days for GMTK 2025.",
+    title: "Where the Cookies At?",
+    description: "Stealth game made for Brackeys Game Jam 2025.2",
 };
 
-const pastSelfHero =
-    "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_main_image.png?raw=true";
-
-const pastSelfImages = {
-    gallery: [
-        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_01.png?raw=true",
-        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_02.png?raw=true",
-        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_03.png?raw=true",
-    ],
+const heroImage = {
+    image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/hero_image.png?raw=true"
 };
 
-const UIImages = {
-    gallery: [
-        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/menu.png?raw=true",
-        "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/settings.png?raw=true",
-    ]
-}
+const motherMovementGif = {
+    gif: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/mother_movement.gif?raw=true",
+};
+
+const motherFovGif = {
+    gif: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/mother_fov_detection.gif?raw=true",
+};
+
+const motherPlayerDetectionGif = {
+    gif: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/mother_player_detection.gif?raw=true",
+};
+
+const cookiesInteractionGif = {
+    gif: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/cookies_interaction_UI.gif?raw=true",
+};
+
+const gameplayImage = {
+    image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/gameplay.gif?raw=true",
+};
 
 const Page: React.FC = () => {
     return (
@@ -34,22 +38,17 @@ const Page: React.FC = () => {
                 {/* Title and Main Image */}
                 <div className="w-full flex flex-row items-end gap-2">
                     {/* LEFT */}
-                    <div className="w-3/8 flex items-start">
+                    <div className="w-4/8 flex items-start">
                         <div className="flex flex-col items-start">
-                            <img
-                                className="max-w-[100%] sm:max-w-[70%] md:max-w-[60%]"
-                                src={pastSelfHero}
-                                alt="Past Self – Main"
-                            />
-                            <h1 className="mt-4 mb-2">Where the Cookies At</h1>
-                            <h3 className="mt-0 mb-2">Brackeys Game Jam 2025.2 – Project Breakdown</h3>
+                            <h1 className="mt-4 mb-2">Where the Cookies At?</h1>
+                            <h3 className="mt-0 mb-2">Brackeys Game Jam 2025.2</h3>
                         </div>
                     </div>
 
                     {/* RIGHT */}
-                    <div className="w-5/8">
+                    <div className="w-4/8">
                         <div className="flex flex-col items-center">
-                            <ImageDisplay src={pastSelfImages.gallery[0]} />
+                            <ImageDisplay src={heroImage.image} />
                         </div>
                     </div>
                 </div>
@@ -63,31 +62,19 @@ const Page: React.FC = () => {
                             <ul>
                                 <li>Platform: PC</li>
                                 <li>Engine: Unity 6.2</li>
-                                <li>Team Size: 3</li>
-                                <li>Duration: 4 days (Jam)</li>
+                                <li>Team Size: 5</li>
+                                <li>Duration: 7 Days</li>
                                 <li>
                                     <a
                                         className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
                                         rel="noopener noreferrer"
                                         target="_blank"
-                                        href="https://hinoga.itch.io/past-self"
+                                        href="https://itch.io/jam/brackeys-14/rate/3850002"
                                     >
-                                        Itch.io Page <ArrowIcon size={12} />
+                                        Game Jam Page <ArrowIcon size={12} />
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-
-                        {/* Team */}
-                        <div className="p-2 md:p-4 shadow-xl">
-                            <h4>Team</h4>
-                            <div>
-                                <p>The team consisted of <b>3</b> members:</p>
-                                <ul>
-                                    <li>2 Developers</li>
-                                    <li>1 Level Designer</li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
 
@@ -97,128 +84,150 @@ const Page: React.FC = () => {
                         <div className="p-2 md:p-4 shadow-xl">
                             <h4>Brief</h4>
                             <p>
-                                <b>Past Self</b> is a time‑loop <b>puzzle‑platformer</b> created for the <b>GMTK Game Jam 2025</b>. Each run lasts only a few seconds; when the timer ends, a ghost of your <b>past self</b> replays your actions, letting you cooperate with previous runs to open doors, press buttons, and collect keys to reach the exit.
-                            </p>
-                        </div>
-
-                        {/* Project Goals */}
-                        <div className="p-2 md:p-4 shadow-xl">
-                            <h4>Project Goals</h4>
-                            <p>
-                                Deliver a <b>jam‑ready prototype</b> that clearly communicates the <b>time‑loop cooperation</b> mechanic, with a short, polished flow: readable goals, tight timers, simple inventory/keys, and fast iteration on level design.
-                            </p>
-                            <br />
-                            <div className="w-full flex flex-row">
-                                <div className="w-1/2">
-                                    <h6 className="mb-2">Primary responsibilities</h6>
-                                    <ul>
-                                        <li>Core Loop & Level Scripting</li>
-                                        <li>Key & Inventory Systems</li>
-                                        <li>UI & Settings (Music/SFX)</li>
-                                        <li>Music Composition & Integration</li>
-                                    </ul>
-                                </div>
-                                <div className="w-1/2">
-                                    <h6 className="mb-2">Other hats</h6>
-                                    <ul>
-                                        <li>Bug Fixing & Polish</li>
-                                        <li>Player Feel Tuning</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Takeaways */}
-                        <div className="p-2 md:p-4 shadow-xl">
-                            <h4>Takeaways</h4>
-                            <p>
-                                Short jams reward <b>scope control</b> and <b>clear feedback</b>. Tight timers plus readable doors/buttons made the loop click; a simple audio mix and options helped keep the experience <b>cohesive</b> under time pressure.
+                                <b>Where the Cookies At?</b> is a stealth game made for{" "}
+                                <b>Brackeys Game Jam 2025.2</b>. The player must sneak cookies
+                                without being caught by the <b>mother NPC</b>, who patrols the
+                                level and reacts to the player’s movements. My primary
+                                contribution was <b>designing and implementing the NPC behavior</b>,
+                                as well as adding <b>UI interaction feedback</b> for the cookies.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Key Features (mirrors “Game Mechanics”) */}
+            {/* Key Features */}
             <div className="w-full flex flex-col items-start gap-4 md:gap-16">
-                <h2>Key Features</h2>
-
-                {/* Core Loop */}
-                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl md:gap-8">
-                    <h3>1. Time‑Loop Cooperation</h3>
-
-                    <div className="w-full mt-4 flex flex-col md:flex-row items-start gap-2">
-                        <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
-                            <div className="w-3/5 md:w-full">
-                                <ImageDisplay src={pastSelfImages.gallery[0]} gallery={pastSelfImages.gallery} index={0} />
-                            </div>
-                            <div className="w-2/5 md:w-full">
-                                <p className="md:text-center">
-                                    Short runs (5–15s) create a recording; your past self repeats actions to hold buttons or open paths.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
-                            <div className="w-3/5 md:w-full">
-                                <ImageDisplay src={pastSelfImages.gallery[1]} gallery={pastSelfImages.gallery} index={1} />
-                            </div>
-                            <div className="w-2/5 md:w-full">
-                                <p className="md:text-center">
-                                    Keys and doors form simple goals; cooperation with previous runs solves otherwise impossible routes.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* My Contributions */}
-            <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16">
                 <h2>My Contributions</h2>
 
-                {/* UI */}
-                <h3>1. UI Integration</h3>
-                <div className="w-full flex flex-col items-start p-2 md:p-4 md:gap-8">
-                    <div className="w-full mt-4 flex flex-col md:flex-row items-start gap-2">
-
-                        <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
-                            <div className="w-3/5 md:w-full">
-                                <ImageDisplay src={UIImages.gallery[0]} gallery={UIImages.gallery} index={0} />
-                            </div>
-                            <div className="w-2/5 md:w-full">
-                                <p className="md:text-center">
-                                    Main menu UI, with play, settings and quit buttons.
-                                </p>
-                            </div>
+                {/* NPC Movement */}
+                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl gap-8">
+                    <h3>1. NPC Patrol Movement</h3>
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4">
+                        <div className="w-full md:w-2/3">
+                            <ImageDisplay src={motherMovementGif.gif} />
                         </div>
-
-                        <div className="w-full md:w-1/2 flex flex-row md:flex-col items-center gap-2">
-                            <div className="w-3/5 md:w-full">
-                                <ImageDisplay src={UIImages.gallery[1]} gallery={UIImages.gallery} index={1} />
-                            </div>
-                            <div className="w-2/5 md:w-full">
-                                <p className="md:text-center">
-                                    Minimal UI with <b>Music/SFX sliders</b>.
-                                </p>
-                            </div>
+                        <div className="w-full md:w-1/3">
+                            <p className="md:text-center">
+                                Built the <b>NPC’s patrol system</b> using the NavMesh, with
+                                flexible patrol patterns. The mother could either <b>ping-pong</b>{" "}
+                                (1 → 2 → 3 → 2 → 1) or <b>loop</b> (1 → 2 → 3 → 1 → 2 → 3) along
+                                waypoints.
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <h3>2. Other stuff</h3>
-                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl">
-                    <ul>
-                        <li>Designed & implemented the <b>key collection</b> and <b>inventory</b> logic</li>
-                        <li>Helped build and tune <b>core player mechanics</b></li>
-                        <li>Composed and integrated the <b>background music</b></li>
-                        <li>Fixed various <b>game‑breaking bugs</b> and added polish</li>
-                    </ul>
+                {/* NPC FOV Detection */}
+                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl gap-8">
+                    <h3>2. Field of View Detection</h3>
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4">
+                        <div className="w-full md:w-2/3">
+                            <ImageDisplay src={motherFovGif.gif} />
+                        </div>
+                        <div className="w-full md:w-1/3">
+                            <p className="md:text-center">
+                                Implemented a <b>field of view system</b> that detects the
+                                player within a radius and angle (e.g., 5m at 90°). After{" "}
+                                <b>0.5s</b> of visibility, the player is considered <b>caught</b>,
+                                leading to game over.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Player Detection Feedback */}
+                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl gap-8">
+                    <h3>3. Player Detection Feedback</h3>
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4">
+                        <div className="w-full md:w-2/3">
+                            <ImageDisplay src={motherPlayerDetectionGif.gif} />
+                        </div>
+                        <div className="w-full md:w-1/3">
+                            <p className="md:text-center">
+                                Added <b>visual cues</b> when the mother detects the player:
+                                an exclamation mark animates above her head, she rotates to face
+                                the player, and her movement halts while she is in the{" "}
+                                <b>detection state</b>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Cookie Interaction UI */}
+                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl gap-8">
+                    <h3>4. Cookie Interaction UI</h3>
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4">
+                        <div className="w-full md:w-2/3">
+                            <ImageDisplay src={cookiesInteractionGif.gif} />
+                        </div>
+                        <div className="w-full md:w-1/3">
+                            <p className="md:text-center">
+                                Improved <b>cookie interaction feedback</b> by displaying an{" "}
+                                <b>E-button prompt</b> when near cookies, plus a{" "}
+                                <b>cookie counter</b> that decreases from 13 to 0 with smooth
+                                fade-in/out transitions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Gameplay */}
+            <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16 shadow-2xl">
+                <h2>Gameplay</h2>
+                <div className="self-center w-full aspect-video max-w-4xl">
+                    <ImageDisplay src={gameplayImage.image} />
+                </div>
+            </div>
+
+            {/* Play Our Game */}
+            <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16 shadow-2xl">
+                <h2>Play our Game!</h2>
+                <div className="self-center w-full aspect-video max-w-5xl">
+                    <iframe
+                        src="https://itch.io/embed-upload/14843207?color=000000"
+                        className="w-full h-full rounded-lg border-2 border-neutral-800"
+                        allowFullScreen
+                        frameBorder="0"
+                    >
+                        <a href="https://hinoga.itch.io/where-the-cookies-at">
+                            Play <b>Where the Cookies At?</b> on itch.io
+                        </a>
+                    </iframe>
                 </div>
             </div>
 
             {/* Footer Nav */}
-            <WorksNav currentSlug="past-self-gmtk-2025" />
+            <div className="px-8 flex md:flex-row flex-col justify-between w-[100vw]">
+                <div className="flex flex-col items-start w-[100%]">
+                    <a
+                        className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
+                        href="/works/starfox-game"
+                    >
+                        <img
+                            className="h-[50px]"
+                            src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f47a0e5c6852030f01aef_arrow%20svg%20left.svg"
+                            alt="Previous"
+                        />
+                        PREVIOUS PROJECT
+                    </a>
+                </div>
+
+                <div className="flex flex-col items-end w-[100%]">
+                    <a
+                        className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
+                        href="/works/hebald-forest"
+                    >
+                        NEXT PROJECT
+                        <img
+                            className="h-[50px]"
+                            src="https://cdn.prod.website-files.com/63ea7102bccb5ef39bb53f01/640f4647eec4474635c0cee7_arrow%20svg%20right.svg"
+                            alt="Next"
+                        />
+                    </a>
+                </div>
+            </div>
         </section>
     );
 };
