@@ -10,12 +10,9 @@ type WorkItem = {
 const WORKS_INDEX: WorkItem[] = [
     { slug: "hebald-forest", title: "Hebald Forest" },
     { slug: "anamnesis", title: "Anamnesis" },
-    { slug: "procedural-walk-animation", title: "Procedural Leg Animation" },
     { slug: "where-the-cookies-at", title: "Where the Cookies At? – Brackeys 2025.2" },
-    { slug: "past-self-gmtk-2025", title: "Past Self – GMTK 2025" },
-    { slug: "pokedex-app", title: "Pokédex App" },
-    { slug: "kentyou", title: "Kentyou Dashboard Redesign" },
-    { slug: "podcastr", title: "Podcastr Platform" },
+    { slug: "past-self", title: "Past Self – GMTK 2025" },
+    { slug: "procedural-walk-animation", title: "Procedural Leg Animation" },
     // add/remove/reorder here only
 ];
 

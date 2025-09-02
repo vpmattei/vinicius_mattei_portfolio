@@ -218,7 +218,7 @@ const Page: React.FC = () => {
             </div>
 
             {/* Footer Nav */}
-            <WorksNav currentSlug="past-self-gmtk-2025" />
+            <WorksNav currentSlug="past-self" />
         </section>
     );
 };

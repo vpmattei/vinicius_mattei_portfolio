@@ -5,12 +5,13 @@ import CustomImage from "./components/CustomImage";
 import useIntersectionObserver from "./hooks/useIntersectionObserver";
 import CustomButton from "./components/CustomButton";
 import ProjectCard from "./components/ProjectCard";
+import ContactForm from "./contact-me/ContactForm";
 
 export default function Page() {
   useIntersectionObserver(".fade-in-element");
 
   return (
-    <section className="prose ml-8 mr-8">
+    <section className="prose">
       <div className="mt-48 mb-32 flex flex-col items-center gap-4">
         <div className="mb-8 text-center fade-in-element opacity-0">
           <div className="title poppins bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
@@ -36,6 +37,12 @@ export default function Page() {
         </p>
       </div>
 
+      <div className="w-full flex flex-col items-center my-16 py-4 bg-neutral-900 shadow-xl">
+        <h1>
+          University Projects
+        </h1>
+      </div>
+
       <div className="m-[clap(0, 2vw, 64)] flex flex-col items-center gap-32">
 
         {/* Project Card 1 - Left Image */}
@@ -55,7 +62,7 @@ export default function Page() {
             {/* Bottom action bar */}
             <a
               href="https://jessymonrocq.itch.io/hebald-forest"
-              className="mt-3 flex items-center gap-2"
+              className="mt-3 flex items-center self-center md:self-start gap-2"
             >
               <img
                 className="w-10 h-10"
@@ -73,7 +80,7 @@ export default function Page() {
             {/* growing content */}
             <div className="flex-1">
               <img
-                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/work-pages-redesign/assets/hebald_forest_images/logo.webp"
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/hebald_forest_images/logo.webp"
                 alt="Hebald Forest Logo"
                 className="h-20 mb-3"
               />
@@ -119,7 +126,7 @@ export default function Page() {
             {/* Bottom action bar */}
             <a
               href="https://www.ludhic.fr/games/anamnesis"
-              className="mt-3 flex items-center gap-2 self-end"
+              className="mt-3 flex items-center gap-2 md:self-end self-center"
             >
               <img
                 className="w-10 h-10"
@@ -167,6 +174,238 @@ export default function Page() {
         </div>
 
       </div>
+
+      <div className="w-full flex flex-col items-center my-16 py-4 bg-neutral-900 shadow-xl">
+        <h1>
+          Game Jams
+        </h1>
+      </div>
+
+      <div className="m-[clap(0, 2vw, 64)] flex flex-col items-center gap-32">
+
+        {/* Where the Cookies At - Left Image */}
+        <div className="max-w-[80rem] flex flex-col md:flex-row items-stretch gap-8 p-4 shadow-xl bg-neutral-900 rounded-lg">
+
+          {/* IMAGE LEFT (becomes the “tallest” column) */}
+          <div className="md:basis-1/2 flex flex-col">
+            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
+              <CustomImage
+                src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/level_02.png?raw=true"
+                alt="Where the Cookies At"
+                link="/projects/where-the-cookies-at"
+                maxWidth="40rem"
+              />
+            </div>
+
+            {/* Bottom action bar */}
+            <a
+              href="https://hinoga.itch.io/where-the-cookies-at"
+              className="mt-3 flex items-center self-center md:self-start gap-2"
+            >
+              <img
+                className="w-10 h-10"
+                src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/logos/itchio_white_logo.png?raw=true"
+                alt="itch.io"
+              />
+              <button className="text-[clamp(.5rem,2vw,1rem)] cursor-pointer flex items-center gap-2 border border-gray-300 px-6 py-2 rounded-lg transition-all duration-300 hover:bg-gray-200 hover:text-gray-900">
+                Play in Browser
+              </button>
+            </a>
+          </div>
+
+          {/* TEXT RIGHT (stretches to match left) */}
+          <div className="md:basis-1/2 flex flex-col min-w-0">
+            {/* growing content */}
+            <div className="flex-1">
+              <img
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/where_the_cookies_at/hero_image.png"
+                alt="Where the Cookies At Logo"
+                className="h-20 mb-3"
+              />
+              <h2 className="mt-2 text-2xl">Where the Cookies At</h2>
+              <p className="opacity-90">
+                <b>AI & NPC Developer, UI Programmer</b> – Unity
+              </p>
+              <p className="mt-2">
+                <b>Where the Cookies At?</b> is a stealth game made for <b>Brackeys Game Jam 2025.2</b>,
+                where the player sneaks cookies while avoiding the patrolling mother NPC. I designed and
+                implemented the <b>NPC behavior</b> and added <b>UI feedback</b> for cookie interactions.
+              </p>
+
+              <ul className="mt-4 list-disc list-inside">
+                <li>Engine: Unity 6.2</li>
+                <li>Team Size: 5</li>
+                <li>Duration: 1 week</li>
+              </ul>
+            </div>
+
+            {/* pinned bottom button */}
+            <a href="/projects/where-the-cookies-at" className="mt-4 self-end">
+              <button className="text-[clamp(.5rem,2vw,1rem)] cursor-pointer flex items-center gap-2 border border-gray-300 px-[clamp(.5rem,.5vw,2rem)] py-[clamp(.05rem,.5vw,.5rem)] rounded-lg transition-all duration-300 hover:bg-gray-200 hover:text-gray-900">
+                Read more <span className="text-lg">›</span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        {/* Past Self - Right */}
+        <div className="max-w-[80rem] flex flex-col md:flex-row-reverse items-stretch gap-8 p-4 shadow-xl bg-neutral-900 rounded-lg">
+
+          {/* IMAGE RIGHT */}
+          <div className="md:basis-1/2 flex flex-col">
+            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
+              <CustomImage
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/past_self_images/past_self_01.png?raw=true"
+                alt="Anamnesis"
+                link="/projects/past-self"
+                maxWidth="40rem"
+              />
+            </div>
+
+            {/* Bottom action bar */}
+            <a
+              href="https://hinoga.itch.io/past-self"
+              className="mt-3 flex items-center gap-2 self-center md:self-end"
+            >
+              <img
+                className="w-10 h-10"
+                src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/logos/itchio_white_logo.png?raw=true"
+                alt="Project"
+              />
+              <button className="text-[clamp(.5rem,2vw,1rem)] cursor-pointer flex items-center gap-2 border border-gray-300 px-6 py-2 rounded-lg transition-all duration-300 hover:bg-gray-200 hover:text-gray-900">
+                Play in Browser
+              </button>
+            </a>
+          </div>
+
+          {/* TEXT LEFT */}
+          <div className="md:basis-1/2 flex flex-col min-w-0">
+            {/* Growing content */}
+            <div className="flex-1">
+              <img
+                src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/past_self_images/past_self_main_image.png"
+                alt="Past Self Logo"
+                className="h-20 mb-3"
+              />
+              <h2 className="text-2xl">Past Self</h2>
+              <p className="opacity-90">
+                <b>Core Loop & Level Scripting, Key & Inventory Systems, Sound Implementation</b> – Unity
+              </p>
+              <p className="mt-2">
+                <b>Past Self</b> is a time-loop puzzle-platformer created for the <b>GMTK Game Jam 2025</b>, where short runs replay as past selves, letting players cooperate with their previous actions to press buttons, open doors, and collect keys to reach the exit.
+              </p>
+
+              <ul className="mt-4 list-disc list-inside">
+                <li>Engine: Unity 6.2</li>
+                <li>Team Size: 3</li>
+                <li>Duration: 4 days</li>
+              </ul>
+            </div>
+
+            {/* pinned bottom button */}
+            <a href="/projects/past-self" className="mt-4 self-end">
+              <button className="text-[clamp(.5rem,2vw,1rem)] cursor-pointer flex items-center gap-2 border border-gray-300 px-[clamp(.5rem,.5vw,2rem)] py-[clamp(.05rem,.5vw,.5rem)] rounded-lg transition-all duration-300 hover:bg-gray-200 hover:text-gray-900">
+                Read more <span className="text-lg">›</span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="w-full flex flex-col items-center my-16 py-4 bg-neutral-900 shadow-xl">
+        <h1>
+          Game Prototypes
+        </h1>
+      </div>
+
+      <div className="m-[clap(0, 2vw, 64)] flex flex-col items-center gap-32">
+
+        {/* Procedural Leg Animation - Left Image */}
+        <div className="max-w-[80rem] flex flex-col md:flex-row items-stretch gap-8 p-4 shadow-xl bg-neutral-900 rounded-lg">
+
+          {/* IMAGE LEFT (becomes the “tallest” column) */}
+          <div className="md:basis-1/2 flex flex-col">
+            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
+              <CustomImage
+                src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/pwa_title.png?raw=true"
+                alt="Procedural Leg Animation"
+                link="/projects/procedural-walk-animation"
+                maxWidth="40rem"
+              />
+            </div>
+          </div>
+
+          {/* TEXT RIGHT (stretches to match left) */}
+          <div className="md:basis-1/2 flex flex-col min-w-0">
+            {/* growing content */}
+            <div className="flex-1">
+              <h2 className="mt-2 text-2xl">Procedural Leg Animation</h2>
+              <p className="opacity-90">
+                <b>Procedural Animation Programmer</b> – Unity
+              </p>
+              <p className="mt-2">
+                A fully <b>procedural stepping system</b> built in <b>Unity 6</b> for insect or robot-like legs,
+                where legs are split into two groups (A/B) and step dynamically based on priority scores relative
+                to target distance, achieving natural movement with <b>no baked animations</b>.
+              </p>
+
+              <ul className="mt-4 list-disc list-inside">
+                <li>Engine: Unity</li>
+                <li>Team Size: 1 (myself)</li>
+                <li>Duration: span of 3 months</li>
+              </ul>
+            </div>
+
+            {/* pinned bottom button */}
+            <a href="/projects/procedural-walk-animation" className="mt-4 self-end">
+              <button className="text-[clamp(.5rem,2vw,1rem)] cursor-pointer flex items-center gap-2 border border-gray-300 px-[clamp(.5rem,.5vw,2rem)] py-[clamp(.05rem,.5vw,.5rem)] rounded-lg transition-all duration-300 hover:bg-gray-200 hover:text-gray-900">
+                Read more <span className="text-lg">›</span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      {/* <div className="w-full flex flex-col items-center my-16 py-4 bg-neutral-900 shadow-xl">
+        <h1>
+          Contact Me
+        </h1>
+      </div>
+
+      <div className="m-[clap(0, 2vw, 64)] flex flex-col items-center gap-32">
+        <a
+          className="flex flex-col items-center gap-2 transition-colors text-white/95 hover:text-pink-400"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/viniciuspmattei/"
+        >
+          <img
+            className="max-w-[3rem] sm:max-w-[4rem] md:max-w-[5rem]"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/websites/linkedin.png?raw=true"
+            alt="LinkedIn"
+          />
+          <div>LinkedIn</div>
+        </a>
+        <a
+          className="flex flex-col items-center gap-2 transition-colors text-white/95 hover:text-pink-400"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/vpmattei"
+        >
+          <img
+            className="max-w-[4rem] sm:max-w-[5rem] md:max-w-[6rem]"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/websites/github.png?raw=true"
+            alt="GitHub"
+          />
+          <div>GitHub</div>
+        </a>
+
+      </div>
+      <h2 className="text-center text-4xl font-bold">Send me a message</h2>
+      <ContactForm /> */}
+
     </section>
   );
 }
