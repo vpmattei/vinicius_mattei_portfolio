@@ -71,7 +71,7 @@ export default function WorksNav({ currentSlug, wrap = true }: WorksNavProps) {
                 {prev ? (
                     <a
                         className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-                        href={`/works/${prev.slug}`}
+                        href={`/projects/${prev.slug}`}
                     >
                         <LeftArrow />
                         PREVIOUS PROJECT
@@ -85,7 +85,7 @@ export default function WorksNav({ currentSlug, wrap = true }: WorksNavProps) {
                 {next ? (
                     <a
                         className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
-                        href={`/works/${next.slug}`}
+                        href={`/projects/${next.slug}`}
                     >
                         NEXT PROJECT
                         <RightArrow />

@@ -225,7 +225,7 @@ const Page: React.FC = () => {
             </div>
 
             {/* Play Our Game */}
-                <a href="https://hinoga.itch.io/where-the-cookies-at"><h2>Play our Game!</h2></a>
+            <a href="https://hinoga.itch.io/where-the-cookies-at"><h2>Play our Game!</h2></a>
 
             {/* Footer Nav */}
             <WorksNav currentSlug="where-the-cookies-at" />

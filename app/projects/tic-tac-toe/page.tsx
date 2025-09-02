@@ -92,7 +92,7 @@ const Page: React.FC = () => {
         <div className="flex flex-col items-start w-[100%]">
           <a
             className="font-fraunces-light-i text-pink-200 hover:text-3xl hover:text-pink-400 text-2xl flex flex-row items-center gap-3 min-w-[10rem]"
-            href="/works/starfox-game"
+            href="/projects/starfox-game"
           >
             <img
               className="h-[50px]"
@@ -106,7 +106,7 @@ const Page: React.FC = () => {
         <div className="flex flex-col items-end w-[100%]">
           <a
             className="font-fraunces-light-i text-green-300 hover:text-3xl hover:text-green-500 text-2xl flex flex-row items-center gap-3 min-w-[7rem]"
-            href="/works/procedural-walk-animation"
+            href="/projects/procedural-walk-animation"
           >
             NEXT PROJECT
             <img

@@ -18,12 +18,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://i.ibb.co/19SxrGF/paravoile.png"
             alt="Hebald Forest"
-            link="/works/hebald-forest"
+            link="/projects/hebald-forest"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/hebald-forest">
+          <a href="/projects/hebald-forest">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Hebald Forest
             </h4>
@@ -34,12 +34,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/anamnesis_images/main_level_01.png?raw=true"
             alt="Anamnesis"
-            link="/works/anamnesis"
+            link="/projects/anamnesis"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/anamnesis">
+          <a href="/projects/anamnesis">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Anamnesis
             </h4>
@@ -57,12 +57,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/procedural-walk-animation_img/pwa_title.png?raw=true"
             alt="Procedural Walk Animation"
-            link="/works/procedural-walk-animation"
+            link="/projects/procedural-walk-animation"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/procedural-walk-animation">
+          <a href="/projects/procedural-walk-animation">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Procedural Walk Animation
             </h4>
@@ -73,12 +73,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://raw.githubusercontent.com/vpmattei/TicTacToe-Multiplayer-Game/main/Assets/ReadmeImages/TicTacToe_MainScene.png"
             alt="Tic Tac Toe"
-            link="/works/tic-tac-toe"
+            link="/projects/tic-tac-toe"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/tic-tac-toe">
+          <a href="/projects/tic-tac-toe">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Multiplayer Tic Tac Toe
             </h4>
@@ -89,12 +89,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://raw.githubusercontent.com/vpmattei/Starfox-laser-defender-game/main/Assets/GameImages/starfox-gameplay.png"
             alt="Starfox Laser Defender Game"
-            link="/works/starfox-game"
+            link="/projects/starfox-game"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/starfox-game">
+          <a href="/projects/starfox-game">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Starfox Laser Defender Game
             </h4>
@@ -111,12 +111,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/hero_image.png?raw=true"
             alt="Where the Cookies at? – Brackeys 2025.2"
-            link="/works/where-the-cookies-at"
+            link="/projects/where-the-cookies-at"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/where-the-cookies-at">
+          <a href="/projects/where-the-cookies-at">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Where the Cookies At? – Brackeys 2025.2
             </h4>
@@ -127,12 +127,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/past_self_images/past_self_main_image.png?raw=true"
             alt="Past Self – GMTK 2025"
-            link="/works/past-self-gmtk-2025"
+            link="/projects/past-self-gmtk-2025"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/past-self">
+          <a href="/projects/past-self">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Past Self – GMTK 2025
             </h4>
@@ -149,12 +149,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://raw.githubusercontent.com/vpmattei/pokedex-app/main/Showcase/Final%20Export/MainPhotoPokedexShowcase.png"
             alt="Pokédex App"
-            link="/works/pokedex-app"
+            link="/projects/pokedex-app"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/pokedex-app">
+          <a href="/projects/pokedex-app">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Pokédex App
             </h4>
@@ -165,12 +165,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://i.ibb.co/GPvMSqy/Captura-de-Tela-2024-09-13-s-12-00-21.png"
             alt="Kentyou"
-            link="/works/kentyou"
+            link="/projects/kentyou"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/kentyou">
+          <a href="/projects/kentyou">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Kentyou Dashboard Redesign
             </h4>
@@ -181,12 +181,12 @@ const Page: React.FC = () => {
           <CustomImage
             src="https://i.ibb.co/QbHsPWM/podcastr-details-dark.png"
             alt="Podcastr"
-            link="/works/podcastr"
+            link="/projects/podcastr"
             maxWidth="12rem"
             maxHeight="12rem"
             squareImage={true}
           />
-          <a href="/works/podcastr">
+          <a href="/projects/podcastr">
             <h4 className="transition-all hover:text-neutral-400 text-center mt-2">
               Podcastr Platform
             </h4>
