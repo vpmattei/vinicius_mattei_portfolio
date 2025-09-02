@@ -25,15 +25,13 @@ export default function Page() {
           GAME DEVELOPER
         </div>
         <div className="mb-4 title font-fraunces-thin-i text-3xl md:text-4xl lg:text-5xl text-center fade-in-element opacity-0">
-          GAME DESIGNER
+          NPC & AI PROGRAMMER
         </div>
         <p className="max-w-[50rem] min-w-[18rem] mx-8 text-sm md:text-base fade-in-element opacity-0">
-          I am a <b>Game Developer</b> and a <b>Game Designer</b> with <b>8+ years</b> of personal experience with <b>Unity</b>,
-          I focus on building <b>core systems</b> for games.
+          I am a <b>Game Developer</b> with <b>8+ years</b> of Unity experience, focused on creating <b>core gameplay systems</b>.
         </p>
         <p className="max-w-[50rem] min-w-[18rem] mx-8 text-sm md:text-base fade-in-element opacity-0">
-          I specialize in building game mechanics and interactions, with a focus on <b>integrating AIs</b> in games like
-          with <b>NPCs</b> and their behaviour.
+          I <b>specialize</b> in designing and integrating <b>AI</b> and <b>NPC behaviors</b> that bring worlds to life.
         </p>
       </div>
 
@@ -43,7 +41,7 @@ export default function Page() {
         </h1>
       </div>
 
-      <div className="m-[clap(0, 2vw, 64)] flex flex-col items-center gap-32">
+      <div className="mx-2 flex flex-col items-center gap-32">
 
         {/* Project Card 1 - Left Image */}
         <div className="max-w-[80rem] flex flex-col md:flex-row items-stretch gap-8 p-4 shadow-xl bg-neutral-900 rounded-lg">
@@ -181,7 +179,7 @@ export default function Page() {
         </h1>
       </div>
 
-      <div className="m-[clap(0, 2vw, 64)] flex flex-col items-center gap-32">
+      <div className="mx-2 flex flex-col items-center gap-32">
 
         {/* Where the Cookies At - Left Image */}
         <div className="max-w-[80rem] flex flex-col md:flex-row items-stretch gap-8 p-4 shadow-xl bg-neutral-900 rounded-lg">
@@ -224,7 +222,7 @@ export default function Page() {
               />
               <h2 className="mt-2 text-2xl">Where the Cookies At</h2>
               <p className="opacity-90">
-                <b>AI & NPC Developer, UI Programmer</b> – Unity
+                <b>NPC Programmer, UI Programmer</b> – Unity
               </p>
               <p className="mt-2">
                 <b>Where the Cookies At?</b> is a stealth game made for <b>Brackeys Game Jam 2025.2</b>,
@@ -319,7 +317,7 @@ export default function Page() {
         </h1>
       </div>
 
-      <div className="m-[clap(0, 2vw, 64)] flex flex-col items-center gap-32">
+      <div className="mx-2 flex flex-col items-center gap-32">
 
         {/* Procedural Leg Animation - Left Image */}
         <div className="max-w-[80rem] flex flex-col md:flex-row items-stretch gap-8 p-4 shadow-xl bg-neutral-900 rounded-lg">
@@ -368,43 +366,47 @@ export default function Page() {
 
       </div>
 
-      {/* <div className="w-full flex flex-col items-center my-16 py-4 bg-neutral-900 shadow-xl">
+      <div className="w-full flex flex-col items-center my-16 py-4 bg-neutral-900 shadow-xl">
         <h1>
           Contact Me
         </h1>
       </div>
 
-      <div className="m-[clap(0, 2vw, 64)] flex flex-col items-center gap-32">
-        <a
-          className="flex flex-col items-center gap-2 transition-colors text-white/95 hover:text-pink-400"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/viniciuspmattei/"
-        >
-          <img
-            className="max-w-[3rem] sm:max-w-[4rem] md:max-w-[5rem]"
-            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/websites/linkedin.png?raw=true"
-            alt="LinkedIn"
-          />
-          <div>LinkedIn</div>
-        </a>
-        <a
-          className="flex flex-col items-center gap-2 transition-colors text-white/95 hover:text-pink-400"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/vpmattei"
-        >
-          <img
-            className="max-w-[4rem] sm:max-w-[5rem] md:max-w-[6rem]"
-            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/websites/github.png?raw=true"
-            alt="GitHub"
-          />
-          <div>GitHub</div>
-        </a>
+      <div className="mx-2 mb-16 flex flex-col items-center gap-8">
+        <div className="flex flex-row items-end gap-32">
+          <a
+            className="flex flex-col items-center gap-2 transition-colors text-white/95 hover:text-pink-400"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/viniciuspmattei/"
+          >
+            <img
+              className="max-w-[3rem] sm:max-w-[4rem] md:max-w-[5rem]"
+              src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/websites/linkedin.png?raw=true"
+              alt="LinkedIn"
+            />
+            <div>LinkedIn</div>
+          </a>
+          <a
+            className="flex flex-col items-center gap-2 transition-colors text-white/95 hover:text-pink-400"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/vpmattei"
+          >
+            <img
+              className="max-w-[4rem] sm:max-w-[5rem] md:max-w-[6rem]"
+              src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/logos/websites/github.png?raw=true"
+              alt="GitHub"
+            />
+            <div>GitHub</div>
+          </a>
+        </div>
 
+        <h2 className="text-center font-bold mt-16">Send me a message</h2>
+        <div className="w-full max-w-[60rem]">
+          <ContactForm />
+        </div>
       </div>
-      <h2 className="text-center text-4xl font-bold">Send me a message</h2>
-      <ContactForm /> */}
 
     </section>
   );
