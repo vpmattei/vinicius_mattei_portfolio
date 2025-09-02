@@ -124,9 +124,9 @@ const Page: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Takeaways */}
+                        {/* Post Mortem */}
                         <div className="p-2 md:p-4 shadow-xl">
-                            <h4>Takeaways</h4>
+                            <h4>Post Mortem</h4>
                             <p>
                                 The jam showed the importance of <b>scope control</b>. Even simple interactions like grabbing a
                                 cookie required UI, counters, HUD elements, and sound effects, which added more work than

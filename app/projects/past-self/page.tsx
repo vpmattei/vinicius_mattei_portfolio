@@ -128,9 +128,9 @@ const Page: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Takeaways */}
+                        {/* Post Mortem */}
                         <div className="p-2 md:p-4 shadow-xl">
-                            <h4>Takeaways</h4>
+                            <h4>Post Mortem</h4>
                             <p>
                                 Short jams reward <b>scope control</b> and <b>clear feedback</b>. Tight timers plus readable doors/buttons made the loop click; a simple audio mix and options helped keep the experience <b>cohesive</b> under time pressure.
                             </p>

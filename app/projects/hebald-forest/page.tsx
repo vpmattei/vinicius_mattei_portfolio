@@ -199,9 +199,9 @@ const Page: React.FC = () => {
               </div>
             </div>
 
-            {/* Takeaways */}
+            {/* Post Mortem */}
             <div className="p-2 md:p-4 shadow-xl">
-              <h4>Takeaways</h4>
+              <h4>Post Mortem</h4>
               <p>
                 The game made use of cutting-edge technologies such as <b>Lumen</b> and <b>Nanite</b>.
                 However, these innovations often proved to be more of a challenge than a benefit, introducing{" "}

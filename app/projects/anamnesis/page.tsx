@@ -214,9 +214,9 @@ const Page: React.FC = () => {
               </div>
             </div>
 
-            {/* Takeaways */}
+            {/* Post Mortem */}
             {/* <div className="p-2 md:p-4 shadow-xl">
-              <h4>Takeaways</h4>
+              <h4>Post Mortem</h4>
               <p>
                 Building for VR demanded tight <b>interaction fidelity</b> and <b>player comfort</b>.
                 Iterating on physics feel, affordances, and teleport rules was key to reducing friction
