@@ -22,16 +22,16 @@ export default function Page() {
           </div>
         </div>
         <div className="mb-4 title font-fraunces-thin-i text-3xl md:text-4xl lg:text-5xl text-center fade-in-element opacity-0">
-          GAME DEVELOPER
+          Game Programmer | Game Designer
         </div>
         <div className="mb-4 title font-fraunces-thin-i text-3xl md:text-4xl lg:text-5xl text-center fade-in-element opacity-0">
-          NPC & AI PROGRAMMER
+          Technical Designer | NPC/AI & LLM Developer
         </div>
         <p className="max-w-[50rem] min-w-[18rem] mx-8 text-sm md:text-base fade-in-element opacity-0">
-          I am a <b>Game Developer</b> with <b>8+ years</b> of Unity experience, focused on creating <b>core gameplay systems</b>.
+           I have <b>shipped several games</b> in <b>Unity</b> and specialize in <b>NPC Behavior</b> and <b>designing tools</b> for Game Designers and Level Designers.
         </p>
         <p className="max-w-[50rem] min-w-[18rem] mx-8 text-sm md:text-base fade-in-element opacity-0">
-          I <b>specialize</b> in designing and integrating <b>AI</b> and <b>NPC behaviors</b> that bring worlds to life.
+          I also have a vast experience integrating <b>LLMs</b> like Gemini, working with the <b>Google Cloud API</b> and bringing my <b>NPCs</b> to life.
         </p>
       </div>
 
