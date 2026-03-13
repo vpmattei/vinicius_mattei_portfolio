@@ -206,7 +206,7 @@ const Page: React.FC = () => {
         <div className="self-center w-full aspect-video max-w-4xl">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/ODJmCASHLy4"
+            src="https://www.youtube.com/embed/ODJmCASHLy4?autoplay=1&mute=1"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -402,7 +402,7 @@ const Page: React.FC = () => {
             <div className="w-full md:w-2/3 aspect-video ">
               <iframe
                 className="w-full h-full rounded"
-                src="https://www.youtube.com/embed/FLSQJRue0SU"
+                src="https://www.youtube.com/embed/FLSQJRue0SU?autoplay=1&mute=1&loop=1&playlist=FLSQJRue0SU"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
