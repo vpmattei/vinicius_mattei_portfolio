@@ -32,6 +32,28 @@ const gameplayImage = {
     image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/gameplay.gif?raw=true",
 };
 
+// Patrol Paths/Spots Screenshots
+
+const patrolSpotParameters = {
+    image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/patrol_spot_parameters.png?raw=true"
+}
+
+const patrolPathsParameters01 = {
+    image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/patrol_paths_parameters_01.png?raw=true"
+}
+
+const patrolPathsParameters02 = {
+    image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/patrol_paths_parameters_02.png?raw=true"
+}
+
+const patrolPathsParameters03 = {
+    image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/patrol_paths_parameters_03.png?raw=true"
+}
+
+const patrolSpotsInGame = {
+    image: "https://github.com/vpmattei/vinicius_mattei_portfolio/blob/main/assets/where_the_cookies_at/patrol_spots_in_game.png?raw=true"
+}
+
 const Page: React.FC = () => {
     return (
         <section className="prose mx-6 sm:mx-8 md:mx-16 lg:mx-24 flex flex-col items-center gap-16">
@@ -140,7 +162,7 @@ const Page: React.FC = () => {
                 <h2>My Contributions</h2>
 
                 {/* NPC Movement */}
-                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl gap-8">
+                <div className="w-full flex flex-col items-start p-2 md:p-4 shadow-2xl gap-16">
                     <h3>1. NPC Patrol Movement</h3>
                     <div className="w-full flex flex-col md:flex-row items-center gap-4">
                         <div className="w-full md:w-2/3">
@@ -156,19 +178,59 @@ const Page: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="w-full flex flex-col md:flex-row items-center gap-4">
+                    <div className="w-full flex flex-col gap-4">
+                        <h4>Helping the designer</h4>
+                        <p>
+                            When developing the AI for the Mother NPC, I wanted to create the system for placing each Patrol Spot and setting up
+                            the Patrol Path as easy as possible for our Level Designer.
+                        </p>
+                        <p>
+                            Therefore, I created an easy-to-implement Inspector, so that the Level Designer had full control of the AI movement 
+                            and could easily change the Patrol Spots visuals as well, like changing the color, radius but also being able to control 
+                            the amount of seconds the NPC would spend on each Spot.
+                        </p>
+                        <p>
+                            I also enabled the Level Designer to change the order in which the NPC would loop the waypoints, like going in a ping-pong pattern 
+                            or a in a linear pattern. This way, our Level Designer had <b>full creative control</b> on whatever he wanted to do next.
+                        </p>
+                    </div>
+
+                    <div className="w-full h-[15rem] flex flex-col md:flex-row items-center gap-4 my-24">
+                        <div className="w-full md:w-1/3 h-full">
+                            <iframe
+                                className="w-full h-full"
+                                src="https://www.youtube.com/embed/KcUYTIWLOS0?autoplay=1&mute=1&loop=1&playlist=KcUYTIWLOS0"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                        <div className="w-full md:w-2/3">
+                            <p className="md:text-center">
+                                <ImageDisplay src={patrolSpotParameters.image} />
+                                Patrol Spot Parameters where you could set the <b>amount of seconds</b> the Mother would spend idle on the spot,
+                                the <b>radius</b> of the gizmo shown in the editor view and its <b>color</b>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4 my-8">
                         <div className="w-full md:w-1/3">
                             <p className="md:text-center">
+                                <ImageDisplay src={patrolPathsParameters01.image} />
+                                I madeParameters
+                            </p>
+                        </div>
+                        <div className="w-full md:w-1/3">
+                            <p className="md:text-center">
+                                <ImageDisplay src={patrolPathsParameters02.image} />
                                 Bla bla bla bla bla bla
                             </p>
                         </div>
                         <div className="w-full md:w-1/3">
                             <p className="md:text-center">
-                                Bla bla bla bla bla bla
-                            </p>
-                        </div>
-                        <div className="w-full md:w-1/3">
-                            <p className="md:text-center">
+                                <ImageDisplay src={patrolPathsParameters03.image} />
                                 Bla bla bla bla bla bla
                             </p>
                         </div>
@@ -231,7 +293,14 @@ const Page: React.FC = () => {
             </div>
 
             {/* Play Our Game */}
-            <a href="https://hinoga.itch.io/where-the-cookies-at"><h2>Play our Game!</h2></a>
+            <a
+                className="flex gap-1 items-center transition-colors text-white/95 hover:text-pink-400"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://hinoga.itch.io/where-the-cookies-at"
+            >
+                <h2><ArrowIcon size={18} />Play our Game!</h2>
+            </a>
 
             {/* Post Mortem */}
             <div className="p-2 md:p-4 shadow-xl">
