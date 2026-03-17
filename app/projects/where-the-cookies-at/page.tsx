@@ -181,17 +181,28 @@ const Page: React.FC = () => {
                     <div className="w-full flex flex-col gap-4">
                         <h4>Helping the designer</h4>
                         <p>
-                            When developing the AI for the Mother NPC, I wanted to create the system for placing each Patrol Spot and setting up
-                            the Patrol Path as easy as possible for our Level Designer.
+                            Beyond implementing the NPC behavior itself, I focused on making the patrol system
+                            <b> fully configurable without touching any code</b>. In a game jam with a tight deadline,
+                            the Level Designer needed to be able to place patrol routes, tweak timings, and iterate
+                            quickly, so I built a set of custom Unity Inspector components that exposed all the
+                            relevant controls directly in the editor.
                         </p>
                         <p>
-                            Therefore, I created an easy-to-implement Inspector, so that the Level Designer had full control of the AI movement 
-                            and could easily change the Patrol Spots visuals as well, like changing the color, radius but also being able to control 
-                            the amount of seconds the NPC would spend on each Spot.
+                            Each point along a patrol route is a <b>Patrol Spot</b>, a standalone component
+                            I created with its own Inspector settings. The designer can set exactly <b>how many
+                            seconds the Mother NPC idles</b> at that spot before moving on, and customize the
+                            editor gizmo's <b>color and radius</b> so patrol points are easy to identify and
+                            distinguish in the scene view at a glance.
                         </p>
                         <p>
-                            I also enabled the Level Designer to change the order in which the NPC would loop the waypoints, like going in a ping-pong pattern 
-                            or a in a linear pattern. This way, our Level Designer had <b>full creative control</b> on whatever he wanted to do next.
+                            The route itself is managed by a <b>Mother Patrol Controller</b> component, where
+                            the designer assigns any number of Patrol Spots in order and configures two key
+                            behaviors: the <b>Patrol Type</b>, either <b>Linear</b> (the NPC cycles through
+                            spots in order: 1 → 2 → 3 → 1 → 2 → 3…) or <b>Ping Pong</b> (the NPC reverses
+                            direction at each end: 1 → 2 → 3 → 2 → 1 → 2 → 3…), and the <b>Looping</b>{" "}
+                            behavior, whether the patrol runs indefinitely, stops after a set number of cycles,
+                            or plays through only once. This gave the designer <b>full creative control</b> over
+                            the NPC's movement with no programming required.
                         </p>
                     </div>
 
@@ -209,8 +220,9 @@ const Page: React.FC = () => {
                         <div className="w-full md:w-2/3">
                             <p className="md:text-center">
                                 <ImageDisplay src={patrolSpotParameters.image} />
-                                Patrol Spot Parameters where you could set the <b>amount of seconds</b> the Mother would spend idle on the spot,
-                                the <b>radius</b> of the gizmo shown in the editor view and its <b>color</b>.
+                                The <b>Patrol Spot</b> component Inspector, each waypoint exposes a <b>Wait For Seconds</b> slider
+                                controlling how long the NPC idles at that point, plus <b>Gizmo Color</b> and <b>Gizmo Radius</b> so 
+                                the designer can visually distinguish patrol points directly in the scene view.
                             </p>
                         </div>
                     </div>
@@ -219,19 +231,25 @@ const Page: React.FC = () => {
                         <div className="w-full md:w-1/3">
                             <p className="md:text-center">
                                 <ImageDisplay src={patrolPathsParameters01.image} />
-                                I madeParameters
+                                The <b>Patrol Type</b> dropdown on the <b>Mother Patrol Controller</b>, set to <b>Linear</b> here
+                                (1 → 2 → 3 → 1 → 2 → 3…). Switching to <b>Ping Pong</b> makes the NPC reverse at each
+                                end instead (1 → 2 → 3 → 2 → 1 → 2 → 3…).
                             </p>
                         </div>
                         <div className="w-full md:w-1/3">
                             <p className="md:text-center">
                                 <ImageDisplay src={patrolPathsParameters02.image} />
-                                Bla bla bla bla bla bla
+                                The <b>Looping</b> dropdown, available for both patrol types, lets the designer choose
+                                between <b>Do Not Loop</b>, <b>Loop N Times</b>, or <b>Loop Infinitely</b>,
+                                controlling whether the patrol runs once, a fixed number of cycles, or forever.
                             </p>
                         </div>
                         <div className="w-full md:w-1/3">
                             <p className="md:text-center">
                                 <ImageDisplay src={patrolPathsParameters03.image} />
-                                Bla bla bla bla bla bla
+                                Selecting <b>Loop N Times</b> reveals a <b>Loops (cycles)</b> field, here set to 3, so the
+                                designer can specify exactly how many full patrol cycles the NPC completes before stopping,
+                                without writing a single line of code.
                             </p>
                         </div>
                     </div>
@@ -299,7 +317,7 @@ const Page: React.FC = () => {
                 target="_blank"
                 href="https://hinoga.itch.io/where-the-cookies-at"
             >
-                <h2><ArrowIcon size={18} />Play our Game!</h2>
+                <h2>Play our Game! :)</h2>
             </a>
 
             {/* Post Mortem */}
