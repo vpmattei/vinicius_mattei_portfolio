@@ -123,19 +123,15 @@ const Page: React.FC = () => {
                                 </div>
                             </div>
                         </div>
-
-                        {/* Post Mortem */}
-                        <div className="p-2 md:p-4 shadow-xl">
-                            <h4>Post Mortem</h4>
-                            <p>
-                                The jam showed the importance of <b>scope control</b>. Even simple interactions like grabbing a
-                                cookie required UI, counters, HUD elements, and sound effects, which added more work than
-                                expected. While ambitious, the project reinforced how a <b>smaller scope with more mechanics</b>{" "}
-                                can sometimes deliver stronger results. Still, the team delivered a <b>fun, cohesive prototype</b>{" "}
-                                under time pressure.
-                            </p>
-                        </div>
                     </div>
+                </div>
+            </div>
+
+            {/* Gameplay */}
+            <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16 shadow-2xl">
+                <h2>Gameplay</h2>
+                <div className="self-center w-full aspect-video max-w-4xl">
+                    <ImageDisplay src={gameplayImage.image} />
                 </div>
             </div>
 
@@ -156,6 +152,24 @@ const Page: React.FC = () => {
                                 flexible patrol patterns. The mother could either <b>ping-pong</b>{" "}
                                 (1 → 2 → 3 → 2 → 1) or <b>loop</b> (1 → 2 → 3 → 1 → 2 → 3) along
                                 waypoints.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4">
+                        <div className="w-full md:w-1/3">
+                            <p className="md:text-center">
+                                Bla bla bla bla bla bla
+                            </p>
+                        </div>
+                        <div className="w-full md:w-1/3">
+                            <p className="md:text-center">
+                                Bla bla bla bla bla bla
+                            </p>
+                        </div>
+                        <div className="w-full md:w-1/3">
+                            <p className="md:text-center">
+                                Bla bla bla bla bla bla
                             </p>
                         </div>
                     </div>
@@ -216,16 +230,20 @@ const Page: React.FC = () => {
                 </div>
             </div>
 
-            {/* Gameplay */}
-            <div className="w-full flex flex-col items-start p-4 gap-4 md:gap-16 shadow-2xl">
-                <h2>Gameplay</h2>
-                <div className="self-center w-full aspect-video max-w-4xl">
-                    <ImageDisplay src={gameplayImage.image} />
-                </div>
-            </div>
-
             {/* Play Our Game */}
             <a href="https://hinoga.itch.io/where-the-cookies-at"><h2>Play our Game!</h2></a>
+
+            {/* Post Mortem */}
+            <div className="p-2 md:p-4 shadow-xl">
+                <h4>Post Mortem</h4>
+                <p>
+                    The jam showed the importance of <b>scope control</b>. Even simple interactions like grabbing a
+                    cookie required UI, counters, HUD elements, and sound effects, which added more work than
+                    expected. While ambitious, the project reinforced how a <b>smaller scope with more mechanics</b>{" "}
+                    can sometimes deliver stronger results. Still, the team delivered a <b>fun, cohesive prototype</b>{" "}
+                    under time pressure.
+                </p>
+            </div>
 
             {/* Footer Nav */}
             <WorksNav currentSlug="where-the-cookies-at" />
