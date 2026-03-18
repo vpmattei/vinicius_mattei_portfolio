@@ -4,28 +4,43 @@ export default function Page() {
   return (
     <section className="prose lg:mx-32 md:mx-24 mx-16 flex flex-col flex-wrap items-start gap-16">
       <div className="w-[100%]">
-        <h1 className="text-balance">About me</h1>
-        {/* TODO: Modify my description */}
-        <div className="flex flex-row">
+        <div className="flex flex-col items-start gap-8 mb-8">
           <img
-            className="w-1/5 max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[130px] lg:max-h-[130px]"
-            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/me/Me.png"
-          ></img>
-          <p className="w-4/5">
-            I’m a dedicated <b>game developer</b> with over <b>8 years</b> of hands-on work in Unity and C#. I specialize in designing and developing
-            game mechanics and interactions, with a focus on NPC behaviour and interactions, as well as AI and
-            Large Language Models integration.
-          </p>
+            className="max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[130px] lg:max-h-[130px]"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/me/Me.png?raw=true"
+            alt="Vinicius Mattei"
+          />
+          <h1 className="text-balance leading-none">About me</h1>
         </div>
+        {/* TODO: Modify my description */}
+
+        <p className="">
+          I’m a dedicated <b>Game Developer</b> with <b>3 shipped games</b>, specializing in the <b>programming 
+          and development of AIs and NPCs</b>. My work focuses on creating living, reactive worlds where 
+          non-player characters behave with purpose, from complex state machines and field-of-view detection 
+          to flexible patrol systems.
+        </p>
         <br />
         <p>
-          I've worked on countless projects, from solo projects, to university projects with over 10+ people on a single project, ranging from
-          developers to musicians and sound designers. This helped me gain good experience to know how to effectively communicate ideas with
-          a wide range of different areas of work. My <Link className="transition-colors text-white/95 hover:text-pink-400" key="/artworks" href="/artworks">artistic background</Link> has also helped me navigate through this, as I am a musician and a
-          visual artist myself.
+          Beyond pure programming, I am a <b>Technical Designer</b> and <b>Game Designer</b>. I pride myself 
+          on building robust, designer-friendly tools that bridge the gap between code and creativity. For 
+          instance, in my project <i>Where the Cookies At?</i>, I developed custom Unity Inspector components 
+          that allowed level designers to configure complex NPC behaviors and patrol paths entirely without 
+          code, significantly accelerating our development pipeline.
+        </p>
+        <br />
+        <p>
+          I've worked on diverse projects, from solo endeavors to large-scale university collaborations with 
+          over 19 team members. My experience as a <b>Project Coordinator</b> and <b>Scrum Master</b> has 
+          taught me how to effectively synchronize developers, artists, and sound designers toward a unified 
+          vision.
+        </p>
+        <br />
+        <p>
+          My <Link className="transition-colors text-white/95 hover:text-pink-400" key="/artworks" href="/artworks">artistic background</Link> as a musician and visual artist gives me a unique perspective on game feel and aesthetics, allowing me to communicate fluently across all disciplines of game production.
         </p>
 
-        <h2 className="text-balance">Experiences</h2>
+        <h2 className="text-balance mt-8">Experiences</h2>
         <div className="flex flex-row justify-start flex-wrap gap-x-8 gap-y-8">
           {/* ---------------------------- Freelance ---------------------------- */}
           <div className="w-[6rem] sm:w-[8rem] md:w-[10.5rem] lg:w-[12rem] h-[20rem] flex flex-col justify-between">
