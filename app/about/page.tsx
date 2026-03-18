@@ -6,11 +6,17 @@ export default function Page() {
       <div className="w-[100%]">
         <h1 className="text-balance">About me</h1>
         {/* TODO: Modify my description */}
-        <p>
-          I’m a dedicated <b>game developer</b> with over <b>8 years</b> of hands-on work in Unity and C#. I specialize in designing and developing
-          game mechanics and interactions, with a focus on NPC behaviour and interactions, as well as AI and
-          Large Language Models integration.
-        </p>
+        <div className="flex flex-row">
+          <img
+            className="w-1/5 max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[130px] lg:max-h-[130px]"
+            src="https://raw.githubusercontent.com/vpmattei/vinicius_mattei_portfolio/refs/heads/main/assets/me/Me.png"
+          ></img>
+          <p className="w-4/5">
+            I’m a dedicated <b>game developer</b> with over <b>8 years</b> of hands-on work in Unity and C#. I specialize in designing and developing
+            game mechanics and interactions, with a focus on NPC behaviour and interactions, as well as AI and
+            Large Language Models integration.
+          </p>
+        </div>
         <br />
         <p>
           I've worked on countless projects, from solo projects, to university projects with over 10+ people on a single project, ranging from
